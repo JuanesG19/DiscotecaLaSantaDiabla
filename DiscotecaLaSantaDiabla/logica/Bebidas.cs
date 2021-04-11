@@ -14,7 +14,6 @@ namespace DiscotecaLaSantaDiabla.logica
         //CONSTRUCTOR
         Bebidas()
         {
-
             bebidas = new List<Producto>();
             bebidasEspeciales = new List<Producto>();
         }
