@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class Bebidas
+    class Bebidas //ULTIMA VERSION
     {
 
         //ATRIBUTOS
