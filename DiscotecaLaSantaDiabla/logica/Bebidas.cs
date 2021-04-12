@@ -25,7 +25,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //METODOS...
 
-       /AGREGAR
+       //AGREGAR - B
 
         public void agregarBebida(Producto pProducto)
         {
@@ -57,14 +57,11 @@ namespace DiscotecaLaSantaDiabla.logica
 
         }
 
-        //CONTAR
+        //CONTAR - B
 
         public int contarBebidas()
         {
-
-
             int cantBebidas = bebidas.Count;
-
             return cantBebidas;
         }
 
@@ -72,8 +69,6 @@ namespace DiscotecaLaSantaDiabla.logica
         public int contarBebidasEspeciales()
         {
             int cantBebidasEsp = bebidasEspeciales.Count;
-
-
             return cantBebidasEsp;
         }
         //ELIMINAR
@@ -187,7 +182,7 @@ namespace DiscotecaLaSantaDiabla.logica
             return "Hay " + cantidad + " " + pProducto.getNombre() + " de: " + pProducto.getPresentacion() + " a: " + pProducto.getPrecio();
         }
 
-        //DAR POSICION
+        //DAR POSICION - B
         public int darPosicionBebida(Producto pProducto)
 
         {
