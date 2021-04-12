@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class Bebidas //ULTIMA VERSION
+    class Bebidas 
     {
 
         //ATRIBUTOS
@@ -42,9 +42,9 @@ namespace DiscotecaLaSantaDiabla.logica
 
         }
 
-        public void agregarBebidaEspecial(Producto pProducto, int cantidad)
+        public void agregarBebidaEspecial(Producto pProducto)
         {
-            int agregado = darPosicionBebidaEspeciales(pProducto);
+            int agregado = darPosicionBebidaEspecial(pProducto);
 
             if (agregado == -1)
             {
@@ -65,55 +65,41 @@ namespace DiscotecaLaSantaDiabla.logica
             return cantBebidas;
         }
 
-
         public int contarBebidasEspeciales()
         {
             int cantBebidasEsp = bebidasEspeciales.Count;
             return cantBebidasEsp;
         }
-        //ELIMINAR
+
+        //ELIMINAR - B
 
         public void eliminarBebida(Producto pProducto)
         {
-            if (contarBebidas() > 0)
+            int aEliminar = darPosicionBebida(pProducto);
+
+            if (aEliminar != 1)
             {
-                foreach (Producto p in bebidas)
-                {
-                    if (p.getNombre().Equals(pProducto.getNombre()) &&
-                        p.getPrecio() == pProducto.getPrecio() &&
-                        p.getPresentacion().Equals(pProducto.getPresentacion()) &&
-                        p.getCantidad() == pProducto.getCantidad())
-                    {
-                        bebidas.Remove(p);
-                        break;
-                    }
-                }
+                bebidas.RemoveAt(aEliminar);
+                
             }
             else
             {
-                throw new Exception("No hay bebidas " + pProducto.getNombre() + "en el momento");
+                throw new Exception("No se pudo eliminar el producto solicitado !");
             }
         }
 
         public void eliminarBebidaEspecial(Producto pProducto)
         {
-            if (contarBebidasEspeciales() > 0)
+            int aEliminar = darPosicionBebidaEspecial(pProducto);
+
+            if (aEliminar != 1)
             {
-                foreach (Producto p in bebidasEspeciales)
-                {
-                    if (p.getNombre().Equals(pProducto.getNombre()) &&
-                        p.getPrecio() == pProducto.getPrecio() &&
-                        p.getPresentacion().Equals(pProducto.getPresentacion()) &&
-                        p.getCantidad() == pProducto.getCantidad())
-                    {
-                        bebidasEspeciales.Remove(p);
-                        break;
-                    }
-                }
+                bebidasEspeciales.RemoveAt(aEliminar);
+
             }
             else
             {
-                throw new Exception("No hay bebidas " + pProducto.getNombre() + "en el momento");
+                throw new Exception("No se pudo eliminar el producto solicitado !");
             }
         }
 
@@ -121,7 +107,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public void modificarBebida(Producto pProducto)
         {
-            if (contarBebidas() > 0)
+            if (contarBebidasEspeciales() > 0)
             {
                 foreach (Producto p in bebidas)
                 {
@@ -139,9 +125,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No se pudo modificar la bebida " + pProducto.getNombre());
             }
-
         }
-
 
         public void modificarBebidaEspecial(Producto pProducto)
         {
@@ -165,21 +149,36 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        //BUSCAR
+        //BUSCAR - B
 
-        public String buscarBebida(Producto pProducto)
+        public Producto buscarBebida(String nombre, int precio)
         {
-            int cantidad = contarBebida(pProducto);
+            Producto buscado = null;
 
-            return "Hay " + cantidad + " " + pProducto.getNombre() + " de: " + pProducto.getPresentacion() + " a: " + pProducto.getPrecio();
+            foreach (Producto p in bebidas)
+            {
+                if (p.getNombre().Equals(nombre) && p.getPrecio() == precio)
 
+                {
+                    buscado = new Producto(p.getNombre(), p.getPrecio(), p.getPresentacion(), p.getCantidad());
+                }
+            }
+            return buscado;
         }
 
-        public String buscarBebidaEspecial(Producto pProducto)
+        public Producto buscarBebidaEspecial(String nombre, int precio)
         {
-            int cantidad = contarBebidasEspeciales(pProducto);
+            Producto buscado = null;
 
-            return "Hay " + cantidad + " " + pProducto.getNombre() + " de: " + pProducto.getPresentacion() + " a: " + pProducto.getPrecio();
+            foreach (Producto p in bebidasEspeciales)
+            {
+                if (p.getNombre().Equals(nombre) && p.getPrecio() == precio)
+   
+                {
+                    buscado = new Producto(p.getNombre(), p.getPrecio(), p.getPresentacion(), p.getCantidad());
+                }
+            }
+            return buscado;
         }
 
         //DAR POSICION - B
@@ -214,9 +213,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         }
 
-        public int darPosicionBebidaEspeciales(Producto pProducto)
-
-
+        public int darPosicionBebidaEspecial(Producto pProducto)
         {
             int pos = -1;
             int index = 0;
@@ -229,15 +226,12 @@ namespace DiscotecaLaSantaDiabla.logica
                 {
                     pos = index;
                     break;
-
                 }
                 else
                 {
                     index++;
                 }
-
             }
-
             return pos;
         }
 
