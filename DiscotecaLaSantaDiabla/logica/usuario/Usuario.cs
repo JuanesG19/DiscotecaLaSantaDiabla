@@ -32,13 +32,11 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
             if (usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
             {
-
                 usuarios.ElementAt(idBuscado).setNombre(pCliente.getNombre());
                 usuarios.ElementAt(idBuscado).setApellido(pCliente.getApellido());
                 usuarios.ElementAt(idBuscado).setTelefono(pCliente.getTelefono());
-                usuarios.ElementAt(idBuscado).setNombre(pCliente.getNombre());
                 usuarios.ElementAt(idBuscado).setFechaN(pCliente.getgetFechaN());
-
+                usuarios.ElementAt(idBuscado).setTipoCuenta(pCliente.getTipoCuenta());
             }
             else
             {
@@ -64,14 +62,15 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         public void eliminarUsuario(Cliente pCliente)
         {
+            int idBuscado = buscarUsuario(pCliente.getID());
 
-            if (usuarios. > 0)
+            if (usuarios.Count > 0)
             {
-                foreach (Producto p in bebidas)
+                foreach (Cliente p in usuarios)
                 {
-                    if (p.getNombre().Equals(pProducto.getNombre()) &&
-                        p.getPrecio() == pProducto.getPrecio() &&
-                        p.getPresentacion().Equals(pProducto.getPresentacion()) &&
+                    if (p.getNombre().Equals(pCliente.getNombre()) &&
+                        p.getApellido()pCliente.getPrecio() &&
+                        p.getPresentacion().Equals(pCliente.getPresentacion()) &&
                         cant <= cantidad)
                     {
                         bebidas.Remove(p);

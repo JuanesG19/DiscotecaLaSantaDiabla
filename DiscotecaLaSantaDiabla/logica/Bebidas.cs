@@ -23,28 +23,19 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public List<Producto> darBebidasEspeciales() => bebidasEspeciales;
 
-
         //METODOS...
 
         //AGREGAR
 
-        public void agregarBebida(Producto pProducto)
-        {
-            bebidas.Add(pProducto);
-        }
+        public void agregarBebida(Producto pProducto) => bebidas.Add(pProducto);
 
-        public void agregarBebidaEspecial(Producto pProducto)
-        {
-            bebidasEspeciales.Add(pProducto);
-
-        }
+        public void agregarBebidaEspecial(Producto pProducto) => bebidasEspeciales.Add(pProducto);
 
         //CONTAR
 
         public int contarBebidas()
         {
             int cantBebidas = bebidas.Count;
-
             return cantBebidas;
         }
 
@@ -52,16 +43,12 @@ namespace DiscotecaLaSantaDiabla.logica
         public int contarBebidasEspeciales()
         {
             int cantBEspeciales = bebidasEspeciales.Count;
-
-           
             return cantBEspeciales;
         }
         //ELIMINAR
 
         public void eliminarBebida(Producto pProducto)
         {
-            int cant = 0;
-
             if (contarBebidas() > 0)
             {
                 foreach (Producto p in bebidas)
@@ -69,13 +56,12 @@ namespace DiscotecaLaSantaDiabla.logica
                     if (p.getNombre().Equals(pProducto.getNombre()) &&
                         p.getPrecio() == pProducto.getPrecio() &&
                         p.getPresentacion().Equals(pProducto.getPresentacion()) &&
-                        cant <= cantidad)
+                        p.getCantidad() == pProducto.getCantidad())
                     {
                         bebidas.Remove(p);
-                        cant++;
+                        break;
                     }
                 }
-
             }
             else
             {
@@ -83,39 +69,33 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        public void eliminarBebidaEspecial(Producto pProducto, int cantidad)
+        public void eliminarBebidaEspecial(Producto pProducto)
         {
-            int cant = 0;
-
-            if (contarBebidasEspeciales(pProducto) > 0)
+            if (contarBebidasEspeciales() > 0)
             {
-                foreach (Producto p in bebidas)
+                foreach (Producto p in bebidasEspeciales)
                 {
                     if (p.getNombre().Equals(pProducto.getNombre()) &&
                         p.getPrecio() == pProducto.getPrecio() &&
                         p.getPresentacion().Equals(pProducto.getPresentacion()) &&
-                        cant <= cantidad)
+                        p.getCantidad() == pProducto.getCantidad())
                     {
-                        bebidas.Remove(p);
-                        cant++;
+                        bebidasEspeciales.Remove(p);
+                        break;
                     }
                 }
-
             }
-
             else
             {
                 throw new Exception("No hay bebidas " + pProducto.getNombre() + "en el momento");
             }
-
-
         }
 
         //MODIFICAR
 
         public void modificarBebida(Producto pProducto)
         {
-            if (contarBebidasEspeciales(pProducto) > 0)
+            if (contarBebidas() > 0)
             {
                 foreach (Producto p in bebidas)
                 {
@@ -139,7 +119,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public void modificarBebidaEspecial(Producto pProducto)
         {
-            if (contarBebidasEspeciales(pProducto) > 0)
+            if (contarBebidasEspeciales() > 0)
             {
                 foreach (Producto p in bebidasEspeciales)
                 {
