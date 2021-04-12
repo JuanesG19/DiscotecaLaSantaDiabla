@@ -25,25 +25,56 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //METODOS...
 
-        //AGREGAR
+       /AGREGAR
 
-        public void agregarBebida(Producto pProducto) => bebidas.Add(pProducto);
+        public void agregarBebida(Producto pProducto)
+        {
+            int agregado = darPosicionBebida(pProducto);
 
-        public void agregarBebidaEspecial(Producto pProducto) => bebidasEspeciales.Add(pProducto);
+            if (agregado == -1)
+            {
+                bebidas.Add(pProducto);
+            }
+            else
+            {
+                throw new Exception("El produto ya se encuentra agregado !");
+            }
+
+        }
+
+        public void agregarBebidaEspecial(Producto pProducto, int cantidad)
+        {
+            int agregado = darPosicionBebidaEspeciales(pProducto);
+
+            if (agregado == -1)
+            {
+                bebidasEspeciales.Add(pProducto);
+            }
+            else
+            {
+                throw new Exception("El produto ya se encuentra agregado !");
+            }
+
+        }
 
         //CONTAR
 
         public int contarBebidas()
         {
+
+
             int cantBebidas = bebidas.Count;
+
             return cantBebidas;
         }
 
 
         public int contarBebidasEspeciales()
         {
-            int cantBEspeciales = bebidasEspeciales.Count;
-            return cantBEspeciales;
+            int cantBebidasEsp = bebidasEspeciales.Count;
+
+
+            return cantBebidasEsp;
         }
         //ELIMINAR
 
@@ -155,5 +186,65 @@ namespace DiscotecaLaSantaDiabla.logica
 
             return "Hay " + cantidad + " " + pProducto.getNombre() + " de: " + pProducto.getPresentacion() + " a: " + pProducto.getPrecio();
         }
+
+        //DAR POSICION
+        public int darPosicionBebida(Producto pProducto)
+
+        {
+            int pos = -1;
+            int index = 0;
+            foreach (Producto p in bebidas)
+            {
+                if (pProducto.getNombre().Equals(p.getNombre()) &&
+                    pProducto.getPrecio() == p.getPrecio() &&
+                    pProducto.getPresentacion().Equals(p.getPresentacion())
+                    && pProducto.getCantidad() == p.getCantidad())
+                {
+                    pos = index;
+                    break;
+
+                }
+                else
+                {
+                    index++;
+                }
+
+            }
+
+            return pos;
+
+
+            int cantBebidas = bebidas.Count;
+            return cantBebidas;
+
+        }
+
+        public int darPosicionBebidaEspeciales(Producto pProducto)
+
+
+        {
+            int pos = -1;
+            int index = 0;
+            foreach (Producto p in bebidasEspeciales)
+            {
+                if (pProducto.getNombre().Equals(p.getNombre()) &&
+                    pProducto.getPrecio() == p.getPrecio() &&
+                    pProducto.getPresentacion().Equals(p.getPresentacion())
+                    && pProducto.getCantidad() == p.getCantidad())
+                {
+                    pos = index;
+                    break;
+
+                }
+                else
+                {
+                    index++;
+                }
+
+            }
+
+            return pos;
+        }
+
     }
 }
