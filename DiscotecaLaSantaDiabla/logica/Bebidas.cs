@@ -9,7 +9,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //ATRIBUTOS
         private List<Producto> bebidas;
-        private List<Producto> bebidasEspeciales; }
+        private List<Producto> bebidasEspeciales;
 
         //CONSTRUCTOR
         Bebidas()
