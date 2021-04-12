@@ -10,12 +10,14 @@ namespace DiscotecaLaSantaDiabla.logica
         private String nombre;
         private double precio;
         private String presentacion;
+        private int cantidad;
 
-        public Producto(String pNombre, double pPrecio, String pPresentacion)
+        public Producto(String pNombre, double pPrecio, String pPresentacion, int pCantidad)
         {
             nombre = pNombre;
             precio = pPrecio;
             presentacion = pPresentacion;
+            cantidad = pCantidad;
         }
 
         public String getNombre() => nombre;
@@ -37,6 +39,13 @@ namespace DiscotecaLaSantaDiabla.logica
         public void setPresentacion(String pPresentacion)
         {
             presentacion = pPresentacion;
+        }
+
+        public int getCantidad() => cantidad;
+
+        public void setCantidad(int pCantidad)
+        {
+            cantidad = pCantidad;
         }
 
 
