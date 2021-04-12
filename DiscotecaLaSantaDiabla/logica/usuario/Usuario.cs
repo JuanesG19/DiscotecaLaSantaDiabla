@@ -7,14 +7,14 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 {
     class Usuario
     {
-        private List<Cliente> usuarios;
+        private static List<Cliente> usuarios;
 
         public Usuario()
         {
             usuarios = new List<Cliente>();
         }
 
-        public List<Cliente> getUsuarios() => usuarios;
+        public static List<Cliente> getUsuarios() => usuarios;
 
         //Metodos
 
@@ -22,7 +22,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         public void crearUsuario(Cliente pCliente)
         {
-            if (buscarUsuario(pCliente.getID()) !=1)
+            if (buscarUsuario(pCliente.getID()) != -1)
             {
                 usuarios.Add(pCliente);
             }

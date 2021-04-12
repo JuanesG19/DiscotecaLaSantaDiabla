@@ -33,11 +33,10 @@ namespace DiscotecaLaSantaDiabla
                 Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipocuenta, fecha);
                 user.crearUsuario(cliente);
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("No se pudo agregar el cliente!");
+                throw new Exception(ex.Message);
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

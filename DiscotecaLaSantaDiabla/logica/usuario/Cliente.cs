@@ -38,12 +38,20 @@ namespace DiscotecaLaSantaDiabla.logica
         //Constructor
         public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaN)
         {
-            this.id = id;
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.fechaN = fechaN;
-            this.telefono = telefono;
-            this.tipoCuenta = pTipoCuenta;
+            try
+            {
+                this.id = id;
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.fechaN = fechaN;
+                this.telefono = telefono;
+                this.tipoCuenta = pTipoCuenta;
+            }
+            catch
+            {
+                throw new Exception("Error");
+            }
+            
         }
 
         //Metodos get y set de los atributos del cliente
