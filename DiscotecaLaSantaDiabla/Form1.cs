@@ -36,5 +36,11 @@ namespace DiscotecaLaSantaDiabla
         {
 
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            GUIUsuario usuario = new GUIUsuario();
+            usuario.Show();
+        }
     }
 }

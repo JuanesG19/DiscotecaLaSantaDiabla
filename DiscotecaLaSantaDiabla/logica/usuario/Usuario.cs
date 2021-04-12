@@ -20,6 +20,11 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             return usuarios;
         }
 
+        public void crearUsuario(Cliente pCliente)
+        {
+            usuarios.Add(pCliente);
+        }
+
         public void modificarUsuario(Cliente pCliente)
         {
 
@@ -81,13 +86,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
         }
 
-        public void crearUsuario(Cliente pCliente)
-        {
-            for (int i = 0; i <= cantidad; i++)
-            {
-                bebidasEspeciales.Add(pProducto);
-            }
-        }
+       
 
         public void cambiarEstado(Cliente pCliente)
         {

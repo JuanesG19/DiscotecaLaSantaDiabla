@@ -18,7 +18,7 @@ namespace DiscotecaLaSantaDiabla.logica
         //ATRIBUTOS
 
         //Id del Cliente
-        private int id;
+        private String id;
 
         //Nombre del Cliente
         private String nombre;
@@ -30,10 +30,7 @@ namespace DiscotecaLaSantaDiabla.logica
         private String fechaN;
 
         //Telefono del Cliente
-        private int telefono;
-
-        //Fecha de Creacion De Cuenta del Cliente
-        private String fechaCreacionC;
+        private String telefono;
 
         //Tipo de cuenta del Cliente
         private Cuenta tipoCuenta;
@@ -41,21 +38,20 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //Constructor
 
-        public Cliente(int id, string nombre, string apellido, string fechaN, int telefono, string fechaCreacionC, Cuenta pTipoCuenta)
+        public Cliente(String id, String nombre, String apellido, String telefono, Cuenta pTipoCuenta, String fechaN)
         {
             this.id = id;
             this.nombre = nombre;
             this.apellido = apellido;
             this.fechaN = fechaN;
             this.telefono = telefono;
-            this.fechaCreacionC = fechaCreacionC;
             this.tipoCuenta = pTipoCuenta;
         }
 
         //Metodos get y set de los atributos del cliente
-        public int getID() => id;
+        public String getID() => id;
 
-        public void setID(int pID)
+        public void setID(String pID)
         {
             id = pID;
         }
@@ -81,18 +77,11 @@ namespace DiscotecaLaSantaDiabla.logica
             fechaN = pFechaN;
         }
 
-        public int getTelefono() => telefono;
+        public String getTelefono() => telefono;
 
-        public void setTelefono(int pTelefono)
+        public void setTelefono(String pTelefono)
         {
             telefono = pTelefono;
-        }
-
-        public string getFechaCreacionC() => fechaCreacionC;
-
-        public void setFechaCreacionC(String pFechaCreacionC)
-        {
-            fechaCreacionC = pFechaCreacionC;
         }
 
         public Cuenta getTipoCuenta() => tipoCuenta;

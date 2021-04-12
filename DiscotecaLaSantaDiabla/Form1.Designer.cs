@@ -187,6 +187,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnUsuarios.TabIndex = 2;
             this.btnUsuarios.Text = "Usuario";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnVerCuenta
             // 

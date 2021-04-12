@@ -12,10 +12,6 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class GUIUsuario : Form
     {
-        
-        
-
-
         public GUIUsuario()
         {
             InitializeComponent();

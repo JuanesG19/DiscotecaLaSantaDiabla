@@ -19,18 +19,18 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            int identificacion = Convert.ToInt32(txtIdentificacion.Text);
+            String identificacion = txtIdentificacion.Text;
             String nombre = txtNombres.Text;
             String apellidos = txtApellidos.Text;
-            Cliente.TipoCuentaUsuario tipocuenta = Cliente.TipoCuentaUsuario.STANDAR; 
-            long telefono = Convert.ToInt64(txtTelefonos.Text);
+            String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
+            Cliente.Cuenta tipocuenta = Cliente.Cuenta.STANDAR;
 
             Usuario user = new Usuario();
 
             try
             {
-                Cliente cliente = new Cliente(identificacion, nombre, apellidos, tipocuenta, telefono, fecha);
+                Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipocuenta, fecha);
                 user.crearUsuario(cliente);
             }
             catch

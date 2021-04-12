@@ -24,67 +24,45 @@ namespace DiscotecaLaSantaDiabla.logica
         public List<Producto> darBebidasEspeciales() => bebidasEspeciales;
 
 
-        //METODOS
+        //METODOS...
 
-        public void agregarBebida(Producto pProducto, int cantidad)
+        //AGREGAR
+
+        public void agregarBebida(Producto pProducto)
         {
-            for (int i = 0; i <= cantidad; i++)
-            {
-                bebidas.Add(pProducto);
-            }
+            bebidas.Add(pProducto);
         }
 
-        public void agregarBebidaEspecial(Producto pProducto, int cantidad)
+        public void agregarBebidaEspecial(Producto pProducto)
         {
-            for (int i = 0; i <= cantidad; i++)
-            {
-                bebidasEspeciales.Add(pProducto);
-            }
+            bebidasEspeciales.Add(pProducto);
 
         }
 
         //CONTAR
 
-        public int contarBebida(Producto pProducto)
+        public int contarBebidas()
         {
-            int cant = 0;
-            foreach (Producto p in bebidas)
-            {
-                if (p.getNombre().Equals(pProducto.getNombre()) &&
-                    p.getPrecio() == pProducto.getPrecio() &&
-                    p.getPresentacion().Equals(pProducto.getPresentacion()))
-                {
-                    cant++;
+            int cantBebidas = bebidas.Count;
 
-                }
-            }
-
-            return cant;
+            return cantBebidas;
         }
 
 
-        public int contarBebidasEspeciales(Producto pProducto)
+        public int contarBebidasEspeciales()
         {
-            int cant = 0;
+            int cantBEspeciales = bebidasEspeciales.Count;
 
-            foreach (Producto p in bebidasEspeciales)
-            {
-                if (p.getNombre().Equals(pProducto.getNombre()) &&
-                   p.getPrecio() == pProducto.getPrecio() &&
-                   p.getPresentacion().Equals(pProducto.getPresentacion()))
-                {
-                    cant++;
-                }
-            }
-            return cant;
+           
+            return cantBEspeciales;
         }
         //ELIMINAR
 
-        public void eliminarBebida(Producto pProducto, int cantidad)
+        public void eliminarBebida(Producto pProducto)
         {
             int cant = 0;
 
-            if (contarBebida(pProducto) > 0)
+            if (contarBebidas() > 0)
             {
                 foreach (Producto p in bebidas)
                 {
