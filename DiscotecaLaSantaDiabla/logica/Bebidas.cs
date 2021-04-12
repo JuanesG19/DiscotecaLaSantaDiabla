@@ -4,12 +4,13 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class Bebidas 
+    class Bebidas
     {
 
         //ATRIBUTOS
         private List<Producto> bebidas;
-        private List<Producto> bebidasEspeciales;
+        private List<Producto> bebidasEspeciales; }
+    private asdasdas;
 
         //CONSTRUCTOR
         Bebidas()
