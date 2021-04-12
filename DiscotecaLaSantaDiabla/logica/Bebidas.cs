@@ -206,11 +206,6 @@ namespace DiscotecaLaSantaDiabla.logica
             }
 
             return pos;
-
-
-            int cantBebidas = bebidas.Count;
-            return cantBebidas;
-
         }
 
         public int darPosicionBebidaEspecial(Producto pProducto)
