@@ -24,7 +24,7 @@ namespace DiscotecaLaSantaDiabla
             String apellidos = txtApellidos.Text;
             String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
-            Cliente.Cuenta tipocuenta = Cliente.Cuenta.STANDAR;
+            Cliente.Cuentas tipocuenta = Cliente.Cuentas.STANDAR;
 
             Usuario user = new Usuario();
 

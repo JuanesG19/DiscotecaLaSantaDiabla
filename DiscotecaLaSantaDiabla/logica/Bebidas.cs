@@ -103,7 +103,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        //MODIFICAR
+        //MODIFICAR - B
 
         public void modificarBebida(Producto pProducto)
         {

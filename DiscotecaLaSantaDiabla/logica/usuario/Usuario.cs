@@ -7,7 +7,6 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 {
     class Usuario
     {
-
         private List<Cliente> usuarios;
 
         public Usuario()
@@ -15,22 +14,31 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             usuarios = new List<Cliente>();
         }
 
-        public List<Cliente> getUsuarios()
-        {
-            return usuarios;
-        }
+        public List<Cliente> getUsuarios() => usuarios;
+
+        //Metodos
+
+        //Crear Usuario
 
         public void crearUsuario(Cliente pCliente)
         {
-            usuarios.Add(pCliente);
+            if (buscarUsuario(pCliente.getID()) !=1)
+            {
+                usuarios.Add(pCliente);
+            }
+            else
+            {
+                throw new Exception("El usuario a agregar ya existe");
+            }
         }
+
+        //Modificar - B
 
         public void modificarUsuario(Cliente pCliente)
         {
-
             int idBuscado = buscarUsuario(pCliente.getID());
 
-            if (usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
+            if (idBuscado != 1 && usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
             {
                 usuarios.ElementAt(idBuscado).setNombre(pCliente.getNombre());
                 usuarios.ElementAt(idBuscado).setApellido(pCliente.getApellido());
@@ -42,12 +50,13 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             {
                 throw new Exception("No se pudo modificar al usuario solicitado!");
             }
-
         }
+
+        //Buscar - B
 
         public int buscarUsuario(String id)
         {
-            int index = 0;
+            int index = -1;
 
             for (int i = 0; i <= usuarios.Count; i++)
             {
@@ -60,53 +69,59 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             return index;
         }
 
+        //Eliminar - B
+
         public void eliminarUsuario(Cliente pCliente)
         {
             int idBuscado = buscarUsuario(pCliente.getID());
 
-            if (usuarios.Count > 0)
+            if(idBuscado != 1)
             {
-                foreach (Cliente p in usuarios)
-                {
-                    if (p.getNombre().Equals(pCliente.getNombre()) &&
-                        p.getApellido()pCliente.getPrecio() &&
-                        p.getPresentacion().Equals(pCliente.getPresentacion()) &&
-                        cant <= cantidad)
-                    {
-                        bebidas.Remove(p);
-                        cant++;
-                    }
-                }
-
+                usuarios.RemoveAt(idBuscado);
             }
             else
             {
-                throw new Exception("No hay bebidas " + pProducto.getNombre() + "en el momento");
+                throw new Exception("No se pudo eliminar el usuario solicitado");
             }
         }
 
-       
+        //Cambiar Estado - B
 
         public void cambiarEstado(Cliente pCliente)
         {
+            int idBuscado = buscarUsuario(pCliente.getID());
 
+            if (usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
+            {
+                if(pCliente.getTipoCuenta() == Cliente.Cuentas.STANDAR )
+                {
+                    pCliente.setTipoCuenta(Cliente.Cuentas.VIP);
+                }
+                else if(pCliente.getTipoCuenta() == Cliente.Cuentas.VIP)
+                {
+                    pCliente.setTipoCuenta(Cliente.Cuentas.STANDAR);
+                }
+                else
+                {
+                    throw new Exception("El Cliente no tiene un tipo de cuenta definido");
+                }
+            }
+            else
+            {
+                throw new Exception("No se encontro el Usuario");
+            }
         }
+
+        //Contar Usuarios - B
 
         public int contarUsuarios()
         {
-            int cant = 0;
-
-            foreach (Producto p in bebidasEspeciales)
-            {
-                if (p.getNombre().Equals(pProducto.getNombre()) &&
-                   p.getPrecio() == pProducto.getPrecio() &&
-                   p.getPresentacion().Equals(pProducto.getPresentacion()))
-                {
-                    cant++;
-                }
-            }
-            return cant;
+            int cantidad = usuarios.Count;
+            return cantidad;
         }
 
     }
 }
+
+    
+

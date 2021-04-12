@@ -10,7 +10,7 @@ namespace DiscotecaLaSantaDiabla.logica
         //ENUMS
 
         //Enum para el Tipo de Cliente
-        public enum Cuenta
+        public enum Cuentas
         {
             VIP, STANDAR
         }
@@ -33,12 +33,10 @@ namespace DiscotecaLaSantaDiabla.logica
         private String telefono;
 
         //Tipo de cuenta del Cliente
-        private Cuenta tipoCuenta;
-
+        private Cuentas tipoCuenta;
 
         //Constructor
-
-        public Cliente(String id, String nombre, String apellido, String telefono, Cuenta pTipoCuenta, String fechaN)
+        public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaN)
         {
             this.id = id;
             this.nombre = nombre;
@@ -84,9 +82,9 @@ namespace DiscotecaLaSantaDiabla.logica
             telefono = pTelefono;
         }
 
-        public Cuenta getTipoCuenta() => tipoCuenta;
+        public Cuentas getTipoCuenta() => tipoCuenta;
 
-        public void setTipoCuenta(Cuenta pTipoCuenta)
+        public void setTipoCuenta(Cuentas pTipoCuenta)
         {
             tipoCuenta = pTipoCuenta;
         }
