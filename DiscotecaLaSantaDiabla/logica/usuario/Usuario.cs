@@ -47,13 +47,13 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         }
 
-        public int buscarUsuario(int id)
+        public int buscarUsuario(String id)
         {
             int index = 0;
 
             for (int i = 0; i <= usuarios.Count; i++)
             {
-                if (usuarios.ElementAt(i).getID() == id)
+                if (usuarios.ElementAt(i).getID().Equals(id))
                 {
                     index = i;
                     break;
