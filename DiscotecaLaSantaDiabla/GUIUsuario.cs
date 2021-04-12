@@ -54,8 +54,6 @@ namespace DiscotecaLaSantaDiabla
                 gridUsuarios.Rows[numFila].Cells[5].Value = cliente.getTelefono();
                 gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getgetFechaN();
 
-                
-
             }
 
         }
