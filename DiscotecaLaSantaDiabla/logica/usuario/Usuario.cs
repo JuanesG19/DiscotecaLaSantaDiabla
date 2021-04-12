@@ -18,7 +18,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         //Metodos
 
-        //Crear Usuario
+        //Crear Usuario - B
 
         public void crearUsuario(Cliente pCliente)
         {
