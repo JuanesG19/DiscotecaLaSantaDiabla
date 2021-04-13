@@ -41,6 +41,7 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIUsuario usuario = new GUIUsuario();
             usuario.Show();
+            //Hola
         }
     }
 }

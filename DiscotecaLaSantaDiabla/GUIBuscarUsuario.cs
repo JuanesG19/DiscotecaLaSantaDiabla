@@ -33,14 +33,12 @@ namespace DiscotecaLaSantaDiabla
                 txtTipoDeCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
                 txtTelefonos.Text = cliente.getTelefono();
                 txtFechaN.Text = cliente.getFechaN();
-
             }
             catch(Exception ex)
             {
                throw new Exception( ex.Message);
                 
             }
-           
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

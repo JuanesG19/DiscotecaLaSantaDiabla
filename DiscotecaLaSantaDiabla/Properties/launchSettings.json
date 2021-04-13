@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DiscotecaLaSantaDiabla": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
