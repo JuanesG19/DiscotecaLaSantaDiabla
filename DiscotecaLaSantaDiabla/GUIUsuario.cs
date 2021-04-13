@@ -39,7 +39,9 @@ namespace DiscotecaLaSantaDiabla
         {
             int numFila;
             int iter = 0;
+
             List<Cliente> usuarios = Usuario.getUsuarios();
+            gridUsuarios.Rows.Clear();
 
             foreach (Cliente cliente in usuarios)
             {

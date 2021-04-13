@@ -24,14 +24,28 @@ namespace DiscotecaLaSantaDiabla
             String apellidos = txtApellidos.Text;
             String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
-            Cliente.Cuentas tipocuenta = Cliente.Cuentas.STANDAR;
+            Cliente.Cuentas tipoCuenta = Cliente.Cuentas.STANDAR;
+
+            if (txtTipoDeCuenta.Text.Equals(Cliente.Cuentas.VIP))
+            {
+                tipoCuenta = Cliente.Cuentas.VIP;
+            }
+         
 
             Usuario user = new Usuario();
 
             try
             {
-                Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipocuenta, fecha);
+                Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
                 user.crearUsuario(cliente);
+
+                txtIdentificacion.Text = "";
+                txtNombres.Text = "";
+                txtApellidos.Text = "";
+                txtTelefonos.Text = "";
+                txtTipoDeCuenta.Text = "";
+
+                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito!");
             }
             catch (Exception ex)
             {
