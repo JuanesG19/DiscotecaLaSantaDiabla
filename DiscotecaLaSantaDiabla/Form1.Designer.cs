@@ -58,17 +58,14 @@ namespace DiscotecaLaSantaDiabla
             // 
             // Banner
             // 
-            this.Banner.Image = ((System.Drawing.Image)(resources.GetObject("Banner.Image")));
-            this.Banner.Location = new System.Drawing.Point(0, -5);
+            resources.ApplyResources(this.Banner, "Banner");
             this.Banner.Name = "Banner";
-            this.Banner.Size = new System.Drawing.Size(1278, 178);
-            this.Banner.TabIndex = 0;
             this.Banner.TabStop = false;
             this.Banner.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnZonaD);
             this.panel1.Controls.Add(this.btnZonaC);
@@ -80,202 +77,133 @@ namespace DiscotecaLaSantaDiabla
             this.panel1.Controls.Add(this.btnVIP);
             this.panel1.Controls.Add(this.btnZonaEspecial);
             this.panel1.Controls.Add(this.btnTarima);
-            this.panel1.Location = new System.Drawing.Point(12, 190);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 378);
-            this.panel1.TabIndex = 1;
             // 
             // btnZonaD
             // 
-            this.btnZonaD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZonaD.BackgroundImage")));
-            this.btnZonaD.Location = new System.Drawing.Point(585, 239);
+            resources.ApplyResources(this.btnZonaD, "btnZonaD");
             this.btnZonaD.Name = "btnZonaD";
-            this.btnZonaD.Size = new System.Drawing.Size(476, 80);
-            this.btnZonaD.TabIndex = 27;
             this.btnZonaD.UseVisualStyleBackColor = true;
             // 
             // btnZonaC
             // 
-            this.btnZonaC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZonaC.BackgroundImage")));
-            this.btnZonaC.Location = new System.Drawing.Point(102, 239);
+            resources.ApplyResources(this.btnZonaC, "btnZonaC");
             this.btnZonaC.Name = "btnZonaC";
-            this.btnZonaC.Size = new System.Drawing.Size(476, 80);
-            this.btnZonaC.TabIndex = 26;
             this.btnZonaC.UseVisualStyleBackColor = true;
             // 
             // btnZonaB
             // 
-            this.btnZonaB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZonaB.BackgroundImage")));
-            this.btnZonaB.Location = new System.Drawing.Point(585, 153);
+            resources.ApplyResources(this.btnZonaB, "btnZonaB");
             this.btnZonaB.Name = "btnZonaB";
-            this.btnZonaB.Size = new System.Drawing.Size(476, 80);
-            this.btnZonaB.TabIndex = 25;
             this.btnZonaB.UseVisualStyleBackColor = true;
             // 
             // btnEntrada
             // 
-            this.btnEntrada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEntrada.BackgroundImage")));
-            this.btnEntrada.Enabled = false;
-            this.btnEntrada.Location = new System.Drawing.Point(13, 325);
+            resources.ApplyResources(this.btnEntrada, "btnEntrada");
             this.btnEntrada.Name = "btnEntrada";
-            this.btnEntrada.Size = new System.Drawing.Size(1212, 39);
-            this.btnEntrada.TabIndex = 24;
             this.btnEntrada.UseVisualStyleBackColor = true;
             // 
             // btnBaño
             // 
-            this.btnBaño.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBaño.BackgroundImage")));
-            this.btnBaño.Enabled = false;
-            this.btnBaño.Location = new System.Drawing.Point(13, 12);
+            resources.ApplyResources(this.btnBaño, "btnBaño");
             this.btnBaño.Name = "btnBaño";
-            this.btnBaño.Size = new System.Drawing.Size(83, 104);
-            this.btnBaño.TabIndex = 23;
             this.btnBaño.UseVisualStyleBackColor = true;
             // 
             // btnBar
             // 
-            this.btnBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBar.BackgroundImage")));
-            this.btnBar.Enabled = false;
-            this.btnBar.Location = new System.Drawing.Point(13, 122);
+            resources.ApplyResources(this.btnBar, "btnBar");
             this.btnBar.Name = "btnBar";
-            this.btnBar.Size = new System.Drawing.Size(83, 197);
-            this.btnBar.TabIndex = 22;
             this.btnBar.UseVisualStyleBackColor = true;
             // 
             // btnZonaA
             // 
-            this.btnZonaA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZonaA.BackgroundImage")));
-            this.btnZonaA.Location = new System.Drawing.Point(103, 153);
+            resources.ApplyResources(this.btnZonaA, "btnZonaA");
             this.btnZonaA.Name = "btnZonaA";
-            this.btnZonaA.Size = new System.Drawing.Size(476, 80);
-            this.btnZonaA.TabIndex = 18;
             this.btnZonaA.UseVisualStyleBackColor = true;
             // 
             // btnVIP
             // 
-            this.btnVIP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVIP.BackgroundImage")));
-            this.btnVIP.Location = new System.Drawing.Point(1067, 12);
+            resources.ApplyResources(this.btnVIP, "btnVIP");
             this.btnVIP.Name = "btnVIP";
-            this.btnVIP.Size = new System.Drawing.Size(158, 307);
-            this.btnVIP.TabIndex = 17;
             this.btnVIP.UseVisualStyleBackColor = true;
             // 
             // btnZonaEspecial
             // 
-            this.btnZonaEspecial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZonaEspecial.BackgroundImage")));
-            this.btnZonaEspecial.Location = new System.Drawing.Point(102, 64);
+            resources.ApplyResources(this.btnZonaEspecial, "btnZonaEspecial");
             this.btnZonaEspecial.Name = "btnZonaEspecial";
-            this.btnZonaEspecial.Size = new System.Drawing.Size(959, 83);
-            this.btnZonaEspecial.TabIndex = 16;
             this.btnZonaEspecial.UseVisualStyleBackColor = true;
             // 
             // btnTarima
             // 
-            this.btnTarima.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTarima.BackgroundImage")));
-            this.btnTarima.Enabled = false;
-            this.btnTarima.Location = new System.Drawing.Point(102, 12);
+            resources.ApplyResources(this.btnTarima, "btnTarima");
             this.btnTarima.Name = "btnTarima";
-            this.btnTarima.Size = new System.Drawing.Size(959, 43);
-            this.btnTarima.TabIndex = 15;
             this.btnTarima.UseVisualStyleBackColor = true;
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 574);
+            resources.ApplyResources(this.btnUsuarios, "btnUsuarios");
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(224, 36);
-            this.btnUsuarios.TabIndex = 2;
-            this.btnUsuarios.Text = "Usuario";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnVerCuenta
             // 
-            this.btnVerCuenta.Location = new System.Drawing.Point(521, 574);
+            resources.ApplyResources(this.btnVerCuenta, "btnVerCuenta");
             this.btnVerCuenta.Name = "btnVerCuenta";
-            this.btnVerCuenta.Size = new System.Drawing.Size(224, 36);
-            this.btnVerCuenta.TabIndex = 3;
-            this.btnVerCuenta.Text = "Ver Cuenta";
             this.btnVerCuenta.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1028, 574);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(224, 36);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(768, 574);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(224, 36);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // btnBuscarUsuario
             // 
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(269, 574);
+            resources.ApplyResources(this.btnBuscarUsuario, "btnBuscarUsuario");
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(224, 36);
-            this.btnBuscarUsuario.TabIndex = 6;
-            this.btnBuscarUsuario.Text = "Pagar";
             this.btnBuscarUsuario.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(521, 616);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(224, 36);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(1028, 616);
+            resources.ApplyResources(this.button10, "button10");
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(224, 36);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(768, 616);
+            resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(224, 36);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(269, 616);
+            resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(224, 36);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(12, 616);
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(224, 36);
-            this.button13.TabIndex = 7;
-            this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1264, 659);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
@@ -288,8 +216,11 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Banner);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Discoteca La Santa Diabla";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).EndInit();
             this.panel1.ResumeLayout(false);

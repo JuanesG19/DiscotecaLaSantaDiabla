@@ -18,7 +18,6 @@ namespace DiscotecaLaSantaDiabla
         }
 
         Cliente cliente;
-        Usuario user = new Usuario();
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -26,7 +25,7 @@ namespace DiscotecaLaSantaDiabla
 
             try
             {
-                cliente = user.buscarUsuario(id);
+                cliente = Usuario.buscarUsuario(id);
 
                 txtNombres.Text = cliente.getNombre();
                 txtApellidos.Text = cliente.getApellido();
@@ -44,6 +43,11 @@ namespace DiscotecaLaSantaDiabla
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void GUIBuscarUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -67,5 +67,11 @@ namespace DiscotecaLaSantaDiabla
             GUIBuscarUsuario buscar = new GUIBuscarUsuario();
             buscar.Show();
         }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            GUIEliminar eliminar = new GUIEliminar();
+            eliminar.Show();
+        }
     }
 }

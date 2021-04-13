@@ -68,7 +68,7 @@ namespace DiscotecaLaSantaDiabla
             this.tipodeCuentaGrid,
             this.telefonoGrid,
             this.fechaNacimientoGrid});
-            this.gridUsuarios.Location = new System.Drawing.Point(-9, 176);
+            this.gridUsuarios.Location = new System.Drawing.Point(12, 176);
             this.gridUsuarios.Name = "gridUsuarios";
             this.gridUsuarios.RowTemplate.Height = 25;
             this.gridUsuarios.Size = new System.Drawing.Size(960, 413);
@@ -152,6 +152,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarUsuario.TabIndex = 4;
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnBuscarUsuario
             // 
@@ -175,7 +176,9 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.gridUsuarios);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Discoteca La Santa Diabla";
             this.Load += new System.EventHandler(this.GUIUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -12,8 +12,6 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class GUIAgregar : Form
     {
-        Usuario user = new Usuario();
-
         public GUIAgregar()
         {
             InitializeComponent();
@@ -37,7 +35,7 @@ namespace DiscotecaLaSantaDiabla
             try
             {
                 Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
-                user.crearUsuario(cliente);
+                Usuario.crearUsuario(cliente);
 
                 txtIdentificacion.Text = "";
                 txtNombres.Text = "";
@@ -45,7 +43,7 @@ namespace DiscotecaLaSantaDiabla
                 txtTelefonos.Text = "";
                 txtTipoDeCuenta.Text = "";
 
-                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito! ->" + user.contarUsuarios());
+                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito! ->" + Usuario.contarUsuarios());
 
             }
             catch (Exception ex)
