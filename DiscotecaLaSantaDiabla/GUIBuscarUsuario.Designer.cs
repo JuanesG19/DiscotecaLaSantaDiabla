@@ -33,7 +33,6 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTipoDeCuenta = new System.Windows.Forms.Label();
-            this.fechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefonos = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace DiscotecaLaSantaDiabla
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.lblIdentificacion = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtFechaN = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscar.TabIndex = 42;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCancelar
             // 
@@ -85,14 +86,6 @@ namespace DiscotecaLaSantaDiabla
             this.lblTipoDeCuenta.Size = new System.Drawing.Size(87, 15);
             this.lblTipoDeCuenta.TabIndex = 40;
             this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
-            // 
-            // fechaNacimiento
-            // 
-            this.fechaNacimiento.Enabled = false;
-            this.fechaNacimiento.Location = new System.Drawing.Point(12, 359);
-            this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.Size = new System.Drawing.Size(253, 23);
-            this.fechaNacimiento.TabIndex = 39;
             // 
             // label4
             // 
@@ -179,17 +172,24 @@ namespace DiscotecaLaSantaDiabla
             this.panel1.Size = new System.Drawing.Size(275, 69);
             this.panel1.TabIndex = 44;
             // 
+            // txtFechaN
+            // 
+            this.txtFechaN.Location = new System.Drawing.Point(12, 359);
+            this.txtFechaN.Name = "txtFechaN";
+            this.txtFechaN.Size = new System.Drawing.Size(254, 23);
+            this.txtFechaN.TabIndex = 45;
+            // 
             // GUIBuscarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 450);
+            this.ClientSize = new System.Drawing.Size(277, 450);
+            this.Controls.Add(this.txtFechaN);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTipoDeCuenta);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblTipoDeCuenta);
-            this.Controls.Add(this.fechaNacimiento);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTelefonos);
             this.Controls.Add(this.lblTelefono);
@@ -212,7 +212,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTipoDeCuenta;
-        private System.Windows.Forms.DateTimePicker fechaNacimiento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefonos;
         private System.Windows.Forms.Label lblTelefono;
@@ -223,5 +222,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label lblIdentificacion;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtFechaN;
     }
 }

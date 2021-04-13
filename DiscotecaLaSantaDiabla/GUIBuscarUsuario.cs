@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DiscotecaLaSantaDiabla.logica;
+using DiscotecaLaSantaDiabla.logica.usuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,32 @@ namespace DiscotecaLaSantaDiabla
         public GUIBuscarUsuario()
         {
             InitializeComponent();
+        }
+
+        Cliente cliente;
+        Usuario user = new Usuario();
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+             String id = txtIdentificacion.Text;
+
+            try
+            {
+                cliente = user.buscarUsuario(id);
+
+                txtNombres.Text = cliente.getNombre();
+                txtApellidos.Text = cliente.getApellido();
+                txtTipoDeCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
+                txtTelefonos.Text = cliente.getTelefono();
+                txtFechaN.Text = cliente.getFechaN();
+
+            }
+            catch(Exception ex)
+            {
+               throw new Exception( ex.Message);
+                
+            }
+           
         }
     }
 }

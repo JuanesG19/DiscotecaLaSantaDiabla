@@ -76,7 +76,7 @@ namespace DiscotecaLaSantaDiabla.logica
             apellido = pApellido;
         }
 
-        public string getgetFechaN() => fechaN;
+        public string getFechaN() => fechaN;
 
         public void setFechaN(String pFechaN)
         {
