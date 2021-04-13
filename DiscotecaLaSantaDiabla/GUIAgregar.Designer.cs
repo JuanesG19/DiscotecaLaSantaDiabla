@@ -185,6 +185,7 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.txtIdentificacion);
             this.Controls.Add(this.lblIdentificacion);
             this.Name = "GUIAgregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar";
             this.ResumeLayout(false);
             this.PerformLayout();

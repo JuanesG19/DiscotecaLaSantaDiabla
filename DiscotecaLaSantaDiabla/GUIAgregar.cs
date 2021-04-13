@@ -12,6 +12,8 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class GUIAgregar : Form
     {
+        Usuario user = new Usuario();
+
         public GUIAgregar()
         {
             InitializeComponent();
@@ -24,16 +26,14 @@ namespace DiscotecaLaSantaDiabla
             String apellidos = txtApellidos.Text;
             String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
+
             Cliente.Cuentas tipoCuenta = Cliente.Cuentas.STANDAR;
 
             if (txtTipoDeCuenta.Text.Equals(Cliente.Cuentas.VIP))
             {
                 tipoCuenta = Cliente.Cuentas.VIP;
             }
-         
-
-            Usuario user = new Usuario();
-
+        
             try
             {
                 Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
@@ -45,7 +45,8 @@ namespace DiscotecaLaSantaDiabla
                 txtTelefonos.Text = "";
                 txtTipoDeCuenta.Text = "";
 
-                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito!");
+                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito! ->" + user.contarUsuarios());
+
             }
             catch (Exception ex)
             {

@@ -35,12 +35,15 @@ namespace DiscotecaLaSantaDiabla
             agregar.Show();
         }
 
+        List<Cliente> usuarios;
+
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             int numFila;
             int iter = 0;
 
-            List<Cliente> usuarios = Usuario.getUsuarios();
+            usuarios = Usuario.getUsuarios();
+
             gridUsuarios.Rows.Clear();
 
             foreach (Cliente cliente in usuarios)
@@ -57,7 +60,6 @@ namespace DiscotecaLaSantaDiabla
                 gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getgetFechaN();
 
             }
-
         }
     }
 }
