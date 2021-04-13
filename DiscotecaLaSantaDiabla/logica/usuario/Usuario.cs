@@ -19,101 +19,95 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         //Metodos
 
         //Crear Usuario - B
-
         public void crearUsuario(Cliente pCliente)
         {
-            if (buscarUsuario(pCliente.getID()) != -1)
+            if (buscarUsuario(pCliente.getID()) == null)
             {
                 usuarios.Add(pCliente);
             }
+
             else
             {
-                throw new Exception("El usuario a agregar ya existe");
+                throw new Exception("El usuario ya existe");
             }
+
         }
 
         //Modificar - B
-
-        public void modificarUsuario(Cliente pCliente)
+        public void modificarUsuario(Cliente nuevoCliente, String id)
         {
-            int idBuscado = buscarUsuario(pCliente.getID());
+            Cliente clienteModificar = buscarUsuario(id);
+            int pos = usuarios.IndexOf(clienteModificar);
 
-            if (idBuscado != 1 && usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
+            try
             {
-                usuarios.ElementAt(idBuscado).setNombre(pCliente.getNombre());
-                usuarios.ElementAt(idBuscado).setApellido(pCliente.getApellido());
-                usuarios.ElementAt(idBuscado).setTelefono(pCliente.getTelefono());
-                usuarios.ElementAt(idBuscado).setFechaN(pCliente.getgetFechaN());
-                usuarios.ElementAt(idBuscado).setTipoCuenta(pCliente.getTipoCuenta());
+                eliminarUsuario(id);
+                usuarios.Insert(pos, nuevoCliente);
             }
-            else
+            catch
             {
-                throw new Exception("No se pudo modificar al usuario solicitado!");
+                throw new Exception("El cliente no ha podido ser modificado!");
             }
         }
 
         //Buscar - B
-
-        public int buscarUsuario(String id)
+        public Cliente buscarUsuario(String id)
         {
-            int index = -1;
-
-            for (int i = 0; i <= usuarios.Count; i++)
+            Cliente buscado = null;
+            foreach (Cliente c in usuarios)
             {
-                if (usuarios.ElementAt(i).getID().Equals(id))
+                if (c.getID().Equals(id))
                 {
-                    index = i;
+                    buscado = c;
                     break;
                 }
             }
-            return index;
+            return buscado;
         }
 
         //Eliminar - B
-
-        public void eliminarUsuario(Cliente pCliente)
+        public void eliminarUsuario(String id)
         {
-            int idBuscado = buscarUsuario(pCliente.getID());
+            Cliente buscado = buscarUsuario(id);
 
-            if(idBuscado != 1)
+            if (buscado != null)
             {
-                usuarios.RemoveAt(idBuscado);
+                int pos = usuarios.IndexOf(buscado);
+                usuarios.RemoveAt(pos);
             }
             else
             {
-                throw new Exception("No se pudo eliminar el usuario solicitado");
+                throw new Exception("No se pudo eliminar el usuario");
             }
         }
 
         //Cambiar Estado - B
-
-        public void cambiarEstado(Cliente pCliente)
+        public void cambiarEstado(String id)
         {
-            int idBuscado = buscarUsuario(pCliente.getID());
+            Cliente idBuscado = buscarUsuario(id);
+            int pos = usuarios.IndexOf(idBuscado);
 
-            if (usuarios.ElementAt(idBuscado).getID() == pCliente.getID())
+            if (idBuscado.getTipoCuenta() == Cliente.Cuentas.STANDAR)
             {
-                if(pCliente.getTipoCuenta() == Cliente.Cuentas.STANDAR )
-                {
-                    pCliente.setTipoCuenta(Cliente.Cuentas.VIP);
-                }
-                else if(pCliente.getTipoCuenta() == Cliente.Cuentas.VIP)
-                {
-                    pCliente.setTipoCuenta(Cliente.Cuentas.STANDAR);
-                }
-                else
-                {
-                    throw new Exception("El Cliente no tiene un tipo de cuenta definido");
-                }
+                eliminarUsuario(idBuscado.getID());
+                idBuscado.setTipoCuenta(Cliente.Cuentas.VIP);
+                usuarios.Insert(pos, idBuscado);
+
+            }
+            else if (idBuscado.getTipoCuenta() == Cliente.Cuentas.VIP)
+            {
+                eliminarUsuario(idBuscado.getID());
+                idBuscado.setTipoCuenta(Cliente.Cuentas.STANDAR);
+                usuarios.Insert(pos, idBuscado);
             }
             else
             {
-                throw new Exception("No se encontro el Usuario");
+                throw new Exception("El Cliente no tiene un tipo de cuenta definido");
             }
+
         }
 
         //Contar Usuarios - B
-
         public int contarUsuarios()
         {
             int cantidad = usuarios.Count;
@@ -123,5 +117,5 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
     }
 }
 
-    
+
 
