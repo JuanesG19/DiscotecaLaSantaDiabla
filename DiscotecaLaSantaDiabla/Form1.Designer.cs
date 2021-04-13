@@ -288,8 +288,6 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Banner);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Discoteca La Santa Diabla";
             this.Load += new System.EventHandler(this.Form1_Load);
