@@ -61,5 +61,10 @@ namespace DiscotecaLaSantaDiabla
 
             }
         }
+
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

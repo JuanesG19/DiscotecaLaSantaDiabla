@@ -16,7 +16,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         public static List<Cliente> getUsuarios()
         {
-          return  usuarios;
+          return usuarios;
         }
         //Metodos
 

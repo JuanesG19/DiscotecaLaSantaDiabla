@@ -41,6 +41,8 @@ namespace DiscotecaLaSantaDiabla
             this.fechaNacimientoGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +68,7 @@ namespace DiscotecaLaSantaDiabla
             this.tipodeCuentaGrid,
             this.telefonoGrid,
             this.fechaNacimientoGrid});
-            this.gridUsuarios.Location = new System.Drawing.Point(12, 176);
+            this.gridUsuarios.Location = new System.Drawing.Point(-9, 176);
             this.gridUsuarios.Name = "gridUsuarios";
             this.gridUsuarios.RowTemplate.Height = 25;
             this.gridUsuarios.Size = new System.Drawing.Size(960, 413);
@@ -134,7 +136,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(224, 595);
+            this.btnMostrar.Location = new System.Drawing.Point(12, 634);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(206, 33);
             this.btnMostrar.TabIndex = 3;
@@ -142,12 +144,33 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
+            // btnEliminarUsuario
+            // 
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(224, 595);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(206, 33);
+            this.btnEliminarUsuario.TabIndex = 4;
+            this.btnEliminarUsuario.Text = "Eliminar Usuario";
+            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarUsuario
+            // 
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(436, 595);
+            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(206, 33);
+            this.btnBuscarUsuario.TabIndex = 5;
+            this.btnBuscarUsuario.Text = "Buscar Usuario";
+            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
+            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
+            // 
             // GUIUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(984, 697);
+            this.Controls.Add(this.btnBuscarUsuario);
+            this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.gridUsuarios);
@@ -174,5 +197,7 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimientoGrid;
         private System.Windows.Forms.Button btnAgregarUsuario;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Button btnEliminarUsuario;
+        private System.Windows.Forms.Button btnBuscarUsuario;
     }
 }
