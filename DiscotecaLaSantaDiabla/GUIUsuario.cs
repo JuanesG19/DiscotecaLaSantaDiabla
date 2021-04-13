@@ -57,14 +57,15 @@ namespace DiscotecaLaSantaDiabla
                 gridUsuarios.Rows[numFila].Cells[3].Value = cliente.getApellido();
                 gridUsuarios.Rows[numFila].Cells[4].Value = cliente.getTipoCuenta();
                 gridUsuarios.Rows[numFila].Cells[5].Value = cliente.getTelefono();
-                gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getgetFechaN();
+                gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getFechaN();
 
             }
         }
 
         private void btnBuscarUsuario_Click(object sender, EventArgs e)
         {
-
+            GUIBuscarUsuario buscar = new GUIBuscarUsuario();
+            buscar.Show();
         }
     }
 }
