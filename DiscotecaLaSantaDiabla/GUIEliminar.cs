@@ -46,6 +46,7 @@ namespace DiscotecaLaSantaDiabla
                     {
                         Usuario.eliminarUsuario(id);
                         MessageBox.Show(cliente.getNombre() + ", Ha sido Eliminado!");
+                        this.Close();
                     }
                     catch
                     {

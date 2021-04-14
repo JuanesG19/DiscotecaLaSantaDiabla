@@ -6238,27 +6238,6 @@
   <metadata name="fechaNacimientoGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="iterador.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="idGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="nombre.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="apellidoGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="tipodeCuentaGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="telefonoGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="fechaNacimientoGrid.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkGBxAQDxANDRANDw8NDw8NDQ0MDw8NDQ0MFBEWFhQRFBQY

@@ -43,7 +43,7 @@ namespace DiscotecaLaSantaDiabla
                 txtTelefonos.Text = "";
                 txtTipoDeCuenta.Text = "";
 
-                MessageBox.Show(cliente.getNombre() + ", Ha sido agregado Con Exito! ->" + Usuario.contarUsuarios());
+                MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
 
             }
             catch (Exception ex)

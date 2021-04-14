@@ -29,7 +29,6 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTipoDeCuenta = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTipoDeCuenta = new System.Windows.Forms.Label();
@@ -44,20 +43,9 @@ namespace DiscotecaLaSantaDiabla
             this.lblIdentificacion = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtFechaN = new System.Windows.Forms.TextBox();
+            this.txtTipoCuenta = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtTipoDeCuenta
-            // 
-            this.txtTipoDeCuenta.Enabled = false;
-            this.txtTipoDeCuenta.FormattingEnabled = true;
-            this.txtTipoDeCuenta.Items.AddRange(new object[] {
-            "STANDAR",
-            "VIP"});
-            this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 232);
-            this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
-            this.txtTipoDeCuenta.Size = new System.Drawing.Size(279, 23);
-            this.txtTipoDeCuenta.TabIndex = 43;
             // 
             // btnBuscar
             // 
@@ -71,7 +59,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(146, 397);
+            this.btnCancelar.Location = new System.Drawing.Point(172, 397);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 25);
             this.btnCancelar.TabIndex = 41;
@@ -82,7 +70,7 @@ namespace DiscotecaLaSantaDiabla
             // lblTipoDeCuenta
             // 
             this.lblTipoDeCuenta.AutoSize = true;
-            this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 214);
+            this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 212);
             this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
             this.lblTipoDeCuenta.Size = new System.Drawing.Size(87, 15);
             this.lblTipoDeCuenta.TabIndex = 40;
@@ -99,9 +87,9 @@ namespace DiscotecaLaSantaDiabla
             // 
             // txtTelefonos
             // 
-            this.txtTelefonos.Enabled = false;
             this.txtTelefonos.Location = new System.Drawing.Point(12, 288);
             this.txtTelefonos.Name = "txtTelefonos";
+            this.txtTelefonos.ReadOnly = true;
             this.txtTelefonos.Size = new System.Drawing.Size(279, 23);
             this.txtTelefonos.TabIndex = 37;
             // 
@@ -116,9 +104,9 @@ namespace DiscotecaLaSantaDiabla
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Enabled = false;
             this.txtApellidos.Location = new System.Drawing.Point(12, 170);
             this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.ReadOnly = true;
             this.txtApellidos.Size = new System.Drawing.Size(279, 23);
             this.txtApellidos.TabIndex = 35;
             // 
@@ -133,11 +121,12 @@ namespace DiscotecaLaSantaDiabla
             // 
             // txtNombres
             // 
-            this.txtNombres.Enabled = false;
             this.txtNombres.Location = new System.Drawing.Point(12, 109);
             this.txtNombres.Name = "txtNombres";
+            this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(279, 23);
             this.txtNombres.TabIndex = 33;
+            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
             // lblNombre
             // 
@@ -176,20 +165,29 @@ namespace DiscotecaLaSantaDiabla
             // 
             // txtFechaN
             // 
-            this.txtFechaN.Enabled = false;
             this.txtFechaN.Location = new System.Drawing.Point(12, 348);
             this.txtFechaN.Name = "txtFechaN";
+            this.txtFechaN.ReadOnly = true;
             this.txtFechaN.Size = new System.Drawing.Size(279, 23);
             this.txtFechaN.TabIndex = 45;
+            // 
+            // txtTipoCuenta
+            // 
+            this.txtTipoCuenta.Location = new System.Drawing.Point(12, 230);
+            this.txtTipoCuenta.Name = "txtTipoCuenta";
+            this.txtTipoCuenta.ReadOnly = true;
+            this.txtTipoCuenta.Size = new System.Drawing.Size(279, 23);
+            this.txtTipoCuenta.TabIndex = 46;
+            this.txtTipoCuenta.TextChanged += new System.EventHandler(this.txtTipoCuenta_TextChanged);
             // 
             // GUIBuscarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 441);
+            this.Controls.Add(this.txtTipoCuenta);
             this.Controls.Add(this.txtFechaN);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtTipoDeCuenta);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblTipoDeCuenta);
@@ -213,8 +211,6 @@ namespace DiscotecaLaSantaDiabla
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox txtTipoDeCuenta;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTipoDeCuenta;
@@ -229,5 +225,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblIdentificacion;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtFechaN;
+        private System.Windows.Forms.TextBox txtTipoCuenta;
     }
 }

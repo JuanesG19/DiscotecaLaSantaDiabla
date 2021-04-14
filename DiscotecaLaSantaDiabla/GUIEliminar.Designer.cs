@@ -95,7 +95,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(24, 404);
+            this.btnEliminar.Location = new System.Drawing.Point(12, 404);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(119, 25);
             this.btnEliminar.TabIndex = 55;
@@ -105,7 +105,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(158, 404);
+            this.btnCancelar.Location = new System.Drawing.Point(172, 404);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 25);
             this.btnCancelar.TabIndex = 54;

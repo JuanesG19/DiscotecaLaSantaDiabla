@@ -11,13 +11,16 @@ namespace DiscotecaLaSantaDiabla.logica
         private double precio;
         private String presentacion;
         private int cantidad;
+        private String idBebida;
 
-        public Producto(String pNombre, double pPrecio, String pPresentacion, int pCantidad)
+        public Producto(String pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad)
         {
+            idBebida = pIdBebida;
             nombre = pNombre;
             precio = pPrecio;
             presentacion = pPresentacion;
             cantidad = pCantidad;
+
         }
 
         public String getNombre() => nombre;
@@ -46,6 +49,13 @@ namespace DiscotecaLaSantaDiabla.logica
         public void setCantidad(int pCantidad)
         {
             cantidad = pCantidad;
+        }
+
+        public String getIdBebida() => idBebida;
+
+        public void setidBebida(String pIdBebida)
+        {
+            idBebida = pIdBebida;
         }
 
 

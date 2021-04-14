@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla
 
                 txtNombres.Text = cliente.getNombre();
                 txtApellidos.Text = cliente.getApellido();
-                txtTipoDeCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
+                txtTipoCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
                 txtTelefonos.Text = cliente.getTelefono();
                 txtFechaN.Text = cliente.getFechaN();
             }
@@ -46,6 +46,16 @@ namespace DiscotecaLaSantaDiabla
         }
 
         private void GUIBuscarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTipoCuenta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombres_TextChanged(object sender, EventArgs e)
         {
 
         }
