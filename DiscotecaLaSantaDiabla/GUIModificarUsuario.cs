@@ -80,69 +80,21 @@ namespace DiscotecaLaSantaDiabla
                         cliente.setTipoCuenta(tipoCuenta);
 
                     }
-                    else  if (txtNombre.Text.Trim().Equals(""))
+                    if (txtNombre.Text.Trim().Equals(""))
                     {
 
                         cliente.setNombre(txtNombreB.Text);
-                        cliente.setApellido(txtApellido.Text);
-                        cliente.setFechaN(comboFechaN.Text);
-                        cliente.setTelefono(txtTelefono.Text);
-
-                        Cliente.Cuentas tipoCuenta;
-
-                        if (comboTipoCuenta.Text.Equals("VIP"))
-                        {
-                            tipoCuenta = Cliente.Cuentas.VIP;
-                        }
-                        else
-                        {
-                            tipoCuenta = Cliente.Cuentas.STANDAR;
-                        }
-
-                        cliente.setTipoCuenta(tipoCuenta);
+                        
                     }
-                    else if(txtApellido.Text.Trim().Equals(""))
+                    if(txtApellido.Text.Trim().Equals(""))
                     {
-                        cliente.setNombre(txtNombre.Text);
+                        
                         cliente.setApellido(txtApellidosB.Text);
-                        cliente.setFechaN(comboFechaN.Text);
-                        cliente.setTelefono(txtTelefono.Text);
-
-                        Cliente.Cuentas tipoCuenta;
-
-                        if (comboTipoCuenta.Text.Equals("VIP"))
-                        {
-                            tipoCuenta = Cliente.Cuentas.VIP;
-                        }
-                        else
-                        {
-                            tipoCuenta = Cliente.Cuentas.STANDAR;
-                        }
-
-                        cliente.setTipoCuenta(tipoCuenta);
-
-
                     }
-                    else if(txtTelefono.Text.Trim().Equals(""))
+                    if(txtTelefono.Text.Trim().Equals(""))
                     {
-                        cliente.setNombre(txtNombre.Text);
-                        cliente.setApellido(txtApellido.Text);
-                        cliente.setFechaN(comboFechaN.Text);
+                      
                         cliente.setTelefono(txtTelefonosB.Text);
-
-                        Cliente.Cuentas tipoCuenta;
-
-                        if (comboTipoCuenta.Text.Equals("VIP"))
-                        {
-                            tipoCuenta = Cliente.Cuentas.VIP;
-                        }
-                        else
-                        {
-                            tipoCuenta = Cliente.Cuentas.STANDAR;
-                        }
-
-                        cliente.setTipoCuenta(tipoCuenta);
-
                     }
                      
                     else
@@ -167,7 +119,6 @@ namespace DiscotecaLaSantaDiabla
                         cliente.setTipoCuenta(tipoCuenta);
 
                         MessageBox.Show("El usuario ha sido modificado");
-
 
                     }
 
