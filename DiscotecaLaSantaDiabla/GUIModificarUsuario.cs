@@ -130,5 +130,10 @@ namespace DiscotecaLaSantaDiabla
                 MessageBox.Show("Es necesario realizar primeramente una busqueda del usuario a modificar");
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
