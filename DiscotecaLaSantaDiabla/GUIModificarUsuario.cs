@@ -50,28 +50,51 @@ namespace DiscotecaLaSantaDiabla
         {
             if(Busqueda == true)
             {
-                
+                String id = txtIdentificacion.Text;
+
+                cliente = Usuario.buscarUsuario(id);
+
+
                 try
                 {
-                    if (txtNombre.Text.Equals(""))
+                    if (txtNombre.Text.Trim().Equals(""))
                     {
 
                         cliente.setNombre(txtNombreB.Text);
-                    }
-                    else if(txtApellido.Equals(""))
-                    {
                         cliente.setApellido(txtApellido.Text);
+                        cliente.setFechaN(comboFechaN.Text);
+                        cliente.setTelefono(txtTelefono.Text);
                     }
-                    else if(txtTelefono.Equals(""))
+                    else if(txtApellido.Text.Trim().Equals(""))
                     {
+                        cliente.setNombre(txtNombre.Text);
+                        cliente.setApellido(txtApellidosB.Text);
+                        cliente.setFechaN(comboFechaN.Text);
+                        cliente.setTelefono(txtTelefono.Text);
+
+
+                    }
+                    else if(txtTelefono.Text.Trim().Equals(""))
+                    {
+                        cliente.setNombre(txtNombreB.Text);
+                        cliente.setApellido(txtApellido.Text);
+                        cliente.setFechaN(comboFechaN.Text);
                         cliente.setTelefono(txtTelefonosB.Text);
+
+                    }
+                    else if (txtNombre.Text.Trim().Equals("") &&
+                        txtApellido.Text.Trim().Equals("") &&
+                        txtTelefono.Text.Trim().Equals("")) 
+                    {
+                        cliente.setNombre(txtNombreB.Text);
+                        cliente.setApellido(txtApellidosB.Text);
+                        cliente.setFechaN(comboFechaN.Text);
+                        cliente.setTelefono(txtTelefonosB.Text);
+
                     }
                     else
                     {
-                        String id = txtIdentificacion.Text;
-
-                        cliente = Usuario.buscarUsuario(id);
-
+                        
                         cliente.setNombre(txtNombre.Text);
                         cliente.setApellido(txtApellido.Text);
                         cliente.setFechaN(comboFechaN.Text);
