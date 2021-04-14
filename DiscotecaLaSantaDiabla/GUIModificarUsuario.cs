@@ -50,31 +50,50 @@ namespace DiscotecaLaSantaDiabla
         {
             if(Busqueda == true)
             {
+                
                 try
                 {
-                    String id = txtIdentificacion.Text;
-
-                    cliente = Usuario.buscarUsuario(id);
-
-                    cliente.setNombre(txtNombre.Text);
-                    cliente.setApellido(txtApellido.Text);
-                    cliente.setFechaN(comboFechaN.Text);
-                    cliente.setTelefono(txtTelefono.Text);
-
-                    Cliente.Cuentas tipoCuenta;
-
-                    if (comboTipoCuenta.Text.Equals("VIP"))
+                    if (txtNombre.Text.Equals(""))
                     {
-                        tipoCuenta = Cliente.Cuentas.VIP;
+
+                        cliente.setNombre(txtNombreB.Text);
+                    }
+                    else if(txtApellido.Equals(""))
+                    {
+                        cliente.setApellido(txtApellido.Text);
+                    }
+                    else if(txtTelefono.Equals(""))
+                    {
+                        cliente.setTelefono(txtTelefonosB.Text);
                     }
                     else
                     {
-                        tipoCuenta = Cliente.Cuentas.STANDAR;
+                        String id = txtIdentificacion.Text;
+
+                        cliente = Usuario.buscarUsuario(id);
+
+                        cliente.setNombre(txtNombre.Text);
+                        cliente.setApellido(txtApellido.Text);
+                        cliente.setFechaN(comboFechaN.Text);
+                        cliente.setTelefono(txtTelefono.Text);
+
+                        Cliente.Cuentas tipoCuenta;
+
+                        if (comboTipoCuenta.Text.Equals("VIP"))
+                        {
+                            tipoCuenta = Cliente.Cuentas.VIP;
+                        }
+                        else
+                        {
+                            tipoCuenta = Cliente.Cuentas.STANDAR;
+                        }
+
+                        cliente.setTipoCuenta(tipoCuenta);
+
+                        MessageBox.Show("El usuario ha sido modificado");
+
+
                     }
-
-                    cliente.setTipoCuenta(tipoCuenta);
-
-                    MessageBox.Show("El usuario ha sido modificado");
 
                 }
                 catch (Exception er)
