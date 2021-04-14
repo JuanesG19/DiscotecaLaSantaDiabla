@@ -80,6 +80,7 @@ namespace DiscotecaLaSantaDiabla
                         cliente.setTipoCuenta(tipoCuenta);
 
                     }
+
                     if (txtNombre.Text.Trim().Equals(""))
                     {
 

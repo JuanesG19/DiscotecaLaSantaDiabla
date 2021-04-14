@@ -132,6 +132,7 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.btnZonaEspecial, "btnZonaEspecial");
             this.btnZonaEspecial.Name = "btnZonaEspecial";
             this.btnZonaEspecial.UseVisualStyleBackColor = true;
+            this.btnZonaEspecial.Click += new System.EventHandler(this.btnZonaEspecial_Click);
             // 
             // btnTarima
             // 

@@ -15,12 +15,12 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public Reserva(int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasPalco)
         {
-            this.reservasEspecial = pReservasEspecial;
-            this.reservasA = pReservasA;
-            this.reservasB = pReservasB;
-            this.reservasC = pReservasC;
-            this.reservasD = pReservasD;
-            this.reservasPalco = pReservasPalco;
+            reservasEspecial = pReservasEspecial;
+            reservasA = pReservasA;
+            reservasB = pReservasB;
+            reservasC = pReservasC;
+            reservasD = pReservasD;
+            reservasPalco = pReservasPalco;
         }
 
         public int darNumReservasEspecial()

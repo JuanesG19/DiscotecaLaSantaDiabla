@@ -40,8 +40,5 @@ namespace DiscotecaLaSantaDiabla.logica
             zona = pZona;
         }
 
-
-
-
     }
 }

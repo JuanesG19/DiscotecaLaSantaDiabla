@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,7 +42,14 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIUsuario usuario = new GUIUsuario();
             usuario.Show();
-            //Hola
+        }
+
+        private void btnZonaEspecial_Click(object sender, EventArgs e)
+        {
+            //int pedido = 0;
+           // pedido = Convert.ToInt32(Interaction.
+          
+             
         }
     }
 }
