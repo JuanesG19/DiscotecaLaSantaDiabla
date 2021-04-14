@@ -67,7 +67,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //ELIMINAR - B
 
-        public void eliminarBebida(String id, Producto pProducto)
+        public void eliminarBebida(int id, Producto pProducto)
         {
             Producto aModificar = buscarBebida(id);
 
@@ -83,7 +83,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        public static void eliminarBebidaEspecial(String id)
+        public static void eliminarBebidaEspecial(int id)
         {
             Producto aModificar = buscarBebidaEspecial(id);
 
@@ -101,7 +101,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //MODIFICAR - B
 
-        public static void modificarBebida(Producto pProducto, String id)
+        public static void modificarBebida(Producto pProducto, int id)
         {
             Producto aModificar = buscarBebida(id);
 
@@ -118,7 +118,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        public static void modificarBebidaEspecial(Producto pProducto, String id)
+        public static void modificarBebidaEspecial(Producto pProducto, int id)
         {
             Producto aModificar = buscarBebidaEspecial(id);
 
@@ -137,13 +137,13 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //BUSCAR - B
 
-        public static Producto buscarBebida(String id)
+        public static Producto buscarBebida(int id)
         {
             Producto buscado = null;
 
             foreach (Producto p in bebidas)
             {
-                if (p.getIdBebida().Equals(id))
+                if (p.getIdBebida() == id)
 
                 {
                     buscado = p;
@@ -153,13 +153,13 @@ namespace DiscotecaLaSantaDiabla.logica
             return buscado;
         }
 
-        public static Producto buscarBebidaEspecial(String id)
+        public static Producto buscarBebidaEspecial(int id)
         {
             Producto buscado = null;
 
             foreach (Producto p in bebidasEspeciales)
             {
-                if (p.getIdBebida().Equals(id))
+                if (p.getIdBebida() == id)
 
                 {
                     buscado = p;
