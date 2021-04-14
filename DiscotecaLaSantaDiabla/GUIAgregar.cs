@@ -25,13 +25,17 @@ namespace DiscotecaLaSantaDiabla
             String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
 
-            Cliente.Cuentas tipoCuenta = Cliente.Cuentas.STANDAR;
+            Cliente.Cuentas tipoCuenta;
 
-            if (txtTipoDeCuenta.Text.Equals(Cliente.Cuentas.VIP))
+            if (txtTipoDeCuenta.Text.Equals("VIP"))
             {
                 tipoCuenta = Cliente.Cuentas.VIP;
             }
-        
+            else
+            {
+                tipoCuenta = Cliente.Cuentas.STANDAR;
+            }
+
             try
             {
                 Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
@@ -48,7 +52,7 @@ namespace DiscotecaLaSantaDiabla
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 

@@ -13,8 +13,8 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         {
           return usuarios;
         }
-        //Metodos XDXD
 
+        //Metodos 
         //Crear Usuario - B
         public static void crearUsuario(Cliente pCliente)
         {
@@ -24,7 +24,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
             else
             {
-                throw new Exception("El usuario ya existe");
+                throw new Exception("El usuario ya existe, no se pueden agregar dos usuarios con la misma identificacion");
             }
 
         }
