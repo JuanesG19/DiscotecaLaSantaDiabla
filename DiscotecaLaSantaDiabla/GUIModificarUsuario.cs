@@ -85,7 +85,7 @@ namespace DiscotecaLaSantaDiabla
             }
             else
             {
-                MessageBox.Show("Es necesario realizar primeramente una busqueda del producto a modificar");
+                MessageBox.Show("Es necesario realizar primeramente una busqueda del usuario a modificar");
             }
         }
     }
