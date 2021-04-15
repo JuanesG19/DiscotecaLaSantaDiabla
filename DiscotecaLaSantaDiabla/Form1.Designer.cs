@@ -84,18 +84,21 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.btnZonaD, "btnZonaD");
             this.btnZonaD.Name = "btnZonaD";
             this.btnZonaD.UseVisualStyleBackColor = true;
+            this.btnZonaD.Click += new System.EventHandler(this.btnZonaD_Click);
             // 
             // btnZonaC
             // 
             resources.ApplyResources(this.btnZonaC, "btnZonaC");
             this.btnZonaC.Name = "btnZonaC";
             this.btnZonaC.UseVisualStyleBackColor = true;
+            this.btnZonaC.Click += new System.EventHandler(this.btnZonaC_Click);
             // 
             // btnZonaB
             // 
             resources.ApplyResources(this.btnZonaB, "btnZonaB");
             this.btnZonaB.Name = "btnZonaB";
             this.btnZonaB.UseVisualStyleBackColor = true;
+            this.btnZonaB.Click += new System.EventHandler(this.btnZonaB_Click);
             // 
             // btnEntrada
             // 
@@ -120,12 +123,14 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.btnZonaA, "btnZonaA");
             this.btnZonaA.Name = "btnZonaA";
             this.btnZonaA.UseVisualStyleBackColor = true;
+            this.btnZonaA.Click += new System.EventHandler(this.btnZonaA_Click);
             // 
             // btnVIP
             // 
             resources.ApplyResources(this.btnVIP, "btnVIP");
             this.btnVIP.Name = "btnVIP";
             this.btnVIP.UseVisualStyleBackColor = true;
+            this.btnVIP.Click += new System.EventHandler(this.btnVIP_Click);
             // 
             // btnZonaEspecial
             // 
