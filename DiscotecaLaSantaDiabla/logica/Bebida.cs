@@ -11,7 +11,7 @@ namespace DiscotecaLaSantaDiabla.logica
         private static List<Producto> bebidasEspeciales = new List<Producto>();
 
         //CONSTRUCTOR
-        Bebidas()
+        Bebida()
         {
             bebidas = new List<Producto>();
             bebidasEspeciales = new List<Producto>();
