@@ -7,31 +7,29 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 {
     class Usuario
     {
-        private static List<Cliente> usuarios;
+        private static List<Cliente> usuarios = new List<Cliente>();
 
         public static List<Cliente> getUsuarios()
         {
           return usuarios;
-        }
-        //Metodos XDXD
-
+        }     
+        //Metodos 
         //Crear Usuario - B
-        public void crearUsuario(Cliente pCliente)
+        public static void crearUsuario(Cliente pCliente)
         {
             if (buscarUsuario(pCliente.getID()) == null)
             {
                 usuarios.Add(pCliente);
             }
-
             else
             {
-                throw new Exception("El usuario ya existe");
+                throw new Exception("El usuario ya existe, no se pueden agregar dos usuarios con la misma identificacion");
             }
 
         }
 
         //Modificar - B
-        public void modificarUsuario(Cliente nuevoCliente, String id)
+        public static void modificarUsuario(Cliente nuevoCliente, String id)
         {
             Cliente clienteModificar = buscarUsuario(id);
             int pos = usuarios.IndexOf(clienteModificar);
@@ -48,7 +46,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         }
 
         //Buscar - B
-        public Cliente buscarUsuario(String id)
+        public static Cliente buscarUsuario(String id)
         {
             Cliente buscado = null;
             foreach (Cliente c in usuarios)
@@ -63,7 +61,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         }
 
         //Eliminar - B
-        public void eliminarUsuario(String id)
+        public static void eliminarUsuario(String id)
         {
             Cliente buscado = buscarUsuario(id);
 
@@ -79,7 +77,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         }
 
         //Cambiar Estado - B
-        public void cambiarEstado(String id)
+        public static void cambiarEstado(String id)
         {
             Cliente idBuscado = buscarUsuario(id);
             int pos = usuarios.IndexOf(idBuscado);
@@ -105,7 +103,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         }
 
         //Contar Usuarios - B
-        public int contarUsuarios()
+        public static int contarUsuarios()
         {
             int cantidad = usuarios.Count;
             return cantidad;

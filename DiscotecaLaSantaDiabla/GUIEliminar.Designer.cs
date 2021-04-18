@@ -1,7 +1,7 @@
 ﻿
 namespace DiscotecaLaSantaDiabla
 {
-    partial class GUIBuscarUsuario
+    partial class GUIEliminar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,12 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtFechaN = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
+            this.lblIdentificacion = new System.Windows.Forms.Label();
+            this.txtTipoDeCuenta = new System.Windows.Forms.ComboBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTipoDeCuenta = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,103 +44,26 @@ namespace DiscotecaLaSantaDiabla
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.lblIdentificacion = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFechaN = new System.Windows.Forms.TextBox();
-            this.txtTipoCuenta = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnBuscar
+            // txtFechaN
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(12, 397);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 25);
-            this.btnBuscar.TabIndex = 42;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.txtFechaN.Enabled = false;
+            this.txtFechaN.Location = new System.Drawing.Point(12, 351);
+            this.txtFechaN.Name = "txtFechaN";
+            this.txtFechaN.Size = new System.Drawing.Size(279, 23);
+            this.txtFechaN.TabIndex = 58;
             // 
-            // btnCancelar
+            // panel1
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(172, 397);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(119, 25);
-            this.btnCancelar.TabIndex = 41;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // lblTipoDeCuenta
-            // 
-            this.lblTipoDeCuenta.AutoSize = true;
-            this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 212);
-            this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
-            this.lblTipoDeCuenta.Size = new System.Drawing.Size(87, 15);
-            this.lblTipoDeCuenta.TabIndex = 40;
-            this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 330);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 15);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Fecha de Nacimiento";
-            // 
-            // txtTelefonos
-            // 
-            this.txtTelefonos.Location = new System.Drawing.Point(12, 288);
-            this.txtTelefonos.Name = "txtTelefonos";
-            this.txtTelefonos.ReadOnly = true;
-            this.txtTelefonos.Size = new System.Drawing.Size(279, 23);
-            this.txtTelefonos.TabIndex = 37;
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(12, 270);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(52, 15);
-            this.lblTelefono.TabIndex = 36;
-            this.lblTelefono.Text = "Telefono";
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Location = new System.Drawing.Point(12, 170);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.ReadOnly = true;
-            this.txtApellidos.Size = new System.Drawing.Size(279, 23);
-            this.txtApellidos.TabIndex = 35;
-            // 
-            // lblApellidos
-            // 
-            this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Location = new System.Drawing.Point(12, 152);
-            this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(56, 15);
-            this.lblApellidos.TabIndex = 34;
-            this.lblApellidos.Text = "Apellidos";
-            // 
-            // txtNombres
-            // 
-            this.txtNombres.Location = new System.Drawing.Point(12, 109);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.ReadOnly = true;
-            this.txtNombres.Size = new System.Drawing.Size(279, 23);
-            this.txtNombres.TabIndex = 33;
-            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(12, 91);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 15);
-            this.lblNombre.TabIndex = 32;
-            this.lblNombre.Text = "Nombres";
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtIdentificacion);
+            this.panel1.Controls.Add(this.lblIdentificacion);
+            this.panel1.Location = new System.Drawing.Point(12, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(279, 69);
+            this.panel1.TabIndex = 57;
             // 
             // txtIdentificacion
             // 
@@ -153,42 +81,117 @@ namespace DiscotecaLaSantaDiabla
             this.lblIdentificacion.TabIndex = 30;
             this.lblIdentificacion.Text = "Documento de Identificación";
             // 
-            // panel1
+            // txtTipoDeCuenta
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtIdentificacion);
-            this.panel1.Controls.Add(this.lblIdentificacion);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 69);
-            this.panel1.TabIndex = 44;
+            this.txtTipoDeCuenta.Enabled = false;
+            this.txtTipoDeCuenta.FormattingEnabled = true;
+            this.txtTipoDeCuenta.Items.AddRange(new object[] {
+            "STANDAR",
+            "VIP"});
+            this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 235);
+            this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
+            this.txtTipoDeCuenta.Size = new System.Drawing.Size(279, 23);
+            this.txtTipoDeCuenta.TabIndex = 56;
             // 
-            // txtFechaN
+            // btnEliminar
             // 
-            this.txtFechaN.Location = new System.Drawing.Point(12, 348);
-            this.txtFechaN.Name = "txtFechaN";
-            this.txtFechaN.ReadOnly = true;
-            this.txtFechaN.Size = new System.Drawing.Size(279, 23);
-            this.txtFechaN.TabIndex = 45;
+            this.btnEliminar.Location = new System.Drawing.Point(12, 404);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(119, 25);
+            this.btnEliminar.TabIndex = 55;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtTipoCuenta
+            // btnCancelar
             // 
-            this.txtTipoCuenta.Location = new System.Drawing.Point(12, 230);
-            this.txtTipoCuenta.Name = "txtTipoCuenta";
-            this.txtTipoCuenta.ReadOnly = true;
-            this.txtTipoCuenta.Size = new System.Drawing.Size(279, 23);
-            this.txtTipoCuenta.TabIndex = 46;
-            this.txtTipoCuenta.TextChanged += new System.EventHandler(this.txtTipoCuenta_TextChanged);
+            this.btnCancelar.Location = new System.Drawing.Point(172, 404);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(119, 25);
+            this.btnCancelar.TabIndex = 54;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // GUIBuscarUsuario
+            // lblTipoDeCuenta
+            // 
+            this.lblTipoDeCuenta.AutoSize = true;
+            this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 217);
+            this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
+            this.lblTipoDeCuenta.Size = new System.Drawing.Size(87, 15);
+            this.lblTipoDeCuenta.TabIndex = 53;
+            this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 15);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "Fecha de Nacimiento";
+            // 
+            // txtTelefonos
+            // 
+            this.txtTelefonos.Enabled = false;
+            this.txtTelefonos.Location = new System.Drawing.Point(12, 291);
+            this.txtTelefonos.Name = "txtTelefonos";
+            this.txtTelefonos.Size = new System.Drawing.Size(279, 23);
+            this.txtTelefonos.TabIndex = 51;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(12, 273);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(52, 15);
+            this.lblTelefono.TabIndex = 50;
+            this.lblTelefono.Text = "Telefono";
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Enabled = false;
+            this.txtApellidos.Location = new System.Drawing.Point(12, 173);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(279, 23);
+            this.txtApellidos.TabIndex = 49;
+            this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
+            // 
+            // lblApellidos
+            // 
+            this.lblApellidos.AutoSize = true;
+            this.lblApellidos.Location = new System.Drawing.Point(12, 155);
+            this.lblApellidos.Name = "lblApellidos";
+            this.lblApellidos.Size = new System.Drawing.Size(56, 15);
+            this.lblApellidos.TabIndex = 48;
+            this.lblApellidos.Text = "Apellidos";
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.Enabled = false;
+            this.txtNombres.Location = new System.Drawing.Point(12, 112);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(279, 23);
+            this.txtNombres.TabIndex = 47;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(12, 94);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(56, 15);
+            this.lblNombre.TabIndex = 46;
+            this.lblNombre.Text = "Nombres";
+            // 
+            // GUIEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 441);
-            this.Controls.Add(this.txtTipoCuenta);
             this.Controls.Add(this.txtFechaN);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtTipoDeCuenta);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblTipoDeCuenta);
             this.Controls.Add(this.label4);
@@ -199,10 +202,9 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "GUIBuscarUsuario";
+            this.Name = "GUIEliminar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUIBuscarUsuario";
-            this.Load += new System.EventHandler(this.GUIBuscarUsuario_Load);
+            this.Text = "Eliminar Usuario";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -211,7 +213,13 @@ namespace DiscotecaLaSantaDiabla
         }
 
         #endregion
-        private System.Windows.Forms.Button btnBuscar;
+
+        private System.Windows.Forms.TextBox txtFechaN;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtIdentificacion;
+        private System.Windows.Forms.Label lblIdentificacion;
+        private System.Windows.Forms.ComboBox txtTipoDeCuenta;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTipoDeCuenta;
         private System.Windows.Forms.Label label4;
@@ -221,10 +229,5 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtIdentificacion;
-        private System.Windows.Forms.Label lblIdentificacion;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtFechaN;
-        private System.Windows.Forms.TextBox txtTipoCuenta;
     }
 }

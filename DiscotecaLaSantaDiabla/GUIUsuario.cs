@@ -58,7 +58,6 @@ namespace DiscotecaLaSantaDiabla
                 gridUsuarios.Rows[numFila].Cells[4].Value = cliente.getTipoCuenta();
                 gridUsuarios.Rows[numFila].Cells[5].Value = cliente.getTelefono();
                 gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getFechaN();
-
             }
         }
 
@@ -66,6 +65,23 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIBuscarUsuario buscar = new GUIBuscarUsuario();
             buscar.Show();
+        }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            GUIEliminar eliminar = new GUIEliminar();
+            eliminar.Show();
+        }
+
+        private void btnContarUsuario_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hay: " + Usuario.contarUsuarios() + " usuarios registrados", "Eliminar");
+        }
+
+        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        {
+            GUIModificarUsuario usuario = new GUIModificarUsuario();
+            usuario.Show();
         }
     }
 }

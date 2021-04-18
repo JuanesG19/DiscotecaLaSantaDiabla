@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="logica\Zona.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="imagenes\" />
     <Folder Include="interface\" />
     <Folder Include="estructural\" />
