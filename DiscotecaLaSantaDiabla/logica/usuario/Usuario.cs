@@ -7,11 +7,11 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 {
     class Usuario
     {
-        private static List<Cliente> usuarios = new List<Cliente>();
+        private static List<Cliente> clientes = new List<Cliente>();
 
         public static List<Cliente> getUsuarios()
         {
-          return usuarios;
+          return clientes;
         }     
         //Metodos 
         //Crear Usuario - B
@@ -19,7 +19,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         {
             if (buscarUsuario(pCliente.getID()) == null)
             {
-                usuarios.Add(pCliente);
+                clientes.Add(pCliente);
             }
             else
             {
@@ -32,12 +32,12 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         public static void modificarUsuario(Cliente nuevoCliente, String id)
         {
             Cliente clienteModificar = buscarUsuario(id);
-            int pos = usuarios.IndexOf(clienteModificar);
+            int pos = clientes.IndexOf(clienteModificar);
 
             try
             {
                 eliminarUsuario(id);
-                usuarios.Insert(pos, nuevoCliente);
+                clientes.Insert(pos, nuevoCliente);
             }
             catch
             {
@@ -49,7 +49,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         public static Cliente buscarUsuario(String id)
         {
             Cliente buscado = null;
-            foreach (Cliente c in usuarios)
+            foreach (Cliente c in clientes)
             {
                 if (c.getID().Equals(id))
                 {
@@ -67,8 +67,8 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
             if (buscado != null)
             {
-                int pos = usuarios.IndexOf(buscado);
-                usuarios.RemoveAt(pos);
+                int pos = clientes.IndexOf(buscado);
+                clientes.RemoveAt(pos);
             }
             else
             {
@@ -80,20 +80,20 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         public static void cambiarEstado(String id)
         {
             Cliente idBuscado = buscarUsuario(id);
-            int pos = usuarios.IndexOf(idBuscado);
+            int pos = clientes.IndexOf(idBuscado);
 
             if (idBuscado.getTipoCuenta() == Cliente.Cuentas.STANDAR)
             {
                 eliminarUsuario(idBuscado.getID());
                 idBuscado.setTipoCuenta(Cliente.Cuentas.VIP);
-                usuarios.Insert(pos, idBuscado);
+                clientes.Insert(pos, idBuscado);
 
             }
             else if (idBuscado.getTipoCuenta() == Cliente.Cuentas.VIP)
             {
                 eliminarUsuario(idBuscado.getID());
                 idBuscado.setTipoCuenta(Cliente.Cuentas.STANDAR);
-                usuarios.Insert(pos, idBuscado);
+                clientes.Insert(pos, idBuscado);
             }
             else
             {
@@ -105,7 +105,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         //Contar Usuarios - B
         public static int contarUsuarios()
         {
-            int cantidad = usuarios.Count;
+            int cantidad = clientes.Count;
             return cantidad;
         }
 

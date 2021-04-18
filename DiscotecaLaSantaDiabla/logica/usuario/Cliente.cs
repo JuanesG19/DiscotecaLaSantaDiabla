@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static DiscotecaLaSantaDiabla.logica.Cuenta;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
@@ -10,10 +11,7 @@ namespace DiscotecaLaSantaDiabla.logica
         //ENUMS
 
         //Enum para el Tipo de Cliente
-        public enum Cuentas
-        {
-            VIP, STANDAR
-        }
+       
 
         //ATRIBUTOS
 
@@ -36,14 +34,14 @@ namespace DiscotecaLaSantaDiabla.logica
         private Cuentas tipoCuenta;
 
         //Constructor
-        public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaN)
+        public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaNacimiento)
         {
             try
             {
                 this.id = id;
                 this.nombre = nombre;
                 this.apellido = apellido;
-                this.fechaN = fechaN;
+                this.fechaN = fechaNacimiento;
                 this.telefono = telefono;
                 this.tipoCuenta = pTipoCuenta;
             }
@@ -89,13 +87,13 @@ namespace DiscotecaLaSantaDiabla.logica
         {
             telefono = pTelefono;
         }
-
         public Cuentas getTipoCuenta() => tipoCuenta;
 
         public void setTipoCuenta(Cuentas pTipoCuenta)
         {
             tipoCuenta = pTipoCuenta;
         }
+
 
 
 
