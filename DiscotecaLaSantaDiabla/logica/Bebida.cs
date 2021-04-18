@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class Bebidas
+    class Bebida
     {
 
         //ATRIBUTOS
@@ -12,7 +12,7 @@ namespace DiscotecaLaSantaDiabla.logica
         private List<Producto> bebidasEspeciales;
 
         //CONSTRUCTOR
-        Bebidas()
+        Bebida()
         {
             bebidas = new List<Producto>();
             bebidasEspeciales = new List<Producto>();
