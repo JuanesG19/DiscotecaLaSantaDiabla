@@ -37,7 +37,7 @@ namespace DiscotecaLaSantaDiabla
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 15);
+            this.label1.Location = new System.Drawing.Point(41, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 15);
             this.label1.TabIndex = 0;
@@ -45,18 +45,16 @@ namespace DiscotecaLaSantaDiabla
             // 
             // txtIngreso
             // 
-            this.txtIngreso.Location = new System.Drawing.Point(18, 65);
-            this.txtIngreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtIngreso.Location = new System.Drawing.Point(16, 49);
             this.txtIngreso.Name = "txtIngreso";
-            this.txtIngreso.Size = new System.Drawing.Size(248, 34);
+            this.txtIngreso.Size = new System.Drawing.Size(218, 23);
             this.txtIngreso.TabIndex = 1;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(68, 130);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnConfirmar.Location = new System.Drawing.Point(57, 78);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(140, 39);
+            this.btnConfirmar.Size = new System.Drawing.Size(122, 29);
             this.btnConfirmar.TabIndex = 2;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
@@ -64,14 +62,13 @@ namespace DiscotecaLaSantaDiabla
             // 
             // GUIZonas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 212);
+            this.ClientSize = new System.Drawing.Size(242, 119);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtIngreso);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GUIZonas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso";
