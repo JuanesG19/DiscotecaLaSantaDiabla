@@ -66,15 +66,15 @@ namespace DiscotecaLaSantaDiabla
                         cliente.setFechaN(comboFechaN.Text);
                         cliente.setTelefono(txtTelefonosB.Text);
 
-                        Cliente.Cuentas tipoCuenta;
+                        Cuenta.Cuentas tipoCuenta;
 
                         if (comboTipoCuenta.Text.Equals("VIP"))
                         {
-                            tipoCuenta = Cliente.Cuentas.VIP;
+                            tipoCuenta = Cuenta.Cuentas.VIP;
                         }
                         else
                         {
-                            tipoCuenta = Cliente.Cuentas.STANDAR;
+                            tipoCuenta = Cuenta.Cuentas.STANDAR;
                         }
 
                         cliente.setTipoCuenta(tipoCuenta);
@@ -106,15 +106,15 @@ namespace DiscotecaLaSantaDiabla
                         cliente.setFechaN(comboFechaN.Text);
                         cliente.setTelefono(txtTelefono.Text);
 
-                        Cliente.Cuentas tipoCuenta;
+                        Cuenta.Cuentas tipoCuenta;
 
                         if (comboTipoCuenta.Text.Equals("VIP"))
                         {
-                            tipoCuenta = Cliente.Cuentas.VIP;
+                            tipoCuenta = Cuenta.Cuentas.VIP;
                         }
                         else
                         {
-                            tipoCuenta = Cliente.Cuentas.STANDAR;
+                            tipoCuenta = Cuenta.Cuentas.STANDAR;
                         }
 
                         cliente.setTipoCuenta(tipoCuenta);
