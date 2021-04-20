@@ -20,6 +20,13 @@ namespace DiscotecaLaSantaDiabla
             InitializeComponent();
         }
 
+        private static String zona = "";
+
+        public static String getZona()
+        {
+            return zona;
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
         }
@@ -38,93 +45,46 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaEspecial_Click(object sender, EventArgs e)
         {
+            zona = "E";
             GUIZonas zonas = new GUIZonas();
-            zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaEspecial();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+            zonas.Show();          
         }
 
         private void btnZonaA_Click(object sender, EventArgs e)
         {
+            zona = "A";
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            try
-            {
-                AccederZona.reservarZonaA();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void btnZonaB_Click(object sender, EventArgs e)
         {
+            zona = "B";
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaB();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void btnZonaC_Click(object sender, EventArgs e)
         {
+            zona = "C";
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaC();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void btnZonaD_Click(object sender, EventArgs e)
         {
+            zona = "D";
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaD();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void btnVIP_Click(object sender, EventArgs e)
         {
+            zona = "V";
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaPalco();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
