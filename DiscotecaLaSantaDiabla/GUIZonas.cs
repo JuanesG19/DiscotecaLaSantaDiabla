@@ -12,6 +12,7 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class GUIZonas : Form
     {
+         
         public GUIZonas()
         {
             InitializeComponent();
@@ -19,11 +20,8 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            int numPersonas = Convert.ToInt32( txtIngreso.Text);
-            AccederZona.setIngresar(numPersonas);
-
-            MessageBox.Show("Asignacion Exitosa");
-            this.Close();
+            int numPersonas = Convert.ToInt32(txtIngreso.Text);
+            AccederZona.setIngreso(numPersonas);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public static int getIngreso() => ingreso;
 
-        public static void setIngresar(int pIngreso)
+        public static void setIngreso(int pIngreso)
         {
             ingreso = pIngreso;
         }
@@ -97,110 +97,119 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public static void reservarZonaEspecial()
         {
-            if (reservasEspecial == AccederZona.CAPACIDAD_ESPECIAL)
+            if ((reservasEspecial += ingreso) == AccederZona.CAPACIDAD_ESPECIAL)
             {
                 throw new Exception("La zona especial ya se encuentra al maximo de su capacidad");
             }
-            else if(reservasEspecial > AccederZona.CAPACIDAD_ESPECIAL)
+            else if((reservasEspecial += ingreso) > AccederZona.CAPACIDAD_ESPECIAL)
             {
                 int exceso = reservasEspecial - AccederZona.CAPACIDAD_ESPECIAL;
                 throw new Exception("Se excedio el cupo de la zona especial por: "+ exceso + " persona(s)");
-                reservasEspecial -= exceso;
+                //reservasEspecial -= exceso;
             }
+            else
+            {
+                reservasEspecial += ingreso;
+            }
+
+
         }
-        /**
+        
         public static void reservarZonaA()
         {
-            if (reservasA == AccederZona.CAPACIDAD_A)
+            if ((reservasA += ingreso) == AccederZona.CAPACIDAD_A)
             {
-                throw new Exception("La zona A ya se encuentra al maximo de su capacidad");
+                throw new Exception("La zona especial ya se encuentra al maximo de su capacidad");
+            }
+            else if ((reservasA += ingreso) > AccederZona.CAPACIDAD_A)
+            {
+                int exceso = reservasA - AccederZona.CAPACIDAD_A;
+                throw new Exception("Se excedio el cupo de la zona especial por: " + exceso + " persona(s)");
+                //reservasEspecial -= exceso;
+            }
+            else
+            {
+                reservasA += ingreso;
+            }
 
-            }
-            else if (reservasA > AccederZona.CAPACIDAD_A)
-            {
-                int exceso = reservasA - AccederZona.CAPACIDAD_ESPECIAL;
-                throw new Exception("Se excedio el cupo de la zona A por: " + exceso + " persona(s)");
-                reservasA -= exceso;
-            }
-            
+
         }
 
         public static void reservarZonaB()
         {
-            if (reservasB  <= AccederZona.CAPACIDAD_B)
+            if ((reservasB += ingreso) == AccederZona.CAPACIDAD_B)
             {
-                reservasB = reservasB + numeroPersonas;
-
+                throw new Exception("La zona B ya se encuentra al maximo de su capacidad");
             }
-            else if (reservasB == AccederZona.CAPACIDAD_B)
+            else if ((reservasB += ingreso) > AccederZona.CAPACIDAD_B)
             {
-                throw new Exception("La zona A ya se encuentra al maximo de su capacidad");
+                int exceso = reservasB- AccederZona.CAPACIDAD_B;
+                throw new Exception("Se excedio el cupo de la zona B por: " + exceso + " persona(s)");
+                //reservasEspecial -= exceso;
             }
             else
             {
-                int capacidadRestante = reservasB + numeroPersonas - AccederZona.CAPACIDAD_B;
-                throw new Exception("Solo quedan " + capacidadRestante + " cupos disponibles en la zona B");
-
+                reservasB += ingreso;
             }
+
         }
 
         public static void reservarZonaC()
         {
-            if (reservasC + numeroPersonas <= AccederZona.CAPACIDAD_C)
-            {
-                reservasC = reservasC + numeroPersonas;
-
-            }
-            else if (reservasC == AccederZona.CAPACIDAD_C)
+            if ((reservasC += ingreso) == AccederZona.CAPACIDAD_C)
             {
                 throw new Exception("La zona C ya se encuentra al maximo de su capacidad");
             }
+            else if ((reservasC += ingreso) > AccederZona.CAPACIDAD_C)
+            {
+                int exceso = reservasC - AccederZona.CAPACIDAD_C;
+                throw new Exception("Se excedio el cupo de la zona especial por: " + exceso + " persona(s)");
+                //reservasEspecial -= exceso;
+            }
             else
             {
-                int capacidadRestante = reservasC + numeroPersonas - AccederZona.CAPACIDAD_C;
-                throw new Exception("Solo quedan " + capacidadRestante + " cupos disponibles en la zona C");
-
+                reservasC += ingreso;
             }
+
         }
 
         public static void reservarZonaD()
         {
-            if (reservasD + numeroPersonas <= AccederZona.CAPACIDAD_D)
-            {
-                reservasD = reservasD + numeroPersonas;
-
-            }
-            else if (reservasD == AccederZona.CAPACIDAD_D)
+            if ((reservasD += ingreso) == AccederZona.CAPACIDAD_D)
             {
                 throw new Exception("La zona D ya se encuentra al maximo de su capacidad");
             }
+            else if ((reservasD += ingreso) > AccederZona.CAPACIDAD_D)
+            {
+                int exceso = reservasD - AccederZona.CAPACIDAD_D;
+                throw new Exception("Se excedio el cupo de la zona D por: " + exceso + " persona(s)");
+                //reservasEspecial -= exceso;
+            }
             else
             {
-                int capacidadRestante = reservasD + numeroPersonas - AccederZona.CAPACIDAD_D;
-                throw new Exception("Solo quedan " + capacidadRestante + " cupos disponibles en la zona D");
-
+                reservasD += ingreso;
             }
+
         }
 
         public static void reservarZonaPalco()
         {
-            if (reservasVIP + numeroPersonas <= AccederZona.CAPACIDAD_PALCO)
+            if ((reservasVIP += ingreso) == AccederZona.CAPACIDAD_PALCO)
             {
-                reservasVIP = reservasVIP + numeroPersonas;
-
+                throw new Exception("La zona VIP ya se encuentra al maximo de su capacidad");
             }
-            else if (reservasVIP == AccederZona.CAPACIDAD_PALCO)
+            else if ((reservasVIP += ingreso) > AccederZona.CAPACIDAD_PALCO)
             {
-                throw new Exception("La zona A ya se encuentra al maximo de su capacidad");
+                int exceso = reservasVIP - AccederZona.CAPACIDAD_PALCO;
+                throw new Exception("Se excedio el cupo de la zona VIP por: " + exceso + " persona(s)");
+                //reservasEspecial -= exceso;
             }
             else
             {
-                int capacidadRestante = reservasVIP + numeroPersonas - AccederZona.CAPACIDAD_PALCO;
-                throw new Exception("Solo quedan " + capacidadRestante + " cupos disponibles en la zona B");
-
+                reservasVIP+= ingreso;
             }
+
         }
-    */
 
     }
 }

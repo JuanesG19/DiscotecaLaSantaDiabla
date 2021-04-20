@@ -14,7 +14,7 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class Form1 : Form
     {
-        
+       
         public Form1()
         {
             InitializeComponent();
@@ -41,17 +41,15 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasEspecial += ingreso;
-
             try
             {
                 AccederZona.reservarZonaEspecial();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
         private void btnZonaA_Click(object sender, EventArgs e)
@@ -59,8 +57,14 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasA += ingreso;
+            try
+            {
+                AccederZona.reservarZonaA();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnZonaB_Click(object sender, EventArgs e)
@@ -68,8 +72,14 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasB += ingreso;
+            try
+            {
+                AccederZona.reservarZonaB();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnZonaC_Click(object sender, EventArgs e)
@@ -77,8 +87,14 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasC += ingreso;
+            try
+            {
+                AccederZona.reservarZonaC();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnZonaD_Click(object sender, EventArgs e)
@@ -86,8 +102,14 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasD += ingreso;
+            try
+            {
+                AccederZona.reservarZonaD();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnVIP_Click(object sender, EventArgs e)
@@ -95,8 +117,14 @@ namespace DiscotecaLaSantaDiabla
             GUIZonas zonas = new GUIZonas();
             zonas.Show();
 
-            int ingreso = AccederZona.getIngreso();
-            AccederZona.reservasVIP += ingreso;
+            try
+            {
+                AccederZona.reservarZonaPalco();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
