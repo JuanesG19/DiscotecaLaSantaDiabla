@@ -15,20 +15,20 @@ namespace DiscotecaLaSantaDiabla.logica
             D,
             PALCO,
         }
-              
-        public const int CAPACIDAD_ESPECIAL = 60;
-        public const int CAPACIDAD_A = 30;
-        public const int CAPACIDAD_B = 30;
-        public const int CAPACIDAD_C = 30;
-        public const int CAPACIDAD_D = 30;
-        public const int CAPACIDAD_PALCO = 60;
 
-        public static int reservasEspecial;
-        public static int reservasA;
-        public static int reservasB;
-        public static int reservasC;
-        public static int reservasD;
-        public static int reservasVIP;
+        private const int CAPACIDAD_ESPECIAL = 60;
+        private const int CAPACIDAD_A = 30;
+        private const int CAPACIDAD_B = 30;
+        private const int CAPACIDAD_C = 30;
+        private const int CAPACIDAD_D = 30;
+        private const int CAPACIDAD_PALCO = 60;
+
+        private static int reservasEspecial;
+        private static int reservasA;
+        private static int reservasB;
+        private static int reservasC;
+        private static int reservasD;
+        private static int reservasVIP;
 
         public TipoZona zona;
 

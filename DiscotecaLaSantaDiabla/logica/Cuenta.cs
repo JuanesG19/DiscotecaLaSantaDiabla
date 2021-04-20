@@ -8,6 +8,11 @@ namespace DiscotecaLaSantaDiabla.logica
     {
         public const double MEMBRESIA = 100.000;
 
+        public enum Cuentas
+        {
+            VIP, STANDAR
+        }
+
         public Boolean haPagadoMembresia()
         {
             return true;
@@ -21,7 +26,7 @@ namespace DiscotecaLaSantaDiabla.logica
         {
             Boolean descuento = false;
 
-            if (pCliente.getTipoCuenta().Equals(Cliente.Cuentas.VIP) && haPagadoMembresia())
+            if (pCliente.getTipoCuenta().Equals(Cuentas.VIP) && haPagadoMembresia())
             {
                 descuento = true;
             }
@@ -31,13 +36,13 @@ namespace DiscotecaLaSantaDiabla.logica
 
         public void convertirseEnSocio(Cliente pCliente)
         {
-            if (pCliente.getTipoCuenta().Equals(Cliente.Cuentas.VIP) && haPagadoMembresia())
+            if (pCliente.getTipoCuenta().Equals(Cuentas.VIP) && haPagadoMembresia())
             {
                 throw new Exception("El cliente ya es socio actualmente");
             }
             else
             {
-                pCliente.setTipoCuenta(Cliente.Cuentas.VIP);
+                pCliente.setTipoCuenta(Cuentas.VIP);
             }
 
         }
