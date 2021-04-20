@@ -25,15 +25,15 @@ namespace DiscotecaLaSantaDiabla
             String telefono = txtTelefonos.Text;
             String fecha = fechaNacimiento.Value.ToString();
 
-            Cliente.Cuentas tipoCuenta;
+            Cuenta.Cuentas tipoCuenta;
 
             if (txtTipoDeCuenta.Text.Equals("VIP"))
             {
-                tipoCuenta = Cliente.Cuentas.VIP;
+                tipoCuenta = Cuenta.Cuentas.VIP;
             }
             else
             {
-                tipoCuenta = Cliente.Cuentas.STANDAR;
+                tipoCuenta = Cuenta.Cuentas.STANDAR;
             }
 
             try
@@ -59,6 +59,11 @@ namespace DiscotecaLaSantaDiabla
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void GUIAgregar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
