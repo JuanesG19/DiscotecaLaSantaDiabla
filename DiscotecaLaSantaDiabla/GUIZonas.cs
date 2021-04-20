@@ -48,6 +48,77 @@ namespace DiscotecaLaSantaDiabla
                     }
 
                     break;
+
+                case "A":
+
+                    try
+                    {
+                        AccederZona.reservarZonaA();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "B":
+
+                    try
+                    {
+                        AccederZona.reservarZonaB();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "C":
+
+                    try
+                    {
+                        AccederZona.reservarZonaC();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "D":
+
+                    try
+                    {
+                        AccederZona.reservarZonaD();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "V":
+
+                    try
+                    {
+                        AccederZona.reservarZonaPalco();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
             }
 
            
