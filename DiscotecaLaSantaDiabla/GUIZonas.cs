@@ -22,6 +22,9 @@ namespace DiscotecaLaSantaDiabla
         {
             int numPersonas = Convert.ToInt32(txtIngreso.Text);
             AccederZona.setIngreso(numPersonas);
+
+            MessageBox.Show("Prueba");
+            this.Close();
         }
     }
 }
