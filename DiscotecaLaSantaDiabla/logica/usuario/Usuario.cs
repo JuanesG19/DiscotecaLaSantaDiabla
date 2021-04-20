@@ -82,17 +82,17 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             Cliente idBuscado = buscarUsuario(id);
             int pos = clientes.IndexOf(idBuscado);
 
-            if (idBuscado.getTipoCuenta() == Cliente.Cuentas.STANDAR)
+            if (idBuscado.getTipoCuenta() == Cuenta.Cuentas.STANDAR)
             {
                 eliminarUsuario(idBuscado.getID());
-                idBuscado.setTipoCuenta(Cliente.Cuentas.VIP);
+                idBuscado.setTipoCuenta(Cuenta.Cuentas.VIP);
                 clientes.Insert(pos, idBuscado);
 
             }
-            else if (idBuscado.getTipoCuenta() == Cliente.Cuentas.VIP)
+            else if (idBuscado.getTipoCuenta() == Cuenta.Cuentas.VIP)
             {
                 eliminarUsuario(idBuscado.getID());
-                idBuscado.setTipoCuenta(Cliente.Cuentas.STANDAR);
+                idBuscado.setTipoCuenta(Cuenta.Cuentas.STANDAR);
                 clientes.Insert(pos, idBuscado);
             }
             else
