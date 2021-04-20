@@ -111,8 +111,6 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 reservasEspecial += ingreso;
             }
-
-
         }
         
         public static void reservarZonaA()

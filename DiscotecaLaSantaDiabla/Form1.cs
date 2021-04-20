@@ -20,6 +20,13 @@ namespace DiscotecaLaSantaDiabla
             InitializeComponent();
         }
 
+        private static String zona = "";
+
+        public static String getZona()
+        {
+            return zona;
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
         }
@@ -38,18 +45,9 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaEspecial_Click(object sender, EventArgs e)
         {
+            zona = "E";
             GUIZonas zonas = new GUIZonas();
-            zonas.Show();
-
-            try
-            {
-                AccederZona.reservarZonaEspecial();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+            zonas.Show();          
         }
 
         private void btnZonaA_Click(object sender, EventArgs e)
