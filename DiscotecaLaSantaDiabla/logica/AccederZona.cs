@@ -115,14 +115,15 @@ namespace DiscotecaLaSantaDiabla.logica
         
         public static void reservarZonaA()
         {
-            if ((reservasA += ingreso) == AccederZona.CAPACIDAD_A)
+            if (reservasA == AccederZona.CAPACIDAD_A)
             {
                 throw new Exception("La zona especial ya se encuentra al maximo de su capacidad");
             }
-            else if ((reservasA += ingreso) > AccederZona.CAPACIDAD_A)
+            else if ((reservasA += ingreso )> AccederZona.CAPACIDAD_A)
             {
                 int exceso = reservasA - AccederZona.CAPACIDAD_A;
-                throw new Exception("Se excedio el cupo de la zona especial por: " + exceso + " persona(s)");
+                reservasA -= ingreso;
+                throw new Exception("Se excedio el cupo de la zona a por: " + exceso + " persona(s)");
                 //reservasEspecial -= exceso;
             }
             else
