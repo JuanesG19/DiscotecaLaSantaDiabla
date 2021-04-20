@@ -6,8 +6,6 @@ namespace DiscotecaLaSantaDiabla.logica
 {
     class Bebida
     {
-        //ESTE ES EL ULTIMO
-
         //ATRIBUTOS
         private static List<Producto> bebidas = new List<Producto>();
         private static List<Producto> bebidasEspeciales = new List<Producto>();
