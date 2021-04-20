@@ -35,18 +35,65 @@ namespace DiscotecaLaSantaDiabla
             switch (zona)
             {
                 case "E":
+
+
                     try
                     {
-                        AccederZona.reservarZonaEspecial();
+                        AccederZona.reservarZonaB();
+                        MessageBox.Show("Se han ingresado los clientes !");
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
+
                     break;
+
+                case "C":
+
+                    try
+                    {
+                        AccederZona.reservarZonaC();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "D":
+
+                    try
+                    {
+                        AccederZona.reservarZonaD();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
+                case "V":
+
+                    try
+                    {
+                        AccederZona.reservarZonaPalco();
+                        MessageBox.Show("Se han ingresado los clientes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    break;
+
             }
 
-            MessageBox.Show("Prueba");
+           
             this.Close();
         }
     }
