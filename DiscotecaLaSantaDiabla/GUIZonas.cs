@@ -34,10 +34,7 @@ namespace DiscotecaLaSantaDiabla
 
             switch (zona)
             {
-
                 case "E":
-
-
                     try
                     {
                         AccederZona.reservarZonaEspecial();
@@ -46,7 +43,6 @@ namespace DiscotecaLaSantaDiabla
                     {
                         MessageBox.Show(ex.Message);
                     }
-
                     break;
             }
 
