@@ -37,10 +37,10 @@ namespace DiscotecaLaSantaDiabla
 
                 case "E":
 
-
                     try
                     {
                         AccederZona.reservarZonaEspecial();
+                        MessageBox.Show("Se han ingresado los clientes !");
                     }
                     catch (Exception ex)
                     {
@@ -50,7 +50,7 @@ namespace DiscotecaLaSantaDiabla
                     break;
             }
 
-            MessageBox.Show("Prueba");
+           
             this.Close();
         }
     }
