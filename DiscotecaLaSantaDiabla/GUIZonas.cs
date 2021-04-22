@@ -34,8 +34,8 @@ namespace DiscotecaLaSantaDiabla
 
             switch (zona)
             {
-
                 case "E":
+
 
                     try
                     {
