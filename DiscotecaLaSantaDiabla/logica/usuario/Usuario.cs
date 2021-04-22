@@ -99,7 +99,6 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             {
                 throw new Exception("El Cliente no tiene un tipo de cuenta definido");
             }
-
         }
 
         //Contar Usuarios - B

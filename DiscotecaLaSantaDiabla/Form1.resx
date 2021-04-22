@@ -57,7 +57,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="Banner.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAC0CAIAAABE5RZkAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -11267,7 +11267,7 @@
     <value>5</value>
   </data>
   <data name="button6.Text" xml:space="preserve">
-    <value>button6</value>
+    <value>Funcion 5</value>
   </data>
   <data name="&gt;&gt;button6.Name" xml:space="preserve">
     <value>button6</value>
@@ -11291,7 +11291,7 @@
     <value>4</value>
   </data>
   <data name="button7.Text" xml:space="preserve">
-    <value>button7</value>
+    <value>Funcion 4</value>
   </data>
   <data name="&gt;&gt;button7.Name" xml:space="preserve">
     <value>button7</value>
@@ -11339,7 +11339,7 @@
     <value>11</value>
   </data>
   <data name="button9.Text" xml:space="preserve">
-    <value>button9</value>
+    <value>Funcion 8</value>
   </data>
   <data name="&gt;&gt;button9.Name" xml:space="preserve">
     <value>button9</value>
@@ -11363,7 +11363,7 @@
     <value>10</value>
   </data>
   <data name="button10.Text" xml:space="preserve">
-    <value>button10</value>
+    <value>Funcion 10</value>
   </data>
   <data name="&gt;&gt;button10.Name" xml:space="preserve">
     <value>button10</value>
@@ -11387,7 +11387,7 @@
     <value>9</value>
   </data>
   <data name="button11.Text" xml:space="preserve">
-    <value>button11</value>
+    <value>Funcion 9</value>
   </data>
   <data name="&gt;&gt;button11.Name" xml:space="preserve">
     <value>button11</value>
@@ -11411,7 +11411,7 @@
     <value>8</value>
   </data>
   <data name="button12.Text" xml:space="preserve">
-    <value>button12</value>
+    <value>Funcion 7</value>
   </data>
   <data name="&gt;&gt;button12.Name" xml:space="preserve">
     <value>button12</value>
@@ -11435,7 +11435,7 @@
     <value>7</value>
   </data>
   <data name="button13.Text" xml:space="preserve">
-    <value>button13</value>
+    <value>Funcion 6</value>
   </data>
   <data name="&gt;&gt;button13.Name" xml:space="preserve">
     <value>button13</value>
