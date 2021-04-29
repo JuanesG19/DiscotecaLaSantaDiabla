@@ -44,96 +44,100 @@ namespace DiscotecaLaSantaDiabla
         {
         }
 
-        public void btnZonaEspecial_Click(object sender, EventArgs e)
+        private void btnZonaEspecial_Click(object sender, EventArgs e)
         {
-           if(AccederZona.getTopeZonaEspecial() == true)
+            
+            if (AccederZona.darNumReservasEspecial() < 60 )
             {
-                btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialRojo.png");
-                btnZonaEspecial.Enabled = false;
+                btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialVerde.png");
+                GUIZonas zonas = new GUIZonas();
+                zona = "E";
+                zonas.Show();
             }
             else
             {
-                zona = "E";
-                GUIZonas zonas = new GUIZonas();
-                zonas.Show();
+                btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialRojo.png");
+                MessageBox.Show("La Zona Especial Ya Se Encuentra Al Maximo De Su Capacidad");
             }
         }
 
         private void btnZonaA_Click(object sender, EventArgs e)
         {
-            if (AccederZona.getTopeZonaA() == true)
+            if (AccederZona.darNumReservasA() < 30)
             {
-                btnZonaA.BackgroundImage = Image.FromFile(@"imagenes\ZonaARojo.png");
-                btnZonaA.Enabled = false;
-            }
-            else
-            {
+                btnZonaA.BackgroundImage = Image.FromFile(@"imagenes\ZonaAVerde.png");
                 zona = "A";
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
             }
-                
-
-            
+            else
+            {
+                btnZonaA.BackgroundImage = Image.FromFile(@"imagenes\ZonaARojo.png");
+                MessageBox.Show("La Zona A Ya Se Encuentra Al Maximo De Su Capacidad");
+            } 
         }
 
         private void btnZonaB_Click(object sender, EventArgs e)
         {
-            if (AccederZona.getTopeZonaB() == true)
+            if (AccederZona.darNumReservasB() < 30)
             {
-                btnZonaB.BackgroundImage = Image.FromFile(@"imagenes\ZonaBRojo.png");
-                btnZonaB.Enabled = false;
-            }
-            else
-            {
+                btnZonaB.BackgroundImage = Image.FromFile(@"imagenes\ZonaBVerde.png");
                 zona = "B";
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
+            }
+            else
+            {
+                btnZonaB.BackgroundImage = Image.FromFile(@"imagenes\ZonaBRojo.png");
+                MessageBox.Show("La Zona B Ya Se Encuentra Al Maximo De Su Capacidad");
             }
         }
 
         private void btnZonaC_Click(object sender, EventArgs e)
         {
-            if (AccederZona.getTopeZonaC() == true)
+            if (AccederZona.darNumReservasC() < 30)
             {
-                btnZonaC.BackgroundImage = Image.FromFile(@"imagenes\ZonaCRojo.png");
-                btnZonaC.Enabled = false;
-            }
-            else
-            {
+                btnZonaC.BackgroundImage = Image.FromFile(@"imagenes\ZonaCVerde.png");
                 zona = "C";
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
+            }
+            else
+            {
+                btnZonaC.BackgroundImage = Image.FromFile(@"imagenes\ZonaCRojo.png");
+                MessageBox.Show("La Zona C Ya Se Encuentra Al Maximo De Su Capacidad");
             }
         }
 
         private void btnZonaD_Click(object sender, EventArgs e)
         {
-            if (AccederZona.getTopeZonaD() == true)
+            if (AccederZona.darNumReservasD() < 30)
             {
-                btnZonaD.BackgroundImage = Image.FromFile(@"imagenes\ZonaDRojo.png");
-                btnZonaD.Enabled = false;
-            }
-            else
-            {
+                btnZonaD.BackgroundImage = Image.FromFile(@"imagenes\ZonaDVerde.png");
                 zona = "D";
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
+            }
+            else
+            {
+                btnZonaD.BackgroundImage = Image.FromFile(@"imagenes\ZonaDRojo.png");
+                MessageBox.Show("La Zona D Ya Se Encuentra Al Maximo De Su Capacidad");
             }
         }
 
         private void btnVIP_Click(object sender, EventArgs e)
         {
-            if (AccederZona.getTopeZonaVIP() == true)
+            if (AccederZona.darNumReservasVIP() < 60)
             {
-                btnVIP.BackgroundImage = Image.FromFile(@"imagenes\ZonaVIPRojo.png");
-                btnVIP.Enabled = false;
-            }
-            else
-            {
+                btnVIP.BackgroundImage = Image.FromFile(@"imagenes\ZonaVIPVerde.png");
                 zona = "V";
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
+            }
+            else
+            {
+                btnVIP.BackgroundImage = Image.FromFile(@"imagenes\ZonaVIPRojo.png");
+                MessageBox.Show("La Zona VIP Ya Se Encuentra Al Maximo De Su Capacidad");
             }
         }
 
@@ -154,5 +158,29 @@ namespace DiscotecaLaSantaDiabla
             double aforo = AccederZona.darAforoTotal();
             MessageBox.Show("El Aforo en la discoteca es del: " + aforo + "%", "Aforo Porcentual");
         }
+
+        public void cambiarEstadoBotonEspecial(bool estado)
+        {
+
+            if(estado == true)
+            {
+                btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialRojo.png");
+                btnZonaEspecial.Enabled = false;
+            }
+            else
+            {     
+                btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialVerde.png");
+                btnZonaEspecial.Enabled = true;
+            }
+
+        }
+
+        private void btnSalidaDeUsuarios_Click(object sender, EventArgs e)
+        {
+            GUISalidaDeZona salida = new GUISalidaDeZona();
+            salida.Show();
+        }
+
+        
     }
 }

@@ -9308,6 +9308,147 @@
         cKBgOBCP/9k=
 </value>
   </data>
+  <data name="&gt;&gt;btnZonaD.Name" xml:space="preserve">
+    <value>btnZonaD</value>
+  </data>
+  <data name="&gt;&gt;btnZonaD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZonaD.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaD.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnZonaC.Name" xml:space="preserve">
+    <value>btnZonaC</value>
+  </data>
+  <data name="&gt;&gt;btnZonaC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZonaC.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaC.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaB.Name" xml:space="preserve">
+    <value>btnZonaB</value>
+  </data>
+  <data name="&gt;&gt;btnZonaB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZonaB.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnEntrada.Name" xml:space="preserve">
+    <value>btnEntrada</value>
+  </data>
+  <data name="&gt;&gt;btnEntrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEntrada.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnEntrada.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnBaño.Name" xml:space="preserve">
+    <value>btnBaño</value>
+  </data>
+  <data name="&gt;&gt;btnBaño.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBaño.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnBaño.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnBar.Name" xml:space="preserve">
+    <value>btnBar</value>
+  </data>
+  <data name="&gt;&gt;btnBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnBar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnZonaA.Name" xml:space="preserve">
+    <value>btnZonaA</value>
+  </data>
+  <data name="&gt;&gt;btnZonaA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZonaA.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaA.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnVIP.Name" xml:space="preserve">
+    <value>btnVIP</value>
+  </data>
+  <data name="&gt;&gt;btnVIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVIP.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnVIP.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnZonaEspecial.Name" xml:space="preserve">
+    <value>btnZonaEspecial</value>
+  </data>
+  <data name="&gt;&gt;btnZonaEspecial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZonaEspecial.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnZonaEspecial.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnTarima.Name" xml:space="preserve">
+    <value>btnTarima</value>
+  </data>
+  <data name="&gt;&gt;btnTarima.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTarima.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnTarima.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 190</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1240, 378</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="btnZonaD.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdwAAABQCAYAAACzpsTiAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -9726,7 +9867,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsSAAALEgHS3X78
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AAAodElEQVR4Xu2dCbQUxfXGzT8kZjFBo9G4JGqixmxGI66oiEZBUWRTVgURRFFUcENBRMFdUVEBN1Tc
         CO67xrgFozG4b7hviCtBjCIo4v3X705XW9Ovu2fmMTPvibfO+c57M13dXV0953713bp1a5kNZRkxGAwG
         g8FQWxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjh
@@ -11201,27 +11342,6 @@
   <data name="&gt;&gt;btnTarima.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 190</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1240, 378</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="btnUsuarios.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>12, 574</value>
   </data>
@@ -11342,30 +11462,6 @@
   <data name="&gt;&gt;btnBuscarUsuario.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>521, 616</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>11</value>
-  </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>Funcion 8</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>1028, 616</value>
   </data>
@@ -11439,7 +11535,7 @@
     <value>3</value>
   </data>
   <data name="aforoZonas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 616</value>
+    <value>521, 616</value>
   </data>
   <data name="aforoZonas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>224, 36</value>
@@ -11461,6 +11557,34 @@
   </data>
   <data name="&gt;&gt;aforoZonas.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSalidaDeUsuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 616</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>224, 36</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.Text" xml:space="preserve">
+    <value>Salida De Usuarios</value>
+  </data>
+  <data name="&gt;&gt;btnSalidaDeUsuarios.Name" xml:space="preserve">
+    <value>btnSalidaDeUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnSalidaDeUsuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalidaDeUsuarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSalidaDeUsuarios.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -11530,7 +11654,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1264, 659</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

@@ -1,5 +1,4 @@
 ﻿using DiscotecaLaSantaDiabla.logica;
-using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,36 +9,26 @@ using System.Windows.Forms;
 
 namespace DiscotecaLaSantaDiabla
 {
-    public partial class GUIZonas : Form
+    public partial class GUISalidaDeZona : Form
     {
-         
-        public GUIZonas()
+        public GUISalidaDeZona()
         {
             InitializeComponent();
         }
 
-        private int numPersonas;
-      
-        public int getNumPersonas()
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-            return numPersonas;
-        }
-
-        
-
-        private void btnConfirmar_Click(object sender, EventArgs e)
-        {
-            String zona = Form1.getZona();
-            numPersonas = Convert.ToInt32(txtIngreso.Text);
-            AccederZona.setIngreso(numPersonas);
+            string zona = comboZonas.Text;
+            int usuarios = Convert.ToInt32(txtPersonas.Text);
+            AccederZona.setSalidaZona(usuarios);
 
             switch (zona)
             {
-                case "E":
+                case "ZONA ESPECIAL":
                     try
                     {
-                        AccederZona.reservarZonaEspecial();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaEspecial();
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -48,12 +37,13 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
 
-                case "A":
+                case "ZONA A":
 
                     try
                     {
-                        AccederZona.reservarZonaA();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaA();
+                       
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -62,12 +52,13 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
 
-                case "B":
+                case "ZONA B":
 
                     try
                     {
-                        AccederZona.reservarZonaB();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaB();
+
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -76,12 +67,13 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
 
-                case "C":
+                case "ZONA C":
 
                     try
                     {
-                        AccederZona.reservarZonaC();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaC();
+
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -90,12 +82,13 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
 
-                case "D":
+                case "ZONA D":
 
                     try
                     {
-                        AccederZona.reservarZonaD();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaD();
+
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -104,12 +97,13 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
 
-                case "V":
+                case "ZONA VIP":
 
                     try
                     {
-                        AccederZona.reservarZonaVIP();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        AccederZona.salidaZonaVIP();
+
+                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
                     {
@@ -117,13 +111,7 @@ namespace DiscotecaLaSantaDiabla
                     }
 
                     break;
-
             }
-
-           
-            this.Close();
         }
-
-      
     }
 }

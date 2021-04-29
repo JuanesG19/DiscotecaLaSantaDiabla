@@ -47,11 +47,11 @@ namespace DiscotecaLaSantaDiabla
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.btnBuscarUsuario = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnAfotoPorcentual = new System.Windows.Forms.Button();
             this.aforoZonas = new System.Windows.Forms.Button();
+            this.btnSalidaDeUsuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -176,12 +176,6 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
             this.btnBuscarUsuario.UseVisualStyleBackColor = true;
             // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // button10
             // 
             resources.ApplyResources(this.button10, "button10");
@@ -208,11 +202,18 @@ namespace DiscotecaLaSantaDiabla
             this.aforoZonas.UseVisualStyleBackColor = true;
             this.aforoZonas.Click += new System.EventHandler(this.aforoZonas_Click);
             // 
+            // btnSalidaDeUsuarios
+            // 
+            resources.ApplyResources(this.btnSalidaDeUsuarios, "btnSalidaDeUsuarios");
+            this.btnSalidaDeUsuarios.Name = "btnSalidaDeUsuarios";
+            this.btnSalidaDeUsuarios.UseVisualStyleBackColor = true;
+            this.btnSalidaDeUsuarios.Click += new System.EventHandler(this.btnSalidaDeUsuarios_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btnSalidaDeUsuarios);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.btnAfotoPorcentual);
@@ -254,12 +255,12 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnBuscarUsuario;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnAfotoPorcentual;
         private System.Windows.Forms.Button aforoZonas;
         public System.Windows.Forms.Button btnZonaEspecial;
+        private System.Windows.Forms.Button btnSalidaDeUsuarios;
     }
 }
 
