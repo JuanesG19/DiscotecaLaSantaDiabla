@@ -18,6 +18,8 @@ namespace DiscotecaLaSantaDiabla
             InitializeComponent();
         }
         private  int numPersonas;
+        Form1 form = new Form1();
+
 
         public  int getNumPersonas()
         {
@@ -28,19 +30,16 @@ namespace DiscotecaLaSantaDiabla
         {
             String zona = Form1.getZona();
             numPersonas = Convert.ToInt32(txtIngreso.Text);
-
-           
             AccederZona.setIngreso(numPersonas);
 
             switch (zona)
             {
                 case "E":
-
-
                     try
                     {
                         AccederZona.reservarZonaEspecial();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes !");           
+                       
                     }
                     catch (Exception ex)
                     {
@@ -109,7 +108,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.reservarZonaPalco();
+                        AccederZona.reservarZonaVIP();
                         MessageBox.Show("Se han ingresado los clientes !");
                     }
                     catch (Exception ex)
@@ -124,5 +123,7 @@ namespace DiscotecaLaSantaDiabla
            
             this.Close();
         }
+
+      
     }
 }
