@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.graphics.guiBebidas;
+using DiscotecaLaSantaDiabla.logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +14,7 @@ namespace DiscotecaLaSantaDiabla
     {
 
         List<Producto> bebidas = new List<Producto>();
-        Bebida bebida = new Bebida();
-
+        logica.Bebida nueva = new logica.Bebida();
 
         public GUIBebida()
         {
@@ -26,9 +26,8 @@ namespace DiscotecaLaSantaDiabla
             int numFila;
             int iter = 0;
 
-            bebidas = bebida.darBebidas();
-            bebidas.AddRange(bebida.darBebidasEspeciales());
-
+            bebidas = logica.Bebida.darBebidas();
+           
             gridBebidas.Rows.Clear();
 
             foreach (Producto b in bebidas)
@@ -42,9 +41,25 @@ namespace DiscotecaLaSantaDiabla
                 gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio();
                 gridBebidas.Rows[numFila].Cells[4].Value = b.getPresentacion();
                 gridBebidas.Rows[numFila].Cells[5].Value = b.getCantidad();
-            }
+            } 
+        }
 
-           
+        private void btnAgregarBebida_Click(object sender, EventArgs e)
+        {
+            GUIAgregarBebida agregar = new GUIAgregarBebida();
+            agregar.Show();
+        }
+
+        private void btnEliminarBebida_Click(object sender, EventArgs e)
+        {
+            GUIEliminarBebida eliminar = new GUIEliminarBebida();
+            eliminar.Show();
+        }
+
+        private void btnBuscarBebida_Click(object sender, EventArgs e)
+        {
+            GUIBuscarBebida buscar = new GUIBuscarBebida();
+            buscar.Show();
         }
     }
 }

@@ -227,13 +227,14 @@ namespace DiscotecaLaSantaDiabla
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("BatmanForeverAlternate", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("BatmanForeverAlternate", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label1.Location = new System.Drawing.Point(10, 25);
+            this.label1.Location = new System.Drawing.Point(9, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 22);
+            this.label1.Size = new System.Drawing.Size(295, 26);
             this.label1.TabIndex = 57;
             this.label1.Text = "NUEVO USUARIO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label7
             // 

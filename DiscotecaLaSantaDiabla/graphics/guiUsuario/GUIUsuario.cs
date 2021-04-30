@@ -69,7 +69,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
-            GUIEliminar eliminar = new GUIEliminar();
+            GUIEliminarUsuario eliminar = new GUIEliminarUsuario();
             eliminar.Show();
         }
 

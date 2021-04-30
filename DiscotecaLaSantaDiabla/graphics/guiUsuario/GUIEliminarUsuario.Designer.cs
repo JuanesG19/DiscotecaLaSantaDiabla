@@ -1,7 +1,7 @@
 ﻿
 namespace DiscotecaLaSantaDiabla
 {
-    partial class GUIEliminar
+    partial class GUIEliminarUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,6 @@ namespace DiscotecaLaSantaDiabla
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.lblIdentificacion = new System.Windows.Forms.Label();
-            this.txtTipoDeCuenta = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTipoDeCuenta = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.txtTipoDeCuenta = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,7 @@ namespace DiscotecaLaSantaDiabla
             this.txtFechaN.Enabled = false;
             this.txtFechaN.Location = new System.Drawing.Point(12, 351);
             this.txtFechaN.Name = "txtFechaN";
+            this.txtFechaN.ReadOnly = true;
             this.txtFechaN.Size = new System.Drawing.Size(279, 23);
             this.txtFechaN.TabIndex = 58;
             // 
@@ -80,18 +81,6 @@ namespace DiscotecaLaSantaDiabla
             this.lblIdentificacion.Size = new System.Drawing.Size(161, 15);
             this.lblIdentificacion.TabIndex = 30;
             this.lblIdentificacion.Text = "Documento de Identificación";
-            // 
-            // txtTipoDeCuenta
-            // 
-            this.txtTipoDeCuenta.Enabled = false;
-            this.txtTipoDeCuenta.FormattingEnabled = true;
-            this.txtTipoDeCuenta.Items.AddRange(new object[] {
-            "STANDAR",
-            "VIP"});
-            this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 235);
-            this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
-            this.txtTipoDeCuenta.Size = new System.Drawing.Size(279, 23);
-            this.txtTipoDeCuenta.TabIndex = 56;
             // 
             // btnEliminar
             // 
@@ -136,6 +125,7 @@ namespace DiscotecaLaSantaDiabla
             this.txtTelefonos.Enabled = false;
             this.txtTelefonos.Location = new System.Drawing.Point(12, 291);
             this.txtTelefonos.Name = "txtTelefonos";
+            this.txtTelefonos.ReadOnly = true;
             this.txtTelefonos.Size = new System.Drawing.Size(279, 23);
             this.txtTelefonos.TabIndex = 51;
             // 
@@ -153,6 +143,7 @@ namespace DiscotecaLaSantaDiabla
             this.txtApellidos.Enabled = false;
             this.txtApellidos.Location = new System.Drawing.Point(12, 173);
             this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.ReadOnly = true;
             this.txtApellidos.Size = new System.Drawing.Size(279, 23);
             this.txtApellidos.TabIndex = 49;
             this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
@@ -171,6 +162,7 @@ namespace DiscotecaLaSantaDiabla
             this.txtNombres.Enabled = false;
             this.txtNombres.Location = new System.Drawing.Point(12, 112);
             this.txtNombres.Name = "txtNombres";
+            this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(279, 23);
             this.txtNombres.TabIndex = 47;
             // 
@@ -183,14 +175,23 @@ namespace DiscotecaLaSantaDiabla
             this.lblNombre.TabIndex = 46;
             this.lblNombre.Text = "Nombres";
             // 
-            // GUIEliminar
+            // txtTipoDeCuenta
+            // 
+            this.txtTipoDeCuenta.Enabled = false;
+            this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 235);
+            this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
+            this.txtTipoDeCuenta.ReadOnly = true;
+            this.txtTipoDeCuenta.Size = new System.Drawing.Size(279, 23);
+            this.txtTipoDeCuenta.TabIndex = 59;
+            // 
+            // GUIEliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 441);
+            this.Controls.Add(this.txtTipoDeCuenta);
             this.Controls.Add(this.txtFechaN);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtTipoDeCuenta);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblTipoDeCuenta);
@@ -202,7 +203,7 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "GUIEliminar";
+            this.Name = "GUIEliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Usuario";
             this.panel1.ResumeLayout(false);
@@ -218,7 +219,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label lblIdentificacion;
-        private System.Windows.Forms.ComboBox txtTipoDeCuenta;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTipoDeCuenta;
@@ -229,5 +229,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtTipoDeCuenta;
     }
 }

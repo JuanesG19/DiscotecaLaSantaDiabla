@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiscotecaLaSantaDiabla
 {
-    public partial class GUIEliminar : Form
+    public partial class GUIEliminarUsuario : Form
     {
-        public GUIEliminar()
+        public GUIEliminarUsuario()
         {
             InitializeComponent();
         }

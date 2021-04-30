@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="interface\" />
     <Folder Include="estructural\" />
   </ItemGroup>
 

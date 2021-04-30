@@ -36,13 +36,13 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarBebida = new System.Windows.Forms.Button();
             this.btnAgregarBebida = new System.Windows.Forms.Button();
             this.gridBebidas = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iterador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.presentacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridBebidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.btnMostrar.Location = new System.Drawing.Point(647, 601);
             this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(165, 33);
+            this.btnMostrar.Size = new System.Drawing.Size(174, 33);
             this.btnMostrar.TabIndex = 15;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
@@ -74,6 +74,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarBebida.TabIndex = 13;
             this.btnBuscarBebida.Text = "Buscar Bebida";
             this.btnBuscarBebida.UseVisualStyleBackColor = true;
+            this.btnBuscarBebida.Click += new System.EventHandler(this.btnBuscarBebida_Click);
             // 
             // btnEliminarBebida
             // 
@@ -83,6 +84,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarBebida.TabIndex = 12;
             this.btnEliminarBebida.Text = "Eliminar Bebida";
             this.btnEliminarBebida.UseVisualStyleBackColor = true;
+            this.btnEliminarBebida.Click += new System.EventHandler(this.btnEliminarBebida_Click);
             // 
             // btnAgregarBebida
             // 
@@ -92,6 +94,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnAgregarBebida.TabIndex = 10;
             this.btnAgregarBebida.Text = "Agregar Bebida";
             this.btnAgregarBebida.UseVisualStyleBackColor = true;
+            this.btnAgregarBebida.Click += new System.EventHandler(this.btnAgregarBebida_Click);
             // 
             // gridBebidas
             // 
@@ -109,15 +112,6 @@ namespace DiscotecaLaSantaDiabla
             this.gridBebidas.RowTemplate.Height = 25;
             this.gridBebidas.Size = new System.Drawing.Size(811, 413);
             this.gridBebidas.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(986, 159);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // iterador
             // 
@@ -161,6 +155,15 @@ namespace DiscotecaLaSantaDiabla
             this.cantidad.ReadOnly = true;
             this.cantidad.Width = 120;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(986, 159);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // GUIBebida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -173,8 +176,10 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.btnAgregarBebida);
             this.Controls.Add(this.gridBebidas);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIBebida";
-            this.Text = "GUIBebida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bebida";
             ((System.ComponentModel.ISupportInitialize)(this.gridBebidas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -43,11 +43,8 @@ namespace DiscotecaLaSantaDiabla
             this.btnZonaEspecial = new System.Windows.Forms.Button();
             this.btnTarima = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnPedirBebidas = new System.Windows.Forms.Button();
             this.btnInventarioBebidas = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.btnAfotoPorcentual = new System.Windows.Forms.Button();
             this.aforoZonas = new System.Windows.Forms.Button();
             this.btnSalidaDeUsuarios = new System.Windows.Forms.Button();
@@ -151,12 +148,6 @@ namespace DiscotecaLaSantaDiabla
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // btnPedirBebidas
             // 
             resources.ApplyResources(this.btnPedirBebidas, "btnPedirBebidas");
@@ -169,18 +160,6 @@ namespace DiscotecaLaSantaDiabla
             this.btnInventarioBebidas.Name = "btnInventarioBebidas";
             this.btnInventarioBebidas.UseVisualStyleBackColor = true;
             this.btnInventarioBebidas.Click += new System.EventHandler(this.btnInventarioBebidas_Click);
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
             // 
             // btnAfotoPorcentual
             // 
@@ -208,12 +187,9 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnSalidaDeUsuarios);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
             this.Controls.Add(this.btnAfotoPorcentual);
             this.Controls.Add(this.aforoZonas);
             this.Controls.Add(this.btnInventarioBebidas);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.btnPedirBebidas);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.panel1);
@@ -244,11 +220,8 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button btnZonaD;
         private System.Windows.Forms.Button btnZonaC;
         private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnPedirBebidas;
         private System.Windows.Forms.Button btnInventarioBebidas;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnAfotoPorcentual;
         private System.Windows.Forms.Button aforoZonas;
         public System.Windows.Forms.Button btnZonaEspecial;
