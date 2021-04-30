@@ -181,6 +181,11 @@ namespace DiscotecaLaSantaDiabla
             salida.Show();
         }
 
-        
+        private void btnInventarioBebidas_Click(object sender, EventArgs e)
+        {
+            GUIBebida bebida = new GUIBebida();
+            bebida.Show();
+
+        }
     }
 }

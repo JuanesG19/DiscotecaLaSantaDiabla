@@ -43,10 +43,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnZonaEspecial = new System.Windows.Forms.Button();
             this.btnTarima = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnVerCuenta = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.btnPedirBebidas = new System.Windows.Forms.Button();
+            this.btnInventarioBebidas = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnAfotoPorcentual = new System.Windows.Forms.Button();
@@ -152,29 +151,24 @@ namespace DiscotecaLaSantaDiabla
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // btnVerCuenta
-            // 
-            resources.ApplyResources(this.btnVerCuenta, "btnVerCuenta");
-            this.btnVerCuenta.Name = "btnVerCuenta";
-            this.btnVerCuenta.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnPedirBebidas
             // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnPedirBebidas, "btnPedirBebidas");
+            this.btnPedirBebidas.Name = "btnPedirBebidas";
+            this.btnPedirBebidas.UseVisualStyleBackColor = true;
             // 
-            // btnBuscarUsuario
+            // btnInventarioBebidas
             // 
-            resources.ApplyResources(this.btnBuscarUsuario, "btnBuscarUsuario");
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnInventarioBebidas, "btnInventarioBebidas");
+            this.btnInventarioBebidas.Name = "btnInventarioBebidas";
+            this.btnInventarioBebidas.UseVisualStyleBackColor = true;
+            this.btnInventarioBebidas.Click += new System.EventHandler(this.btnInventarioBebidas_Click);
             // 
             // button10
             // 
@@ -218,10 +212,9 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.button11);
             this.Controls.Add(this.btnAfotoPorcentual);
             this.Controls.Add(this.aforoZonas);
-            this.Controls.Add(this.btnBuscarUsuario);
+            this.Controls.Add(this.btnInventarioBebidas);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.btnVerCuenta);
+            this.Controls.Add(this.btnPedirBebidas);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Banner);
@@ -251,10 +244,9 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button btnZonaD;
         private System.Windows.Forms.Button btnZonaC;
         private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Button btnVerCuenta;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button btnBuscarUsuario;
+        private System.Windows.Forms.Button btnPedirBebidas;
+        private System.Windows.Forms.Button btnInventarioBebidas;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnAfotoPorcentual;

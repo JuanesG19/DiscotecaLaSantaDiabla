@@ -9,26 +9,40 @@ namespace DiscotecaLaSantaDiabla.logica
         //ESTE ES EL ULTIMO
 
         //ATRIBUTOS
-        private static List<Producto> bebidas = new List<Producto>();
-        private static List<Producto> bebidasEspeciales = new List<Producto>();
+        private  List<Producto> bebidas = null;
+        private  List<Producto> bebidasEspeciales = null;
+
+
 
         //CONSTRUCTOR
-        Bebida()
+        public Bebida()
         {
             bebidas = new List<Producto>();
+
+            bebidas.Add(new Producto(1000, "Aguila", 5000, "350 ml", 10));
+            bebidas.Add(new Producto(1001, "Poker", 5000, "350 ml", 10));
+            bebidas.Add(new Producto(1002, "Corona", 8000, "350 ml", 10));
+            bebidas.Add(new Producto(1003, "Costeña", 3800, "350 ml", 10));
+            bebidas.Add(new Producto(1004, "Tapa Roja", 50000, "750 ml", 5));
+           
             bebidasEspeciales = new List<Producto>();
+                      
+            bebidasEspeciales.Add(new Producto(2000, "Buchanan's", 250000, "750 ml", 10));
+            bebidasEspeciales.Add(new Producto(2001, "Jagermeister", 150000, "700 ml", 10));
+            bebidasEspeciales.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));         
+            
         }
 
         //METODOS GET
-        public static List<Producto> darBebidas() => bebidas;
+        public List<Producto> darBebidas() => bebidas;
 
-        public static List<Producto> darBebidasEspeciales() => bebidasEspeciales;
+        public List<Producto> darBebidasEspeciales() => bebidasEspeciales;
 
-        //METODOS...
+        //METODOS.....
 
         //AGREGAR - B
 
-        public static void agregarBebida(Producto pProducto)
+        public  void agregarBebida(Producto pProducto)
         {
             Producto aAgregar = buscarBebida(pProducto.getIdBebida());
 
@@ -40,10 +54,9 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("La bebida ya se encuentra agregado !");
             }
-
         }
 
-        public static void agregarBebidaEspecial(Producto pProducto)
+        public  void agregarBebidaEspecial(Producto pProducto)
         {
             Producto aAgregar = buscarBebidaEspecial(pProducto.getIdBebida());
 
@@ -53,20 +66,18 @@ namespace DiscotecaLaSantaDiabla.logica
             }
             else
             {
-                throw new Exception("La bebida ya se encuentra agregado !");
+                throw new Exception("La bebida especial ya se encuentra agregado !");
             }
-
         }
 
         //CONTAR - B
-
-        public static int contarBebidas()
+        public  int contarBebidas()
         {
             int cantBebidas = bebidas.Count;
             return cantBebidas;
         }
 
-        public static int contarBebidasEspeciales()
+        public  int contarBebidasEspeciales()
         {
             int cantBebidasEsp = bebidasEspeciales.Count;
             return cantBebidasEsp;
@@ -82,7 +93,6 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 int pos = bebidas.IndexOf(aModificar);
                 bebidas.RemoveAt(pos);
-
             }
             else
             {
@@ -90,7 +100,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        public static void eliminarBebidaEspecial(int id)
+        public void eliminarBebidaEspecial(int id)
         {
             Producto aModificar = buscarBebidaEspecial(id);
 
@@ -98,17 +108,15 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 int pos = bebidasEspeciales.IndexOf(aModificar);
                 bebidasEspeciales.RemoveAt(pos);
-
             }
             else
             {
-                throw new Exception("No se pudo eliminar la bebida solicitado !");
+                throw new Exception("No se pudo eliminar la bebida especial solicitado !");
             }
         }
 
         //MODIFICAR - B
-
-        public static void modificarBebida(Producto pProducto, int id)
+        public void modificarBebida(Producto pProducto, int id)
         {
             Producto aModificar = buscarBebida(id);
 
@@ -125,7 +133,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        public static void modificarBebidaEspecial(Producto pProducto, int id)
+        public  void modificarBebidaEspecial(Producto pProducto, int id)
         {
             Producto aModificar = buscarBebidaEspecial(id);
 
@@ -138,13 +146,13 @@ namespace DiscotecaLaSantaDiabla.logica
             }
             else
             {
-                throw new Exception("No se pudo modificar la bebida solicitada !");
+                throw new Exception("No se pudo modificar la bebida especial solicitada !");
             }
         }
 
         //BUSCAR - B
 
-        public static Producto buscarBebida(int id)
+        public  Producto buscarBebida(int id)
         {
             Producto buscado = null;
 
@@ -160,14 +168,13 @@ namespace DiscotecaLaSantaDiabla.logica
             return buscado;
         }
 
-        public static Producto buscarBebidaEspecial(int id)
+        public  Producto buscarBebidaEspecial(int id)
         {
             Producto buscado = null;
 
             foreach (Producto p in bebidasEspeciales)
             {
                 if (p.getIdBebida() == id)
-
                 {
                     buscado = p;
                     break;
@@ -175,8 +182,5 @@ namespace DiscotecaLaSantaDiabla.logica
             }
             return buscado;
         }
-
     }
-
-
 }

@@ -9244,7 +9244,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Banner.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9447,7 +9447,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="btnZonaD.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9867,7 +9867,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsNAAALDQHtB8As
         AAAodElEQVR4Xu2dCbQUxfXGzT8kZjFBo9G4JGqixmxGI66oiEZBUWRTVgURRFFUcENBRMFdUVEBN1Tc
         CO67xrgFozG4b7hviCtBjCIo4v3X705XW9Ovu2fmMTPvibfO+c57M13dXV0953713bp1a5kNZRkxGAwG
         g8FQWxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjhGgwGg8FQBxjh
@@ -11364,30 +11364,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUsuarios.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btnVerCuenta.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>521, 574</value>
-  </data>
-  <data name="btnVerCuenta.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
-  </data>
-  <data name="btnVerCuenta.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
-  </data>
-  <data name="btnVerCuenta.Text" xml:space="preserve">
-    <value>Ver Cuenta</value>
-  </data>
-  <data name="&gt;&gt;btnVerCuenta.Name" xml:space="preserve">
-    <value>btnVerCuenta</value>
-  </data>
-  <data name="&gt;&gt;btnVerCuenta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnVerCuenta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnVerCuenta.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing.Primitives">
@@ -11414,52 +11390,52 @@
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>768, 574</value>
+  <data name="btnPedirBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>521, 574</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnPedirBebidas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>224, 36</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnPedirBebidas.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>Funcion 4</value>
+  <data name="btnPedirBebidas.Text" xml:space="preserve">
+    <value>Pedir Bebidas</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;btnPedirBebidas.Name" xml:space="preserve">
+    <value>btnPedirBebidas</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnPedirBebidas.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnPedirBebidas.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnPedirBebidas.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="btnBuscarUsuario.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnInventarioBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>269, 574</value>
   </data>
-  <data name="btnBuscarUsuario.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnInventarioBebidas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>224, 36</value>
   </data>
-  <data name="btnBuscarUsuario.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnInventarioBebidas.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
   </data>
-  <data name="btnBuscarUsuario.Text" xml:space="preserve">
-    <value>Pagar</value>
+  <data name="btnInventarioBebidas.Text" xml:space="preserve">
+    <value>Inventario Bebidas</value>
   </data>
-  <data name="&gt;&gt;btnBuscarUsuario.Name" xml:space="preserve">
-    <value>btnBuscarUsuario</value>
+  <data name="&gt;&gt;btnInventarioBebidas.Name" xml:space="preserve">
+    <value>btnInventarioBebidas</value>
   </data>
-  <data name="&gt;&gt;btnBuscarUsuario.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInventarioBebidas.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnBuscarUsuario.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInventarioBebidas.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnBuscarUsuario.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnInventarioBebidas.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing.Primitives">

@@ -6,23 +6,20 @@ namespace DiscotecaLaSantaDiabla.logica
 {
     class Producto
     {
-        private static int idBebida;
-        private static String nombre;
-        private static double precio;
-        private static String presentacion;
-        private static int cantidad;
-        private static readonly Random _random = new Random();
-
-
+        private  int idBebida;
+        private  String nombre;
+        private  double precio;
+        private  String presentacion;
+        private  int cantidad;
+              
         public Producto(int pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad)
         {
             idBebida = pIdBebida;
             nombre = pNombre;
             precio = pPrecio;
             presentacion = pPresentacion;
-            cantidad = pCantidad;
-
-        }
+            cantidad = pCantidad;           
+        }       
 
         public int getIdBebida() => idBebida;
 
@@ -58,12 +55,6 @@ namespace DiscotecaLaSantaDiabla.logica
         public void setCantidad(int pCantidad)
         {
             cantidad = pCantidad;
-        }
-
-        public static int RandomNumber()
-        {
-            return _random.Next(100, 300);
-        }
-
+        }     
     }
 }
