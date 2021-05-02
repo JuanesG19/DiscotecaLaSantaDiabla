@@ -39,14 +39,16 @@ namespace DiscotecaLaSantaDiabla
             // lblZona
             // 
             this.lblZona.AutoSize = true;
+            this.lblZona.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZona.Location = new System.Drawing.Point(17, 21);
             this.lblZona.Name = "lblZona";
-            this.lblZona.Size = new System.Drawing.Size(37, 15);
+            this.lblZona.Size = new System.Drawing.Size(44, 17);
             this.lblZona.TabIndex = 0;
-            this.lblZona.Text = "Zona:";
+            this.lblZona.Text = "Zona";
             // 
             // comboZonas
             // 
+            this.comboZonas.BackColor = System.Drawing.Color.DodgerBlue;
             this.comboZonas.FormattingEnabled = true;
             this.comboZonas.Items.AddRange(new object[] {
             "ZONA ESPECIAL",
@@ -63,14 +65,16 @@ namespace DiscotecaLaSantaDiabla
             // lblPersonas
             // 
             this.lblPersonas.AutoSize = true;
+            this.lblPersonas.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPersonas.Location = new System.Drawing.Point(17, 55);
             this.lblPersonas.Name = "lblPersonas";
-            this.lblPersonas.Size = new System.Drawing.Size(54, 15);
+            this.lblPersonas.Size = new System.Drawing.Size(80, 17);
             this.lblPersonas.TabIndex = 2;
             this.lblPersonas.Text = "Personas";
             // 
             // txtPersonas
             // 
+            this.txtPersonas.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtPersonas.Location = new System.Drawing.Point(101, 52);
             this.txtPersonas.Name = "txtPersonas";
             this.txtPersonas.Size = new System.Drawing.Size(181, 23);
@@ -78,18 +82,23 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.Location = new System.Drawing.Point(60, 92);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(160, 29);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Salida";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // GUISalidaDeZona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(294, 137);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtPersonas);

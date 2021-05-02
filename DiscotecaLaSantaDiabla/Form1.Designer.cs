@@ -143,43 +143,61 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnUsuarios
             // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUsuarios.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.btnUsuarios, "btnUsuarios");
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnPedirBebidas
             // 
+            this.btnPedirBebidas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPedirBebidas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPedirBebidas.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.btnPedirBebidas, "btnPedirBebidas");
             this.btnPedirBebidas.Name = "btnPedirBebidas";
-            this.btnPedirBebidas.UseVisualStyleBackColor = true;
+            this.btnPedirBebidas.UseVisualStyleBackColor = false;
             // 
             // btnInventarioBebidas
             // 
+            this.btnInventarioBebidas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInventarioBebidas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnInventarioBebidas.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.btnInventarioBebidas, "btnInventarioBebidas");
             this.btnInventarioBebidas.Name = "btnInventarioBebidas";
-            this.btnInventarioBebidas.UseVisualStyleBackColor = true;
+            this.btnInventarioBebidas.UseVisualStyleBackColor = false;
             this.btnInventarioBebidas.Click += new System.EventHandler(this.btnInventarioBebidas_Click);
             // 
             // btnAfotoPorcentual
             // 
+            this.btnAfotoPorcentual.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfotoPorcentual.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAfotoPorcentual.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.btnAfotoPorcentual, "btnAfotoPorcentual");
             this.btnAfotoPorcentual.Name = "btnAfotoPorcentual";
-            this.btnAfotoPorcentual.UseVisualStyleBackColor = true;
+            this.btnAfotoPorcentual.UseVisualStyleBackColor = false;
             this.btnAfotoPorcentual.Click += new System.EventHandler(this.btnAfotoPorcentual_Click);
             // 
             // aforoZonas
             // 
+            this.aforoZonas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.aforoZonas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.aforoZonas.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.aforoZonas, "aforoZonas");
             this.aforoZonas.Name = "aforoZonas";
-            this.aforoZonas.UseVisualStyleBackColor = true;
+            this.aforoZonas.UseVisualStyleBackColor = false;
             this.aforoZonas.Click += new System.EventHandler(this.aforoZonas_Click);
             // 
             // btnSalidaDeUsuarios
             // 
+            this.btnSalidaDeUsuarios.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSalidaDeUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSalidaDeUsuarios.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.btnSalidaDeUsuarios, "btnSalidaDeUsuarios");
             this.btnSalidaDeUsuarios.Name = "btnSalidaDeUsuarios";
-            this.btnSalidaDeUsuarios.UseVisualStyleBackColor = true;
+            this.btnSalidaDeUsuarios.UseVisualStyleBackColor = false;
             this.btnSalidaDeUsuarios.Click += new System.EventHandler(this.btnSalidaDeUsuarios_Click);
             // 
             // Form1

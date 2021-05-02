@@ -11222,6 +11222,13 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnUsuarios.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
+  </data>
   <data name="btnUsuarios.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>263, 574</value>
   </data>
@@ -11245,6 +11252,12 @@
   </data>
   <data name="&gt;&gt;btnUsuarios.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="btnPedirBebidas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPedirBebidas.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
   </data>
   <data name="btnPedirBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>772, 574</value>
@@ -11270,6 +11283,12 @@
   <data name="&gt;&gt;btnPedirBebidas.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btnInventarioBebidas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnInventarioBebidas.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
+  </data>
   <data name="btnInventarioBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>520, 574</value>
   </data>
@@ -11293,6 +11312,12 @@
   </data>
   <data name="&gt;&gt;btnInventarioBebidas.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="btnAfotoPorcentual.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAfotoPorcentual.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
   </data>
   <data name="btnAfotoPorcentual.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>520, 616</value>
@@ -11318,6 +11343,12 @@
   <data name="&gt;&gt;btnAfotoPorcentual.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="aforoZonas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="aforoZonas.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
+  </data>
   <data name="aforoZonas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>772, 616</value>
   </data>
@@ -11342,7 +11373,12 @@
   <data name="&gt;&gt;aforoZonas.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSalidaDeUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Allstar4, 9pt</value>
+  </data>
   <data name="btnSalidaDeUsuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>

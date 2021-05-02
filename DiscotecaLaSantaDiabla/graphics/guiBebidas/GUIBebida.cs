@@ -61,5 +61,11 @@ namespace DiscotecaLaSantaDiabla
             GUIBuscarBebida buscar = new GUIBuscarBebida();
             buscar.Show();
         }
+        
+        private void btnModificarBebida_Click(object sender, EventArgs e)
+        {
+            GUIModificarBebida modificar = new GUIModificarBebida();
+            modificar.Show();
+        }
     }
 }

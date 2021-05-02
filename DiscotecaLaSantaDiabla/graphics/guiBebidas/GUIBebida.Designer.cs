@@ -74,6 +74,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarBebida.TabIndex = 14;
             this.btnModificarBebida.Text = "Modificar Bebida";
             this.btnModificarBebida.UseVisualStyleBackColor = false;
+            this.btnModificarBebida.Click += new System.EventHandler(this.btnModificarBebida_Click);
             // 
             // btnBuscarBebida
             // 
