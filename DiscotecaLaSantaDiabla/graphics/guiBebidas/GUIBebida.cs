@@ -14,7 +14,7 @@ namespace DiscotecaLaSantaDiabla
     {
 
         List<Producto> bebidas = new List<Producto>();
-        logica.Bebida nueva = new logica.Bebida();
+        //Bebida nueva = new Bebida();
 
         public GUIBebida()
         {
@@ -26,7 +26,7 @@ namespace DiscotecaLaSantaDiabla
             int numFila;
             int iter = 0;
 
-            bebidas = logica.Bebida.darBebidas();
+            bebidas = Bebida.darBebidas();
            
             gridBebidas.Rows.Clear();
 

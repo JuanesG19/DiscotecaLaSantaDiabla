@@ -9,12 +9,13 @@ namespace DiscotecaLaSantaDiabla.logica
         //ESTE ES EL ULTIMO
 
         //ATRIBUTOS
-        private static List<Producto> bebidas = null;
+        private static List<Producto> bebidas = new List<Producto>();
 
         private static int numBebidas;
 
 
         //CONSTRUCTOR
+        /**
         public Bebida()
         {
             bebidas = new List<Producto>();
@@ -32,7 +33,7 @@ namespace DiscotecaLaSantaDiabla.logica
             bebidas.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));
 
         }
-
+        **/
         //METODOS GET
         public static List<Producto> darBebidas() => bebidas;
 
@@ -131,6 +132,12 @@ namespace DiscotecaLaSantaDiabla.logica
         {
             Producto p = Bebida.buscarBebida(id);
 
+            int idNuevo = p.getIdBebida();
+            String nombreN = p.getNombre();
+            double precioN = p.getPrecio();
+            String presentacionN = p.getPresentacion();
+
+
             if (p.getIdBebida() == id)
             {
                 if (p.getCantidad() == 0)
@@ -139,17 +146,21 @@ namespace DiscotecaLaSantaDiabla.logica
                 }
                 else if (numBebidas > p.getCantidad())
                 {
-                    throw new Exception("En el momento hay " + p.getCantidad() + " disponibles");
+                    throw new Exception("En el momento solo hay " + p.getCantidad() + "cantidades de "+ p.getNombre()+ "disponibles");
                 }
                 else
                 {
+                    int pos = bebidas.IndexOf(p);
+                    bebidas.RemoveAt(pos);
                     int nuevaCant = p.getCantidad() - numBebidas;
-                    p.setCantidad(nuevaCant);
+
+                    Producto nuevo = new Producto(idNuevo, nombreN, precioN, presentacionN, nuevaCant);
+                    bebidas.Insert(pos, nuevo);
                 }
             }
         }
 
-        
+
         public static double totalAPagar(int id)
         {
             Producto p = Bebida.buscarBebida(id);

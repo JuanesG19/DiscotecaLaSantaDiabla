@@ -17,7 +17,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         }
 
         Producto bebida;
-        Boolean Busqueda = false;
+        Boolean busqueda = false;
         private void btnBuscar_Click(object sender, EventArgs e)
         {
                 int id = Int32.Parse(txtIdentificadorB.Text);
@@ -26,10 +26,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             try
             {
                 bebida = Bebida.buscarBebida(id);
-                txtNombre.Text = bebida.getNombre();
-                txtPrecio.Text = Convert.ToString(bebida.getPrecio());
-                txtPresentacion.Text = bebida.getPresentacion();
-                txtCantidad.Text = Convert.ToString(bebida.getCantidad());               
+                busqueda = true;
+                txtNombreB.Text = bebida.getNombre();
+                txtPrecioB.Text = Convert.ToString(bebida.getPrecio());
+                txtPresentacionB.Text = bebida.getPresentacion();
+                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());               
             }
 
             catch(Exception ex)
@@ -43,7 +44,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private void btnModificar_Click(object sender, EventArgs e)
         {
 
-            if (Busqueda == true)
+            if (busqueda == true)
             {
 
                 int id = Int32.Parse(txtIdentificadorB.Text);
@@ -53,10 +54,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                 try
                 {
-                    bebida.setNombre(txtNombreB.Text);
-                    bebida.setPrecio(Double.Parse(txtPrecioB.Text));
-                    bebida.setPresentacion(txtPresentacionB.Text);
-                    bebida.setCantidad(Convert.ToInt32(txtCantidadB.Text));
+                    bebida.setNombre(txtNombre.Text);
+                    bebida.setPrecio(Double.Parse(txtPrecio.Text));
+                    bebida.setPresentacion(txtPresentacion.Text);
+                    bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
+                    MessageBox.Show("El producto ha sido modificado correctamente");
 
                 }
                 catch (Exception ex)

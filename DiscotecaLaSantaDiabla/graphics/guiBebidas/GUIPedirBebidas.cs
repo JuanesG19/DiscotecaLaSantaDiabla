@@ -10,7 +10,8 @@ using System.Windows.Forms;
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
     public partial class GUIPedirBebidas : Form
-    {
+    { 
+        
         public GUIPedirBebidas()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 Bebida.setNumBebidas(cantidad);
 
                 MessageBoxButtons botones = MessageBoxButtons.YesNo;
-                DialogResult dr = MessageBox.Show("El total a pagar es : " + Bebida.totalAPagar(id) + ". Desea adquirir los productos?", "Pagar", botones);
+                DialogResult dr = MessageBox.Show("El total a pagar es : " + Bebida.totalAPagar(id) + "$. Desea adquirir los productos?", "Pagar", botones);
 
                 if (dr == DialogResult.Yes)
                 {
