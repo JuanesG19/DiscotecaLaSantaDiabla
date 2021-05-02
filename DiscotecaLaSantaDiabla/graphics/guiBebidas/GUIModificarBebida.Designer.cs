@@ -333,6 +333,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "GUIModificarBebida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Bebida";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

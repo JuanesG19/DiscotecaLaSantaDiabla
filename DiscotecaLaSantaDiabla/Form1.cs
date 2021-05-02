@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.graphics.guiBebidas;
+using DiscotecaLaSantaDiabla.logica;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
@@ -186,6 +187,12 @@ namespace DiscotecaLaSantaDiabla
             GUIBebida bebida = new GUIBebida();
             bebida.Show();
 
+        }
+
+        private void btnPedirBebidas_Click(object sender, EventArgs e)
+        {
+            GUIPedirBebidas pedir = new GUIPedirBebidas();
+            pedir.Show();
         }
     }
 }

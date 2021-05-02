@@ -9,8 +9,10 @@ namespace DiscotecaLaSantaDiabla.logica
         //ESTE ES EL ULTIMO
 
         //ATRIBUTOS
-        private  static List<Producto> bebidas = null;  
-         
+        private static List<Producto> bebidas = null;
+
+        private static int numBebidas;
+
 
         //CONSTRUCTOR
         public Bebida()
@@ -27,12 +29,22 @@ namespace DiscotecaLaSantaDiabla.logica
 
             bebidas.Add(new Producto(2000, "Buchanan's", 250000, "750 ml", 10));
             bebidas.Add(new Producto(2001, "Jagermeister", 150000, "700 ml", 10));
-            bebidas.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));         
-            
+            bebidas.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));
+
         }
 
         //METODOS GET
-        public static List<Producto> darBebidas() => bebidas;        
+        public static List<Producto> darBebidas() => bebidas;
+
+        public int darNumBebidas()
+        {
+            return numBebidas;
+        }
+
+        public static void setNumBebidas(int pNumBebidas)
+        {
+            numBebidas = pNumBebidas;
+        }
 
         //METODOS.....
 
@@ -51,19 +63,19 @@ namespace DiscotecaLaSantaDiabla.logica
                 throw new Exception("La bebida ya se encuentra agregado !");
             }
         }
-      
+
         //CONTAR - B
         public static int contarBebidas()
         {
             int cantBebidas = bebidas.Count;
             return cantBebidas;
         }
-    
+
 
         //ELIMINAR - B
 
         public static void eliminarBebida(int id)
-        {                 
+        {
             Producto aModificar = buscarBebida(id);
 
             if (aModificar != null)
@@ -112,6 +124,39 @@ namespace DiscotecaLaSantaDiabla.logica
                 }
             }
             return buscado;
-        }      
-    }
+        }
+
+        //Pedir Bebida 
+        public static void pedirBebida(int id)
+        {
+            Producto p = Bebida.buscarBebida(id);
+
+            if (p.getIdBebida() == id)
+            {
+                if (p.getCantidad() == 0)
+                {
+                    throw new Exception("No hay bebidas disponibles");
+                }
+                else if (numBebidas > p.getCantidad())
+                {
+                    throw new Exception("En el momento hay " + p.getCantidad() + " disponibles");
+                }
+                else
+                {
+                    int nuevaCant = p.getCantidad() - numBebidas;
+                    p.setCantidad(nuevaCant);
+                }
+            }
+        }
+
+        
+        public static double totalAPagar(int id)
+        {
+            Producto p = Bebida.buscarBebida(id);
+            double aPagar = numBebidas * p.getPrecio();
+            return aPagar;
+
+        }
+
+    }    
 }

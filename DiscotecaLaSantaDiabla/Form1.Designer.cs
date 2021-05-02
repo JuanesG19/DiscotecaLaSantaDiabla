@@ -159,6 +159,7 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.btnPedirBebidas, "btnPedirBebidas");
             this.btnPedirBebidas.Name = "btnPedirBebidas";
             this.btnPedirBebidas.UseVisualStyleBackColor = false;
+            this.btnPedirBebidas.Click += new System.EventHandler(this.btnPedirBebidas_Click);
             // 
             // btnInventarioBebidas
             // 
