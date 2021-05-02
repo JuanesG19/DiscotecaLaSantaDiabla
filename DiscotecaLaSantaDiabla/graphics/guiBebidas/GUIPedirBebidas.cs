@@ -39,6 +39,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     {
                         Bebida.pedirBebida(id);
                         MessageBox.Show("Los productos fueron adquiridos correctamente!");
+                         this.Close();
+
                     }
                     
                     catch (Exception ex)

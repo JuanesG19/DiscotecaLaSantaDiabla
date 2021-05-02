@@ -30,7 +30,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 txtNombreB.Text = bebida.getNombre();
                 txtPrecioB.Text = Convert.ToString(bebida.getPrecio());
                 txtPresentacionB.Text = bebida.getPresentacion();
-                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());               
+                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());
+                
             }
 
             catch(Exception ex)
@@ -59,6 +60,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     bebida.setPresentacion(txtPresentacion.Text);
                     bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
                     MessageBox.Show("El producto ha sido modificado correctamente");
+                    this.Close();
+               
 
                 }
                 catch (Exception ex)
