@@ -203,7 +203,7 @@ namespace DiscotecaLaSantaDiabla
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Discoteca La Santa Diabla";
+            this.Text = "Usuarios La Santa Diabla";
             this.Load += new System.EventHandler(this.GUIUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuarios)).EndInit();

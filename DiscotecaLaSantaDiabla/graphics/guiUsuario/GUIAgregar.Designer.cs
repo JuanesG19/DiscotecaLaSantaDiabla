@@ -47,35 +47,47 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmar.Location = new System.Drawing.Point(12, 376);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(119, 25);
             this.btnConfirmar.TabIndex = 28;
             this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(146, 376);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 25);
             this.btnCancelar.TabIndex = 27;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblTipoDeCuenta
             // 
             this.lblTipoDeCuenta.AutoSize = true;
+            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 193);
             this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
-            this.lblTipoDeCuenta.Size = new System.Drawing.Size(87, 15);
+            this.lblTipoDeCuenta.Size = new System.Drawing.Size(119, 17);
             this.lblTipoDeCuenta.TabIndex = 25;
             this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
             // 
             // fechaNacimiento
             // 
+            this.fechaNacimiento.CalendarMonthBackground = System.Drawing.Color.DodgerBlue;
+            this.fechaNacimiento.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
+            this.fechaNacimiento.CalendarTrailingForeColor = System.Drawing.Color.DodgerBlue;
             this.fechaNacimiento.Location = new System.Drawing.Point(12, 327);
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.Size = new System.Drawing.Size(253, 23);
@@ -84,14 +96,16 @@ namespace DiscotecaLaSantaDiabla
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(12, 309);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 15);
+            this.label4.Size = new System.Drawing.Size(160, 17);
             this.label4.TabIndex = 23;
             this.label4.Text = "Fecha de Nacimiento";
             // 
             // txtTelefonos
             // 
+            this.txtTelefonos.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtTelefonos.Location = new System.Drawing.Point(12, 267);
             this.txtTelefonos.Name = "txtTelefonos";
             this.txtTelefonos.Size = new System.Drawing.Size(253, 23);
@@ -100,14 +114,16 @@ namespace DiscotecaLaSantaDiabla
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelefono.Location = new System.Drawing.Point(12, 249);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(52, 15);
+            this.lblTelefono.Size = new System.Drawing.Size(74, 17);
             this.lblTelefono.TabIndex = 21;
             this.lblTelefono.Text = "Telefono";
             // 
             // txtApellidos
             // 
+            this.txtApellidos.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtApellidos.Location = new System.Drawing.Point(12, 149);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(253, 23);
@@ -116,14 +132,16 @@ namespace DiscotecaLaSantaDiabla
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
+            this.lblApellidos.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblApellidos.Location = new System.Drawing.Point(12, 131);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(56, 15);
+            this.lblApellidos.Size = new System.Drawing.Size(79, 17);
             this.lblApellidos.TabIndex = 19;
             this.lblApellidos.Text = "Apellidos";
             // 
             // txtNombres
             // 
+            this.txtNombres.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtNombres.Location = new System.Drawing.Point(12, 88);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(253, 23);
@@ -132,14 +150,16 @@ namespace DiscotecaLaSantaDiabla
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNombre.Location = new System.Drawing.Point(12, 70);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 15);
+            this.lblNombre.Size = new System.Drawing.Size(75, 17);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombres";
             // 
             // txtIdentificacion
             // 
+            this.txtIdentificacion.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtIdentificacion.Location = new System.Drawing.Point(12, 32);
             this.txtIdentificacion.Name = "txtIdentificacion";
             this.txtIdentificacion.Size = new System.Drawing.Size(253, 23);
@@ -148,14 +168,16 @@ namespace DiscotecaLaSantaDiabla
             // lblIdentificacion
             // 
             this.lblIdentificacion.AutoSize = true;
+            this.lblIdentificacion.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblIdentificacion.Location = new System.Drawing.Point(12, 14);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(161, 15);
+            this.lblIdentificacion.Size = new System.Drawing.Size(220, 17);
             this.lblIdentificacion.TabIndex = 15;
-            this.lblIdentificacion.Text = "Documento de Identificación";
+            this.lblIdentificacion.Text = "Documento de Identificacion";
             // 
             // txtTipoDeCuenta
             // 
+            this.txtTipoDeCuenta.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtTipoDeCuenta.FormattingEnabled = true;
             this.txtTipoDeCuenta.Items.AddRange(new object[] {
             "STANDAR",
@@ -169,6 +191,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(281, 420);
             this.Controls.Add(this.txtTipoDeCuenta);
             this.Controls.Add(this.btnConfirmar);
@@ -187,7 +210,7 @@ namespace DiscotecaLaSantaDiabla
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar";
+            this.Text = "Agregar Bebidas";
             this.Load += new System.EventHandler(this.GUIAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

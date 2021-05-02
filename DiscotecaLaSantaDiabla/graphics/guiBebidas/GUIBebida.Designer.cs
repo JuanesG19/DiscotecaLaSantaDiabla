@@ -29,6 +29,7 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIBebida));
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnModificarBebida = new System.Windows.Forms.Button();
@@ -49,56 +50,84 @@ namespace DiscotecaLaSantaDiabla
             // 
             // btnMostrar
             // 
+            this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMostrar.Location = new System.Drawing.Point(647, 601);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(174, 33);
             this.btnMostrar.TabIndex = 15;
             this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.UseVisualStyleBackColor = false;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // btnModificarBebida
             // 
+            this.btnModificarBebida.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModificarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnModificarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnModificarBebida.Location = new System.Drawing.Point(488, 601);
             this.btnModificarBebida.Name = "btnModificarBebida";
             this.btnModificarBebida.Size = new System.Drawing.Size(153, 33);
             this.btnModificarBebida.TabIndex = 14;
             this.btnModificarBebida.Text = "Modificar Bebida";
-            this.btnModificarBebida.UseVisualStyleBackColor = true;
+            this.btnModificarBebida.UseVisualStyleBackColor = false;
             // 
             // btnBuscarBebida
             // 
+            this.btnBuscarBebida.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBuscarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuscarBebida.Location = new System.Drawing.Point(329, 601);
             this.btnBuscarBebida.Name = "btnBuscarBebida";
             this.btnBuscarBebida.Size = new System.Drawing.Size(153, 33);
             this.btnBuscarBebida.TabIndex = 13;
             this.btnBuscarBebida.Text = "Buscar Bebida";
-            this.btnBuscarBebida.UseVisualStyleBackColor = true;
+            this.btnBuscarBebida.UseVisualStyleBackColor = false;
             this.btnBuscarBebida.Click += new System.EventHandler(this.btnBuscarBebida_Click);
             // 
             // btnEliminarBebida
             // 
+            this.btnEliminarBebida.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminarBebida.Location = new System.Drawing.Point(170, 601);
             this.btnEliminarBebida.Name = "btnEliminarBebida";
             this.btnEliminarBebida.Size = new System.Drawing.Size(153, 33);
             this.btnEliminarBebida.TabIndex = 12;
             this.btnEliminarBebida.Text = "Eliminar Bebida";
-            this.btnEliminarBebida.UseVisualStyleBackColor = true;
+            this.btnEliminarBebida.UseVisualStyleBackColor = false;
             this.btnEliminarBebida.Click += new System.EventHandler(this.btnEliminarBebida_Click);
             // 
             // btnAgregarBebida
             // 
+            this.btnAgregarBebida.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAgregarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAgregarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAgregarBebida.Location = new System.Drawing.Point(11, 601);
             this.btnAgregarBebida.Name = "btnAgregarBebida";
             this.btnAgregarBebida.Size = new System.Drawing.Size(153, 33);
             this.btnAgregarBebida.TabIndex = 10;
             this.btnAgregarBebida.Text = "Agregar Bebida";
-            this.btnAgregarBebida.UseVisualStyleBackColor = true;
+            this.btnAgregarBebida.UseVisualStyleBackColor = false;
             this.btnAgregarBebida.Click += new System.EventHandler(this.btnAgregarBebida_Click);
             // 
             // gridBebidas
             // 
             this.gridBebidas.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridBebidas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridBebidas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iterador,
@@ -122,7 +151,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             // idGrid
             // 
-            this.idGrid.HeaderText = "Identificación";
+            this.idGrid.HeaderText = "Identificacion";
             this.idGrid.Name = "idGrid";
             this.idGrid.ReadOnly = true;
             this.idGrid.Width = 130;
@@ -158,7 +187,7 @@ namespace DiscotecaLaSantaDiabla
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(986, 159);
             this.pictureBox1.TabIndex = 8;
@@ -168,6 +197,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(833, 640);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnModificarBebida);
@@ -179,7 +209,7 @@ namespace DiscotecaLaSantaDiabla
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIBebida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bebida";
+            this.Text = "Bebida La Santa Diabla";
             ((System.ComponentModel.ISupportInitialize)(this.gridBebidas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -194,12 +224,12 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button btnEliminarBebida;
         private System.Windows.Forms.Button btnAgregarBebida;
         private System.Windows.Forms.DataGridView gridBebidas;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iterador;
         private System.Windows.Forms.DataGridViewTextBoxColumn idGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn presentacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
