@@ -85,7 +85,7 @@ namespace DiscotecaLaSantaDiabla
             // txtTipoCuentaB
             // 
             this.txtTipoCuentaB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTipoCuentaB.Enabled = false;
+            this.txtTipoCuentaB.ForeColor = System.Drawing.Color.Black;
             this.txtTipoCuentaB.Location = new System.Drawing.Point(10, 208);
             this.txtTipoCuentaB.Name = "txtTipoCuentaB";
             this.txtTipoCuentaB.ReadOnly = true;
@@ -95,7 +95,7 @@ namespace DiscotecaLaSantaDiabla
             // txtFecha
             // 
             this.txtFecha.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtFecha.Enabled = false;
+            this.txtFecha.ForeColor = System.Drawing.Color.Black;
             this.txtFecha.Location = new System.Drawing.Point(10, 324);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.ReadOnly = true;
@@ -153,7 +153,7 @@ namespace DiscotecaLaSantaDiabla
             // txtTelefonosB
             // 
             this.txtTelefonosB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTelefonosB.Enabled = false;
+            this.txtTelefonosB.ForeColor = System.Drawing.Color.Black;
             this.txtTelefonosB.Location = new System.Drawing.Point(10, 264);
             this.txtTelefonosB.Name = "txtTelefonosB";
             this.txtTelefonosB.ReadOnly = true;
@@ -173,7 +173,7 @@ namespace DiscotecaLaSantaDiabla
             // txtApellidosB
             // 
             this.txtApellidosB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtApellidosB.Enabled = false;
+            this.txtApellidosB.ForeColor = System.Drawing.Color.Black;
             this.txtApellidosB.Location = new System.Drawing.Point(10, 146);
             this.txtApellidosB.Name = "txtApellidosB";
             this.txtApellidosB.ReadOnly = true;
@@ -193,7 +193,7 @@ namespace DiscotecaLaSantaDiabla
             // txtNombreB
             // 
             this.txtNombreB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtNombreB.Enabled = false;
+            this.txtNombreB.ForeColor = System.Drawing.Color.Black;
             this.txtNombreB.Location = new System.Drawing.Point(10, 85);
             this.txtNombreB.Name = "txtNombreB";
             this.txtNombreB.ReadOnly = true;

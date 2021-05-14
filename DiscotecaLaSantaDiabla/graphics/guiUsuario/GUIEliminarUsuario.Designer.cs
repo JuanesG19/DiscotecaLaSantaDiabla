@@ -50,7 +50,6 @@ namespace DiscotecaLaSantaDiabla
             // txtFechaN
             // 
             this.txtFechaN.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtFechaN.Enabled = false;
             this.txtFechaN.Location = new System.Drawing.Point(12, 351);
             this.txtFechaN.Name = "txtFechaN";
             this.txtFechaN.ReadOnly = true;
@@ -136,7 +135,6 @@ namespace DiscotecaLaSantaDiabla
             // txtTelefonos
             // 
             this.txtTelefonos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTelefonos.Enabled = false;
             this.txtTelefonos.Location = new System.Drawing.Point(12, 291);
             this.txtTelefonos.Name = "txtTelefonos";
             this.txtTelefonos.ReadOnly = true;
@@ -156,7 +154,6 @@ namespace DiscotecaLaSantaDiabla
             // txtApellidos
             // 
             this.txtApellidos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtApellidos.Enabled = false;
             this.txtApellidos.Location = new System.Drawing.Point(12, 173);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.ReadOnly = true;
@@ -177,7 +174,6 @@ namespace DiscotecaLaSantaDiabla
             // txtNombres
             // 
             this.txtNombres.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtNombres.Enabled = false;
             this.txtNombres.Location = new System.Drawing.Point(12, 112);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.ReadOnly = true;
@@ -197,7 +193,6 @@ namespace DiscotecaLaSantaDiabla
             // txtTipoDeCuenta
             // 
             this.txtTipoDeCuenta.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTipoDeCuenta.Enabled = false;
             this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 235);
             this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
             this.txtTipoDeCuenta.ReadOnly = true;

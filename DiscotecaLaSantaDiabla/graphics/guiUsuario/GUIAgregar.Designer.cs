@@ -210,7 +210,7 @@ namespace DiscotecaLaSantaDiabla
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GUIAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar Bebidas";
+            this.Text = "Agregar Usuario";
             this.Load += new System.EventHandler(this.GUIAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

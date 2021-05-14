@@ -112,6 +112,8 @@ namespace DiscotecaLaSantaDiabla
 
                     break;
             }
+
+            this.Close();
         }
     }
 }
