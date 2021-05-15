@@ -18,16 +18,6 @@ namespace DiscotecaLaSantaDiabla
 
         }
 
-        private void GUIUsuario_Load(object sender, EventArgs e)
-        {
-       
-           
-        }
-
-        private void gridUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {

@@ -84,7 +84,6 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.RowTemplate.Height = 25;
             this.gridUsuarios.Size = new System.Drawing.Size(960, 413);
             this.gridUsuarios.TabIndex = 1;
-            this.gridUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUsuarios_CellContentClick);
             // 
             // btnAgregarUsuario
             // 
@@ -237,7 +236,6 @@ namespace DiscotecaLaSantaDiabla
             this.Name = "GUIUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios La Santa Diabla";
-            this.Load += new System.EventHandler(this.GUIUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuarios)).EndInit();
             this.ResumeLayout(false);
