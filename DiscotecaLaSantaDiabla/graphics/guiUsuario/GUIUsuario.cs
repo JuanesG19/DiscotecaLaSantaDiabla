@@ -43,13 +43,11 @@ namespace DiscotecaLaSantaDiabla
             int iter = 0;           
 
             usuarios = Usuario.getUsuarios();
-
-            if(usuarios.Count == 0)
+            gridUsuarios.Rows.Clear();
+            if (usuarios.Count == 0)
             {
                 MessageBox.Show("No hay usuarios registrados");
-            }
-
-            gridUsuarios.Rows.Clear();
+            }           
 
             foreach (Cliente cliente in usuarios)
             {
