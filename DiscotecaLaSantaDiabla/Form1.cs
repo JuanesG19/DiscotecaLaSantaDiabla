@@ -16,7 +16,7 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class Form1 : Form
     {
-       //
+       //jorge
         public Form1()
         {
             InitializeComponent();
