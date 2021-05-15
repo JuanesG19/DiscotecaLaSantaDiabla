@@ -61,7 +61,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
             else
             {
-                throw new Exception("La bebida ya se encuentra agregado !");
+                throw new Exception("La bebida ya se encuentra agregada!");
             }
         }
 

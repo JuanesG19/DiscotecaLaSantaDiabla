@@ -57,7 +57,6 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.Banner, "Banner");
             this.Banner.Name = "Banner";
             this.Banner.TabStop = false;
-            this.Banner.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -218,7 +217,6 @@ namespace DiscotecaLaSantaDiabla
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
