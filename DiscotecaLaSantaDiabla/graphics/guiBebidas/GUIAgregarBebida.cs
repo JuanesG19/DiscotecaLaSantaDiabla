@@ -18,23 +18,30 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            int id = Int32.Parse(txtIdentificador.Text);
-            String nombre = txtNombre.Text;
-            double precio = Double.Parse(txtPrecio.Text);
-            String presentacion = txtPresentacion.Text;
-            int cantidad = Int32.Parse(txtCantidad.Text);
-
-            Producto producto = new Producto(id, nombre, precio, presentacion, cantidad);
+            if (txtIdentificador.Text.Length == 0 || txtNombre.Text.Length == 0 || txtPrecio.Text.Length == 0 || txtPresentacion.Text.Length == 0 || txtCantidad.Text.Length == 0)
+            {
+                MessageBox.Show("Hay espacios vacios, No se ha podido agregar el usuario");
+                return;
+            }
             try
             {
+                int id = Int32.Parse(txtIdentificador.Text);
+                String nombre = txtNombre.Text;
+                double precio = Double.Parse(txtPrecio.Text);
+                String presentacion = txtPresentacion.Text;
+                int cantidad = Int32.Parse(txtCantidad.Text);
+                Producto producto = new Producto(id, nombre, precio, presentacion, cantidad);
                 Bebida.agregarBebida(producto);
                 MessageBox.Show(producto.getNombre() + ", Ha sido registrado con exito");
+                this.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
-            }
-            this.Close();
+                MessageBox.Show("Alguno de los campos ingresados no es valido. \n" +
+                    "Posibles errores en la digitacion de:  \n" +
+                    "Identificador, Precio, Cantidad");
+            }                               
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

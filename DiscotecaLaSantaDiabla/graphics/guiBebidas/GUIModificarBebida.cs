@@ -20,26 +20,30 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         Boolean busqueda = false;
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-                int id = Int32.Parse(txtIdentificadorB.Text);
-
-
+            int id = -1;
             try
             {
+                id = Int32.Parse(txtIdentificadorB.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un identificador valido");
+                return;
+            }
+
+            Producto buscada = Bebida.buscarBebida(id);
+
+            if (buscada == null)
+            {
+                MessageBox.Show("No existe la bebida buscada");
+                return;
+            }            
                 bebida = Bebida.buscarBebida(id);
                 busqueda = true;
                 txtNombreB.Text = bebida.getNombre();
                 txtPrecioB.Text = Convert.ToString(bebida.getPrecio());
                 txtPresentacionB.Text = bebida.getPresentacion();
-                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());
-                
-            }
-
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-
+                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());                         
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -53,6 +57,12 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 bebida = Bebida.buscarBebida(id);
 
 
+                if (txtNombre.Text.Length == 0 || txtPrecio.Text.Length == 0 || txtPresentacion.Text.Length == 0 || txtCantidad.Text.Length == 0)
+                {
+                    MessageBox.Show("Hay espacios vacios, No se ha podido modificar la bebida");
+                    return;
+                }
+
                 try
                 {
                     bebida.setNombre(txtNombre.Text);
@@ -61,14 +71,13 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
                     MessageBox.Show("El producto ha sido modificado correctamente");
                     this.Close();
-               
-
-                }
-                catch (Exception ex)
+                }                    
+                 catch
                 {
-                    MessageBox.Show(ex.Message);
+                        MessageBox.Show("Alguno de los campos ingresados no es valido. \n" +
+                        "Posibles errores en la digitacion de:  \n" +
+                        "Identificador, Precio, Cantidad");
                 }
-
             }
             else
             {

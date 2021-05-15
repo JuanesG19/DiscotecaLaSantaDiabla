@@ -18,12 +18,24 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int id = Int32.Parse(txtIdentificador.Text);
-
+            int id = -1;
             try
             {
-                Producto buscada = Bebida.buscarBebida(id);
+               id = Int32.Parse(txtIdentificador.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un identificador valido");
+                return;
+            }
 
+            Producto buscada = Bebida.buscarBebida(id);
+
+            if (buscada == null)
+            {
+                MessageBox.Show("No existe la bebida buscada");
+                return;
+            }
                 txtNombre.Text = buscada.getNombre();
                 txtPrecio.Text = Convert.ToString(buscada.getPrecio());
                 txtPresentacion.Text = buscada.getPresentacion();
@@ -45,13 +57,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                         MessageBox.Show(ex.Message);
                     }
                 }
-            }
-            catch  (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
             this.Close();
-        }
+        }         
+                  
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
