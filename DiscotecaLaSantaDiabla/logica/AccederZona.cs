@@ -363,7 +363,6 @@ namespace DiscotecaLaSantaDiabla.logica
 
             double aforo = (personasIngresadas * 100) / totalCapaciad;
             return aforo;
-
         }
     }
 }

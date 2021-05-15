@@ -1,4 +1,5 @@
 ﻿using DiscotecaLaSantaDiabla.logica;
+using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,9 +25,32 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            int id = 0;
+            int cantidad = 0;
+            try
+            {
+                id = Int32.Parse(txtIdentificador.Text);
+                cantidad = Int32.Parse(txtCantidad.Text);
+                
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un valor valido");
+            }
+                String idUsuario = txtIdentificacionUsuario.Text;
+                Cliente user = Usuario.buscarUsuario(idUsuario);
+                if(user == null)
+                {
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("El usuario con la identificacion: " + idUsuario + " No existe, ¿Desea crearlo?","Crear Usuario", botonesConf);
+                if (dR == DialogResult.Yes)
+                {
+                    GUIAgregar agregar = new GUIAgregar();
+                    agregar.Show();
+                }
+                return;
+                }
 
-                int id = Int32.Parse(txtIdentificador.Text);
-                int cantidad = Int32.Parse(txtCantidad.Text);
 
                 Bebida.setNumBebidas(cantidad);
 
@@ -38,7 +62,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     try
                     {
                         Bebida.pedirBebida(id);
-                        MessageBox.Show("Los productos fueron adquiridos correctamente!");
+                        MessageBox.Show("Los productos fueron adquiridos correctamente por el cliente " +
+                            user.getNombre()+"!");
                          this.Close();
 
                     }
