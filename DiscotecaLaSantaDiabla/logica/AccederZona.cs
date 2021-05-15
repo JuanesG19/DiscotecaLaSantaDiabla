@@ -230,10 +230,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona Especial Actualmente");
             }
-            else if (salida > 0 && salidaZona == 0)
+            else if (salida < 0)
             {
-                throw new Exception("No se puede desalojar este numero de personas");
-
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasEspecial
+                   + " Personas en la zona");
             }
             else
             {
@@ -249,10 +249,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona A Actualmente");
             }
-            else if (salida < 0 && salidaZona == 0)
+            else if (salida < 0 )
             {
-                throw new Exception("No se puede desalojar este numero de personas");
-
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasA
+                                   + " Personas en la zona");
             }
             else
             {
@@ -268,10 +268,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona B Actualmente");
             }
-            else if (salida < 0 && salidaZona == 0)
+            else if (salida < 0 )
             {
-                throw new Exception("No se puede desalojar este numero de personas");
-
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasB
+                                  + " Personas en la zona");
             }
             else
             {
@@ -288,10 +288,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona C Actualmente");
             }
-            else if (salida < 0 && salidaZona == 0)
+            else if (salida < 0 )
             {
-                throw new Exception("No se puede desalojar este numero de personas");
-
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasC
+                                  + " Personas en la zona");
             }
             else
             {
@@ -308,9 +308,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona D Actualmente");
             }
-            else if (salida < 0 && salidaZona == 0)
+            else if (salida < 0 )
             {
-                throw new Exception("No se puede desalojar este numero de personas");
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasD
+                                 + " Personas en la zona");
 
             }
             else
@@ -328,9 +329,10 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona D Actualmente");
             }
-            else if (salida < 0 && salidaZona == 0)
+            else if (salida < 0 )
             {
-                throw new Exception("No se puede desalojar este numero de personas");
+                throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasVIP
+                                  + " Personas en la zona");
 
             }
             else

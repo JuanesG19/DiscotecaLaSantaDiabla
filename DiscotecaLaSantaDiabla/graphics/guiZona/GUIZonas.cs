@@ -30,8 +30,19 @@ namespace DiscotecaLaSantaDiabla
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             String zona = Form1.getZona();
-            numPersonas = Convert.ToInt32(txtIngreso.Text);
-            AccederZona.setIngreso(numPersonas);
+
+            try
+            {
+                numPersonas = Convert.ToInt32(txtIngreso.Text);
+                AccederZona.setIngreso(numPersonas); 
+                
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un valor valido");
+                return;
+            }
+            
 
             switch (zona)
             {

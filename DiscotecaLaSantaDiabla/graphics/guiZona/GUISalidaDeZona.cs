@@ -18,9 +18,24 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if(comboZonas.Text.Length == 0)
+            {
+                MessageBox.Show("Ingrese un valor valido");
+                return;
+            }
+
             string zona = comboZonas.Text;
-            int usuarios = Convert.ToInt32(txtPersonas.Text);
-            AccederZona.setSalidaZona(usuarios);
+            try
+            {
+                int usuarios = Convert.ToInt32(txtPersonas.Text);
+                AccederZona.setSalidaZona(usuarios);
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un valor valido");
+                return;
+            }
+           
 
             switch (zona)
             {
