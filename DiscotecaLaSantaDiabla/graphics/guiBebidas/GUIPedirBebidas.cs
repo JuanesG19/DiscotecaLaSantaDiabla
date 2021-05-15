@@ -55,6 +55,18 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 }
                 return;
                 }
+                Producto buscada = Bebida.buscarBebida(id);
+                if (buscada == null)
+                {
+                MessageBoxButtons botonesBeb = MessageBoxButtons.YesNo;
+                DialogResult dbeb = MessageBox.Show("El usuario con la identificacion: " + idUsuario + " No existe, ¿Desea crearlo?", "Crear Usuario", botonesBeb);
+                if (dbeb == DialogResult.Yes)
+                {
+                    GUIAgregarBebida agregar = new GUIAgregarBebida();
+                    agregar.Show();
+                }
+                return;
+                }
 
                 Bebida.setNumBebidas(cantidad);
 

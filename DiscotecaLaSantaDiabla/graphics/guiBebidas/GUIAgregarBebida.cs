@@ -20,7 +20,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         {
             if (txtIdentificador.Text.Length == 0 || txtNombre.Text.Length == 0 || txtPrecio.Text.Length == 0 || txtPresentacion.Text.Length == 0 || txtCantidad.Text.Length == 0)
             {
-                MessageBox.Show("Hay espacios vacios, No se ha podido agregar el usuario");
+                MessageBox.Show("Hay espacios vacios, No se ha podido agregar la bebida");
                 return;
             }
             try
