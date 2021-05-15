@@ -27,7 +27,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             Producto producto = new Producto(id, nombre, precio, presentacion, cantidad);
             try
             {
-                logica.Bebida.agregarBebida(producto);
+                Bebida.agregarBebida(producto);
                 MessageBox.Show(producto.getNombre() + ", Ha sido registrado con exito");
             }
             catch (Exception ex)

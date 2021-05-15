@@ -40,9 +40,14 @@ namespace DiscotecaLaSantaDiabla
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             int numFila;
-            int iter = 0;
+            int iter = 0;           
 
             usuarios = Usuario.getUsuarios();
+
+            if(usuarios.Count == 0)
+            {
+                MessageBox.Show("No hay usuarios registrados");
+            }
 
             gridUsuarios.Rows.Clear();
 

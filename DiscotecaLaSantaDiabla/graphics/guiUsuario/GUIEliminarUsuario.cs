@@ -27,9 +27,13 @@ namespace DiscotecaLaSantaDiabla
         {
             String id = txtIdentificacion.Text;
 
-            try
-            {
+            
                 cliente = Usuario.buscarUsuario(id);
+                if(cliente == null)
+                {
+                MessageBox.Show("No existe el usuario a eliminar");
+                return;
+                }
 
                 txtNombres.Text = cliente.getNombre();
                 txtApellidos.Text = cliente.getApellido();
@@ -58,13 +62,7 @@ namespace DiscotecaLaSantaDiabla
                 {
                     this.Close();
                 }
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+        }                  
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

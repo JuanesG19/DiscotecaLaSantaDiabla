@@ -44,7 +44,6 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 pCliente.setTipoCuenta(Cuentas.VIP);
             }
-
         }
     }
 }

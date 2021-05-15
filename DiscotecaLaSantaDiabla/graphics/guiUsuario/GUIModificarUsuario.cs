@@ -23,22 +23,19 @@ namespace DiscotecaLaSantaDiabla
         {
             String id = txtIdentificacion.Text;
 
-            try
-            {
+            
                 cliente = Usuario.buscarUsuario(id);
-
+                if (cliente == null)
+                {
+                    MessageBox.Show("El usuario buscado no existe");
+                    return;
+                }              
                 txtNombreB.Text = cliente.getNombre();
                 txtApellidosB.Text = cliente.getApellido();
                 txtTipoCuentaB.Text = Convert.ToString(cliente.getTipoCuenta());
                 txtTelefonosB.Text = cliente.getTelefono();
                 txtFecha.Text = cliente.getFechaN();
-                Busqueda = true;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-
-            }
+                Busqueda = true;          
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -54,53 +51,18 @@ namespace DiscotecaLaSantaDiabla
 
                 cliente = Usuario.buscarUsuario(id);
 
-
-                try
+                if (txtNombre.Text.Length == 0 || txtApellido.Text.Length == 0 || txtTelefono.Text.Length == 0 || comboFechaN.Text.Length == 0)
                 {
-                    if (txtNombre.Text.Trim().Equals("") &&
-                        txtApellido.Text.Trim().Equals("") &&
-                        txtTelefono.Text.Trim().Equals(""))
-                    {
-                        cliente.setNombre(txtNombreB.Text);
-                        cliente.setApellido(txtApellidosB.Text);
-                        cliente.setFechaN(comboFechaN.Text);
-                        cliente.setTelefono(txtTelefonosB.Text);
-
-                        Cuenta.Cuentas tipoCuenta;
-
-                        if (comboTipoCuenta.Text.Equals("VIP"))
-                        {
-                            tipoCuenta = Cuenta.Cuentas.VIP;
-                        }
-                        else
-                        {
-                            tipoCuenta = Cuenta.Cuentas.STANDAR;
-                        }
-
-                        cliente.setTipoCuenta(tipoCuenta);
-
-                    }
-
-                    if (txtNombre.Text.Trim().Equals(""))
-                    {
-
-                        cliente.setNombre(txtNombreB.Text);
-                        
-                    }
-                    if(txtApellido.Text.Trim().Equals(""))
-                    {
-                        
-                        cliente.setApellido(txtApellidosB.Text);
-                    }
-                    if(txtTelefono.Text.Trim().Equals(""))
-                    {
-                      
-                        cliente.setTelefono(txtTelefonosB.Text);
-                    }
-                     
-                    else
-                    {
-                        
+                    MessageBox.Show("Hay espacios vacios, No se ha podido modificar el usuario");
+                    return;
+                }              
+                if (!comboTipoCuenta.Text.Equals("VIP") && !comboTipoCuenta.Text.Equals("STANDAR"))
+                {
+                    MessageBox.Show("El tipo de la cuenta no es valido");
+                    return;
+                }
+                else
+                    {                       
                         cliente.setNombre(txtNombre.Text);
                         cliente.setApellido(txtApellido.Text);
                         cliente.setFechaN(comboFechaN.Text);
@@ -123,13 +85,7 @@ namespace DiscotecaLaSantaDiabla
 
                     }
 
-                }
-                catch (Exception er)
-                {
-                    MessageBox.Show("Ha ocurrido un error agregando el usuario" + er);
-                }
-
-            }
+                }                          
             else
             {
                 MessageBox.Show("Es necesario realizar primeramente una busqueda del usuario a modificar");

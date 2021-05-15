@@ -23,22 +23,21 @@ namespace DiscotecaLaSantaDiabla
         {
              String id = txtIdentificacion.Text;
 
-            try
-            {
+            
                 cliente = Usuario.buscarUsuario(id);
+                if(cliente == null)
+                {
+                    MessageBox.Show("El usuario buscado no existe");
+                    return;
+                 }
 
                 txtNombres.Text = cliente.getNombre();
                 txtApellidos.Text = cliente.getApellido();
                 txtTipoCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
                 txtTelefonos.Text = cliente.getTelefono();
                 txtFechaN.Text = cliente.getFechaN();
-            }
-            catch(Exception ex)
-            {
-               throw new Exception( ex.Message);
-                
-            }
-        }
+        }           
+       
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

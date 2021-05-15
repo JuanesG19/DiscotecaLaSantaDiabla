@@ -47,8 +47,6 @@ namespace DiscotecaLaSantaDiabla.logica
             reservasC = pReservasC;
             reservasD = pReservasD;
             reservasVIP = pReservasVIP;
-
-
         }
 
         public TipoZona getTipoZona()
@@ -342,10 +340,6 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-
-
-
-
         public static int darCapacidadTotal()
         {
             int capacidad = CAPACIDAD_ESPECIAL + CAPACIDAD_VIP + CAPACIDAD_A + CAPACIDAD_B + CAPACIDAD_C + CAPACIDAD_D;
@@ -369,9 +363,6 @@ namespace DiscotecaLaSantaDiabla.logica
             return aforo;
 
         }
-
-
-
     }
 }
 
