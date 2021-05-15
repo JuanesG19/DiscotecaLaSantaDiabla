@@ -31,6 +31,25 @@ namespace DiscotecaLaSantaDiabla
         {
             String zona = Form1.getZona();
 
+            String idUsuario = txtIdentificacionUsuario.Text;
+            if(idUsuario.Length == 0)
+            {
+                MessageBox.Show("Ingrese un valor valido para la identificacion del usuario");
+                return;
+            }
+            Cliente user = Usuario.buscarUsuario(idUsuario);
+            if (user == null)
+            {
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("El usuario con la identificacion: " + idUsuario + " No existe, ¿Desea crearlo?", "Crear Usuario", botonesConf);
+                if (dR == DialogResult.Yes)
+                {
+                    GUIAgregar agregar = new GUIAgregar();
+                    agregar.Show();
+                }
+                return;
+            }
+
             try
             {
                 numPersonas = Convert.ToInt32(txtIngreso.Text);
@@ -50,7 +69,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaEspecial();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {
@@ -64,7 +83,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaA();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {
@@ -78,7 +97,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaB();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {
@@ -92,7 +111,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaC();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {
@@ -106,7 +125,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaD();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {
@@ -120,7 +139,7 @@ namespace DiscotecaLaSantaDiabla
                     try
                     {
                         AccederZona.reservarZonaVIP();
-                        MessageBox.Show("Se han ingresado los clientes !");
+                        MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
                     {

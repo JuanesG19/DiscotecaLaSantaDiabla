@@ -38,6 +38,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 MessageBox.Show("Ingrese un valor valido");
             }
                 String idUsuario = txtIdentificacionUsuario.Text;
+                if (idUsuario.Length == 0)
+                {
+                    MessageBox.Show("Ingrese un valor valido para la identificacion del usuario");
+                    return;
+                }
                 Cliente user = Usuario.buscarUsuario(idUsuario);
                 if(user == null)
                 {
@@ -50,7 +55,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 }
                 return;
                 }
-
 
                 Bebida.setNumBebidas(cantidad);
 
