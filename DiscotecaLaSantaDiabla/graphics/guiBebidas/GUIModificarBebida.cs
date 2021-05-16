@@ -81,7 +81,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             }
             else
             {
-                MessageBox.Show("Es necesario realizar primeramente una busqueda del usuario a modificar");
+                MessageBox.Show("Es necesario realizar primeramente una busqueda de la bebida a modificar");
             }
 
         }
