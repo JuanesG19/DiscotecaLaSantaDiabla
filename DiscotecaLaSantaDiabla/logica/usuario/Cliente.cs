@@ -8,11 +8,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
     class Cliente
     {
-        //ENUMS
-
-        //Enum para el Tipo de Cliente
-       
-
+        
         //ATRIBUTOS
 
         //Id del Cliente

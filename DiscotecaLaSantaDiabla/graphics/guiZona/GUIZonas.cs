@@ -138,7 +138,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        if (user.getTipoCuenta().Equals("VIP"))
+                        if (user.getTipoCuenta().Equals(Cuenta.Cuentas.VIP))
                         {
                             AccederZona.reservarZonaVIP();
                             MessageBox.Show("Se han ingresado los clientes!");
