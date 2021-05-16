@@ -68,7 +68,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnContarUsuario_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hay: " + Usuario.contarUsuarios() + " usuarios registrados", "Eliminar");
+            MessageBox.Show("Hay: " + Usuario.contarUsuarios() + " usuarios registrados", "Contar Usuario");
         }
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
