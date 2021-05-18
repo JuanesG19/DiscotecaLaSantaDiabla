@@ -1,7 +1,7 @@
 ﻿
 namespace DiscotecaLaSantaDiabla
 {
-    partial class Form1
+    partial class GUIPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIPrincipal));
             this.Banner = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnZonaD = new System.Windows.Forms.Button();

@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace DiscotecaLaSantaDiabla
 {
-    public partial class Form1 : Form
+    public partial class GUIPrincipal : Form
     {
        //jorge
-        public Form1()
+        public GUIPrincipal()
         {
             InitializeComponent();
         }

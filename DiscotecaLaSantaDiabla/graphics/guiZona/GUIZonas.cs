@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            String zona = Form1.getZona();
+            String zona = GUIPrincipal.getZona();
 
             String idUsuario = txtIdentificacionUsuario.Text;
             if(idUsuario.Length == 0)

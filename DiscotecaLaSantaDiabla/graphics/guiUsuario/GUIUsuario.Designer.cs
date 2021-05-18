@@ -33,12 +33,6 @@ namespace DiscotecaLaSantaDiabla
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gridUsuarios = new System.Windows.Forms.DataGridView();
-            this.btnAgregarUsuario = new System.Windows.Forms.Button();
-            this.btnMostrar = new System.Windows.Forms.Button();
-            this.btnEliminarUsuario = new System.Windows.Forms.Button();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
-            this.btnModificarUsuario = new System.Windows.Forms.Button();
-            this.btnContarUsuario = new System.Windows.Forms.Button();
             this.iterador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +40,12 @@ namespace DiscotecaLaSantaDiabla
             this.tipodeCuentaGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaNacimientoGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.btnModificarUsuario = new System.Windows.Forms.Button();
+            this.btnContarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -84,90 +84,6 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.RowTemplate.Height = 25;
             this.gridUsuarios.Size = new System.Drawing.Size(960, 413);
             this.gridUsuarios.TabIndex = 1;
-            // 
-            // btnAgregarUsuario
-            // 
-            this.btnAgregarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAgregarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(12, 595);
-            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(153, 33);
-            this.btnAgregarUsuario.TabIndex = 2;
-            this.btnAgregarUsuario.Text = "Agregar Usuario";
-            this.btnAgregarUsuario.UseVisualStyleBackColor = false;
-            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
-            // 
-            // btnMostrar
-            // 
-            this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMostrar.Location = new System.Drawing.Point(819, 595);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(153, 33);
-            this.btnMostrar.TabIndex = 3;
-            this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = false;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
-            // 
-            // btnEliminarUsuario
-            // 
-            this.btnEliminarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnEliminarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(171, 595);
-            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(153, 33);
-            this.btnEliminarUsuario.TabIndex = 4;
-            this.btnEliminarUsuario.Text = "Eliminar Usuario";
-            this.btnEliminarUsuario.UseVisualStyleBackColor = false;
-            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
-            // 
-            // btnBuscarUsuario
-            // 
-            this.btnBuscarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBuscarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(330, 595);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(153, 33);
-            this.btnBuscarUsuario.TabIndex = 5;
-            this.btnBuscarUsuario.Text = "Buscar Usuario";
-            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
-            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
-            // 
-            // btnModificarUsuario
-            // 
-            this.btnModificarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnModificarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificarUsuario.Location = new System.Drawing.Point(489, 595);
-            this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(153, 33);
-            this.btnModificarUsuario.TabIndex = 6;
-            this.btnModificarUsuario.Text = "Modificar Usuario";
-            this.btnModificarUsuario.UseVisualStyleBackColor = false;
-            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
-            // 
-            // btnContarUsuario
-            // 
-            this.btnContarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnContarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnContarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnContarUsuario.Location = new System.Drawing.Point(648, 595);
-            this.btnContarUsuario.Name = "btnContarUsuario";
-            this.btnContarUsuario.Size = new System.Drawing.Size(165, 33);
-            this.btnContarUsuario.TabIndex = 7;
-            this.btnContarUsuario.Text = "Contar Usuarios";
-            this.btnContarUsuario.UseVisualStyleBackColor = false;
-            this.btnContarUsuario.Click += new System.EventHandler(this.btnContarUsuario_Click);
             // 
             // iterador
             // 
@@ -217,6 +133,90 @@ namespace DiscotecaLaSantaDiabla
             this.fechaNacimientoGrid.Name = "fechaNacimientoGrid";
             this.fechaNacimientoGrid.ReadOnly = true;
             this.fechaNacimientoGrid.Width = 150;
+            // 
+            // btnAgregarUsuario
+            // 
+            this.btnAgregarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAgregarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(12, 595);
+            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(153, 33);
+            this.btnAgregarUsuario.TabIndex = 2;
+            this.btnAgregarUsuario.Text = "Agregar Usuario";
+            this.btnAgregarUsuario.UseVisualStyleBackColor = false;
+            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrar.Location = new System.Drawing.Point(819, 595);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(153, 33);
+            this.btnMostrar.TabIndex = 3;
+            this.btnMostrar.Text = "Mostrar Usuarios";
+            this.btnMostrar.UseVisualStyleBackColor = false;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // btnEliminarUsuario
+            // 
+            this.btnEliminarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(171, 595);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(153, 33);
+            this.btnEliminarUsuario.TabIndex = 4;
+            this.btnEliminarUsuario.Text = "Eliminar Usuario";
+            this.btnEliminarUsuario.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
+            // 
+            // btnBuscarUsuario
+            // 
+            this.btnBuscarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(330, 595);
+            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(153, 33);
+            this.btnBuscarUsuario.TabIndex = 5;
+            this.btnBuscarUsuario.Text = "Buscar Usuario";
+            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
+            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
+            // 
+            // btnModificarUsuario
+            // 
+            this.btnModificarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModificarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(489, 595);
+            this.btnModificarUsuario.Name = "btnModificarUsuario";
+            this.btnModificarUsuario.Size = new System.Drawing.Size(153, 33);
+            this.btnModificarUsuario.TabIndex = 6;
+            this.btnModificarUsuario.Text = "Modificar Usuario";
+            this.btnModificarUsuario.UseVisualStyleBackColor = false;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
+            // 
+            // btnContarUsuario
+            // 
+            this.btnContarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnContarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnContarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContarUsuario.Location = new System.Drawing.Point(648, 595);
+            this.btnContarUsuario.Name = "btnContarUsuario";
+            this.btnContarUsuario.Size = new System.Drawing.Size(165, 33);
+            this.btnContarUsuario.TabIndex = 7;
+            this.btnContarUsuario.Text = "Contar Usuarios";
+            this.btnContarUsuario.UseVisualStyleBackColor = false;
+            this.btnContarUsuario.Click += new System.EventHandler(this.btnContarUsuario_Click);
             // 
             // GUIUsuario
             // 
