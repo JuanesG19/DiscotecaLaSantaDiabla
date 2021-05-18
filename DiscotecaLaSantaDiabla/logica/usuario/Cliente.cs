@@ -63,14 +63,14 @@ namespace DiscotecaLaSantaDiabla.logica
             nombre = pNombre;
         }
 
-        public string getApellido() => apellido;
+        public String getApellido() => apellido;
 
         public void setApellido(String pApellido)
         {
             apellido = pApellido;
         }
 
-        public string getFechaN() => fechaN;
+        public String getFechaN() => fechaN;
 
         public void setFechaN(String pFechaN)
         {
