@@ -89,9 +89,5 @@ namespace DiscotecaLaSantaDiabla.logica
         {
             tipoCuenta = pTipoCuenta;
         }
-
-
-
-
     }
 }
