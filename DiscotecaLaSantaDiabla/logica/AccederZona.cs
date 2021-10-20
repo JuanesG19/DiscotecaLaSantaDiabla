@@ -7,6 +7,9 @@ namespace DiscotecaLaSantaDiabla.logica
 {
     class AccederZona
     {
+
+        //AQU ESTUVO GOMEZZZZZ
+
         public enum TipoZona
         {
             ESPECIAL,
