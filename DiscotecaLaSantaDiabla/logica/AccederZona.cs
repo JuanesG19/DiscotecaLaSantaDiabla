@@ -8,7 +8,7 @@ namespace DiscotecaLaSantaDiabla.logica
     class AccederZona
     {
 
-
+        //ATRIBUTOS
         public enum TipoZona
         {
             ESPECIAL,
@@ -33,13 +33,12 @@ namespace DiscotecaLaSantaDiabla.logica
         private static int reservasD;
         private static int reservasVIP;
 
-       
-
         public TipoZona zona;
 
         private static int ingreso;
         private static int salidaZona;
 
+        //CONSTRUCTOR
         public AccederZona(TipoZona pZona, int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasVIP)
         {
             this.zona = pZona;
@@ -51,6 +50,9 @@ namespace DiscotecaLaSantaDiabla.logica
             reservasVIP = pReservasVIP;
         }
 
+        //METODOS
+
+        //GET tipoZona
         public TipoZona getTipoZona()
         {
             return zona;
