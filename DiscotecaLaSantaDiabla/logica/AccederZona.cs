@@ -9,6 +9,7 @@ namespace DiscotecaLaSantaDiabla.logica
     {
 
         //AQU ESTUVO GOMEZZZZZ
+        //Aqui estuvo Gomez x2
 
         public enum TipoZona
         {
