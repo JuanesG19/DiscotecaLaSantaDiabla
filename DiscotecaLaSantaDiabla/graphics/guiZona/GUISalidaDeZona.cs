@@ -28,7 +28,7 @@ namespace DiscotecaLaSantaDiabla
             try
             {
                 int usuarios = Convert.ToInt32(txtPersonas.Text);
-                AccederZona.setSalidaZona(usuarios);
+                Reservas.setSalidaZona(usuarios);
             }
             catch
             {
@@ -42,7 +42,7 @@ namespace DiscotecaLaSantaDiabla
                 case "ZONA ESPECIAL":
                     try
                     {
-                        AccederZona.salidaZonaEspecial();
+                        Reservas.salidaZonaEspecial();
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
                     catch (Exception ex)
@@ -56,7 +56,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.salidaZonaA();
+                        Reservas.salidaZonaA();
                        
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
@@ -71,7 +71,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.salidaZonaB();
+                        Reservas.salidaZonaB();
 
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
@@ -86,7 +86,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.salidaZonaC();
+                        Reservas.salidaZonaC();
 
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
@@ -101,7 +101,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.salidaZonaD();
+                        Reservas.salidaZonaD();
 
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }
@@ -116,7 +116,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.salidaZonaVIP();
+                        Reservas.salidaZonaVIP();
 
                         MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
                     }

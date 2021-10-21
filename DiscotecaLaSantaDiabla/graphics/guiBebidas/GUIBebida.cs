@@ -26,7 +26,7 @@ namespace DiscotecaLaSantaDiabla
             int numFila;
             int iter = 0;
             
-            bebidas = Bebida.darBebidas();
+            bebidas = Bebida.getBebidas();
             gridBebidas.Rows.Clear();
             if (bebidas.Count == 0)
             {

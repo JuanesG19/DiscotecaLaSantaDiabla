@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla.logica
         //Tipo de cuenta del Cliente
         private Cuentas tipoCuenta;
 
-        //Constructor
+        //CONSTRUCTOR
         public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaNacimiento)
         {
             try
@@ -43,48 +43,62 @@ namespace DiscotecaLaSantaDiabla.logica
             }
             catch
             {
-                throw new Exception("Error");
+                throw new Exception("fatal Fatal Error");
             }
             
         }
 
-        //Metodos get y set de los atributos del cliente
+        //METODOS
+
+        //Metodo Get Id del cliente
         public String getID() => id;
 
+        //Metodo Set Id del cliente
         public void setID(String pID)
         {
             id = pID;
         }
 
+        //Metodo Get Nombre del cliente
         public String getNombre() => nombre;
 
+        //Metodo Set Nombre del cliente
         public void setNombre(String pNombre)
         {
             nombre = pNombre;
         }
 
+        //Metodo Get Apellido del cliente
         public String getApellido() => apellido;
 
+        //Metodo Set Apellido del cliente
         public void setApellido(String pApellido)
         {
             apellido = pApellido;
         }
 
+        //Metodo Get fechaNacimiento del cliente
         public String getFechaN() => fechaN;
 
+        //Metodo Set fechaNacimiento del cliente
         public void setFechaN(String pFechaN)
         {
             fechaN = pFechaN;
         }
-
+        
+        //Metodo Get telefono del cliente
         public String getTelefono() => telefono;
 
+        //Metodo Set telefono del cliente
         public void setTelefono(String pTelefono)
         {
             telefono = pTelefono;
         }
+
+        //Metodo Get TipoCuenta del cliente
         public Cuentas getTipoCuenta() => tipoCuenta;
 
+        //Metodo Set TipoCuenta del cliente
         public void setTipoCuenta(Cuentas pTipoCuenta)
         {
             tipoCuenta = pTipoCuenta;

@@ -32,7 +32,7 @@ namespace DiscotecaLaSantaDiabla
         private void btnZonaEspecial_Click(object sender, EventArgs e)
         {
             
-            if (AccederZona.darNumReservasEspecial() < 60 )
+            if (Reservas.getNumReservasEspecial() < 60 )
             {
                 btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialVerde.png");
                 GUIZonas zonas = new GUIZonas();
@@ -48,7 +48,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaA_Click(object sender, EventArgs e)
         {
-            if (AccederZona.darNumReservasA() < 30)
+            if (Reservas.getNumReservasA() < 30)
             {
                 btnZonaA.BackgroundImage = Image.FromFile(@"imagenes\ZonaAVerde.png");
                 zona = "A";
@@ -64,7 +64,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaB_Click(object sender, EventArgs e)
         {
-            if (AccederZona.darNumReservasB() < 30)
+            if (Reservas.getNumReservasB() < 30)
             {
                 btnZonaB.BackgroundImage = Image.FromFile(@"imagenes\ZonaBVerde.png");
                 zona = "B";
@@ -80,7 +80,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaC_Click(object sender, EventArgs e)
         {
-            if (AccederZona.darNumReservasC() < 30)
+            if (Reservas.getNumReservasC() < 30)
             {
                 btnZonaC.BackgroundImage = Image.FromFile(@"imagenes\ZonaCVerde.png");
                 zona = "C";
@@ -96,7 +96,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaD_Click(object sender, EventArgs e)
         {
-            if (AccederZona.darNumReservasD() < 30)
+            if (Reservas.getNumReservasD() < 30)
             {
                 btnZonaD.BackgroundImage = Image.FromFile(@"imagenes\ZonaDVerde.png");
                 zona = "D";
@@ -112,7 +112,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnVIP_Click(object sender, EventArgs e)
         {
-            if (AccederZona.darNumReservasVIP() < 60)
+            if (Reservas.getNumReservasVIP() < 60)
             {
                 btnVIP.BackgroundImage = Image.FromFile(@"imagenes\ZonaVIPVerde.png");
                 zona = "V";
@@ -140,7 +140,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnAfotoPorcentual_Click(object sender, EventArgs e)
         {
-            double aforo = AccederZona.darAforoTotal();
+            double aforo = Reservas.darAforoTotal();
             MessageBox.Show("El Aforo en la discoteca es del: " + aforo + "%", "Aforo Porcentual");
         }
 

@@ -53,7 +53,7 @@ namespace DiscotecaLaSantaDiabla
             try
             {
                 numPersonas = Convert.ToInt32(txtIngreso.Text);
-                AccederZona.setIngreso(numPersonas); 
+                Reservas.setIngreso(numPersonas); 
                 
             }
             catch
@@ -68,7 +68,7 @@ namespace DiscotecaLaSantaDiabla
                 case "E":
                     try
                     {
-                        AccederZona.reservarZonaEspecial();
+                        Reservas.reservarZonaEspecial();
                         MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
@@ -82,7 +82,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.reservarZonaA();
+                        Reservas.reservarZonaA();
                         MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
@@ -96,7 +96,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.reservarZonaB();
+                        Reservas.reservarZonaB();
                         MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
@@ -110,7 +110,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.reservarZonaC();
+                        Reservas.reservarZonaC();
                         MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
@@ -124,7 +124,7 @@ namespace DiscotecaLaSantaDiabla
 
                     try
                     {
-                        AccederZona.reservarZonaD();
+                        Reservas.reservarZonaD();
                         MessageBox.Show("Se han ingresado los clientes!");
                     }
                     catch (Exception ex)
@@ -140,7 +140,7 @@ namespace DiscotecaLaSantaDiabla
                     {
                         if (user.getTipoCuenta().Equals(Cuenta.Cuentas.VIP))
                         {
-                            AccederZona.reservarZonaVIP();
+                            Reservas.reservarZonaVIP();
                             MessageBox.Show("Se han ingresado los clientes!");
                         }
                         else

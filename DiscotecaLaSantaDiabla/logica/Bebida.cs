@@ -6,11 +6,13 @@ namespace DiscotecaLaSantaDiabla.logica
 {
     class Bebida
     {
-        //ESTE ES EL ULTIMO
-
+        
         //ATRIBUTOS
+
+        //Lista de bebidas
         private static List<Producto> bebidas = new List<Producto>();
 
+        //Numero de bebidas
         private static int numBebidas;
 
 
@@ -26,31 +28,29 @@ namespace DiscotecaLaSantaDiabla.logica
             bebidas.Add(new Producto(1003, "Costeña", 3800, "350 ml", 10));
             bebidas.Add(new Producto(1004, "Tapa Roja", 50000, "750 ml", 5));
 
-
-
             bebidas.Add(new Producto(2000, "Buchanan's", 250000, "750 ml", 10));
             bebidas.Add(new Producto(2001, "Jagermeister", 150000, "700 ml", 10));
             bebidas.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));
 
         }
         **/
-        //METODOS GET
-        public static List<Producto> darBebidas() => bebidas;
 
-        public int darNumBebidas()
-        {
-            return numBebidas;
-        }
+        //METODOS 
 
+        // Metodo Get bebidas
+        public static List<Producto> getBebidas() => bebidas;
+
+        //Metodo Get numero de bebidas
+        public int getNumBebidas() => numBebidas;
+       
+
+        //Metodo Set numero de bebidas
         public static void setNumBebidas(int pNumBebidas)
         {
             numBebidas = pNumBebidas;
         }
 
-        //METODOS.....
-
-        //AGREGAR - B
-
+        //Metodo agregar Bebida
         public static void agregarBebida(Producto pProducto)
         {
             Producto aAgregar = buscarBebida(pProducto.getIdBebida());
@@ -65,7 +65,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        //CONTAR - B
+        //Metodo contar bebida
         public static int contarBebidas()
         {
             int cantBebidas = bebidas.Count;
@@ -73,8 +73,7 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
 
-        //ELIMINAR - B
-
+        //Metodo eliminar bebida
         public static void eliminarBebida(int id)
         {
             Producto aModificar = buscarBebida(id);
@@ -90,7 +89,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-        //MODIFICAR - B
+        //Metodo modificar bebida
         public static void modificarBebida(Producto pProducto, int id)
         {
             Producto aModificar = buscarBebida(id);
@@ -109,8 +108,7 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
 
-        //BUSCAR - B
-
+        //Metodo buscar bebida
         public static Producto buscarBebida(int id)
         {
             Producto buscado = null;
@@ -127,7 +125,7 @@ namespace DiscotecaLaSantaDiabla.logica
             return buscado;
         }
 
-        //Pedir Bebida 
+        // Metodo Pedir Bebida 
         public static void pedirBebida(int id)
         {
             Producto p = Bebida.buscarBebida(id);
@@ -160,7 +158,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
-
+        //Metodo para dar el total a pagar
         public static double totalAPagar(int id)
         {
             Producto p = Bebida.buscarBebida(id);

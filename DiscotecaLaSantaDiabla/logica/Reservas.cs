@@ -1,30 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+using static DiscotecaLaSantaDiabla.logica.Zona;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class AccederZona
+    public class Reservas
     {
 
         //ATRIBUTOS
-        public enum TipoZona
-        {
-            ESPECIAL,
-            A,
-            B,
-            C,
-            D,
-            VIP,
-        }
 
-        private const int CAPACIDAD_ESPECIAL = 60;
-        private  const int CAPACIDAD_A = 30;
-        private const int CAPACIDAD_B = 30;
-        private const int CAPACIDAD_C = 30;
-        private const int CAPACIDAD_D = 30;
-        private const int CAPACIDAD_VIP = 60;
+        public TipoZona tipoZona;
 
         private static int reservasEspecial;
         private static int reservasA;
@@ -33,15 +17,13 @@ namespace DiscotecaLaSantaDiabla.logica
         private static int reservasD;
         private static int reservasVIP;
 
-        public TipoZona zona;
-
         private static int ingreso;
         private static int salidaZona;
 
         //CONSTRUCTOR
-        public AccederZona(TipoZona pZona, int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasVIP)
+        public Reservas(TipoZona pZona, int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasVIP)
         {
-            this.zona = pZona;
+            tipoZona = pZona;
             reservasEspecial = pReservasEspecial;
             reservasA = pReservasA;
             reservasB = pReservasB;
@@ -52,73 +34,63 @@ namespace DiscotecaLaSantaDiabla.logica
 
         //METODOS
 
-        //GET tipoZona
-        public TipoZona getTipoZona()
-        {
-            return zona;
-        }
+        //Metodo Get tipoZona
+        public TipoZona getTipoZona() => tipoZona;
+      
+        //Metodo Set tipoZona
         public void setTipoZona(TipoZona pZona)
         {
-            zona = pZona;
+            tipoZona = pZona;
         }
 
+        //Metodo Get Ingreso a zona
         public static int getIngreso() => ingreso;
 
+        //Metodo Set Ingreso a zona
         public static void setIngreso(int pIngreso)
         {
             ingreso = pIngreso;
         }
 
+        //Metodo Get Salida a zona
         public static int getSalidaZona() => salidaZona;
 
+        //Metodo Set Salida a zona
         public static void setSalidaZona(int pEliminarZona)
         {
             salidaZona = pEliminarZona;
         }
 
-        public static int darNumReservasEspecial()
-        {
-            return reservasEspecial;
-        }
+        //Metodo Get Numreo de reservas especiales
+        public static int getNumReservasEspecial() => reservasEspecial;
 
-        public static int darNumReservasA()
-        {
-            return reservasA;
-        }
+        //Metodo Get Numreo de reservas zona A
+        public static int getNumReservasA() => reservasA;
 
-        public static int darNumReservasB()
-        {
-            return reservasB;
-        }
-
-        public static int darNumReservasC()
-        {
-            return reservasC;
-        }
-
-        public static int darNumReservasD()
-        {
-            return reservasD;
-        }
-
-        public static int darNumReservasVIP()
-        {
-            return reservasVIP;
-        }
-
-        //REALIZAR RESERVAS
-
+        //Metodo Get Numreo de reservas zona B
+        public static int getNumReservasB() => reservasB;
+     
+        //Metodo Get Numreo de reservas zona C
+        public static int getNumReservasC() => reservasC;
+       
+        //Metodo Get Numreo de reservas zona D
+        public static int getNumReservasD() => reservasD;
+      
+        //Metodo Get Numreo de reservas zona VIP
+        public static int getNumReservasVIP() => reservasVIP;
+        
+        //Metodo Realizar reserva zona Especial
         public static void reservarZonaEspecial()
         {
             int temp = reservasEspecial + ingreso;
-            if (reservasEspecial == AccederZona.CAPACIDAD_ESPECIAL)
+            if (reservasEspecial == Zona.capacidadEspecial)
             {
                 throw new Exception("La zona especial ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_ESPECIAL)
+            else if (temp > Zona.capacidadEspecial)
             {
                 //topeZonaEspecial = true;
-                int exceso = temp - AccederZona.CAPACIDAD_ESPECIAL;
+                int exceso = temp - Zona.capacidadEspecial;
                 throw new Exception("Se excedio el cupo de la zona Especial por: " + exceso + " persona(s)");
             }
             else
@@ -126,17 +98,17 @@ namespace DiscotecaLaSantaDiabla.logica
                 reservasEspecial += ingreso;
             }
         }
-
+        //Metodo Realizar reserva zona A
         public static void reservarZonaA()
         {
             int temp = reservasA + ingreso;
-            if (reservasA == AccederZona.CAPACIDAD_A)
+            if (reservasA == Zona.capacidadA)
             {
                 throw new Exception("La zona A ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_A)
+            else if (temp > Zona.capacidadA)
             {
-                int exceso = temp - AccederZona.CAPACIDAD_A;
+                int exceso = temp - Zona.capacidadA;
                 throw new Exception("Se excedio el cupo de la zona A por: " + exceso + " persona(s)");
                 //reservasEspecial -= exceso;
             }
@@ -145,18 +117,18 @@ namespace DiscotecaLaSantaDiabla.logica
                 reservasA += ingreso;
             }
         }
-
+        //Metodo Realizar reserva zona B
         public static void reservarZonaB()
         {
             int temp = reservasB + ingreso;
 
-            if (reservasB == AccederZona.CAPACIDAD_B)
+            if (reservasB == Zona.capacidadB)
             {
                 throw new Exception("La Zona B ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_B)
+            else if (temp > Zona.capacidadB)
             {
-                int exceso = temp - AccederZona.CAPACIDAD_B;
+                int exceso = temp - Zona.capacidadB;
                 throw new Exception("Se excedio el cupo de la Zona B por: " + exceso + " persona(s)");
             }
             else
@@ -165,17 +137,17 @@ namespace DiscotecaLaSantaDiabla.logica
             }
 
         }
-
+        //Metodo Realizar reserva zona C
         public static void reservarZonaC()
         {
             int temp = reservasC + ingreso;
-            if (reservasC == AccederZona.CAPACIDAD_C)
+            if (reservasC == Zona.capacidadC)
             {
                 throw new Exception("La zona C ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_C)
+            else if (temp > Zona.capacidadC)
             {
-                int exceso = temp - AccederZona.CAPACIDAD_C;
+                int exceso = temp - Zona.capacidadC;
                 throw new Exception("Se excedio el cupo de la zona C por: " + exceso + " persona(s)");
             }
             else
@@ -184,18 +156,18 @@ namespace DiscotecaLaSantaDiabla.logica
             }
 
         }
-
+        //Metodo Realizar reserva zona D
         public static void reservarZonaD()
         {
             int temp = reservasD + ingreso;
 
-            if (reservasD == AccederZona.CAPACIDAD_D)
+            if (reservasD == Zona.capacidadD)
             {
                 throw new Exception("La Zona D ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_D)
+            else if (temp > Zona.capacidadD)
             {
-                int exceso = temp - AccederZona.CAPACIDAD_D;
+                int exceso = temp - Zona.capacidadD;
 
                 throw new Exception("Se excedio el cupo de la Zona D por: " + exceso + " persona(s)");
             }
@@ -205,18 +177,18 @@ namespace DiscotecaLaSantaDiabla.logica
             }
 
         }
-
+        //Metodo Realizar reserva zona VIP
         public static void reservarZonaVIP()
         {
             int temp = reservasVIP + ingreso;
 
-            if (reservasVIP == AccederZona.CAPACIDAD_VIP)
+            if (reservasVIP == Zona.capacidadVIP)
             {
                 throw new Exception("La zona VIP ya se encuentra al maximo de su capacidad");
             }
-            else if (temp > AccederZona.CAPACIDAD_VIP)
+            else if (temp > Zona.capacidadVIP)
             {
-                int exceso = temp - AccederZona.reservasVIP;
+                int exceso = temp - Zona.capacidadVIP;
                 throw new Exception("Se excedio el cupo de la zona VIP por: " + exceso + " persona(s)");
             }
             else
@@ -225,7 +197,7 @@ namespace DiscotecaLaSantaDiabla.logica
             }
 
         }
-
+        //Metodo Salida zona Especial
         public static void salidaZonaEspecial()
         {
             int temp = reservasEspecial;
@@ -244,7 +216,7 @@ namespace DiscotecaLaSantaDiabla.logica
                 reservasEspecial = reservasEspecial - salidaZona;
             }
         }
-
+        //Metodo Salida zona A
         public static void salidaZonaA()
         {
             int temp = reservasA;
@@ -253,7 +225,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona A Actualmente");
             }
-            else if (salida < 0 )
+            else if (salida < 0)
             {
                 throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasA
                                    + " Personas en la zona");
@@ -263,7 +235,7 @@ namespace DiscotecaLaSantaDiabla.logica
                 reservasA = reservasA - salidaZona;
             }
         }
-
+        //Metodo Salida zona B
         public static void salidaZonaB()
         {
             int temp = reservasB;
@@ -272,7 +244,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona B Actualmente");
             }
-            else if (salida < 0 )
+            else if (salida < 0)
             {
                 throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasB
                                   + " Personas en la zona");
@@ -280,10 +252,10 @@ namespace DiscotecaLaSantaDiabla.logica
             else
             {
                 reservasB = reservasB - salidaZona;
-               
+
             }
         }
-
+        //Metodo Salida zona C
         public static void salidaZonaC()
         {
             int temp = reservasC;
@@ -292,7 +264,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona C Actualmente");
             }
-            else if (salida < 0 )
+            else if (salida < 0)
             {
                 throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasC
                                   + " Personas en la zona");
@@ -300,10 +272,10 @@ namespace DiscotecaLaSantaDiabla.logica
             else
             {
                 reservasC = reservasC - salidaZona;
-                
+
             }
         }
-
+        //Metodo Salida zona D
         public static void salidaZonaD()
         {
             int temp = reservasD;
@@ -312,7 +284,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona D Actualmente");
             }
-            else if (salida < 0 )
+            else if (salida < 0)
             {
                 throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasD
                                  + " Personas en la zona");
@@ -324,7 +296,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
             }
         }
-
+        //Metodo Salida zona VIP
         public static void salidaZonaVIP()
         {
             int temp = reservasVIP;
@@ -333,7 +305,7 @@ namespace DiscotecaLaSantaDiabla.logica
             {
                 throw new Exception("No hay personas en la zona D Actualmente");
             }
-            else if (salida < 0 )
+            else if (salida < 0)
             {
                 throw new Exception("No se puede desalojar este numero de personas, solo hay " + reservasVIP
                                   + " Personas en la zona");
@@ -345,29 +317,23 @@ namespace DiscotecaLaSantaDiabla.logica
 
             }
         }
-
-        public static int darCapacidadTotal()
-        {
-            int capacidad = CAPACIDAD_ESPECIAL + CAPACIDAD_VIP + CAPACIDAD_A + CAPACIDAD_B + CAPACIDAD_C + CAPACIDAD_D;
-            return capacidad;
-
-        }
-
+        
+        //Metodo Get NumPersonas ingresadas
         public static int darNumeroDePersonasIngresasadas()
         {
             int ingresadas = reservasEspecial + reservasA + reservasB + reservasC + reservasD + reservasVIP;
-
             return ingresadas;
         }
-
+        //Metodo Get Aforo
         public static double darAforoTotal()
         {
-            int totalCapaciad = darCapacidadTotal();
+            int totalCapacidad = Zona.darCapacidadTotal();
             int personasIngresadas = darNumeroDePersonasIngresasadas();
 
-            double aforo = (personasIngresadas * 100) / totalCapaciad;
+            double aforo = (personasIngresadas * 100) / totalCapacidad;
             return aforo;
         }
     }
 }
+
 

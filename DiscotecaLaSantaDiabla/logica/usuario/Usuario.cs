@@ -7,14 +7,17 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 {
     class Usuario
     {
+        //ATRIBUTOS 
+
+        //Lista de Clientes
         private static List<Cliente> clientes = new List<Cliente>();
 
-        public static List<Cliente> getUsuarios()
-        {
-          return clientes;
-        }    
-        //Metodos 
-        //Crear Usuario - B
+        //METODOS
+
+        //Metodo Get Usuarios
+        public static List<Cliente> getUsuarios() => clientes;
+        
+        //Metodo Crear Usuario 
         public static void crearUsuario(Cliente pCliente)
         {
             if (buscarUsuario(pCliente.getID()) == null)
@@ -28,7 +31,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         }
 
-        //Modificar - B
+        //Metodo Modificar Usuario
         public static void modificarUsuario(Cliente nuevoCliente, String id)
         {
             Cliente clienteModificar = buscarUsuario(id);
@@ -45,7 +48,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
         }
 
-        //Buscar - B
+        //Metodo Buscar Usuario
         public static Cliente buscarUsuario(String id)
         {
             Cliente buscado = null;
@@ -60,7 +63,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             return buscado;
         }
 
-        //Eliminar - B
+        //Metodo Eliminar Usuario
         public static void eliminarUsuario(String id)
         {
             Cliente buscado = buscarUsuario(id);
@@ -76,7 +79,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
         }
 
-        //Cambiar Estado - B
+        //Metodo Cambiar Estado
         public static void cambiarEstado(String id)
         {
             Cliente idBuscado = buscarUsuario(id);
@@ -101,7 +104,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
         }
 
-        //Contar Usuarios - B
+        //Metodo Contar Usuarios
         public static int contarUsuarios()
         {
             int cantidad = clientes.Count;

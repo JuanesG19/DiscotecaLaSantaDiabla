@@ -7,17 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="imagenes\**" />
-    <EmbeddedResource Remove="imagenes\**" />
-    <None Remove="imagenes\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="logica\Zona.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="estructural\" />
+    <Folder Include="imagenes\" />
   </ItemGroup>
 
   <ItemGroup>
