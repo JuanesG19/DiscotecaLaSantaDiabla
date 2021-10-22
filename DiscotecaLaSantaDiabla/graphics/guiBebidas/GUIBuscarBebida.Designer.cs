@@ -42,6 +42,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.lblIdentificador = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtTipoBebida = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,7 +157,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(12, 344);
+            this.btnBuscar.Location = new System.Drawing.Point(12, 419);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 25);
             this.btnBuscar.TabIndex = 80;
@@ -169,7 +171,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(172, 344);
+            this.btnCancelar.Location = new System.Drawing.Point(172, 419);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 25);
             this.btnCancelar.TabIndex = 79;
@@ -177,12 +179,33 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // txtTipoBebida
+            // 
+            this.txtTipoBebida.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtTipoBebida.Location = new System.Drawing.Point(24, 366);
+            this.txtTipoBebida.Name = "txtTipoBebida";
+            this.txtTipoBebida.ReadOnly = true;
+            this.txtTipoBebida.Size = new System.Drawing.Size(253, 23);
+            this.txtTipoBebida.TabIndex = 91;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(24, 348);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 17);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "Tipo Bebida";
+            // 
             // GUIBuscarBebida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(303, 387);
+            this.ClientSize = new System.Drawing.Size(303, 466);
+            this.Controls.Add(this.txtTipoBebida);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPresentacion);
             this.Controls.Add(this.lblPresentacion);
             this.Controls.Add(this.txtCantidad);
@@ -220,5 +243,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private System.Windows.Forms.Label lblIdentificador;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txtTipoBebida;
+        private System.Windows.Forms.Label label1;
     }
 }

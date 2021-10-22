@@ -44,7 +44,9 @@ namespace DiscotecaLaSantaDiabla
                 gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio();
                 gridBebidas.Rows[numFila].Cells[4].Value = b.getPresentacion();
                 gridBebidas.Rows[numFila].Cells[5].Value = b.getCantidad();
-            } 
+                gridBebidas.Rows[numFila].Cells[6].Value = b.getTipoBebida();
+
+            }
         }
 
         private void btnAgregarBebida_Click(object sender, EventArgs e)

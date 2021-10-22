@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static DiscotecaLaSantaDiabla.logica.Cuenta;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -39,6 +40,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             }
 
             String idUsuario = txtIdentificacionUsuario.Text;
+
             if (idUsuario.Length == 0)
             {
                 MessageBox.Show("Ingrese un valor valido para la identificacion del usuario");
@@ -75,6 +77,21 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                  return;
              }
+
+            if (buscada.getTipoBebida().Equals(Cuentas.VIP) && user.getTipoCuenta().Equals(Cuentas.STANDAR))
+            {
+                MessageBoxButtons botonesBeb = MessageBoxButtons.YesNo;
+                DialogResult dbeb = MessageBox.Show("La bebida que desea comprar es de uso exclusivo para clientes VIP ¿Desea convertirse en cliente VIP?","Tipo De Cuenta No Aceptado", botonesBeb);
+
+                if (dbeb == DialogResult.Yes)
+                {
+                    GUIModificarUsuario modificar = new GUIModificarUsuario();
+                    modificar.Show();
+                }
+
+                return;
+            }
+
 
              Bebida.setNumBebidas(cantidad);
 

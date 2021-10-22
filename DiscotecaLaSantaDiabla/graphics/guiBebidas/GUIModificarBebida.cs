@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static DiscotecaLaSantaDiabla.logica.Cuenta;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -43,11 +44,15 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 txtNombreB.Text = bebida.getNombre();
                 txtPrecioB.Text = Convert.ToString(bebida.getPrecio());
                 txtPresentacionB.Text = bebida.getPresentacion();
-                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());                         
+                txtCantidadB.Text = Convert.ToString(bebida.getCantidad());
+                txtTipoBebidaB.Text = Convert.ToString(buscada.getTipoBebida());
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+
+             Cuentas tipoCuenta = Cuentas.STANDAR;
 
             if (busqueda == true)
             {
@@ -62,15 +67,35 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     MessageBox.Show("Hay espacios vacios, No se ha podido modificar la bebida");
                     return;
                 }
-
+           
                 try
                 {
-                    bebida.setNombre(txtNombre.Text);
-                    bebida.setPrecio(Double.Parse(txtPrecio.Text));
-                    bebida.setPresentacion(txtPresentacion.Text);
-                    bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
-                    MessageBox.Show("El producto ha sido modificado correctamente");
-                    this.Close();
+
+                    if (txtTipoBebidaNew.Text.Equals("STANDAR") == true)
+                    {
+                        bebida.setTipoBebida(Cuentas.STANDAR);
+                        bebida.setNombre(txtNombre.Text);
+                        bebida.setPrecio(Double.Parse(txtPrecio.Text));
+                        bebida.setPresentacion(txtPresentacion.Text);
+                        bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
+                        MessageBox.Show("El producto ha sido modificado correctamente");
+                        this.Close();
+                    }
+                    else if (txtTipoBebidaNew.Text.Equals("VIP") == true)
+                    {
+                        bebida.setTipoBebida(Cuentas.VIP);
+                        bebida.setNombre(txtNombre.Text);
+                        bebida.setPrecio(Double.Parse(txtPrecio.Text));
+                        bebida.setPresentacion(txtPresentacion.Text);
+                        bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
+                        MessageBox.Show("El producto ha sido modificado correctamente");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error De Membresia");
+                    }
+
                 }                    
                  catch
                 {

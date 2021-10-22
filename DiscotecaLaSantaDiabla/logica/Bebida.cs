@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static DiscotecaLaSantaDiabla.logica.Cuenta;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
@@ -134,6 +135,7 @@ namespace DiscotecaLaSantaDiabla.logica
             String nombreN = p.getNombre();
             double precioN = p.getPrecio();
             String presentacionN = p.getPresentacion();
+            Cuentas tipoBebida = p.getTipoBebida();
 
 
             if (p.getIdBebida() == id)
@@ -152,7 +154,7 @@ namespace DiscotecaLaSantaDiabla.logica
                     bebidas.RemoveAt(pos);
                     int nuevaCant = p.getCantidad() - numBebidas;
 
-                    Producto nuevo = new Producto(idNuevo, nombreN, precioN, presentacionN, nuevaCant);
+                    Producto nuevo = new Producto(idNuevo, nombreN, precioN, presentacionN, nuevaCant, tipoBebida);
                     bebidas.Insert(pos, nuevo);
                 }
             }

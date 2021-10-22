@@ -40,7 +40,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 txtPrecio.Text = Convert.ToString(buscada.getPrecio());
                 txtPresentacion.Text = buscada.getPresentacion();
                 txtCantidad.Text = Convert.ToString(buscada.getCantidad());
-                
+                txtTipoBebida.Text = Convert.ToString(buscada.getTipoBebida());
+
                 MessageBoxButtons botones = MessageBoxButtons.YesNo;
                 DialogResult dr = MessageBox.Show("Desea Eliminar a: " + buscada.getNombre() + "?", "Eliminar", botones);
 

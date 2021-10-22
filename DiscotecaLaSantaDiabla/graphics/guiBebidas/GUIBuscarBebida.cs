@@ -45,7 +45,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 txtNombre.Text = buscada.getNombre();
                 txtPrecio.Text = Convert.ToString(buscada.getPrecio());
                 txtPresentacion.Text = buscada.getPresentacion();
-                txtCantidad.Text = Convert.ToString(buscada.getCantidad());          
+                txtCantidad.Text = Convert.ToString(buscada.getCantidad());
+                txtTipoBebida.Text = Convert.ToString(buscada.getTipoBebida());
         }
     }
 }

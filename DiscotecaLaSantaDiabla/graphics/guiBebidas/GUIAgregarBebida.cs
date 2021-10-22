@@ -23,6 +23,23 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 MessageBox.Show("Hay espacios vacios, No se ha podido agregar la bebida");
                 return;
             }
+
+            Cuenta.Cuentas tipoBebida;
+
+            if (!txtTipoBebida.Text.Equals("VIP") && !txtTipoBebida.Text.Equals("STANDAR"))
+            {
+                MessageBox.Show("El tipo de la cuenta no es valido");
+                return;
+            }
+            else if (txtTipoBebida.Text.Equals("STANDAR"))
+            {
+                tipoBebida = Cuenta.Cuentas.STANDAR;
+            }
+            else
+            {
+                tipoBebida = Cuenta.Cuentas.VIP;
+            }
+
             try
             {
                 int id = Int32.Parse(txtIdentificador.Text);
@@ -30,12 +47,13 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 double precio = Double.Parse(txtPrecio.Text);
                 String presentacion = txtPresentacion.Text;
                 int cantidad = Int32.Parse(txtCantidad.Text);
-                Producto producto = new Producto(id, nombre, precio, presentacion, cantidad);
+
+                Producto producto = new Producto(id, nombre, precio, presentacion, cantidad, tipoBebida);
+                
                 try
                 {
                     Bebida.agregarBebida(producto);
                     MessageBox.Show(producto.getNombre() + ", Ha sido registrado con exito");
-                    this.Close();
                 }catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
@@ -54,6 +72,21 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtIdentificador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

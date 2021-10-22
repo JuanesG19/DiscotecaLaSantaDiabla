@@ -33,6 +33,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTipoBebida = new System.Windows.Forms.Label();
             this.txtPresentacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -43,6 +44,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTipoBebidaB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtPresentacionB = new System.Windows.Forms.TextBox();
             this.lblPresentacion = new System.Windows.Forms.Label();
             this.txtCantidadB = new System.Windows.Forms.TextBox();
@@ -54,6 +57,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtIdentificadorB = new System.Windows.Forms.TextBox();
             this.lblIdentificador = new System.Windows.Forms.Label();
+            this.txtTipoBebidaNew = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,7 +69,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(233, 375);
+            this.btnModificar.Location = new System.Drawing.Point(233, 412);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(164, 30);
             this.btnModificar.TabIndex = 10;
@@ -79,7 +83,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(454, 375);
+            this.btnCancelar.Location = new System.Drawing.Point(454, 412);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(164, 30);
             this.btnCancelar.TabIndex = 9;
@@ -92,7 +96,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(12, 375);
+            this.btnBuscar.Location = new System.Drawing.Point(12, 412);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(164, 30);
             this.btnBuscar.TabIndex = 8;
@@ -103,6 +107,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txtTipoBebidaNew);
+            this.panel2.Controls.Add(this.lblTipoBebida);
             this.panel2.Controls.Add(this.txtPresentacion);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtCantidad);
@@ -114,8 +120,18 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(325, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(293, 348);
+            this.panel2.Size = new System.Drawing.Size(293, 395);
             this.panel2.TabIndex = 7;
+            // 
+            // lblTipoBebida
+            // 
+            this.lblTipoBebida.AutoSize = true;
+            this.lblTipoBebida.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTipoBebida.Location = new System.Drawing.Point(20, 335);
+            this.lblTipoBebida.Name = "lblTipoBebida";
+            this.lblTipoBebida.Size = new System.Drawing.Size(91, 17);
+            this.lblTipoBebida.TabIndex = 68;
+            this.lblTipoBebida.Text = "Tipo Bebida";
             // 
             // txtPresentacion
             // 
@@ -203,6 +219,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtTipoBebidaB);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtPresentacionB);
             this.panel1.Controls.Add(this.lblPresentacion);
             this.panel1.Controls.Add(this.txtCantidadB);
@@ -214,8 +232,27 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(12, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 348);
+            this.panel1.Size = new System.Drawing.Size(307, 395);
             this.panel1.TabIndex = 6;
+            // 
+            // txtTipoBebidaB
+            // 
+            this.txtTipoBebidaB.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtTipoBebidaB.Location = new System.Drawing.Point(20, 355);
+            this.txtTipoBebidaB.Name = "txtTipoBebidaB";
+            this.txtTipoBebidaB.ReadOnly = true;
+            this.txtTipoBebidaB.Size = new System.Drawing.Size(253, 23);
+            this.txtTipoBebidaB.TabIndex = 100;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(20, 337);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.TabIndex = 99;
+            this.label6.Text = "Tipo Bebida";
             // 
             // txtPresentacionB
             // 
@@ -321,12 +358,24 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.lblIdentificador.TabIndex = 30;
             this.lblIdentificador.Text = "Identificador";
             // 
+            // txtTipoBebidaNew
+            // 
+            this.txtTipoBebidaNew.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtTipoBebidaNew.FormattingEnabled = true;
+            this.txtTipoBebidaNew.Items.AddRange(new object[] {
+            "STANDAR",
+            "VIP"});
+            this.txtTipoBebidaNew.Location = new System.Drawing.Point(20, 355);
+            this.txtTipoBebidaNew.Name = "txtTipoBebidaNew";
+            this.txtTipoBebidaNew.Size = new System.Drawing.Size(253, 23);
+            this.txtTipoBebidaNew.TabIndex = 69;
+            // 
             // GUIModificarBebida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(632, 418);
+            this.ClientSize = new System.Drawing.Size(632, 454);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnBuscar);
@@ -372,5 +421,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtTipoBebidaB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTipoBebida;
+        private System.Windows.Forms.ComboBox txtTipoBebidaNew;
     }
 }

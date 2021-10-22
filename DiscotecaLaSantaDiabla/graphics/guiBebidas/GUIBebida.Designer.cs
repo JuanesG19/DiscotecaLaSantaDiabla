@@ -37,13 +37,14 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarBebida = new System.Windows.Forms.Button();
             this.btnAgregarBebida = new System.Windows.Forms.Button();
             this.gridBebidas = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iterador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.presentacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TipoBebida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridBebidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -136,12 +137,22 @@ namespace DiscotecaLaSantaDiabla
             this.nombre,
             this.precio,
             this.presentacion,
-            this.cantidad});
+            this.cantidad,
+            this.TipoBebida});
             this.gridBebidas.Location = new System.Drawing.Point(11, 182);
             this.gridBebidas.Name = "gridBebidas";
             this.gridBebidas.RowTemplate.Height = 25;
             this.gridBebidas.Size = new System.Drawing.Size(811, 413);
             this.gridBebidas.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(986, 159);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // iterador
             // 
@@ -169,7 +180,7 @@ namespace DiscotecaLaSantaDiabla
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
-            this.precio.Width = 180;
+            this.precio.Width = 110;
             // 
             // presentacion
             // 
@@ -183,23 +194,20 @@ namespace DiscotecaLaSantaDiabla
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
-            this.cantidad.Width = 120;
+            this.cantidad.Width = 80;
             // 
-            // pictureBox1
+            // TipoBebida
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(986, 159);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.TipoBebida.HeaderText = "Tipo Bebida";
+            this.TipoBebida.Name = "TipoBebida";
+            this.TipoBebida.Width = 120;
             // 
             // GUIBebida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(833, 640);
+            this.ClientSize = new System.Drawing.Size(848, 640);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnModificarBebida);
             this.Controls.Add(this.btnBuscarBebida);
@@ -232,5 +240,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn presentacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoBebida;
     }
 }
