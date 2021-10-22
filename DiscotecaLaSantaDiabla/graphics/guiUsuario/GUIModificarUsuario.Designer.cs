@@ -47,9 +47,7 @@ namespace DiscotecaLaSantaDiabla
             this.comboFechaN = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboTipoCuenta = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -77,29 +75,32 @@ namespace DiscotecaLaSantaDiabla
             this.panel1.Controls.Add(this.lblApellidos);
             this.panel1.Controls.Add(this.txtNombreB);
             this.panel1.Controls.Add(this.lblNombre);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(14, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 368);
+            this.panel1.Size = new System.Drawing.Size(351, 490);
             this.panel1.TabIndex = 0;
             // 
             // txtTipoCuentaB
             // 
             this.txtTipoCuentaB.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtTipoCuentaB.ForeColor = System.Drawing.Color.Black;
-            this.txtTipoCuentaB.Location = new System.Drawing.Point(10, 208);
+            this.txtTipoCuentaB.Location = new System.Drawing.Point(11, 277);
+            this.txtTipoCuentaB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTipoCuentaB.Name = "txtTipoCuentaB";
             this.txtTipoCuentaB.ReadOnly = true;
-            this.txtTipoCuentaB.Size = new System.Drawing.Size(279, 23);
+            this.txtTipoCuentaB.Size = new System.Drawing.Size(318, 27);
             this.txtTipoCuentaB.TabIndex = 57;
             // 
             // txtFecha
             // 
             this.txtFecha.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtFecha.ForeColor = System.Drawing.Color.Black;
-            this.txtFecha.Location = new System.Drawing.Point(10, 324);
+            this.txtFecha.Location = new System.Drawing.Point(11, 432);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.ReadOnly = true;
-            this.txtFecha.Size = new System.Drawing.Size(279, 23);
+            this.txtFecha.Size = new System.Drawing.Size(318, 27);
             this.txtFecha.TabIndex = 56;
             // 
             // panel3
@@ -107,46 +108,48 @@ namespace DiscotecaLaSantaDiabla
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txtIdentificacion);
             this.panel3.Controls.Add(this.lblIdentificacion);
-            this.panel3.Location = new System.Drawing.Point(10, 9);
+            this.panel3.Location = new System.Drawing.Point(11, 12);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(279, 52);
+            this.panel3.Size = new System.Drawing.Size(319, 69);
             this.panel3.TabIndex = 55;
             // 
             // txtIdentificacion
             // 
             this.txtIdentificacion.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtIdentificacion.Location = new System.Drawing.Point(8, 19);
+            this.txtIdentificacion.Location = new System.Drawing.Point(9, 25);
+            this.txtIdentificacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(253, 23);
+            this.txtIdentificacion.Size = new System.Drawing.Size(289, 27);
             this.txtIdentificacion.TabIndex = 31;
             // 
             // lblIdentificacion
             // 
             this.lblIdentificacion.AutoSize = true;
-            this.lblIdentificacion.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblIdentificacion.Location = new System.Drawing.Point(8, 1);
+            this.lblIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIdentificacion.Location = new System.Drawing.Point(9, 1);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(220, 17);
+            this.lblIdentificacion.Size = new System.Drawing.Size(195, 18);
             this.lblIdentificacion.TabIndex = 30;
             this.lblIdentificacion.Text = "Documento de Identificacion";
             // 
             // lblTipoDeCuenta
             // 
             this.lblTipoDeCuenta.AutoSize = true;
-            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoDeCuenta.Location = new System.Drawing.Point(10, 190);
+            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTipoDeCuenta.Location = new System.Drawing.Point(11, 253);
             this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
-            this.lblTipoDeCuenta.Size = new System.Drawing.Size(119, 17);
+            this.lblTipoDeCuenta.Size = new System.Drawing.Size(108, 18);
             this.lblTipoDeCuenta.TabIndex = 53;
             this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(10, 306);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(11, 408);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 17);
+            this.label4.Size = new System.Drawing.Size(148, 18);
             this.label4.TabIndex = 52;
             this.label4.Text = "Fecha de Nacimiento";
             // 
@@ -154,19 +157,20 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.txtTelefonosB.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtTelefonosB.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefonosB.Location = new System.Drawing.Point(10, 264);
+            this.txtTelefonosB.Location = new System.Drawing.Point(11, 352);
+            this.txtTelefonosB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefonosB.Name = "txtTelefonosB";
             this.txtTelefonosB.ReadOnly = true;
-            this.txtTelefonosB.Size = new System.Drawing.Size(279, 23);
+            this.txtTelefonosB.Size = new System.Drawing.Size(318, 27);
             this.txtTelefonosB.TabIndex = 51;
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTelefono.Location = new System.Drawing.Point(10, 246);
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelefono.Location = new System.Drawing.Point(11, 328);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(74, 17);
+            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 50;
             this.lblTelefono.Text = "Telefono";
             // 
@@ -174,19 +178,20 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.txtApellidosB.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtApellidosB.ForeColor = System.Drawing.Color.Black;
-            this.txtApellidosB.Location = new System.Drawing.Point(10, 146);
+            this.txtApellidosB.Location = new System.Drawing.Point(11, 195);
+            this.txtApellidosB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellidosB.Name = "txtApellidosB";
             this.txtApellidosB.ReadOnly = true;
-            this.txtApellidosB.Size = new System.Drawing.Size(279, 23);
+            this.txtApellidosB.Size = new System.Drawing.Size(318, 27);
             this.txtApellidosB.TabIndex = 49;
             // 
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblApellidos.Location = new System.Drawing.Point(10, 128);
+            this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblApellidos.Location = new System.Drawing.Point(11, 171);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(79, 17);
+            this.lblApellidos.Size = new System.Drawing.Size(67, 18);
             this.lblApellidos.TabIndex = 48;
             this.lblApellidos.Text = "Apellidos";
             // 
@@ -194,19 +199,20 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.txtNombreB.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtNombreB.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreB.Location = new System.Drawing.Point(10, 85);
+            this.txtNombreB.Location = new System.Drawing.Point(11, 113);
+            this.txtNombreB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreB.Name = "txtNombreB";
             this.txtNombreB.ReadOnly = true;
-            this.txtNombreB.Size = new System.Drawing.Size(279, 23);
+            this.txtNombreB.Size = new System.Drawing.Size(318, 27);
             this.txtNombreB.TabIndex = 47;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(10, 67);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNombre.Location = new System.Drawing.Point(11, 89);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(75, 17);
+            this.lblNombre.Size = new System.Drawing.Size(70, 18);
             this.lblNombre.TabIndex = 46;
             this.lblNombre.Text = "Nombres";
             // 
@@ -216,36 +222,36 @@ namespace DiscotecaLaSantaDiabla
             this.panel2.Controls.Add(this.comboFechaN);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboTipoCuenta);
             this.panel2.Controls.Add(this.txtNombre);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtApellido);
             this.panel2.Controls.Add(this.txtTelefono);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(325, 12);
+            this.panel2.Location = new System.Drawing.Point(371, 16);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(306, 368);
+            this.panel2.Size = new System.Drawing.Size(349, 490);
             this.panel2.TabIndex = 1;
             // 
             // comboFechaN
             // 
             this.comboFechaN.CalendarMonthBackground = System.Drawing.Color.DodgerBlue;
             this.comboFechaN.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
-            this.comboFechaN.Location = new System.Drawing.Point(10, 324);
+            this.comboFechaN.Location = new System.Drawing.Point(10, 390);
+            this.comboFechaN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboFechaN.Name = "comboFechaN";
-            this.comboFechaN.Size = new System.Drawing.Size(279, 23);
+            this.comboFechaN.Size = new System.Drawing.Size(318, 27);
             this.comboFechaN.TabIndex = 58;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("BatmanForeverAlternate", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(9, 22);
+            this.label1.Location = new System.Drawing.Point(10, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 26);
+            this.label1.Size = new System.Drawing.Size(256, 31);
             this.label1.TabIndex = 57;
             this.label1.Text = "NUEVO USUARIO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -253,86 +259,67 @@ namespace DiscotecaLaSantaDiabla
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(10, 67);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(10, 127);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 17);
+            this.label7.Size = new System.Drawing.Size(70, 18);
             this.label7.TabIndex = 46;
             this.label7.Text = "Nombres";
-            // 
-            // comboTipoCuenta
-            // 
-            this.comboTipoCuenta.BackColor = System.Drawing.Color.DodgerBlue;
-            this.comboTipoCuenta.FormattingEnabled = true;
-            this.comboTipoCuenta.Items.AddRange(new object[] {
-            "STANDAR",
-            "VIP"});
-            this.comboTipoCuenta.Location = new System.Drawing.Point(10, 208);
-            this.comboTipoCuenta.Name = "comboTipoCuenta";
-            this.comboTipoCuenta.Size = new System.Drawing.Size(279, 23);
-            this.comboTipoCuenta.TabIndex = 54;
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtNombre.Location = new System.Drawing.Point(10, 85);
+            this.txtNombre.Location = new System.Drawing.Point(10, 151);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(279, 23);
+            this.txtNombre.Size = new System.Drawing.Size(318, 27);
             this.txtNombre.TabIndex = 47;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(10, 190);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 17);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "Tipo de Cuenta";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(10, 128);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(10, 209);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 17);
+            this.label6.Size = new System.Drawing.Size(67, 18);
             this.label6.TabIndex = 48;
             this.label6.Text = "Apellidos";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(10, 306);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(10, 366);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 17);
+            this.label3.Size = new System.Drawing.Size(148, 18);
             this.label3.TabIndex = 52;
             this.label3.Text = "Fecha de Nacimiento";
             // 
             // txtApellido
             // 
             this.txtApellido.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtApellido.Location = new System.Drawing.Point(10, 146);
+            this.txtApellido.Location = new System.Drawing.Point(10, 233);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(279, 23);
+            this.txtApellido.Size = new System.Drawing.Size(318, 27);
             this.txtApellido.TabIndex = 49;
             // 
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTelefono.Location = new System.Drawing.Point(10, 264);
+            this.txtTelefono.Location = new System.Drawing.Point(10, 310);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(279, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(318, 27);
             this.txtTelefono.TabIndex = 51;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 246);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(10, 286);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 17);
+            this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 50;
             this.label5.Text = "Telefono";
             // 
@@ -341,10 +328,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(12, 401);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscar.Location = new System.Drawing.Point(14, 535);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(164, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(187, 40);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -355,10 +343,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(467, 401);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(534, 535);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(164, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(187, 40);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -369,10 +358,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(245, 401);
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.Location = new System.Drawing.Point(280, 535);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(164, 30);
+            this.btnModificar.Size = new System.Drawing.Size(187, 40);
             this.btnModificar.TabIndex = 5;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -380,16 +370,17 @@ namespace DiscotecaLaSantaDiabla
             // 
             // GUIModificarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(642, 445);
+            this.ClientSize = new System.Drawing.Size(734, 593);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GUIModificarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Usuario";
@@ -421,9 +412,7 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboTipoCuenta;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtApellido;

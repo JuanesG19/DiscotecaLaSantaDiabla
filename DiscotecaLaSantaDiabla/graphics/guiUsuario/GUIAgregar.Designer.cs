@@ -31,7 +31,6 @@ namespace DiscotecaLaSantaDiabla
         {
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.lblTipoDeCuenta = new System.Windows.Forms.Label();
             this.fechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefonos = new System.Windows.Forms.TextBox();
@@ -42,7 +41,6 @@ namespace DiscotecaLaSantaDiabla
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.lblIdentificacion = new System.Windows.Forms.Label();
-            this.txtTipoDeCuenta = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -50,10 +48,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnConfirmar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConfirmar.Location = new System.Drawing.Point(12, 376);
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConfirmar.Location = new System.Drawing.Point(12, 410);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(119, 25);
+            this.btnConfirmar.Size = new System.Drawing.Size(136, 33);
             this.btnConfirmar.TabIndex = 28;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
@@ -64,139 +63,121 @@ namespace DiscotecaLaSantaDiabla
             this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(146, 376);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(165, 410);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(119, 25);
+            this.btnCancelar.Size = new System.Drawing.Size(136, 33);
             this.btnCancelar.TabIndex = 27;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // lblTipoDeCuenta
-            // 
-            this.lblTipoDeCuenta.AutoSize = true;
-            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoDeCuenta.Location = new System.Drawing.Point(12, 193);
-            this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
-            this.lblTipoDeCuenta.Size = new System.Drawing.Size(119, 17);
-            this.lblTipoDeCuenta.TabIndex = 25;
-            this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
             // 
             // fechaNacimiento
             // 
             this.fechaNacimiento.CalendarMonthBackground = System.Drawing.Color.DodgerBlue;
             this.fechaNacimiento.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
             this.fechaNacimiento.CalendarTrailingForeColor = System.Drawing.Color.DodgerBlue;
-            this.fechaNacimiento.Location = new System.Drawing.Point(12, 327);
+            this.fechaNacimiento.Location = new System.Drawing.Point(12, 356);
+            this.fechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.Size = new System.Drawing.Size(253, 23);
+            this.fechaNacimiento.Size = new System.Drawing.Size(289, 27);
             this.fechaNacimiento.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 309);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(14, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 17);
+            this.label4.Size = new System.Drawing.Size(148, 18);
             this.label4.TabIndex = 23;
             this.label4.Text = "Fecha de Nacimiento";
             // 
             // txtTelefonos
             // 
             this.txtTelefonos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTelefonos.Location = new System.Drawing.Point(12, 267);
+            this.txtTelefonos.Location = new System.Drawing.Point(12, 273);
+            this.txtTelefonos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefonos.Name = "txtTelefonos";
-            this.txtTelefonos.Size = new System.Drawing.Size(253, 23);
+            this.txtTelefonos.Size = new System.Drawing.Size(289, 27);
             this.txtTelefonos.TabIndex = 22;
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTelefono.Location = new System.Drawing.Point(12, 249);
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelefono.Location = new System.Drawing.Point(12, 251);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(74, 17);
+            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 21;
             this.lblTelefono.Text = "Telefono";
             // 
             // txtApellidos
             // 
             this.txtApellidos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtApellidos.Location = new System.Drawing.Point(12, 149);
+            this.txtApellidos.Location = new System.Drawing.Point(14, 199);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(253, 23);
+            this.txtApellidos.Size = new System.Drawing.Size(289, 27);
             this.txtApellidos.TabIndex = 20;
             // 
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblApellidos.Location = new System.Drawing.Point(12, 131);
+            this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblApellidos.Location = new System.Drawing.Point(14, 175);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(79, 17);
+            this.lblApellidos.Size = new System.Drawing.Size(67, 18);
             this.lblApellidos.TabIndex = 19;
             this.lblApellidos.Text = "Apellidos";
             // 
             // txtNombres
             // 
             this.txtNombres.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtNombres.Location = new System.Drawing.Point(12, 88);
+            this.txtNombres.Location = new System.Drawing.Point(14, 117);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(253, 23);
+            this.txtNombres.Size = new System.Drawing.Size(289, 27);
             this.txtNombres.TabIndex = 18;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(12, 70);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNombre.Location = new System.Drawing.Point(14, 93);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(75, 17);
+            this.lblNombre.Size = new System.Drawing.Size(70, 18);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombres";
             // 
             // txtIdentificacion
             // 
             this.txtIdentificacion.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtIdentificacion.Location = new System.Drawing.Point(12, 32);
+            this.txtIdentificacion.Location = new System.Drawing.Point(14, 43);
+            this.txtIdentificacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(253, 23);
+            this.txtIdentificacion.Size = new System.Drawing.Size(289, 27);
             this.txtIdentificacion.TabIndex = 16;
             // 
             // lblIdentificacion
             // 
             this.lblIdentificacion.AutoSize = true;
-            this.lblIdentificacion.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblIdentificacion.Location = new System.Drawing.Point(12, 14);
+            this.lblIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIdentificacion.Location = new System.Drawing.Point(14, 19);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(220, 17);
+            this.lblIdentificacion.Size = new System.Drawing.Size(195, 18);
             this.lblIdentificacion.TabIndex = 15;
             this.lblIdentificacion.Text = "Documento de Identificacion";
             // 
-            // txtTipoDeCuenta
-            // 
-            this.txtTipoDeCuenta.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTipoDeCuenta.FormattingEnabled = true;
-            this.txtTipoDeCuenta.Items.AddRange(new object[] {
-            "STANDAR",
-            "VIP"});
-            this.txtTipoDeCuenta.Location = new System.Drawing.Point(12, 211);
-            this.txtTipoDeCuenta.Name = "txtTipoDeCuenta";
-            this.txtTipoDeCuenta.Size = new System.Drawing.Size(253, 23);
-            this.txtTipoDeCuenta.TabIndex = 29;
-            // 
             // GUIAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(281, 420);
-            this.Controls.Add(this.txtTipoDeCuenta);
+            this.ClientSize = new System.Drawing.Size(321, 472);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.lblTipoDeCuenta);
             this.Controls.Add(this.fechaNacimiento);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTelefonos);
@@ -208,6 +189,7 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.txtIdentificacion);
             this.Controls.Add(this.lblIdentificacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GUIAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Usuario";
@@ -221,7 +203,6 @@ namespace DiscotecaLaSantaDiabla
 
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label lblTipoDeCuenta;
         private System.Windows.Forms.DateTimePicker fechaNacimiento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefonos;
@@ -232,6 +213,5 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label lblIdentificacion;
-        private System.Windows.Forms.ComboBox txtTipoDeCuenta;
     }
 }

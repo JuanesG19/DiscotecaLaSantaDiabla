@@ -32,7 +32,6 @@ namespace DiscotecaLaSantaDiabla
                 }              
                 txtNombreB.Text = cliente.getNombre();
                 txtApellidosB.Text = cliente.getApellido();
-                txtTipoCuentaB.Text = Convert.ToString(cliente.getTipoCuenta());
                 txtTelefonosB.Text = cliente.getTelefono();
                 txtFecha.Text = cliente.getFechaN();
                 Busqueda = true;          
@@ -45,7 +44,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if(Busqueda == true)
+            if (Busqueda == true)
             {
                 String id = txtIdentificacion.Text;
 
@@ -59,10 +58,6 @@ namespace DiscotecaLaSantaDiabla
                 {
                     txtApellido.Text = txtApellidosB.Text;
                 }
-                 if (comboTipoCuenta.Text.Length == 0)
-                {
-                    comboTipoCuenta.Text = txtTipoCuentaB.Text;
-                }
                 if (txtTelefono.Text.Length == 0)
                 {
                     txtTelefono.Text = txtTelefonosB.Text;
@@ -72,36 +67,17 @@ namespace DiscotecaLaSantaDiabla
                     comboFechaN.Text = txtFecha.Text;
                 }
 
-                if (!comboTipoCuenta.Text.Equals("VIP") && !comboTipoCuenta.Text.Equals("STANDAR"))
-                {
-                    MessageBox.Show("El tipo de la cuenta no es valido");
-                    return;
-                }
-                else
-                    {                       
-                        cliente.setNombre(txtNombre.Text);
-                        cliente.setApellido(txtApellido.Text);
-                        cliente.setFechaN(comboFechaN.Text);
-                        cliente.setTelefono(txtTelefono.Text);
 
-                        Cuenta.Cuentas tipoCuenta;
+                    cliente.setNombre(txtNombre.Text);
+                    cliente.setApellido(txtApellido.Text);
+                    cliente.setFechaN(comboFechaN.Text);
+                    cliente.setTelefono(txtTelefono.Text);
 
-                        if (comboTipoCuenta.Text.Equals("VIP"))
-                        {
-                            tipoCuenta = Cuenta.Cuentas.VIP;
-                        }
-                        else
-                        {
-                            tipoCuenta = Cuenta.Cuentas.STANDAR;
-                        }
+                    MessageBox.Show("El usuario ha sido modificado");
 
-                        cliente.setTipoCuenta(tipoCuenta);
+                
 
-                        MessageBox.Show("El usuario ha sido modificado");
-
-                    }
-
-                }                          
+            }
             else
             {
                 MessageBox.Show("Es necesario realizar primeramente una busqueda del usuario a modificar");

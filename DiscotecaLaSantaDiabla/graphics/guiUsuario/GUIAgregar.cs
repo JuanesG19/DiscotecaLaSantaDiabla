@@ -31,36 +31,20 @@ namespace DiscotecaLaSantaDiabla
                 return;
             }
 
-            Cuenta.Cuentas tipoCuenta;
-
-            if (!txtTipoDeCuenta.Text.Equals("VIP") && !txtTipoDeCuenta.Text.Equals("STANDAR"))
-            {
-                MessageBox.Show("El tipo de la cuenta no es valido");
-                return;
-            }
-            else if (txtTipoDeCuenta.Text.Equals("STANDAR"))
-            {
-                tipoCuenta = Cuenta.Cuentas.STANDAR;
-            }
-            else
-            {
-                tipoCuenta = Cuenta.Cuentas.VIP;
-            }
-
+                    
             DateTime edadActual = fechaNacimiento.Value.AddYears(18);
 
             if ( edadActual <= DateTime.Today )
             {
                 try
                 {
-                    Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
+                    Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, Cuenta.Cuentas.STANDAR, fecha);
                     Usuario.crearUsuario(cliente);
 
                     txtIdentificacion.Text = "";
                     txtNombres.Text = "";
                     txtApellidos.Text = "";
                     txtTelefonos.Text = "";
-                    txtTipoDeCuenta.Text = "";
 
                     MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
 
