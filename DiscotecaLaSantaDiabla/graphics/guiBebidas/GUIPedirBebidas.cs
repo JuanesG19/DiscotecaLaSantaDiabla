@@ -93,13 +93,27 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             }
 
 
-             Bebida.setNumBebidas(cantidad);
+            Bebida.setNumBebidas(cantidad);
 
-             MessageBoxButtons botones = MessageBoxButtons.YesNo;
-             DialogResult dr = MessageBox.Show("El total a pagar es : " + Bebida.totalAPagar(id) + "$. Desea adquirir los productos?", "Pagar", botones);
+            double totalFactura = 0;
+            double totalPagar = Bebida.totalAPagar(id);
+
+            if (user.getTipoCuenta().Equals(Cuentas.VIP) && buscada.getTipoBebida().Equals(Cuentas.STANDAR))
+            {
+                double descuento = Bebida.descuentoBebidaVIP(totalPagar);
+                totalFactura = descuento;
+            }
+            else
+            {
+                totalFactura = totalPagar;
+            }
+
+            MessageBoxButtons botones = MessageBoxButtons.YesNo;
+             DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFactura + "$. Desea adquirir los productos?", "Pagar", botones);
 
              if (dr == DialogResult.Yes)
              {
+
                 try
                 {
                     Bebida.pedirBebida(id);

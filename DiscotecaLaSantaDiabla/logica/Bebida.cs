@@ -169,5 +169,12 @@ namespace DiscotecaLaSantaDiabla.logica
 
         }
 
+        public static double descuentoBebidaVIP(double totalPrecio)
+        {
+            double descuento = totalPrecio-((totalPrecio * 10) / 100);
+            return descuento;
+        
+        }
+
     }    
 }
