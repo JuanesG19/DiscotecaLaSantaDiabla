@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using static DiscotecaLaSantaDiabla.logica.Cuenta;
@@ -109,7 +110,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             }
 
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
-             DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFactura + "$. Desea adquirir los productos?", "Pagar", botones);
+             DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFactura.ToString("C", CultureInfo.CurrentCulture) + " Desea adquirir los productos?", "Pagar", botones);
 
              if (dr == DialogResult.Yes)
              {

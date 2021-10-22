@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 
@@ -41,7 +42,8 @@ namespace DiscotecaLaSantaDiabla
                 gridBebidas.Rows[numFila].Cells[0].Value = iter;
                 gridBebidas.Rows[numFila].Cells[1].Value = b.getIdBebida();
                 gridBebidas.Rows[numFila].Cells[2].Value = b.getNombre();
-                gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio();
+                gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio().ToString("C", CultureInfo.CurrentCulture);
+
                 gridBebidas.Rows[numFila].Cells[4].Value = b.getPresentacion();
                 gridBebidas.Rows[numFila].Cells[5].Value = b.getCantidad();
                 gridBebidas.Rows[numFila].Cells[6].Value = b.getTipoBebida();

@@ -200,7 +200,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnSalidaDeUsuarios.UseVisualStyleBackColor = false;
             this.btnSalidaDeUsuarios.Click += new System.EventHandler(this.btnSalidaDeUsuarios_Click);
             // 
-            // Form1
+            // GUIPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,7 +216,7 @@ namespace DiscotecaLaSantaDiabla
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "GUIPrincipal";
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

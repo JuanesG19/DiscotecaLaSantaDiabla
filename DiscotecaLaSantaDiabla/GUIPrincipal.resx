@@ -57,8 +57,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="Banner.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Banner.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAC0CAIAAABE5RZkAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -9223,22 +9223,25 @@
         GhIFcRqn/wmBdOjxb6VhQgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Banner.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, -5</value>
+  <data name="Banner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -7</value>
   </data>
-  <data name="Banner.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1278, 178</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Banner.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="Banner.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="Banner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1461, 237</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Banner.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;Banner.Name" xml:space="preserve">
     <value>Banner</value>
   </data>
   <data name="&gt;&gt;Banner.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Banner.Parent" xml:space="preserve">
     <value>$this</value>
@@ -9246,7 +9249,7 @@
   <data name="&gt;&gt;Banner.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkGBhAPDw8PEA8MDg8PDQ0NDQ0NDQ4MDA0NFBAVFBQQEhIX
         HCYeFxkjGRISHy8gIycpLCwsFR4xNTAqNSYrLCn/2wBDAQkKCg4MDhoPDxopJB8cKSwpLCwsKSksLCkp
@@ -9308,7 +9311,7 @@
         cKBgOBCP/9k=
 </value>
   </data>
-  <data name="btnZonaD.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnZonaD.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdwAAABQCAYAAACzpsTiAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -9493,20 +9496,23 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="btnZonaD.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>585, 239</value>
+  <data name="btnZonaD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 319</value>
   </data>
-  <data name="btnZonaD.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>476, 80</value>
+  <data name="btnZonaD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnZonaD.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnZonaD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 107</value>
+  </data>
+  <data name="btnZonaD.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="&gt;&gt;btnZonaD.Name" xml:space="preserve">
     <value>btnZonaD</value>
   </data>
   <data name="&gt;&gt;btnZonaD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnZonaD.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -9514,7 +9520,7 @@
   <data name="&gt;&gt;btnZonaD.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnZonaC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnZonaC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdwAAABQCAYAAACzpsTiAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -9697,20 +9703,23 @@
         9djK/D9T361rwiPq0QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnZonaC.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>102, 239</value>
+  <data name="btnZonaC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 319</value>
   </data>
-  <data name="btnZonaC.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>476, 80</value>
+  <data name="btnZonaC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnZonaC.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnZonaC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 107</value>
+  </data>
+  <data name="btnZonaC.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="&gt;&gt;btnZonaC.Name" xml:space="preserve">
     <value>btnZonaC</value>
   </data>
   <data name="&gt;&gt;btnZonaC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnZonaC.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -9718,7 +9727,7 @@
   <data name="&gt;&gt;btnZonaC.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnZonaB.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnZonaB.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdwAAABQCAYAAACzpsTiAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -9902,20 +9911,23 @@
         oPB/g8FgMBiaDSDckNxCAqwUX6Z811j49lSC1Ac0GAwGg6HpsYz8PyWaNO2lGYaCAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnZonaB.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>585, 153</value>
+  <data name="btnZonaB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 204</value>
   </data>
-  <data name="btnZonaB.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>476, 80</value>
+  <data name="btnZonaB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnZonaB.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnZonaB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 107</value>
+  </data>
+  <data name="btnZonaB.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
   <data name="&gt;&gt;btnZonaB.Name" xml:space="preserve">
     <value>btnZonaB</value>
   </data>
   <data name="&gt;&gt;btnZonaB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnZonaB.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -9923,7 +9935,7 @@
   <data name="&gt;&gt;btnZonaB.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnEntrada.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEntrada.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABLwAAAAnCAIAAACKU8b+AAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -10035,23 +10047,26 @@
         x8x8edqT0sQXxVFv88TUxE94CZwBAcxNBQAAn6EE/gVRwdKIc/PsOQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnEntrada.Enabled" type="System.Boolean, System.Private.CoreLib">
+  <data name="btnEntrada.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnEntrada.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>13, 325</value>
+  <data name="btnEntrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 433</value>
   </data>
-  <data name="btnEntrada.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1212, 39</value>
+  <data name="btnEntrada.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnEntrada.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnEntrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1385, 52</value>
+  </data>
+  <data name="btnEntrada.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="&gt;&gt;btnEntrada.Name" xml:space="preserve">
     <value>btnEntrada</value>
   </data>
   <data name="&gt;&gt;btnEntrada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnEntrada.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -10059,7 +10074,7 @@
   <data name="&gt;&gt;btnEntrada.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btnBaño.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBaño.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFMAAABoCAIAAAACbVs5AAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -10166,23 +10181,26 @@
         l/AOuh0oPfulCZBrUfoHDybg/h8kIoBE1GvQuslZADdz3G5YzJp/AX8GVRIdIzb+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnBaño.Enabled" type="System.Boolean, System.Private.CoreLib">
+  <data name="btnBaño.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnBaño.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>13, 12</value>
+  <data name="btnBaño.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 16</value>
   </data>
-  <data name="btnBaño.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>83, 104</value>
+  <data name="btnBaño.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnBaño.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnBaño.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 139</value>
+  </data>
+  <data name="btnBaño.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
   <data name="&gt;&gt;btnBaño.Name" xml:space="preserve">
     <value>btnBaño</value>
   </data>
   <data name="&gt;&gt;btnBaño.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnBaño.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -10190,7 +10208,7 @@
   <data name="&gt;&gt;btnBaño.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnBar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFMAAADFCAIAAACn71kJAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -10294,23 +10312,26 @@
         3WceufvMI3efeeTuM4/cfeaRu888cveZR+4+88jdZ24lD5T9HdP0IwL/TxmvAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnBar.Enabled" type="System.Boolean, System.Private.CoreLib">
+  <data name="btnBar.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnBar.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>13, 122</value>
+  <data name="btnBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 163</value>
   </data>
-  <data name="btnBar.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>83, 197</value>
+  <data name="btnBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnBar.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 263</value>
+  </data>
+  <data name="btnBar.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="&gt;&gt;btnBar.Name" xml:space="preserve">
     <value>btnBar</value>
   </data>
   <data name="&gt;&gt;btnBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnBar.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -10318,7 +10339,7 @@
   <data name="&gt;&gt;btnBar.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnZonaA.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnZonaA.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdwAAABQCAYAAACzpsTiAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -10501,20 +10522,23 @@
         KQwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnZonaA.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>103, 153</value>
+  <data name="btnZonaA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 204</value>
   </data>
-  <data name="btnZonaA.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>476, 80</value>
+  <data name="btnZonaA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnZonaA.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnZonaA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 107</value>
+  </data>
+  <data name="btnZonaA.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="&gt;&gt;btnZonaA.Name" xml:space="preserve">
     <value>btnZonaA</value>
   </data>
   <data name="&gt;&gt;btnZonaA.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnZonaA.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -10522,7 +10546,7 @@
   <data name="&gt;&gt;btnZonaA.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btnVIP.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnVIP.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAAEzCAIAAABPEi2oAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -10731,20 +10755,23 @@
         Kv+n/wNGPUS6bTJ9xwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnVIP.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>1067, 12</value>
+  <data name="btnVIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1219, 16</value>
   </data>
-  <data name="btnVIP.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>158, 307</value>
+  <data name="btnVIP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnVIP.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnVIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 409</value>
+  </data>
+  <data name="btnVIP.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="&gt;&gt;btnVIP.Name" xml:space="preserve">
     <value>btnVIP</value>
   </data>
   <data name="&gt;&gt;btnVIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnVIP.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -10752,7 +10779,7 @@
   <data name="&gt;&gt;btnVIP.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="btnZonaEspecial.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnZonaEspecial.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA78AAABTCAIAAADY7CepAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -11022,20 +11049,23 @@
         BH8RexYEQRAEQRAEfxF7FgRBEARBEAT/SP7w/wGtWYf5AgJTAAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnZonaEspecial.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>102, 64</value>
+  <data name="btnZonaEspecial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 85</value>
   </data>
-  <data name="btnZonaEspecial.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>959, 83</value>
+  <data name="btnZonaEspecial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnZonaEspecial.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnZonaEspecial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1096, 111</value>
+  </data>
+  <data name="btnZonaEspecial.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="&gt;&gt;btnZonaEspecial.Name" xml:space="preserve">
     <value>btnZonaEspecial</value>
   </data>
   <data name="&gt;&gt;btnZonaEspecial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnZonaEspecial.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -11043,7 +11073,7 @@
   <data name="&gt;&gt;btnZonaEspecial.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="btnTarima.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTarima.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA78AAAAuCAIAAABvUDm2AAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -11177,23 +11207,26 @@
         9mKQNWba6+nQIM09vqB6c8Ru+nXCfzVvEzx6bMEGqzPDMM5Cqfk/kse0yOHx7P4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTarima.Enabled" type="System.Boolean, System.Private.CoreLib">
+  <data name="btnTarima.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnTarima.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>102, 12</value>
+  <data name="btnTarima.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 16</value>
   </data>
-  <data name="btnTarima.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>959, 43</value>
+  <data name="btnTarima.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnTarima.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnTarima.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1096, 57</value>
+  </data>
+  <data name="btnTarima.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="&gt;&gt;btnTarima.Name" xml:space="preserve">
     <value>btnTarima</value>
   </data>
   <data name="&gt;&gt;btnTarima.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnTarima.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -11201,20 +11234,23 @@
   <data name="&gt;&gt;btnTarima.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 190</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 253</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1240, 378</value>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1417, 503</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11222,20 +11258,22 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnUsuarios.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="btnUsuarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="btnUsuarios.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>263, 574</value>
+  <data name="btnUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 765</value>
   </data>
-  <data name="btnUsuarios.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="btnUsuarios.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnUsuarios.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="btnUsuarios.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="btnUsuarios.Text" xml:space="preserve">
@@ -11245,7 +11283,7 @@
     <value>btnUsuarios</value>
   </data>
   <data name="&gt;&gt;btnUsuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnUsuarios.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11256,16 +11294,19 @@
   <data name="btnPedirBebidas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnPedirBebidas.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="btnPedirBebidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="btnPedirBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>772, 574</value>
+  <data name="btnPedirBebidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>882, 765</value>
   </data>
-  <data name="btnPedirBebidas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="btnPedirBebidas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnPedirBebidas.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnPedirBebidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="btnPedirBebidas.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="btnPedirBebidas.Text" xml:space="preserve">
@@ -11275,7 +11316,7 @@
     <value>btnPedirBebidas</value>
   </data>
   <data name="&gt;&gt;btnPedirBebidas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnPedirBebidas.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11286,16 +11327,19 @@
   <data name="btnInventarioBebidas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnInventarioBebidas.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="btnInventarioBebidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="btnInventarioBebidas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>520, 574</value>
+  <data name="btnInventarioBebidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>594, 765</value>
   </data>
-  <data name="btnInventarioBebidas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="btnInventarioBebidas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnInventarioBebidas.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnInventarioBebidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="btnInventarioBebidas.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="btnInventarioBebidas.Text" xml:space="preserve">
@@ -11305,7 +11349,7 @@
     <value>btnInventarioBebidas</value>
   </data>
   <data name="&gt;&gt;btnInventarioBebidas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnInventarioBebidas.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11316,16 +11360,19 @@
   <data name="btnAfotoPorcentual.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnAfotoPorcentual.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="btnAfotoPorcentual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="btnAfotoPorcentual.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>520, 616</value>
+  <data name="btnAfotoPorcentual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>594, 821</value>
   </data>
-  <data name="btnAfotoPorcentual.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="btnAfotoPorcentual.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnAfotoPorcentual.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnAfotoPorcentual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="btnAfotoPorcentual.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="btnAfotoPorcentual.Text" xml:space="preserve">
@@ -11335,7 +11382,7 @@
     <value>btnAfotoPorcentual</value>
   </data>
   <data name="&gt;&gt;btnAfotoPorcentual.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAfotoPorcentual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11346,16 +11393,19 @@
   <data name="aforoZonas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="aforoZonas.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="aforoZonas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="aforoZonas.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>772, 616</value>
+  <data name="aforoZonas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>882, 821</value>
   </data>
-  <data name="aforoZonas.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="aforoZonas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="aforoZonas.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="aforoZonas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="aforoZonas.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="aforoZonas.Text" xml:space="preserve">
@@ -11365,7 +11415,7 @@
     <value>aforoZonas</value>
   </data>
   <data name="&gt;&gt;aforoZonas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;aforoZonas.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11376,19 +11426,22 @@
   <data name="btnSalidaDeUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnSalidaDeUsuarios.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Allstar4, 9pt</value>
+  <data name="btnSalidaDeUsuarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnSalidaDeUsuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnSalidaDeUsuarios.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>263, 616</value>
+  <data name="btnSalidaDeUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 821</value>
   </data>
-  <data name="btnSalidaDeUsuarios.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>224, 36</value>
+  <data name="btnSalidaDeUsuarios.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnSalidaDeUsuarios.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnSalidaDeUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 48</value>
+  </data>
+  <data name="btnSalidaDeUsuarios.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="btnSalidaDeUsuarios.Text" xml:space="preserve">
@@ -11398,7 +11451,7 @@
     <value>btnSalidaDeUsuarios</value>
   </data>
   <data name="&gt;&gt;btnSalidaDeUsuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSalidaDeUsuarios.Parent" xml:space="preserve">
     <value>$this</value>
@@ -11406,19 +11459,19 @@
   <data name="&gt;&gt;btnSalidaDeUsuarios.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
-    <value>7, 15</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
-  <data name="$this.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkGBxAQDxANDRANDw8NDw8NDQ0MDw8NDQ0MFBEWFhQRFBQY
         HCggGBolHBQUITEhJSkrLi4uFx8zODMsNygtLiv/2wBDAQoKCg0MDhQPEBQsGRQZLCwsKywsLCwsLCws
@@ -11471,8 +11524,11 @@
         wnHHAUiX/AJxwlUiGQyTgGQQzjgOqAWccEqCGccAtCwWccClCQyDhAf/2Q==
 </value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1264, 659</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1445, 879</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -11481,9 +11537,9 @@
     <value>Discoteca La Santa Diabla</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+    <value>GUIPrincipal</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

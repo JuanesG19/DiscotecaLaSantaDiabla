@@ -96,5 +96,10 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         {
 
         }
+
+        private void txtPrecio_Leave(object sender, EventArgs e)
+        {
+            GUIModificarBebida.formatoMoneda(txtPrecio);
+        }
     }
 }
