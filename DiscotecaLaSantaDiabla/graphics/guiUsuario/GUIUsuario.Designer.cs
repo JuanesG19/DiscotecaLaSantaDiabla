@@ -33,6 +33,12 @@ namespace DiscotecaLaSantaDiabla
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gridUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.btnModificarUsuario = new System.Windows.Forms.Button();
+            this.btnContarUsuario = new System.Windows.Forms.Button();
             this.iterador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,12 +46,6 @@ namespace DiscotecaLaSantaDiabla
             this.tipodeCuentaGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaNacimientoGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAgregarUsuario = new System.Windows.Forms.Button();
-            this.btnMostrar = new System.Windows.Forms.Button();
-            this.btnEliminarUsuario = new System.Windows.Forms.Button();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
-            this.btnModificarUsuario = new System.Windows.Forms.Button();
-            this.btnContarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -82,64 +82,15 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.Location = new System.Drawing.Point(12, 176);
             this.gridUsuarios.Name = "gridUsuarios";
             this.gridUsuarios.RowTemplate.Height = 25;
-            this.gridUsuarios.Size = new System.Drawing.Size(960, 413);
+            this.gridUsuarios.Size = new System.Drawing.Size(961, 413);
             this.gridUsuarios.TabIndex = 1;
-            // 
-            // iterador
-            // 
-            this.iterador.HeaderText = "";
-            this.iterador.Name = "iterador";
-            this.iterador.ReadOnly = true;
-            this.iterador.Width = 30;
-            // 
-            // idGrid
-            // 
-            this.idGrid.HeaderText = "Identificacion";
-            this.idGrid.Name = "idGrid";
-            this.idGrid.ReadOnly = true;
-            this.idGrid.Width = 130;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 185;
-            // 
-            // apellidoGrid
-            // 
-            this.apellidoGrid.HeaderText = "Apellido";
-            this.apellidoGrid.Name = "apellidoGrid";
-            this.apellidoGrid.ReadOnly = true;
-            this.apellidoGrid.Width = 180;
-            // 
-            // tipodeCuentaGrid
-            // 
-            this.tipodeCuentaGrid.HeaderText = "Tipo De Cuenta";
-            this.tipodeCuentaGrid.Name = "tipodeCuentaGrid";
-            this.tipodeCuentaGrid.ReadOnly = true;
-            this.tipodeCuentaGrid.Width = 120;
-            // 
-            // telefonoGrid
-            // 
-            this.telefonoGrid.HeaderText = "Telefono";
-            this.telefonoGrid.Name = "telefonoGrid";
-            this.telefonoGrid.ReadOnly = true;
-            this.telefonoGrid.Width = 120;
-            // 
-            // fechaNacimientoGrid
-            // 
-            this.fechaNacimientoGrid.HeaderText = "Fecha Nacimiento";
-            this.fechaNacimientoGrid.Name = "fechaNacimientoGrid";
-            this.fechaNacimientoGrid.ReadOnly = true;
-            this.fechaNacimientoGrid.Width = 150;
             // 
             // btnAgregarUsuario
             // 
             this.btnAgregarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAgregarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAgregarUsuario.Location = new System.Drawing.Point(12, 595);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
             this.btnAgregarUsuario.Size = new System.Drawing.Size(153, 33);
@@ -153,7 +104,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMostrar.Location = new System.Drawing.Point(819, 595);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(153, 33);
@@ -167,7 +118,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminarUsuario.Location = new System.Drawing.Point(171, 595);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(153, 33);
@@ -181,7 +132,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuscarUsuario.Location = new System.Drawing.Point(330, 595);
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
             this.btnBuscarUsuario.Size = new System.Drawing.Size(153, 33);
@@ -195,7 +146,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnModificarUsuario.Location = new System.Drawing.Point(489, 595);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(153, 33);
@@ -209,7 +160,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnContarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnContarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnContarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnContarUsuario.Location = new System.Drawing.Point(648, 595);
             this.btnContarUsuario.Name = "btnContarUsuario";
             this.btnContarUsuario.Size = new System.Drawing.Size(165, 33);
@@ -217,6 +168,62 @@ namespace DiscotecaLaSantaDiabla
             this.btnContarUsuario.Text = "Contar Usuarios";
             this.btnContarUsuario.UseVisualStyleBackColor = false;
             this.btnContarUsuario.Click += new System.EventHandler(this.btnContarUsuario_Click);
+            // 
+            // iterador
+            // 
+            this.iterador.HeaderText = "";
+            this.iterador.Name = "iterador";
+            this.iterador.ReadOnly = true;
+            this.iterador.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.iterador.Width = 30;
+            // 
+            // idGrid
+            // 
+            this.idGrid.HeaderText = "Identificacion";
+            this.idGrid.Name = "idGrid";
+            this.idGrid.ReadOnly = true;
+            this.idGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.idGrid.Width = 130;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.nombre.Width = 185;
+            // 
+            // apellidoGrid
+            // 
+            this.apellidoGrid.HeaderText = "Apellido";
+            this.apellidoGrid.Name = "apellidoGrid";
+            this.apellidoGrid.ReadOnly = true;
+            this.apellidoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.apellidoGrid.Width = 180;
+            // 
+            // tipodeCuentaGrid
+            // 
+            this.tipodeCuentaGrid.HeaderText = "Tipo De Cuenta";
+            this.tipodeCuentaGrid.Name = "tipodeCuentaGrid";
+            this.tipodeCuentaGrid.ReadOnly = true;
+            this.tipodeCuentaGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.tipodeCuentaGrid.Width = 125;
+            // 
+            // telefonoGrid
+            // 
+            this.telefonoGrid.HeaderText = "Telefono";
+            this.telefonoGrid.Name = "telefonoGrid";
+            this.telefonoGrid.ReadOnly = true;
+            this.telefonoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.telefonoGrid.Width = 120;
+            // 
+            // fechaNacimientoGrid
+            // 
+            this.fechaNacimientoGrid.HeaderText = "Fecha Nacimiento";
+            this.fechaNacimientoGrid.Name = "fechaNacimientoGrid";
+            this.fechaNacimientoGrid.ReadOnly = true;
+            this.fechaNacimientoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fechaNacimientoGrid.Width = 150;
             // 
             // GUIUsuario
             // 

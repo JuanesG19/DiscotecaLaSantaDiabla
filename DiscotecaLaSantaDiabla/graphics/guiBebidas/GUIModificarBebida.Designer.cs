@@ -33,6 +33,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtTipoBebidaNew = new System.Windows.Forms.ComboBox();
             this.lblTipoBebida = new System.Windows.Forms.Label();
             this.txtPresentacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtIdentificadorB = new System.Windows.Forms.TextBox();
             this.lblIdentificador = new System.Windows.Forms.Label();
-            this.txtTipoBebidaNew = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -89,6 +89,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // btnBuscar
             // 
@@ -122,6 +123,18 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 395);
             this.panel2.TabIndex = 7;
+            // 
+            // txtTipoBebidaNew
+            // 
+            this.txtTipoBebidaNew.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtTipoBebidaNew.FormattingEnabled = true;
+            this.txtTipoBebidaNew.Items.AddRange(new object[] {
+            "STANDAR",
+            "VIP"});
+            this.txtTipoBebidaNew.Location = new System.Drawing.Point(20, 355);
+            this.txtTipoBebidaNew.Name = "txtTipoBebidaNew";
+            this.txtTipoBebidaNew.Size = new System.Drawing.Size(253, 23);
+            this.txtTipoBebidaNew.TabIndex = 69;
             // 
             // lblTipoBebida
             // 
@@ -357,18 +370,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.lblIdentificador.Size = new System.Drawing.Size(105, 17);
             this.lblIdentificador.TabIndex = 30;
             this.lblIdentificador.Text = "Identificador";
-            // 
-            // txtTipoBebidaNew
-            // 
-            this.txtTipoBebidaNew.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtTipoBebidaNew.FormattingEnabled = true;
-            this.txtTipoBebidaNew.Items.AddRange(new object[] {
-            "STANDAR",
-            "VIP"});
-            this.txtTipoBebidaNew.Location = new System.Drawing.Point(20, 355);
-            this.txtTipoBebidaNew.Name = "txtTipoBebidaNew";
-            this.txtTipoBebidaNew.Size = new System.Drawing.Size(253, 23);
-            this.txtTipoBebidaNew.TabIndex = 69;
             // 
             // GUIModificarBebida
             // 

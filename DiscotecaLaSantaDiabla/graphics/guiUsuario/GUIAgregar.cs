@@ -47,24 +47,35 @@ namespace DiscotecaLaSantaDiabla
                 tipoCuenta = Cuenta.Cuentas.VIP;
             }
 
-            try
+            DateTime edadActual = fechaNacimiento.Value.AddYears(18);
+
+            if ( edadActual <= DateTime.Today )
             {
-                Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
-                Usuario.crearUsuario(cliente);
+                try
+                {
+                    Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, tipoCuenta, fecha);
+                    Usuario.crearUsuario(cliente);
 
-                txtIdentificacion.Text = "";
-                txtNombres.Text = "";
-                txtApellidos.Text = "";
-                txtTelefonos.Text = "";
-                txtTipoDeCuenta.Text = "";
+                    txtIdentificacion.Text = "";
+                    txtNombres.Text = "";
+                    txtApellidos.Text = "";
+                    txtTelefonos.Text = "";
+                    txtTipoDeCuenta.Text = "";
 
-                MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
+                    MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("El usuario NO es mayor de edad");
+                return;
             }
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

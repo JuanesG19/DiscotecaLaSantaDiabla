@@ -52,8 +52,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private void btnModificar_Click(object sender, EventArgs e)
         {
 
-             Cuentas tipoCuenta = Cuentas.STANDAR;
-
             if (busqueda == true)
             {
 
@@ -62,32 +60,47 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 bebida = Bebida.buscarBebida(id);
 
 
-                if (txtNombre.Text.Length == 0 || txtPrecio.Text.Length == 0 || txtPresentacion.Text.Length == 0 || txtCantidad.Text.Length == 0)
+                if (txtNombre.Text.Length == 0  )
                 {
-                    MessageBox.Show("Hay espacios vacios, No se ha podido modificar la bebida");
-                    return;
+                    txtNombre.Text = txtNombreB.Text;
                 }
-           
+                if(txtPrecio.Text.Length == 0)
+                {
+                    txtPrecio.Text = txtPrecioB.Text; 
+                }
+                if (txtPresentacion.Text.Length == 0)
+                {
+                    txtPresentacion.Text = txtPresentacionB.Text;
+                }
+                if (txtCantidad.Text.Length == 0)
+                {
+                    txtCantidad.Text = txtCantidadB.Text;
+                }
+                if (txtTipoBebidaNew.Text.Length == 0)
+                {
+                    txtTipoBebidaNew.Text = txtTipoBebidaB.Text;
+                }
+
                 try
                 {
 
                     if (txtTipoBebidaNew.Text.Equals("STANDAR") == true)
                     {
-                        bebida.setTipoBebida(Cuentas.STANDAR);
                         bebida.setNombre(txtNombre.Text);
                         bebida.setPrecio(Double.Parse(txtPrecio.Text));
                         bebida.setPresentacion(txtPresentacion.Text);
                         bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
+                        bebida.setTipoBebida(Cuentas.STANDAR);
                         MessageBox.Show("El producto ha sido modificado correctamente");
                         this.Close();
                     }
                     else if (txtTipoBebidaNew.Text.Equals("VIP") == true)
                     {
-                        bebida.setTipoBebida(Cuentas.VIP);
                         bebida.setNombre(txtNombre.Text);
                         bebida.setPrecio(Double.Parse(txtPrecio.Text));
                         bebida.setPresentacion(txtPresentacion.Text);
                         bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
+                        bebida.setTipoBebida(Cuentas.VIP);
                         MessageBox.Show("El producto ha sido modificado correctamente");
                         this.Close();
                     }
@@ -115,6 +128,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         {
             this.Close();
 
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

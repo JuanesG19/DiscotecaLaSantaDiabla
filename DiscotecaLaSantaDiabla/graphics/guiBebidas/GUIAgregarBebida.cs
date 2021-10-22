@@ -54,7 +54,15 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 {
                     Bebida.agregarBebida(producto);
                     MessageBox.Show(producto.getNombre() + ", Ha sido registrado con exito");
-                }catch(Exception ex)
+
+                    txtIdentificador.Text = " ";
+                    txtNombre.Text = " ";
+                    txtPrecio.Text = " ";
+                    txtPresentacion.Text = " ";
+                    txtCantidad.Text = " ";
+                    txtTipoBebida.Text = " ";
+                }
+                catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }

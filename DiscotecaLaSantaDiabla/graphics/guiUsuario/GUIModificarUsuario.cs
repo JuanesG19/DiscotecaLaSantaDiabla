@@ -51,11 +51,27 @@ namespace DiscotecaLaSantaDiabla
 
                 cliente = Usuario.buscarUsuario(id);
 
-                if (txtNombre.Text.Length == 0 || txtApellido.Text.Length == 0 || txtTelefono.Text.Length == 0 || comboFechaN.Text.Length == 0)
+                if (txtNombre.Text.Length == 0)
                 {
-                    MessageBox.Show("Hay espacios vacios, No se ha podido modificar el usuario");
-                    return;
-                }              
+                    txtNombre.Text = txtNombreB.Text;
+                }
+                if (txtApellido.Text.Length == 0)
+                {
+                    txtApellido.Text = txtApellidosB.Text;
+                }
+                 if (comboTipoCuenta.Text.Length == 0)
+                {
+                    comboTipoCuenta.Text = txtTipoCuentaB.Text;
+                }
+                if (txtTelefono.Text.Length == 0)
+                {
+                    txtTelefono.Text = txtTelefonosB.Text;
+                }
+                if (comboFechaN.Text.Length == 0)
+                {
+                    comboFechaN.Text = txtFecha.Text;
+                }
+
                 if (!comboTipoCuenta.Text.Equals("VIP") && !comboTipoCuenta.Text.Equals("STANDAR"))
                 {
                     MessageBox.Show("El tipo de la cuenta no es valido");
