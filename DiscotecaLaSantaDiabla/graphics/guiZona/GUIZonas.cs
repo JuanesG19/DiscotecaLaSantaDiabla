@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.graphics.guiUsuario;
+using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
@@ -145,7 +146,18 @@ namespace DiscotecaLaSantaDiabla
                         }
                         else
                         {
-                            MessageBox.Show("El cliente "+user.getNombre()+" No puede ingresar a esta zona porque no es VIP");
+                            MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                            DialogResult dR = MessageBox.Show("Acceso a zona VIP restringido. El usuario no cuenta con membresia VIP ¿Desea actualizar su membresia a VIP?", "Actualizar Membresia", botonesConf);
+
+                            if (dR == DialogResult.Yes)
+                            {
+                                GUIMembresia agregar = new GUIMembresia();
+                                agregar.Show();
+                            }
+                            else if(dR == DialogResult.No)
+                            {
+                                return;
+                            }
                         }                      
                     }
                     catch (Exception ex)

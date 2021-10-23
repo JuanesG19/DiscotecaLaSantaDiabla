@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.graphics.guiUsuario;
+using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
@@ -75,6 +76,23 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIModificarUsuario usuario = new GUIModificarUsuario();
             usuario.Show();
+        }
+
+        private void btnModificarMembresia_Click(object sender, EventArgs e)
+        {
+            GUIMembresia membresia = new GUIMembresia();
+            membresia.Show();
+        }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            GUIMembresiaVIP vip = new GUIMembresiaVIP();
+            vip.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -45,6 +45,7 @@ namespace DiscotecaLaSantaDiabla
                     txtNombres.Text = "";
                     txtApellidos.Text = "";
                     txtTelefonos.Text = "";
+                    fechaNacimiento.Text = "";
 
                     MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
 

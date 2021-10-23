@@ -31,8 +31,8 @@ namespace DiscotecaLaSantaDiabla
                 cliente = Usuario.buscarUsuario(id);
                 if(cliente == null)
                 {
-                MessageBox.Show("No existe el usuario a eliminar");
-                return;
+                    MessageBox.Show("No existe el usuario a eliminar");
+                    return;
                 }
 
                 txtNombres.Text = cliente.getNombre();
