@@ -83,5 +83,16 @@ namespace DiscotecaLaSantaDiabla
             GUIMembresia membresia = new GUIMembresia();
             membresia.Show();
         }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            GUIMembresiaVIP vip = new GUIMembresiaVIP();
+            vip.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

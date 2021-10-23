@@ -71,7 +71,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                 {
                     try
                     {
+                        DateTime actual = DateTime.Today;
                         cliente.setTipoCuenta(Cuentas.VIP);
+                        cliente.setFechaVencimientoM(Convert.ToString(actual));
                         MessageBox.Show("Bienvenido a nuestra comunidad VIP: " + cliente.getNombre());
                         this.Close();
                     }

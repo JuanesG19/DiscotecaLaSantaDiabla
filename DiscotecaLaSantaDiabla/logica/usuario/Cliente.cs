@@ -29,6 +29,9 @@ namespace DiscotecaLaSantaDiabla.logica
         //Tipo de cuenta del Cliente
         private Cuentas tipoCuenta;
 
+        //Fecha de membresia del Cliente
+        private String fechaVencimientoM;
+
         //CONSTRUCTOR
         public Cliente(String id, String nombre, String apellido, String telefono, Cuentas pTipoCuenta, String fechaNacimiento)
         {
@@ -40,6 +43,7 @@ namespace DiscotecaLaSantaDiabla.logica
                 this.fechaN = fechaNacimiento;
                 this.telefono = telefono;
                 this.tipoCuenta = pTipoCuenta;
+                this.fechaVencimientoM = null;
             }
             catch
             {
@@ -102,6 +106,15 @@ namespace DiscotecaLaSantaDiabla.logica
         public void setTipoCuenta(Cuentas pTipoCuenta)
         {
             tipoCuenta = pTipoCuenta;
+        }
+
+        //Metodo Get Id del cliente
+        public String getFechaVencimientoM() => fechaVencimientoM;
+
+        //Metodo Set fecha Membresia cliente
+        public void setFechaVencimientoM(String pFechaVencimientoM)
+        {
+            fechaVencimientoM = pFechaVencimientoM;
         }
     }
 }

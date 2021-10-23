@@ -32,11 +32,11 @@ namespace DiscotecaLaSantaDiabla
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIPrincipal));
             this.Banner = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnZonaD = new System.Windows.Forms.Button();
             this.btnZonaC = new System.Windows.Forms.Button();
             this.btnZonaB = new System.Windows.Forms.Button();
             this.btnEntrada = new System.Windows.Forms.Button();
-            this.btnBaño = new System.Windows.Forms.Button();
             this.btnBar = new System.Windows.Forms.Button();
             this.btnZonaA = new System.Windows.Forms.Button();
             this.btnVIP = new System.Windows.Forms.Button();
@@ -62,17 +62,23 @@ namespace DiscotecaLaSantaDiabla
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnZonaD);
             this.panel1.Controls.Add(this.btnZonaC);
             this.panel1.Controls.Add(this.btnZonaB);
             this.panel1.Controls.Add(this.btnEntrada);
-            this.panel1.Controls.Add(this.btnBaño);
             this.panel1.Controls.Add(this.btnBar);
             this.panel1.Controls.Add(this.btnZonaA);
             this.panel1.Controls.Add(this.btnVIP);
             this.panel1.Controls.Add(this.btnZonaEspecial);
             this.panel1.Controls.Add(this.btnTarima);
             this.panel1.Name = "panel1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnZonaD
             // 
@@ -100,12 +106,6 @@ namespace DiscotecaLaSantaDiabla
             resources.ApplyResources(this.btnEntrada, "btnEntrada");
             this.btnEntrada.Name = "btnEntrada";
             this.btnEntrada.UseVisualStyleBackColor = true;
-            // 
-            // btnBaño
-            // 
-            resources.ApplyResources(this.btnBaño, "btnBaño");
-            this.btnBaño.Name = "btnBaño";
-            this.btnBaño.UseVisualStyleBackColor = true;
             // 
             // btnBar
             // 
@@ -217,6 +217,7 @@ namespace DiscotecaLaSantaDiabla
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GUIPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -228,7 +229,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.PictureBox Banner;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnEntrada;
-        private System.Windows.Forms.Button btnBaño;
         private System.Windows.Forms.Button btnBar;
         private System.Windows.Forms.Button btnZonaA;
         private System.Windows.Forms.Button btnVIP;
@@ -243,6 +243,7 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button aforoZonas;
         public System.Windows.Forms.Button btnZonaEspecial;
         private System.Windows.Forms.Button btnSalidaDeUsuarios;
+        private System.Windows.Forms.Button button1;
     }
 }
 
