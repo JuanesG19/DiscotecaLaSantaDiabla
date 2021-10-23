@@ -41,7 +41,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(cliente == null)
+            {
+                MessageBox.Show("Se debe buscar el usuario antes de conventirlo en miembro VIP");
+                return;
+            }
+
         }
 
         private void GUIBuscarUsuario_Load(object sender, EventArgs e)

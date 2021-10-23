@@ -29,12 +29,18 @@ namespace DiscotecaLaSantaDiabla
                 {
                     MessageBox.Show("El usuario buscado no existe");
                     return;
-                }              
-                txtNombreB.Text = cliente.getNombre();
-                txtApellidosB.Text = cliente.getApellido();
-                txtTelefonosB.Text = cliente.getTelefono();
-                txtFecha.Text = cliente.getFechaN();
-                Busqueda = true;          
+                }  
+                else
+                {
+                    txtNombreB.Text = cliente.getNombre();
+                    txtApellidosB.Text = cliente.getApellido();
+                    txtTipoCuentaB.Text = Convert.ToString(cliente.getTipoCuenta());
+                    txtTelefonosB.Text = cliente.getTelefono();
+                    txtFecha.Text = cliente.getFechaN();
+                    Busqueda = true;   
+
+                }            
+                      
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -62,15 +68,9 @@ namespace DiscotecaLaSantaDiabla
                 {
                     txtTelefono.Text = txtTelefonosB.Text;
                 }
-                if (comboFechaN.Text.Length == 0)
-                {
-                    comboFechaN.Text = txtFecha.Text;
-                }
-
 
                     cliente.setNombre(txtNombre.Text);
                     cliente.setApellido(txtApellido.Text);
-                    cliente.setFechaN(comboFechaN.Text);
                     cliente.setTelefono(txtTelefono.Text);
 
                     MessageBox.Show("El usuario ha sido modificado");
