@@ -22,6 +22,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            mostrarUsuariosVIP();
+        }
+        
+        public void mostrarUsuariosVIP()
+        {
             int numFila;
             int iter = 0;
 
@@ -35,7 +40,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 
             foreach (Cliente cliente in usuarios)
             {
-                if(cliente.getTipoCuenta().Equals(Cuentas.VIP))
+                if (cliente.getTipoCuenta().Equals(Cuentas.VIP))
                 {
                     numFila = gridUsuarios.Rows.Add();
                     iter++;
@@ -51,10 +56,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                     gridUsuarios.Rows[numFila].Cells[5].Value = fechaActual;
                     gridUsuarios.Rows[numFila].Cells[6].Value = fechaVencimiento;
 
-                        
+
                 }
-               
+
             }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

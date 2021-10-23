@@ -30,15 +30,20 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            mostrarUsuarios();
+        }
+
+        public void mostrarUsuarios()
+        {
             int numFila;
-            int iter = 0;           
+            int iter = 0;
 
             usuarios = Usuario.getUsuarios();
             gridUsuarios.Rows.Clear();
             if (usuarios.Count == 0)
             {
                 MessageBox.Show("No hay usuarios registrados");
-            }           
+            }
 
             foreach (Cliente cliente in usuarios)
             {
@@ -53,6 +58,7 @@ namespace DiscotecaLaSantaDiabla
                 gridUsuarios.Rows[numFila].Cells[5].Value = cliente.getTelefono();
                 gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getFechaN();
             }
+
         }
 
         private void btnBuscarUsuario_Click(object sender, EventArgs e)
@@ -88,11 +94,15 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIMembresiaVIP vip = new GUIMembresiaVIP();
             vip.Show();
+            vip.mostrarUsuariosVIP();
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }

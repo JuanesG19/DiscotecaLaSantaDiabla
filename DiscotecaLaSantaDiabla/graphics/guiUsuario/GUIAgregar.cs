@@ -16,6 +16,7 @@ namespace DiscotecaLaSantaDiabla
         {
             InitializeComponent();
         }
+       
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
@@ -65,12 +66,15 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            
             this.Close();
+
         }
 
         private void GUIAgregar_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

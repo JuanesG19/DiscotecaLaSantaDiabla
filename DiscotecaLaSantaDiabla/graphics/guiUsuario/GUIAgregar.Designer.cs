@@ -90,7 +90,7 @@ namespace DiscotecaLaSantaDiabla
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(14, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 18);
+            this.label4.Size = new System.Drawing.Size(191, 24);
             this.label4.TabIndex = 23;
             this.label4.Text = "Fecha de Nacimiento";
             // 
@@ -109,7 +109,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelefono.Location = new System.Drawing.Point(12, 251);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
+            this.lblTelefono.Size = new System.Drawing.Size(85, 24);
             this.lblTelefono.TabIndex = 21;
             this.lblTelefono.Text = "Telefono";
             // 
@@ -128,7 +128,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblApellidos.Location = new System.Drawing.Point(14, 175);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(67, 18);
+            this.lblApellidos.Size = new System.Drawing.Size(88, 24);
             this.lblApellidos.TabIndex = 19;
             this.lblApellidos.Text = "Apellidos";
             // 
@@ -147,7 +147,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNombre.Location = new System.Drawing.Point(14, 93);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(70, 18);
+            this.lblNombre.Size = new System.Drawing.Size(88, 24);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombres";
             // 
@@ -166,7 +166,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblIdentificacion.Location = new System.Drawing.Point(14, 19);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(195, 18);
+            this.lblIdentificacion.Size = new System.Drawing.Size(249, 24);
             this.lblIdentificacion.TabIndex = 15;
             this.lblIdentificacion.Text = "Documento de Identificacion";
             // 
@@ -175,7 +175,7 @@ namespace DiscotecaLaSantaDiabla
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(321, 472);
+            this.ClientSize = new System.Drawing.Size(510, 744);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.fechaNacimiento);

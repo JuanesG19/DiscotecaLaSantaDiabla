@@ -57,8 +57,9 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1156, 159);
+            this.pictureBox1.Size = new System.Drawing.Size(1321, 212);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -67,7 +68,7 @@ namespace DiscotecaLaSantaDiabla
             this.gridUsuarios.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -82,15 +83,18 @@ namespace DiscotecaLaSantaDiabla
             this.tipodeCuentaGrid,
             this.telefonoGrid,
             this.fechaNacimientoGrid});
-            this.gridUsuarios.Location = new System.Drawing.Point(182, 176);
+            this.gridUsuarios.Location = new System.Drawing.Point(208, 235);
+            this.gridUsuarios.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridUsuarios.Name = "gridUsuarios";
+            this.gridUsuarios.RowHeadersWidth = 51;
             this.gridUsuarios.RowTemplate.Height = 25;
-            this.gridUsuarios.Size = new System.Drawing.Size(963, 489);
+            this.gridUsuarios.Size = new System.Drawing.Size(1101, 652);
             this.gridUsuarios.TabIndex = 1;
             // 
             // iterador
             // 
             this.iterador.HeaderText = "";
+            this.iterador.MinimumWidth = 6;
             this.iterador.Name = "iterador";
             this.iterador.ReadOnly = true;
             this.iterador.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -99,6 +103,7 @@ namespace DiscotecaLaSantaDiabla
             // idGrid
             // 
             this.idGrid.HeaderText = "Identificacion";
+            this.idGrid.MinimumWidth = 6;
             this.idGrid.Name = "idGrid";
             this.idGrid.ReadOnly = true;
             this.idGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -107,6 +112,7 @@ namespace DiscotecaLaSantaDiabla
             // nombre
             // 
             this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 6;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -115,6 +121,7 @@ namespace DiscotecaLaSantaDiabla
             // apellidoGrid
             // 
             this.apellidoGrid.HeaderText = "Apellido";
+            this.apellidoGrid.MinimumWidth = 6;
             this.apellidoGrid.Name = "apellidoGrid";
             this.apellidoGrid.ReadOnly = true;
             this.apellidoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -123,6 +130,7 @@ namespace DiscotecaLaSantaDiabla
             // tipodeCuentaGrid
             // 
             this.tipodeCuentaGrid.HeaderText = "Tipo De Cuenta";
+            this.tipodeCuentaGrid.MinimumWidth = 6;
             this.tipodeCuentaGrid.Name = "tipodeCuentaGrid";
             this.tipodeCuentaGrid.ReadOnly = true;
             this.tipodeCuentaGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -131,6 +139,7 @@ namespace DiscotecaLaSantaDiabla
             // telefonoGrid
             // 
             this.telefonoGrid.HeaderText = "Telefono";
+            this.telefonoGrid.MinimumWidth = 6;
             this.telefonoGrid.Name = "telefonoGrid";
             this.telefonoGrid.ReadOnly = true;
             this.telefonoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -139,6 +148,7 @@ namespace DiscotecaLaSantaDiabla
             // fechaNacimientoGrid
             // 
             this.fechaNacimientoGrid.HeaderText = "Fecha Nacimiento";
+            this.fechaNacimientoGrid.MinimumWidth = 6;
             this.fechaNacimientoGrid.Name = "fechaNacimientoGrid";
             this.fechaNacimientoGrid.ReadOnly = true;
             this.fechaNacimientoGrid.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -149,10 +159,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnAgregarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAgregarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(26, 176);
+            this.btnAgregarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(30, 235);
+            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(140, 49);
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(160, 65);
             this.btnAgregarUsuario.TabIndex = 2;
             this.btnAgregarUsuario.Text = "Agregar Usuario";
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
@@ -163,10 +174,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMostrar.Location = new System.Drawing.Point(26, 561);
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrar.Location = new System.Drawing.Point(30, 748);
+            this.btnMostrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(140, 49);
+            this.btnMostrar.Size = new System.Drawing.Size(160, 65);
             this.btnMostrar.TabIndex = 3;
             this.btnMostrar.Text = "Mostrar Usuarios";
             this.btnMostrar.UseVisualStyleBackColor = false;
@@ -177,10 +189,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(26, 231);
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(30, 308);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(140, 49);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(160, 65);
             this.btnEliminarUsuario.TabIndex = 4;
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.UseVisualStyleBackColor = false;
@@ -191,10 +204,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(26, 286);
+            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(30, 381);
+            this.btnBuscarUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(140, 49);
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(160, 65);
             this.btnBuscarUsuario.TabIndex = 5;
             this.btnBuscarUsuario.Text = "Buscar Usuario";
             this.btnBuscarUsuario.UseVisualStyleBackColor = false;
@@ -205,10 +219,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificarUsuario.Location = new System.Drawing.Point(26, 341);
+            this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(30, 455);
+            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(140, 49);
+            this.btnModificarUsuario.Size = new System.Drawing.Size(160, 65);
             this.btnModificarUsuario.TabIndex = 6;
             this.btnModificarUsuario.Text = "Modificar Usuario";
             this.btnModificarUsuario.UseVisualStyleBackColor = false;
@@ -219,10 +234,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnContarUsuario.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnContarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnContarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContarUsuario.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnContarUsuario.Location = new System.Drawing.Point(26, 506);
+            this.btnContarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContarUsuario.Location = new System.Drawing.Point(30, 675);
+            this.btnContarUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnContarUsuario.Name = "btnContarUsuario";
-            this.btnContarUsuario.Size = new System.Drawing.Size(140, 49);
+            this.btnContarUsuario.Size = new System.Drawing.Size(160, 65);
             this.btnContarUsuario.TabIndex = 7;
             this.btnContarUsuario.Text = "Contar Usuarios";
             this.btnContarUsuario.UseVisualStyleBackColor = false;
@@ -233,10 +249,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarMembresia.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificarMembresia.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificarMembresia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarMembresia.Font = new System.Drawing.Font("Allstar4", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificarMembresia.Location = new System.Drawing.Point(26, 396);
+            this.btnModificarMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificarMembresia.Location = new System.Drawing.Point(30, 528);
+            this.btnModificarMembresia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModificarMembresia.Name = "btnModificarMembresia";
-            this.btnModificarMembresia.Size = new System.Drawing.Size(140, 49);
+            this.btnModificarMembresia.Size = new System.Drawing.Size(160, 65);
             this.btnModificarMembresia.TabIndex = 8;
             this.btnModificarMembresia.Text = "Modificar Membresia";
             this.btnModificarMembresia.UseVisualStyleBackColor = false;
@@ -247,10 +264,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnMembresia.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMembresia.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMembresia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMembresia.Font = new System.Drawing.Font("Allstar4", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMembresia.Location = new System.Drawing.Point(26, 451);
+            this.btnMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMembresia.Location = new System.Drawing.Point(30, 601);
+            this.btnMembresia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMembresia.Name = "btnMembresia";
-            this.btnMembresia.Size = new System.Drawing.Size(140, 49);
+            this.btnMembresia.Size = new System.Drawing.Size(160, 65);
             this.btnMembresia.TabIndex = 9;
             this.btnMembresia.Text = "Membresia VIP";
             this.btnMembresia.UseVisualStyleBackColor = false;
@@ -261,10 +279,11 @@ namespace DiscotecaLaSantaDiabla
             this.btnSalir.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(26, 616);
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Location = new System.Drawing.Point(30, 821);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(140, 49);
+            this.btnSalir.Size = new System.Drawing.Size(160, 65);
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -272,10 +291,10 @@ namespace DiscotecaLaSantaDiabla
             // 
             // GUIUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1156, 684);
+            this.ClientSize = new System.Drawing.Size(1927, 1058);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnMembresia);
             this.Controls.Add(this.btnModificarMembresia);
@@ -288,6 +307,7 @@ namespace DiscotecaLaSantaDiabla
             this.Controls.Add(this.gridUsuarios);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GUIUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios La Santa Diabla";

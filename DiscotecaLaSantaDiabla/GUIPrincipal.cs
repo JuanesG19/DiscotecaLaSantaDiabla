@@ -130,6 +130,7 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIUsuario usuario = new GUIUsuario();
             usuario.Show();
+            usuario.mostrarUsuarios();
         }
 
         private void aforoZonas_Click(object sender, EventArgs e)
