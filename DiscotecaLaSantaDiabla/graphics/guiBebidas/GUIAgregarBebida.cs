@@ -24,7 +24,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 return;
             }
 
-            Cuenta.Cuentas tipoBebida;
+            Membresia.Membresias tipoBebida;
 
             if (!txtTipoBebida.Text.Equals("VIP") && !txtTipoBebida.Text.Equals("STANDAR"))
             {
@@ -33,11 +33,11 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             }
             else if (txtTipoBebida.Text.Equals("STANDAR"))
             {
-                tipoBebida = Cuenta.Cuentas.STANDAR;
+                tipoBebida = Membresia.Membresias.STANDAR;
             }
             else
             {
-                tipoBebida = Cuenta.Cuentas.VIP;
+                tipoBebida = Membresia.Membresias.VIP;
             }
 
             try

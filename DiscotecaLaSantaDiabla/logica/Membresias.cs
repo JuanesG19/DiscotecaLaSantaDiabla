@@ -4,13 +4,13 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    class Cuenta
+    class Membresia
     {
 
         //ATRIBUTOS
 
         //Tipo de Cuentas
-        public enum Cuentas
+        public enum Membresias
         {
             VIP, STANDAR
         }

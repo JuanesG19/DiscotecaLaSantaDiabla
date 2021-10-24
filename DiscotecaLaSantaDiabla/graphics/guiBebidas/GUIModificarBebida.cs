@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -91,7 +91,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                         bebida.setPrecio(Double.Parse(txtPrecio.Text));
                         bebida.setPresentacion(txtPresentacion.Text);
                         bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
-                        bebida.setTipoBebida(Cuentas.STANDAR);
+                        bebida.setTipoBebida(logica.Membresia.Membresias.STANDAR);
                         MessageBox.Show("El producto ha sido modificado correctamente");
                         this.Close();
                     }
@@ -101,7 +101,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                         bebida.setPrecio(Double.Parse(txtPrecio.Text));
                         bebida.setPresentacion(txtPresentacion.Text);
                         bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
-                        bebida.setTipoBebida(Cuentas.VIP);
+                        bebida.setTipoBebida(logica.Membresia.Membresias.VIP);
                         MessageBox.Show("El producto ha sido modificado correctamente");
                         this.Close();
                     }

@@ -1,5 +1,6 @@
 ﻿using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
+using DiscotecaLaSantaDiabla.baseDeDatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,35 +21,36 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            String identificacion = txtIdentificacion.Text;
-            String nombre = txtNombres.Text;
-            String apellidos = txtApellidos.Text;
-            String telefono = txtTelefonos.Text;
-            String fecha = fechaNacimiento.Value.ToString();
 
-            if(identificacion.Length == 0 || nombre.Length == 0 || apellidos.Length == 0 || telefono.Length == 0 || fecha.Length == 0)
+            if (txtIdentificacion.Text.Length == 0 || txtNombres.Text.Length == 0 || txtApellidos.Text.Length == 0 || txtTelefonos.Text.Length == 0 || fechaNacimiento.Value.ToString().Length == 0)
             {
                 MessageBox.Show("Hay espacios vacios, No se ha podido agregar el usuario");
                 return;
             }
 
-                    
+            int identificacion = Convert.ToInt32(txtIdentificacion.Text);
+            String nombre = txtNombres.Text;
+            String apellidos = txtApellidos.Text;
+            String telefono = txtTelefonos.Text;
+            String fecha = Convert.ToString(fechaNacimiento.Value.ToString("dd/MM/yyyy"));
+            String membresia = Convert.ToString(Membresia.Membresias.STANDAR);
+
             DateTime edadActual = fechaNacimiento.Value.AddYears(18);
 
             if ( edadActual <= DateTime.Today )
             {
                 try
                 {
-                    Cliente cliente = new Cliente(identificacion, nombre, apellidos, telefono, Cuenta.Cuentas.STANDAR, fecha);
-                    Usuario.crearUsuario(cliente);
+                    //Cliente cliente = new Cliente("da", nombre, apellidos, telefono, Membresia.Membresias.STANDAR, fecha);
+                    //Usuario.crearUsuario(cliente);
+                   
+                    ConexionBaseDeDatos.agregarUsuario(identificacion, nombre, apellidos, fecha, telefono, membresia);
 
                     txtIdentificacion.Text = "";
                     txtNombres.Text = "";
                     txtApellidos.Text = "";
                     txtTelefonos.Text = "";
                     fechaNacimiento.Text = "";
-
-                    MessageBox.Show(cliente.getNombre() + ", Ha sido registrado con exito");
 
                 }
                 catch (Exception ex)
@@ -76,5 +78,9 @@ namespace DiscotecaLaSantaDiabla
 
         }
 
+        private void fechaNacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

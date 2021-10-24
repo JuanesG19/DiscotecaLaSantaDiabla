@@ -7,7 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 {
@@ -40,7 +40,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 
             foreach (Cliente cliente in usuarios)
             {
-                if (cliente.getTipoCuenta().Equals(Cuentas.VIP))
+                if (cliente.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP))
                 {
                     numFila = gridUsuarios.Rows.Add();
                     iter++;

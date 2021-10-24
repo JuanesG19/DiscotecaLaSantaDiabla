@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -80,7 +80,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                  return;
              }
 
-            if (buscada.getTipoBebida().Equals(Cuentas.VIP) && user.getTipoCuenta().Equals(Cuentas.STANDAR))
+            if (buscada.getTipoBebida().Equals(logica.Membresia.Membresias.VIP) && user.getTipoCuenta().Equals(logica.Membresia.Membresias.STANDAR))
             {
                 MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
                 DialogResult dR = MessageBox.Show("Bebida unicamente para clientes VIP. ¿Desea actualizar su membresia a VIP?", "Actualizar Membresia", botonesConf);
@@ -103,7 +103,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             double totalFactura = 0;
             double totalPagar = Bebida.totalAPagar(id);
 
-            if (user.getTipoCuenta().Equals(Cuentas.VIP) && buscada.getTipoBebida().Equals(Cuentas.STANDAR))
+            if (user.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP) && buscada.getTipoBebida().Equals(logica.Membresia.Membresias.STANDAR))
             {
                 double descuento = Bebida.descuentoBebidaVIP(totalPagar);
                 totalFactura = descuento;

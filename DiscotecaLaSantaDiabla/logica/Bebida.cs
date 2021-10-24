@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
@@ -135,7 +135,7 @@ namespace DiscotecaLaSantaDiabla.logica
             String nombreN = p.getNombre();
             double precioN = p.getPrecio();
             String presentacionN = p.getPresentacion();
-            Cuentas tipoBebida = p.getTipoBebida();
+            Membresia.Membresias tipoBebida = p.getTipoBebida();
 
 
             if (p.getIdBebida() == id)

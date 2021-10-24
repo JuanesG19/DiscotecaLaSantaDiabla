@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
@@ -26,10 +26,10 @@ namespace DiscotecaLaSantaDiabla.logica
         private  int cantidad;
 
         //Tipo Bebida
-        private Cuentas cuenta;
+        private Membresia.Membresias cuenta;
               
         //CONSTRUCTOR
-        public Producto(int pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad, Cuentas pTipoCuenta)
+        public Producto(int pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad, Membresia.Membresias pTipoCuenta)
         {
             idBebida = pIdBebida;
             cuenta = pTipoCuenta;
@@ -52,10 +52,10 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
         //Metodo Get Tipo Bebida
-        public Cuentas getTipoBebida() => cuenta;
+        public Membresia.Membresias getTipoBebida() => cuenta;
 
          //Metodo Set Tipo Bebida
-        public void setTipoBebida(Cuentas pTipoCuenta)
+        public void setTipoBebida(Membresia.Membresias pTipoCuenta)
         {
             cuenta = pTipoCuenta;
         }

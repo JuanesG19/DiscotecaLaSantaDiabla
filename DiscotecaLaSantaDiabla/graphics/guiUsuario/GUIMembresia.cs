@@ -7,7 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using static DiscotecaLaSantaDiabla.logica.Cuenta;
+using static DiscotecaLaSantaDiabla.logica.Membresia;
 
 namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 {
@@ -57,7 +57,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                 MessageBox.Show("Es necesario buscar a el usuario antes de actualizar la membresia");
                 return;
             }
-            else if(cliente.getTipoCuenta().Equals(Cuentas.VIP))
+            else if(cliente.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP))
             {
                 MessageBox.Show("No puede convertir a un cliente VIP en VIP");
                 return;
@@ -72,7 +72,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                     try
                     {
                         DateTime actual = DateTime.Today;
-                        cliente.setTipoCuenta(Cuentas.VIP);
+                        cliente.setTipoCuenta(logica.Membresia.Membresias.VIP);
                         cliente.setFechaVencimientoM(Convert.ToString(actual));
                         MessageBox.Show("Bienvenido a nuestra comunidad VIP: " + cliente.getNombre());
                         this.Close();

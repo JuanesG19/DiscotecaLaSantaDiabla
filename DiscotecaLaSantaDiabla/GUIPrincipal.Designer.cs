@@ -48,6 +48,8 @@ namespace DiscotecaLaSantaDiabla
             this.btnAfotoPorcentual = new System.Windows.Forms.Button();
             this.aforoZonas = new System.Windows.Forms.Button();
             this.btnSalidaDeUsuarios = new System.Windows.Forms.Button();
+            this.btnPruebaBaseDeDatos = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -200,10 +202,32 @@ namespace DiscotecaLaSantaDiabla
             this.btnSalidaDeUsuarios.UseVisualStyleBackColor = false;
             this.btnSalidaDeUsuarios.Click += new System.EventHandler(this.btnSalidaDeUsuarios_Click);
             // 
+            // btnPruebaBaseDeDatos
+            // 
+            this.btnPruebaBaseDeDatos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPruebaBaseDeDatos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPruebaBaseDeDatos.FlatAppearance.BorderSize = 2;
+            resources.ApplyResources(this.btnPruebaBaseDeDatos, "btnPruebaBaseDeDatos");
+            this.btnPruebaBaseDeDatos.Name = "btnPruebaBaseDeDatos";
+            this.btnPruebaBaseDeDatos.UseVisualStyleBackColor = false;
+            this.btnPruebaBaseDeDatos.Click += new System.EventHandler(this.btnPruebaBaseDeDatos_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 2;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // GUIPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPruebaBaseDeDatos);
             this.Controls.Add(this.btnSalidaDeUsuarios);
             this.Controls.Add(this.btnAfotoPorcentual);
             this.Controls.Add(this.aforoZonas);
@@ -244,6 +268,8 @@ namespace DiscotecaLaSantaDiabla
         public System.Windows.Forms.Button btnZonaEspecial;
         private System.Windows.Forms.Button btnSalidaDeUsuarios;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPruebaBaseDeDatos;
+        private System.Windows.Forms.Button button2;
     }
 }
 

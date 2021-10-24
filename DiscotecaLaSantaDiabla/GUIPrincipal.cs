@@ -1,5 +1,6 @@
 ﻿using DiscotecaLaSantaDiabla.graphics.guiBebidas;
 using DiscotecaLaSantaDiabla.logica;
+using DiscotecaLaSantaDiabla.baseDeDatos;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,6 @@ namespace DiscotecaLaSantaDiabla
 {
     public partial class GUIPrincipal : Form
     {
-       //jorge
         public GUIPrincipal()
         {
             InitializeComponent();
@@ -178,6 +178,16 @@ namespace DiscotecaLaSantaDiabla
         {
             GUIPedirBebidas pedir = new GUIPedirBebidas();
             pedir.Show();
+        }
+
+        private void btnPruebaBaseDeDatos_Click(object sender, EventArgs e)
+        {
+            ConexionBaseDeDatos.establecerConexion();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ConexionBaseDeDatos.cerrarConexion();
         }
     }
 }

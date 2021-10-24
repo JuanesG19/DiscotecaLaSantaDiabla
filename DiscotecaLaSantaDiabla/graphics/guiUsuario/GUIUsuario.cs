@@ -1,6 +1,7 @@
 ﻿using DiscotecaLaSantaDiabla.graphics.guiUsuario;
 using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
+using DiscotecaLaSantaDiabla.baseDeDatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,15 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            mostrarUsuarios();
+            try
+            {
+                gridUsuarios.DataSource = ConexionBaseDeDatos.mostrar().Tables[0];
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error al mostrar los datos" + ex.Message);
+            }
+            
         }
 
         public void mostrarUsuarios()
