@@ -12,11 +12,17 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         //Lista de Clientes
         private static List<Cliente> clientes = new List<Cliente>();
 
+
         //METODOS
 
         //Metodo Get Usuarios
         public static List<Cliente> getUsuarios() => clientes;
-        
+
+        public void setUsuarios(List<Cliente> pUsuario)
+        {
+            clientes = pUsuario;
+        }
+
         //Metodo Crear Usuario 
         public static void crearUsuario(Cliente pCliente)
         {

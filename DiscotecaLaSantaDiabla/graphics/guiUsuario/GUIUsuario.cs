@@ -20,6 +20,7 @@ namespace DiscotecaLaSantaDiabla
 
         }
 
+        List<Cliente> clientes;
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
@@ -29,11 +30,13 @@ namespace DiscotecaLaSantaDiabla
 
         List<Cliente> usuarios;
 
+        /**
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             try
             {
-                gridUsuarios.DataSource = ConexionBaseDeDatos.mostrar().Tables[0];
+                gridUsuarios.DataSource = ConexionBaseDeDatos.mostrarUsuario().Tables[0];
+                Cliente cliente = 
             }
             catch(Exception ex)
             {
@@ -41,34 +44,7 @@ namespace DiscotecaLaSantaDiabla
             }
             
         }
-
-        public void mostrarUsuarios()
-        {
-            int numFila;
-            int iter = 0;
-
-            usuarios = Usuario.getUsuarios();
-            gridUsuarios.Rows.Clear();
-            if (usuarios.Count == 0)
-            {
-                MessageBox.Show("No hay usuarios registrados");
-            }
-
-            foreach (Cliente cliente in usuarios)
-            {
-                numFila = gridUsuarios.Rows.Add();
-                iter++;
-
-                gridUsuarios.Rows[numFila].Cells[0].Value = iter;
-                gridUsuarios.Rows[numFila].Cells[1].Value = cliente.getID();
-                gridUsuarios.Rows[numFila].Cells[2].Value = cliente.getNombre();
-                gridUsuarios.Rows[numFila].Cells[3].Value = cliente.getApellido();
-                gridUsuarios.Rows[numFila].Cells[4].Value = cliente.getTipoCuenta();
-                gridUsuarios.Rows[numFila].Cells[5].Value = cliente.getTelefono();
-                gridUsuarios.Rows[numFila].Cells[6].Value = cliente.getFechaN();
-            }
-
-        }
+        */
 
         private void btnBuscarUsuario_Click(object sender, EventArgs e)
         {
@@ -112,6 +88,42 @@ namespace DiscotecaLaSantaDiabla
             this.Close();
         }
 
-        
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+
+            int numFila;
+
+           ConexionBaseDeDatos.crearListaBd();
+
+           clientes = Usuario.getUsuarios();
+
+            if (clientes.Count == 0)
+            {
+                MessageBox.Show("No hay usuarios registrados");
+                return;
+            }
+
+            gridUsuarios.Rows.Clear();
+    
+
+            foreach (Cliente user in clientes)
+            {
+                numFila = gridUsuarios.Rows.Add();
+
+                gridUsuarios.Rows[numFila].Cells[0].Value = user.getID();
+                gridUsuarios.Rows[numFila].Cells[1].Value = user.getNombre();
+                gridUsuarios.Rows[numFila].Cells[2].Value = user.getApellido();
+                gridUsuarios.Rows[numFila].Cells[3].Value = user.getFechaN();
+                gridUsuarios.Rows[numFila].Cells[4].Value = user.getTelefono();
+                gridUsuarios.Rows[numFila].Cells[5].Value = user.getTipoCuenta();
+            
+            }
+            
+        }
+
+        private void gridUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace DiscotecaLaSantaDiabla
                 return;
             }
 
-            int identificacion = Convert.ToInt32(txtIdentificacion.Text);
+            String identificacion = txtIdentificacion.Text;
             String nombre = txtNombres.Text;
             String apellidos = txtApellidos.Text;
             String telefono = txtTelefonos.Text;
