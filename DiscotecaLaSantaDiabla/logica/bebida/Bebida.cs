@@ -16,26 +16,6 @@ namespace DiscotecaLaSantaDiabla.logica
         //Numero de bebidas
         private static int numBebidas;
 
-
-        //CONSTRUCTOR
-        /**
-        public Bebida()
-        {
-            bebidas = new List<Producto>();
-
-            bebidas.Add(new Producto(1000, "Aguila", 5000, "350 ml", 10));
-            bebidas.Add(new Producto(1001, "Poker", 5000, "350 ml", 10));
-            bebidas.Add(new Producto(1002, "Corona", 8000, "350 ml", 10));
-            bebidas.Add(new Producto(1003, "Costeña", 3800, "350 ml", 10));
-            bebidas.Add(new Producto(1004, "Tapa Roja", 50000, "750 ml", 5));
-
-            bebidas.Add(new Producto(2000, "Buchanan's", 250000, "750 ml", 10));
-            bebidas.Add(new Producto(2001, "Jagermeister", 150000, "700 ml", 10));
-            bebidas.Add(new Producto(2002, "Smirnoff", 120000, "700 ml", 10));
-
-        }
-        **/
-
         //METODOS 
 
         // Metodo Get bebidas
@@ -75,7 +55,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
 
         //Metodo eliminar bebida
-        public static void eliminarBebida(int id)
+        public static void eliminarBebida(String id)
         {
             Producto aModificar = buscarBebida(id);
 
@@ -91,7 +71,7 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
         //Metodo modificar bebida
-        public static void modificarBebida(Producto pProducto, int id)
+        public static void modificarBebida(Producto pProducto, String id)
         {
             Producto aModificar = buscarBebida(id);
 
@@ -110,7 +90,7 @@ namespace DiscotecaLaSantaDiabla.logica
 
 
         //Metodo buscar bebida
-        public static Producto buscarBebida(int id)
+        public static Producto buscarBebida(String id)
         {
             Producto buscado = null;
 
@@ -127,11 +107,11 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
         // Metodo Pedir Bebida 
-        public static void pedirBebida(int id)
+        public static void pedirBebida(String id)
         {
             Producto p = Bebida.buscarBebida(id);
 
-            int idNuevo = p.getIdBebida();
+            String idNuevo = p.getIdBebida();
             String nombreN = p.getNombre();
             double precioN = p.getPrecio();
             String presentacionN = p.getPresentacion();
@@ -160,8 +140,10 @@ namespace DiscotecaLaSantaDiabla.logica
             }
         }
 
+        
+
         //Metodo para dar el total a pagar
-        public static double totalAPagar(int id)
+        public static double totalAPagar(String id)
         {
             Producto p = Bebida.buscarBebida(id);
             double aPagar = numBebidas * p.getPrecio();
@@ -173,8 +155,16 @@ namespace DiscotecaLaSantaDiabla.logica
         {
             double descuento = totalPrecio-((totalPrecio * 10) / 100);
             return descuento;
-        
         }
+        
 
-    }    
+        public static void limpiarListaBebida()
+        {
+            for (int i = 0; i < bebidas.Count; i++)
+            {
+                bebidas.RemoveAt(i);
+                i--;
+            }
+        }
+    }
 }

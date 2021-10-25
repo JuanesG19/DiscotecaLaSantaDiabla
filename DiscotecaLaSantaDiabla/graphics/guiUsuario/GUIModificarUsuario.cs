@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
@@ -22,30 +23,39 @@ namespace DiscotecaLaSantaDiabla
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             String id = txtIdentificacion.Text;
+            Cliente cliente = BaseDeDatosUsuario.buscarClienteBd(id);
 
-            
-                cliente = Usuario.buscarUsuario(id);
-                if (cliente == null)
-                {
-                    MessageBox.Show("El usuario buscado no existe");
-                    return;
-                }  
-                else
-                {
-                    txtNombreB.Text = cliente.getNombre();
-                    txtApellidosB.Text = cliente.getApellido();
-                    txtTipoCuentaB.Text = Convert.ToString(cliente.getTipoCuenta());
-                    txtTelefonosB.Text = cliente.getTelefono();
-                    txtFecha.Text = cliente.getFechaN();
-                    Busqueda = true;   
+            if (cliente == null)
+            {
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("El usuario que desea buscar no se encuentra registrado ¿Desea registrarlo?", "Usuario no encontrado", botonesConf);
 
-                }            
-                      
+                if (dR == DialogResult.Yes)
+                {
+                    GUIAgregar agregar = new GUIAgregar();
+                    agregar.Show();
+                }
+                else if (dR == DialogResult.No)
+                {
+                    this.Close();
+                }
+
+            }
+            else
+            {
+                txtNombreB.Text = cliente.getNombre();
+                txtApellidosB.Text = cliente.getApellido();
+                txtTipoCuentaB.Text = Convert.ToString(cliente.getTipoCuenta());
+                txtTelefonosB.Text = cliente.getTelefono();
+                txtFecha.Text = cliente.getFechaN();
+                Busqueda = true;
+            }
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -53,8 +63,6 @@ namespace DiscotecaLaSantaDiabla
             if (Busqueda == true)
             {
                 String id = txtIdentificacion.Text;
-
-                cliente = Usuario.buscarUsuario(id);
 
                 if (txtNombre.Text.Length == 0)
                 {
@@ -69,13 +77,16 @@ namespace DiscotecaLaSantaDiabla
                     txtTelefono.Text = txtTelefonosB.Text;
                 }
 
-                    cliente.setNombre(txtNombre.Text);
-                    cliente.setApellido(txtApellido.Text);
-                    cliente.setTelefono(txtTelefono.Text);
-
-                    MessageBox.Show("El usuario ha sido modificado");
-
-                
+                try
+                {
+                   BaseDeDatosUsuario.modificarUsuario(id, txtNombre.Text, txtApellido.Text, txtTelefono.Text);
+                    MessageBox.Show("El usuario ha sido modificado con exito");
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se ha podido modificar el usuario" + ex.Message);
+                }
 
             }
             else

@@ -8,6 +8,8 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using static DiscotecaLaSantaDiabla.logica.Membresia;
+using DiscotecaLaSantaDiabla.baseDeDatos;
+
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -20,46 +22,35 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         
         Producto bebida;
         Boolean busqueda = false;
+        String id;
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int id = -1;
-            try
-            {
-                id = Int32.Parse(txtIdentificadorB.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Ingrese un identificador valido");
-                return;
-            }
+            
+            id = txtIdentificadorB.Text;
+            bebida = BaseDeDatosBebida.buscarBebidaBd(id);
 
-            Producto buscada = Bebida.buscarBebida(id);
-
-            if (buscada == null)
+            if (bebida == null)
             {
                 MessageBox.Show("No existe la bebida buscada");
                 return;
             }            
-                bebida = Bebida.buscarBebida(id);
+                
                 busqueda = true;
                 txtNombreB.Text = bebida.getNombre();
                 txtPrecioB.Text = Convert.ToString(bebida.getPrecio().ToString("C", CultureInfo.CurrentCulture));
                 txtPresentacionB.Text = bebida.getPresentacion();
                 txtCantidadB.Text = Convert.ToString(bebida.getCantidad());
-                txtTipoBebidaB.Text = Convert.ToString(buscada.getTipoBebida());
+                txtTipoBebidaB.Text = Convert.ToString(bebida.getTipoBebida());
 
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            id = txtIdentificadorB.Text;
+            bebida = BaseDeDatosBebida.buscarBebidaBd(id);
 
             if (busqueda == true)
-            {
-
-                int id = Int32.Parse(txtIdentificadorB.Text);
-
-                bebida = Bebida.buscarBebida(id);
-                
+            {              
 
                 if (txtNombre.Text.Length == 0  )
                 {
@@ -84,32 +75,28 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                 try
                 {
+                    String id = txtIdentificadorB.Text;
+                    String nombre = txtNombre.Text;
+                    double precio = Double.Parse(txtPrecio.Text);
+                    String presentacion = txtPresentacion.Text;
+                    int cantidad = Int32.Parse(txtCantidad.Text);
+                    String membresia = Convert.ToString(Membresia.Membresias.STANDAR);
 
                     if (txtTipoBebidaNew.Text.Equals("STANDAR") == true)
                     {
-                        bebida.setNombre(txtNombre.Text);
-                        bebida.setPrecio(Double.Parse(txtPrecio.Text));
-                        bebida.setPresentacion(txtPresentacion.Text);
-                        bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
-                        bebida.setTipoBebida(logica.Membresia.Membresias.STANDAR);
-                        MessageBox.Show("El producto ha sido modificado correctamente");
-                        this.Close();
+                        membresia = Convert.ToString(Membresia.Membresias.STANDAR);
                     }
                     else if (txtTipoBebidaNew.Text.Equals("VIP") == true)
                     {
-                        bebida.setNombre(txtNombre.Text);
-                        bebida.setPrecio(Double.Parse(txtPrecio.Text));
-                        bebida.setPresentacion(txtPresentacion.Text);
-                        bebida.setCantidad(Convert.ToInt32(txtCantidad.Text));
-                        bebida.setTipoBebida(logica.Membresia.Membresias.VIP);
-                        MessageBox.Show("El producto ha sido modificado correctamente");
-                        this.Close();
+                        membresia = Convert.ToString(Membresia.Membresias.VIP);
                     }
                     else
                     {
                         MessageBox.Show("Error De Membresia");
                     }
 
+                    BaseDeDatosBebida.modificarBebida(id,nombre,precio,presentacion,cantidad, membresia);
+                    this.Close();
                 }                    
                  catch
                 {

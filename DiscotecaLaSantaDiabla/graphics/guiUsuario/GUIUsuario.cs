@@ -60,6 +60,7 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnContarUsuario_Click(object sender, EventArgs e)
         {
+            BaseDeDatosUsuario.crearListaBd();
             MessageBox.Show("Hay: " + Usuario.contarUsuarios() + " usuarios registrados", "Contar Usuario");
         }
 
@@ -77,10 +78,34 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
-            GUIMembresiaVIP vip = new GUIMembresiaVIP();
-            vip.Show();
-            vip.mostrarUsuariosVIP();
-            
+            int numFila;
+
+            BaseDeDatosUsuario.crearListaVIPBd();
+
+            clientes = Usuario.getUsuarios();
+
+            if (clientes.Count == 0)
+            {
+                MessageBox.Show("No hay usuarios VIP registrados");
+                return;
+            }
+
+            gridUsuarios.Rows.Clear();
+
+
+            foreach (Cliente user in clientes)
+            {
+                numFila = gridUsuarios.Rows.Add();
+
+                gridUsuarios.Rows[numFila].Cells[0].Value = user.getID();
+                gridUsuarios.Rows[numFila].Cells[1].Value = user.getNombre();
+                gridUsuarios.Rows[numFila].Cells[2].Value = user.getApellido();
+                gridUsuarios.Rows[numFila].Cells[3].Value = user.getFechaN();
+                gridUsuarios.Rows[numFila].Cells[4].Value = user.getTelefono();
+                gridUsuarios.Rows[numFila].Cells[5].Value = user.getTipoCuenta();
+            }
+
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -91,9 +116,9 @@ namespace DiscotecaLaSantaDiabla
         private void btnMostrar_Click(object sender, EventArgs e)
         {
 
-            int numFila;
+           int numFila;
 
-           ConexionBaseDeDatos.crearListaBd();
+           BaseDeDatosUsuario.crearListaBd();
 
            clientes = Usuario.getUsuarios();
 

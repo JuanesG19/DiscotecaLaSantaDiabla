@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
@@ -18,8 +19,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             InitializeComponent();
         }
 
-        Cliente cliente;
-        Boolean Busqueda = false;
 
 
         private void GUIMembresia_Load(object sender, EventArgs e)
@@ -27,17 +26,29 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 
         }
 
+        Cliente cliente = null;
+        Boolean Busqueda = false;
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
             String id = txtIdentificacion.Text;
-            cliente = Usuario.buscarUsuario(id);
+            cliente = BaseDeDatosUsuario.buscarClienteBd(id);
 
             if (cliente == null)
             {
-                MessageBox.Show("El usuario buscado no existe");
-                return;      
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("El usuario que desea buscar no se encuentra registrado ¿Desea registrarlo?", "Usuario no encontrado", botonesConf);
+
+                if (dR == DialogResult.Yes)
+                {
+                    GUIAgregar agregar = new GUIAgregar();
+                    agregar.Show();
+                }
+                else
+                {
+                    return;
+                }
+        
             }
             else
             {
@@ -52,14 +63,14 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (cliente == null)
+            if(Busqueda == false)
             {
                 MessageBox.Show("Es necesario buscar a el usuario antes de actualizar la membresia");
                 return;
             }
-            else if(cliente.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP))
+            else if(txtTipoCuenta.Text.Equals("VIP"))
             {
-                MessageBox.Show("No puede convertir a un cliente VIP en VIP");
+                MessageBox.Show("No puede convertir a un cliente VIP en VIP", "Error");
                 return;
             }
             else
@@ -71,9 +82,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                 {
                     try
                     {
-                        DateTime actual = DateTime.Today;
-                        cliente.setTipoCuenta(logica.Membresia.Membresias.VIP);
-                        cliente.setFechaVencimientoM(Convert.ToString(actual));
+                        BaseDeDatosUsuario.modificarMembresia(cliente.getID());
                         MessageBox.Show("Bienvenido a nuestra comunidad VIP: " + cliente.getNombre());
                         this.Close();
                     }
@@ -85,7 +94,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
                 }
                 else
                 {
-                    this.Close();
+                    return;
                 }
             }
         }

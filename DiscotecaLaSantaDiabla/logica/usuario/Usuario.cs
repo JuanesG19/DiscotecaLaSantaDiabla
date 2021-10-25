@@ -18,9 +18,20 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
         //Metodo Get Usuarios
         public static List<Cliente> getUsuarios() => clientes;
 
-        public void setUsuarios(List<Cliente> pUsuario)
+
+        //Metodo Buscar Usuario
+        public static Cliente buscarUsuario(String id)
         {
-            clientes = pUsuario;
+            Cliente buscado = null;
+            foreach (Cliente c in clientes)
+            {
+                if (c.getID().Equals(id))
+                {
+                    buscado = c;
+                    break;
+                }
+            }
+            return buscado;
         }
 
         //Metodo Crear Usuario 
@@ -35,6 +46,12 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
                 throw new Exception("El usuario ya existe, no se pueden agregar dos usuarios con la misma identificacion");
             }
 
+        }
+
+        /**
+        public void setUsuarios(List<Cliente> pUsuario)
+        {
+            clientes = pUsuario;
         }
 
         //Metodo Modificar Usuario
@@ -52,21 +69,6 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             {
                 throw new Exception("El cliente no ha podido ser modificado!");
             }
-        }
-
-        //Metodo Buscar Usuario
-        public static Cliente buscarUsuario(String id)
-        {
-            Cliente buscado = null;
-            foreach (Cliente c in clientes)
-            {
-                if (c.getID().Equals(id))
-                {
-                    buscado = c;
-                    break;
-                }
-            }
-            return buscado;
         }
 
         //Metodo Eliminar Usuario
@@ -110,6 +112,8 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             }
         }
 
+        */
+
         //Metodo Contar Usuarios
         public static int contarUsuarios()
         {
@@ -117,6 +121,14 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
             return cantidad;
         }
 
+        public static void limpiarLista()
+        {
+           for(int i=0; i<clientes.Count;i++)
+           {
+                clientes.RemoveAt(i);
+                i--;
+           }
+        }
     }
 }
 

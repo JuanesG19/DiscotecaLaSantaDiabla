@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.logica;
 using DiscotecaLaSantaDiabla.logica.usuario;
 using System;
 using System.Collections.Generic;
@@ -27,47 +28,47 @@ namespace DiscotecaLaSantaDiabla
         {
             String id = txtIdentificacion.Text;
 
-            
-                cliente = Usuario.buscarUsuario(id);
-                if(cliente == null)
-                {
-                    MessageBox.Show("No existe el usuario a eliminar");
-                    return;
-                }
+            cliente = BaseDeDatosUsuario.buscarClienteBd(id);
 
-                txtNombres.Text = cliente.getNombre();
-                txtApellidos.Text = cliente.getApellido();
-                txtTipoDeCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
-                txtTelefonos.Text = cliente.getTelefono();
-                txtFechaN.Text = cliente.getFechaN();
+            if (cliente == null)
+            {
+                MessageBox.Show("No existe el usuario a eliminar");
+                return;
+            }
 
-                MessageBoxButtons botones = MessageBoxButtons.YesNo;
-                DialogResult dr = MessageBox.Show("Desea Eliminar a: " + cliente.getNombre() + "?", "Eliminar", botones);
+            txtNombres.Text = cliente.getNombre();
+            txtApellidos.Text = cliente.getApellido();
+            txtTipoDeCuenta.Text = Convert.ToString(cliente.getTipoCuenta());
+            txtTelefonos.Text = cliente.getTelefono();
+            txtFechaN.Text = cliente.getFechaN();
 
-                if(dr == DialogResult.Yes)
+            MessageBoxButtons botones = MessageBoxButtons.YesNo;
+            DialogResult dr = MessageBox.Show("Desea Eliminar a: " + cliente.getNombre() + "?", "Eliminar", botones);
+
+            if (dr == DialogResult.Yes)
+            {
+                try
                 {
-                    try
-                    {
-                        Usuario.eliminarUsuario(id);
-                        MessageBox.Show(cliente.getNombre() + ", Ha sido Eliminado!");
-                        this.Close();
-                    }
-                    catch
-                    {
-                        throw new Exception("No se pudo eliminar a: " + cliente.getNombre());
-                    }
-                    
-                }
-                else
-                {
+                    BaseDeDatosUsuario.eliminarUsuario(cliente.getID());
+                    MessageBox.Show(cliente.getNombre() + ", Ha sido Eliminado!");
                     this.Close();
                 }
-        }                  
+                catch
+                {
+                    throw new Exception("No se pudo eliminar a: " + cliente.getNombre());
+                }
+
+            }
+            else
+            {
+                this.Close();
+            }
+        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
     }
-    
+
 }

@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIBebida));
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnModificarBebida = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@ namespace DiscotecaLaSantaDiabla
             this.TipoBebida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnMostrarVIP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridBebidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +57,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMostrar.Location = new System.Drawing.Point(12, 457);
+            this.btnMostrar.Location = new System.Drawing.Point(15, 475);
             this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(140, 64);
+            this.btnMostrar.Size = new System.Drawing.Size(140, 54);
             this.btnMostrar.TabIndex = 15;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = false;
@@ -70,9 +71,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificarBebida.Location = new System.Drawing.Point(12, 389);
+            this.btnModificarBebida.Location = new System.Drawing.Point(15, 356);
             this.btnModificarBebida.Name = "btnModificarBebida";
-            this.btnModificarBebida.Size = new System.Drawing.Size(140, 62);
+            this.btnModificarBebida.Size = new System.Drawing.Size(140, 54);
             this.btnModificarBebida.TabIndex = 14;
             this.btnModificarBebida.Text = "Modificar Bebida";
             this.btnModificarBebida.UseVisualStyleBackColor = false;
@@ -84,9 +85,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarBebida.Location = new System.Drawing.Point(12, 318);
+            this.btnBuscarBebida.Location = new System.Drawing.Point(15, 296);
             this.btnBuscarBebida.Name = "btnBuscarBebida";
-            this.btnBuscarBebida.Size = new System.Drawing.Size(140, 65);
+            this.btnBuscarBebida.Size = new System.Drawing.Size(140, 54);
             this.btnBuscarBebida.TabIndex = 13;
             this.btnBuscarBebida.Text = "Buscar Bebida";
             this.btnBuscarBebida.UseVisualStyleBackColor = false;
@@ -98,9 +99,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarBebida.Location = new System.Drawing.Point(12, 247);
+            this.btnEliminarBebida.Location = new System.Drawing.Point(15, 236);
             this.btnEliminarBebida.Name = "btnEliminarBebida";
-            this.btnEliminarBebida.Size = new System.Drawing.Size(140, 65);
+            this.btnEliminarBebida.Size = new System.Drawing.Size(140, 54);
             this.btnEliminarBebida.TabIndex = 12;
             this.btnEliminarBebida.Text = "Eliminar Bebida";
             this.btnEliminarBebida.UseVisualStyleBackColor = false;
@@ -112,9 +113,9 @@ namespace DiscotecaLaSantaDiabla
             this.btnAgregarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAgregarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregarBebida.Location = new System.Drawing.Point(12, 176);
+            this.btnAgregarBebida.Location = new System.Drawing.Point(15, 176);
             this.btnAgregarBebida.Name = "btnAgregarBebida";
-            this.btnAgregarBebida.Size = new System.Drawing.Size(140, 65);
+            this.btnAgregarBebida.Size = new System.Drawing.Size(140, 54);
             this.btnAgregarBebida.TabIndex = 10;
             this.btnAgregarBebida.Text = "Agregar Bebida";
             this.btnAgregarBebida.UseVisualStyleBackColor = false;
@@ -123,14 +124,14 @@ namespace DiscotecaLaSantaDiabla
             // gridBebidas
             // 
             this.gridBebidas.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridBebidas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridBebidas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridBebidas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iterador,
@@ -216,13 +217,27 @@ namespace DiscotecaLaSantaDiabla
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(12, 527);
+            this.btnSalir.Location = new System.Drawing.Point(15, 535);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(140, 62);
+            this.btnSalir.Size = new System.Drawing.Size(140, 54);
             this.btnSalir.TabIndex = 16;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnMostrarVIP
+            // 
+            this.btnMostrarVIP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostrarVIP.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrarVIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarVIP.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrarVIP.Location = new System.Drawing.Point(15, 416);
+            this.btnMostrarVIP.Name = "btnMostrarVIP";
+            this.btnMostrarVIP.Size = new System.Drawing.Size(140, 54);
+            this.btnMostrarVIP.TabIndex = 17;
+            this.btnMostrarVIP.Text = "Mostrar VIP";
+            this.btnMostrarVIP.UseVisualStyleBackColor = false;
+            this.btnMostrarVIP.Click += new System.EventHandler(this.btnMostrarVIP_Click);
             // 
             // GUIBebida
             // 
@@ -230,6 +245,7 @@ namespace DiscotecaLaSantaDiabla
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1005, 607);
+            this.Controls.Add(this.btnMostrarVIP);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnModificarBebida);
@@ -265,5 +281,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoBebida;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnMostrarVIP;
     }
 }

@@ -10,6 +10,8 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using static DiscotecaLaSantaDiabla.logica.Membresia;
+using DiscotecaLaSantaDiabla.baseDeDatos;
+
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
@@ -64,8 +66,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 return;
              }
 
-             Producto buscada = Bebida.buscarBebida(id);
-
+            // Producto buscada = Bebida.buscarBebida(id);
+            /**
              if (buscada == null)
              {
                 MessageBoxButtons botonesBeb = MessageBoxButtons.YesNo;
@@ -79,7 +81,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                  return;
              }
+            */
 
+             /**
             if (buscada.getTipoBebida().Equals(logica.Membresia.Membresias.VIP) && user.getTipoCuenta().Equals(logica.Membresia.Membresias.STANDAR))
             {
                 MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
@@ -97,7 +101,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                 return;
             }
-
+             */
+             /**
             Bebida.setNumBebidas(cantidad);
 
             double totalFactura = 0;
@@ -112,7 +117,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             {
                 totalFactura = totalPagar;
             }
-
+             */
+             /**
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
              DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFactura.ToString("C", CultureInfo.CurrentCulture) + " Desea adquirir los productos?", "Pagar", botones);
 
@@ -131,7 +137,8 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 {
                     MessageBox.Show(ex.Message);
                 }
-             }    
+             } 
+             */
         }
     }
 }

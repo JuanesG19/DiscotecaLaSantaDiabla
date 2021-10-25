@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.graphics.guiBebidas;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.graphics.guiBebidas;
 using DiscotecaLaSantaDiabla.logica;
 using System;
 using System.Collections.Generic;
@@ -24,10 +25,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+
             int numFila;
-            int iter = 0;
-            
+
+            BaseDeDatosBebida.crearListaBd();
             bebidas = Bebida.getBebidas();
+
             gridBebidas.Rows.Clear();
             if (bebidas.Count == 0)
             {
@@ -37,17 +40,13 @@ namespace DiscotecaLaSantaDiabla
             foreach (Producto b in bebidas)
             {
                 numFila = gridBebidas.Rows.Add();
-                iter++;
 
-                gridBebidas.Rows[numFila].Cells[0].Value = iter;
                 gridBebidas.Rows[numFila].Cells[1].Value = b.getIdBebida();
                 gridBebidas.Rows[numFila].Cells[2].Value = b.getNombre();
                 gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio().ToString("C", CultureInfo.CurrentCulture);
-
                 gridBebidas.Rows[numFila].Cells[4].Value = b.getPresentacion();
                 gridBebidas.Rows[numFila].Cells[5].Value = b.getCantidad();
                 gridBebidas.Rows[numFila].Cells[6].Value = b.getTipoBebida();
-
             }
         }
 
@@ -78,6 +77,33 @@ namespace DiscotecaLaSantaDiabla
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnMostrarVIP_Click(object sender, EventArgs e)
+        {
+            int numFila;
+
+            BaseDeDatosBebida.crearListaVIPBd();
+            bebidas = Bebida.getBebidas();
+
+            gridBebidas.Rows.Clear();
+            if (bebidas.Count == 0)
+            {
+                MessageBox.Show("No hay bebidas agregadas");               
+            }                  
+
+            foreach (Producto b in bebidas)
+            {
+                numFila = gridBebidas.Rows.Add();
+
+                gridBebidas.Rows[numFila].Cells[1].Value = b.getIdBebida();
+                gridBebidas.Rows[numFila].Cells[2].Value = b.getNombre();
+                gridBebidas.Rows[numFila].Cells[3].Value = b.getPrecio().ToString("C", CultureInfo.CurrentCulture);
+                gridBebidas.Rows[numFila].Cells[4].Value = b.getPresentacion();
+                gridBebidas.Rows[numFila].Cells[5].Value = b.getCantidad();
+                gridBebidas.Rows[numFila].Cells[6].Value = b.getTipoBebida();
+            }
+
         }
     }
 }

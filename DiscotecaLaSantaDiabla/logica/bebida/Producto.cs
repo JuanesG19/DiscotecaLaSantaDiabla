@@ -11,7 +11,7 @@ namespace DiscotecaLaSantaDiabla.logica
         //ATRIBTOS
 
         //Id de la bebida
-        private  int idBebida;
+        private  String idBebida;
 
         //Nombre de la bebida
         private  String nombre;
@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla.logica
         private Membresia.Membresias cuenta;
               
         //CONSTRUCTOR
-        public Producto(int pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad, Membresia.Membresias pTipoCuenta)
+        public Producto(String pIdBebida, String pNombre, double pPrecio, String pPresentacion, int pCantidad, Membresia.Membresias pTipoCuenta)
         {
             idBebida = pIdBebida;
             cuenta = pTipoCuenta;
@@ -43,10 +43,10 @@ namespace DiscotecaLaSantaDiabla.logica
         //METODOS
 
         //Metodo Get Id Bebida
-        public int getIdBebida() => idBebida;
+        public String getIdBebida() => idBebida;
 
         //Metodo Set Id Bebida
-        public void setidBebida(int pIdBebida)
+        public void setidBebida(String pIdBebida)
         {
             idBebida = pIdBebida;
         }

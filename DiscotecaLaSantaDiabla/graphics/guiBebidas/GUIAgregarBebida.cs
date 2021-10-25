@@ -1,4 +1,5 @@
 ﻿using DiscotecaLaSantaDiabla.logica;
+using DiscotecaLaSantaDiabla.baseDeDatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,18 +43,16 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
             try
             {
-                int id = Int32.Parse(txtIdentificador.Text);
+                String id = txtIdentificador.Text;
                 String nombre = txtNombre.Text;
                 double precio = Double.Parse(txtPrecio.Text);
                 String presentacion = txtPresentacion.Text;
-                int cantidad = Int32.Parse(txtCantidad.Text);
-
-                Producto producto = new Producto(id, nombre, precio, presentacion, cantidad, tipoBebida);
-                
+                int cantidad = Int32.Parse(txtCantidad.Text);                            
                 try
-                {
-                    Bebida.agregarBebida(producto);
-                    MessageBox.Show(producto.getNombre() + ", Ha sido registrado con exito");
+                {   
+                    BaseDeDatosBebida.agregarBebida(id, nombre, precio, presentacion, cantidad, Convert.ToString(tipoBebida));
+                
+                    MessageBox.Show("La bebida : "+ nombre + ", Ha sido Agregada con exito");
 
                     txtIdentificador.Text = " ";
                     txtNombre.Text = " ";

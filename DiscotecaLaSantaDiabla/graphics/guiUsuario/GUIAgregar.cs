@@ -44,7 +44,7 @@ namespace DiscotecaLaSantaDiabla
                     //Cliente cliente = new Cliente("da", nombre, apellidos, telefono, Membresia.Membresias.STANDAR, fecha);
                     //Usuario.crearUsuario(cliente);
                    
-                    ConexionBaseDeDatos.agregarUsuario(identificacion, nombre, apellidos, fecha, telefono, membresia);
+                    BaseDeDatosUsuario.agregarUsuario(identificacion, nombre, apellidos, fecha, telefono, membresia);
 
                     txtIdentificacion.Text = "";
                     txtNombres.Text = "";

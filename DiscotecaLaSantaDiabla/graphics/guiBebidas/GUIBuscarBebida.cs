@@ -7,6 +7,8 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using DiscotecaLaSantaDiabla.logica;
+using DiscotecaLaSantaDiabla.baseDeDatos;
+
 
 
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
@@ -26,28 +28,33 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int id = -1;
-            try
-            {
-                id = Int32.Parse(txtIdentificador.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Ingrese un identificador valido");
-                return;
-            }
-            Producto buscada = Bebida.buscarBebida(id);
+            String id = txtIdentificador.Text;
+            Producto bebida = BaseDeDatosBebida.buscarBebidaBd(id);
 
-            if (buscada == null)
+            if (bebida == null)
             {
-                MessageBox.Show("No existe la bebida buscada");
-                return;
-            }                        
-                txtNombre.Text = buscada.getNombre();
-                txtPrecio.Text = Convert.ToString(buscada.getPrecio().ToString("C", CultureInfo.CurrentCulture));
-                txtPresentacion.Text = buscada.getPresentacion();
-                txtCantidad.Text = Convert.ToString(buscada.getCantidad());
-                txtTipoBebida.Text = Convert.ToString(buscada.getTipoBebida());
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("La bebida que desea buscar no se encuentra registrado ¿Desea registrarla?", "Bebida no encontrada", botonesConf);
+
+                if (dR == DialogResult.Yes)
+                {
+                    GUIAgregarBebida agregar = new GUIAgregarBebida();
+                    agregar.Show();
+                }
+                else if (dR == DialogResult.No)
+                {
+                    this.Close();
+                }
+
+            }
+            else
+            {
+                txtNombre.Text = bebida.getNombre();
+                txtPrecio.Text = Convert.ToString(bebida.getPrecio().ToString("C", CultureInfo.CurrentCulture));
+                txtPresentacion.Text = bebida.getPresentacion();
+                txtCantidad.Text = Convert.ToString(bebida.getCantidad());
+                txtTipoBebida.Text = Convert.ToString(bebida.getTipoBebida());
+            }
         }
     }
 }
