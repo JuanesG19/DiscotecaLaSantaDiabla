@@ -242,6 +242,7 @@ namespace DiscotecaLaSantaDiabla
             this.MinimizeBox = false;
             this.Name = "GUIPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.GUIPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Banner)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

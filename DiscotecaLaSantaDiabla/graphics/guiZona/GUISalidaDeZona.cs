@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,118 +17,65 @@ namespace DiscotecaLaSantaDiabla
             InitializeComponent();
         }
 
+        int zonaId = 0;
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(comboZonas.Text.Length == 0)
+            if (comboZonas.Text.Length == 0)
             {
-                MessageBox.Show("Ingrese un valor valido");
+                MessageBox.Show("Debe seleccionar una zona !");
                 return;
             }
 
             string zona = comboZonas.Text;
+            int usuarios;
+
             try
             {
-                int usuarios = Convert.ToInt32(txtPersonas.Text);
-                Reservas.setSalidaZona(usuarios);
+                usuarios = Convert.ToInt32(txtPersonas.Text);
             }
             catch
             {
                 MessageBox.Show("Ingrese un valor valido");
                 return;
             }
-           
+
 
             switch (zona)
             {
                 case "ZONA ESPECIAL":
-                    try
-                    {
-                        Reservas.salidaZonaEspecial();
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
+                    zonaId = 1;
                     break;
 
                 case "ZONA A":
-
-                    try
-                    {
-                        Reservas.salidaZonaA();
-                       
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
+                    zonaId = 2;
                     break;
 
                 case "ZONA B":
-
-                    try
-                    {
-                        Reservas.salidaZonaB();
-
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    zonaId = 3;
 
                     break;
 
                 case "ZONA C":
-
-                    try
-                    {
-                        Reservas.salidaZonaC();
-
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    zonaId = 4;
 
                     break;
 
                 case "ZONA D":
-
-                    try
-                    {
-                        Reservas.salidaZonaD();
-
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
+                    zonaId = 5;
                     break;
 
                 case "ZONA VIP":
-
-                    try
-                    {
-                        Reservas.salidaZonaVIP();
-
-                        MessageBox.Show("Se Ha Registrado La Salida De Los Usuarios !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
+                    zonaId = 6;
                     break;
             }
 
+            BaseDeDatosZonas.salidaZonaBd(zonaId, usuarios);
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

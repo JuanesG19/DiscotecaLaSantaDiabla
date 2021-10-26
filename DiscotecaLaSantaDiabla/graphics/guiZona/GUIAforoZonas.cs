@@ -1,4 +1,5 @@
-﻿using DiscotecaLaSantaDiabla.logica;
+﻿using DiscotecaLaSantaDiabla.baseDeDatos;
+using DiscotecaLaSantaDiabla.logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,17 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConstular_Click(object sender, EventArgs e)
         {
-            txtZonaA.Text = Convert.ToString(Reservas.getNumReservasA()) + " de 30";
-            txtZonaB.Text = Convert.ToString(Reservas.getNumReservasB()) + " de 30";
-            txtZonaC.Text = Convert.ToString(Reservas.getNumReservasC()) + " de 30";
-            txtZonaD.Text = Convert.ToString(Reservas.getNumReservasD()) + " de 30";
-            txtZonaEspecial.Text = Convert.ToString(Reservas.getNumReservasEspecial()) + " de 60";
-            txtZonaVIP.Text = Convert.ToString(Reservas.getNumReservasVIP() + " de 60");
+            txtZonaEspecial.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(1).getCapacidaActual() + " de 60");
+            txtZonaA.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(2).getCapacidaActual() + " de 30");
+            txtZonaB.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(3).getCapacidaActual() + " de 30");
+            txtZonaC.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(4).getCapacidaActual() + " de 30");
+            txtZonaD.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(5).getCapacidaActual() + " de 30");
+            txtZonaVIP.Text = Convert.ToString(BaseDeDatosZonas.buscarZonaBd(6).getCapacidaActual() + " de 60");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

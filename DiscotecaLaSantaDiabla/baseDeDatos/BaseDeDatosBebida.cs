@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using DiscotecaLaSantaDiabla.graphics.guiBebidas;
@@ -49,7 +50,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             {
                 string sql = "SELECT * FROM bebidas WHERE id_bebida='" + pId + "';"; //Sentencia SQL
                 NpgsqlDataAdapter comando = new NpgsqlDataAdapter(sql, conexion); //Almacena Datos
-
                 comando.Fill(datos); //POne los datos en el dataser
                 ConexionBaseDeDatos.cerrarConexion();
             }
@@ -65,7 +65,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
         public static void agregarBebida(String pId, String pNombre, double pPrecio, String pPresentacion, int pCantidad, String pTipoBebida)
         {
             conexion = ConexionBaseDeDatos.establecerConexion(); //Establece Conexion
-            string sql = "INSERT INTO bebidas (id_bebida, nombre_bebida, precio_bebida, presentacion_bebida, cantidad_bebida, tipo_bebida) VALUES('"+ pId +"'," + "'" + pNombre + "'," + pPrecio  + "," + "'" + pPresentacion + "'," + pCantidad + "," + "'" + pTipoBebida + "'" + ");"; //Sentencia SQL 
+            string sql = "INSERT INTO bebidas (id_bebida, nombre_bebida, precio_bebida, presentacion_bebida, cantidad_bebida, tipo_bebida) VALUES('" + pId + "'," + "'" + pNombre + "'," + pPrecio + "," + "'" + pPresentacion + "'," + pCantidad + "," + "'" + pTipoBebida + "'" + ");"; //Sentencia SQL 
 
             try
             {
@@ -83,7 +83,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
         public static void modificarBebida(String pId, String pNombre, double pPrecio, String pPresentacion, int pCantidad, String pTipoBebida)
         {
             conexion = ConexionBaseDeDatos.establecerConexion(); //Establece Conexion
-            string sql = "UPDATE public.bebidas SET nombre_bebida = " + "'" + pNombre + "', precio_bebida =" + pPrecio + " , presentacion_bebida = '" + pPresentacion + "', cantidad_bebida = "+pPrecio + ", tipo_bebida = '" + pTipoBebida + "'WHERE id_bebida = '" + pId + "'; ";
+            string sql = "UPDATE public.bebidas SET nombre_bebida = " + "'" + pNombre + "', precio_bebida =" + pPrecio + " , presentacion_bebida = '" + pPresentacion + "', cantidad_bebida = " + pCantidad + ", tipo_bebida = '" + pTipoBebida + "'WHERE id_bebida = '" + pId + "'; ";
 
             try
             {
@@ -137,10 +137,26 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             return datos;
         }
 
+        public static void pedirBebida(String pId, int pCantidad)
+        {
+            conexion = ConexionBaseDeDatos.establecerConexion(); //Establece Conexion
+            string sql = "UPDATE public.bebidas SET cantidad_bebida = " + pCantidad + "WHERE id_bebida = '" + pId + "'; ";
+
+            try
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, conexion); //Almacena Datos
+                comando.ExecuteNonQuery();
+                ConexionBaseDeDatos.cerrarConexion();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error al adquirir las bebidas en la base de datos. Error : " + e.ToString());
+            }
+        }
+
         //METODOS BEBIDAS
 
         //METODOS EXTERNOS
-
         public static void crearListaBd()
         {
             String idBebida = "";
@@ -178,7 +194,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                     }
                     else
                     {
-                         membresias = Membresia.Membresias.STANDAR ;
+                        membresias = Membresia.Membresias.STANDAR;
                     }
                 }
                 catch (Exception ex)
@@ -227,6 +243,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 {
                     MessageBox.Show("No se pudo obtener la informacion en las variables metodo crearListaVIPBd" + ex.Message);
                 }
+
                 try
                 {
                     Producto bebida = new Producto(idBebida, nombreBebida, precioBebida, presentacionBebida, cantidadBebida, membresias);
@@ -260,7 +277,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                     {
                         MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
                         DialogResult dR = MessageBox.Show("La bebida que desea buscar no se encuentra registrada ¿Desea registrarla?", "Bebida no encontrada", botonesConf);
-
                         if (dR == DialogResult.Yes)
                         {
                             GUIAgregarBebida agregarBebida = new GUIAgregarBebida();
@@ -276,39 +292,80 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                         cantidadBebida = Convert.ToInt32(dr["cantidad_bebida"]);
                         tipoBebida = Convert.ToString(dr["tipo_bebida"]);
                         membresias = Membresia.Membresias.STANDAR;
-                        MessageBox.Show("Se agregaron las variables");
                     }
+
+                    if (tipoBebida.Equals("VIP"))
+                    {
+                        membresias = Membresia.Membresias.VIP;
+                    }
+
+                    bebida = new Producto(idBebida, nombreBebida, precioBebida, presentacionBebida, cantidadBebida, membresias);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("No se pudo obtener la informacion en las variables metodo buscarBebidaBd" + ex.Message);
                 }
-                try
-                {
-                    if (tipoBebida.Equals("VIP"))
-                    {
-                        membresias = Membresia.Membresias.VIP;
-                        MessageBox.Show("Se comparo si es VIP");
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No Se pudo comparar si es VIP metodo buscarBebidaBd" + ex.Message);
-                }
-
-                try
-                {
-                    bebida = new Producto(idBebida, nombreBebida, precioBebida, presentacionBebida, cantidadBebida, membresias);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo buscar el usuario " + ex.Message);
-                }
-
+              
             }
 
             return bebida;
+        }
+
+        //Pedir Bebida Base De Datos
+        public static void pedirBebidaBd(String idBebida, int cantidad, String idUsuario)
+        {
+            double totalFactura = 0;
+            double totalFacturaFinal = 0;
+            Producto bebida = buscarBebidaBd(idBebida);
+            Cliente usuario = BaseDeDatosUsuario.buscarClienteBd(idUsuario);
+
+            if (idBebida.Equals(bebida.getIdBebida()))
+            {
+                if (bebida.getCantidad() == 0)
+                {
+                    MessageBox.Show("Actualmente no hay bebidas disponibles");
+                }
+                else if (cantidad > bebida.getCantidad())
+                {
+                    MessageBox.Show("En el momento solo hay " + bebida.getCantidad() + " unidades de " + bebida.getNombre() + " disponibles");
+                }
+                else
+                {
+                    totalFactura = bebida.getPrecio() * cantidad;
+                    
+                    if (usuario.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP) && bebida.getTipoBebida().Equals(logica.Membresia.Membresias.STANDAR))
+                    {
+                        double descuento = totalFactura - ((totalFactura * 10) / 100);
+                        totalFacturaFinal = descuento;
+                    }
+                    else
+                    {
+                        totalFacturaFinal = totalFactura;
+                    }
+                    
+
+                    MessageBoxButtons botones = MessageBoxButtons.YesNo;
+                    DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFacturaFinal.ToString("C", CultureInfo.CurrentCulture) + " Desea adquirir los productos?", "Pagar", botones);
+
+                    if (dr == DialogResult.Yes)
+                    {
+
+                        try
+                        {
+                            int nuevaCantidad;
+                            nuevaCantidad = bebida.getCantidad() - cantidad;
+                            pedirBebida(idBebida, nuevaCantidad); MessageBox.Show("Los productos fueron adquiridos correctamente por el cliente !");
+                            BaseDeDatosFactura.agregarFactura(usuario, bebida, totalFactura, totalFacturaFinal, cantidad);
+                        }
+
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                   
+                }
+            }
         }
     }
 }

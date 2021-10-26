@@ -30,12 +30,12 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            int id = 0;
+            String idBebida = "";
             int cantidad = 0;
 
             try
             {
-                id = Int32.Parse(txtIdentificador.Text);
+                idBebida = txtIdentificador.Text;
                 cantidad = Int32.Parse(txtCantidad.Text);
             }
             catch
@@ -49,9 +49,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             {
                 MessageBox.Show("Ingrese un valor valido para la identificacion del usuario");
                 return;
-             }
+            }
 
-             Cliente user = Usuario.buscarUsuario(idUsuario);
+             Cliente user = BaseDeDatosUsuario.buscarClienteBd(idUsuario);
 
              if(user == null)
              {
@@ -63,27 +63,31 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     GUIAgregar agregar = new GUIAgregar();
                     agregar.Show();
                 }
+                else
+                {
+                    return;
+                }
                 return;
              }
 
-            // Producto buscada = Bebida.buscarBebida(id);
-            /**
+             Producto buscada = BaseDeDatosBebida.buscarBebidaBd(idBebida);
+            
              if (buscada == null)
              {
                 MessageBoxButtons botonesBeb = MessageBoxButtons.YesNo;
-                DialogResult dbeb = MessageBox.Show("La bebida buscada con el id: " + id+ " No existe, ¿Desea crearla?", "Crear Bebida", botonesBeb);
+                DialogResult dbeb = MessageBox.Show("La bebida buscada con el id: " + idBebida+ " No existe, ¿Desea crearla?", "Crear Bebida", botonesBeb);
 
                  if (dbeb == DialogResult.Yes)
                  {
                         GUIAgregarBebida agregar = new GUIAgregarBebida();
                         agregar.Show();
                  }
-
-                 return;
+                 else
+                 {
+                     return;
+                 }      
              }
-            */
-
-             /**
+            
             if (buscada.getTipoBebida().Equals(logica.Membresia.Membresias.VIP) && user.getTipoCuenta().Equals(logica.Membresia.Membresias.STANDAR))
             {
                 MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
@@ -101,44 +105,15 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                 return;
             }
-             */
-             /**
-            Bebida.setNumBebidas(cantidad);
-
-            double totalFactura = 0;
-            double totalPagar = Bebida.totalAPagar(id);
-
-            if (user.getTipoCuenta().Equals(logica.Membresia.Membresias.VIP) && buscada.getTipoBebida().Equals(logica.Membresia.Membresias.STANDAR))
+            try
             {
-                double descuento = Bebida.descuentoBebidaVIP(totalPagar);
-                totalFactura = descuento;
+                BaseDeDatosBebida.pedirBebidaBd(idBebida, cantidad, user.getID());
+                this.Close();
             }
-            else
+            catch
             {
-                totalFactura = totalPagar;
+                MessageBox.Show("No se pudo pedir la bebida Error!");
             }
-             */
-             /**
-            MessageBoxButtons botones = MessageBoxButtons.YesNo;
-             DialogResult dr = MessageBox.Show("El total a pagar es : " + totalFactura.ToString("C", CultureInfo.CurrentCulture) + " Desea adquirir los productos?", "Pagar", botones);
-
-             if (dr == DialogResult.Yes)
-             {
-
-                try
-                {
-                    Bebida.pedirBebida(id);
-                    MessageBox.Show("Los productos fueron adquiridos correctamente por el cliente " + user.getNombre()+"!");
-                    this.Close();
-
-                }
-                    
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-             } 
-             */
         }
     }
 }

@@ -125,6 +125,7 @@ namespace DiscotecaLaSantaDiabla
             if (clientes.Count == 0)
             {
                 MessageBox.Show("No hay usuarios registrados");
+                gridUsuarios.Rows.Clear();
                 return;
             }
 

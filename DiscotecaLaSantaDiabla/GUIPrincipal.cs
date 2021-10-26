@@ -22,21 +22,24 @@ namespace DiscotecaLaSantaDiabla
             InitializeComponent();
         }
 
-        private static String zona = "";
+        private static int idZona;
 
-        public static String getZona()
+        public static int getZona()
         {
-            return zona;
+            return idZona;
         }
+
+        GUIZonas zonas = new GUIZonas();
 
         private void btnZonaEspecial_Click(object sender, EventArgs e)
         {
-            
-            if (Reservas.getNumReservasEspecial() < 60 )
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(1);
+
+            if (zona.getCapacidaActual() < 60 )
             {
                 btnZonaEspecial.BackgroundImage = Image.FromFile(@"imagenes\ZonaEspecialVerde.png");
+                idZona = 1;
                 GUIZonas zonas = new GUIZonas();
-                zona = "E";
                 zonas.Show();
             }
             else
@@ -48,10 +51,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaA_Click(object sender, EventArgs e)
         {
-            if (Reservas.getNumReservasA() < 30)
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(2);
+
+            if (zona.getCapacidaActual()  < 30)
             {
                 btnZonaA.BackgroundImage = Image.FromFile(@"imagenes\ZonaAVerde.png");
-                zona = "A";
+                idZona = 2;
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
             }
@@ -64,10 +69,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaB_Click(object sender, EventArgs e)
         {
-            if (Reservas.getNumReservasB() < 30)
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(3);
+
+            if (zona.getCapacidaActual() < 30)
             {
                 btnZonaB.BackgroundImage = Image.FromFile(@"imagenes\ZonaBVerde.png");
-                zona = "B";
+                idZona = 3;
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
             }
@@ -80,11 +87,14 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaC_Click(object sender, EventArgs e)
         {
-            if (Reservas.getNumReservasC() < 30)
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(4);
+
+            if (zona.getCapacidaActual() < 30)
             {
                 btnZonaC.BackgroundImage = Image.FromFile(@"imagenes\ZonaCVerde.png");
-                zona = "C";
+                idZona = 4;
                 GUIZonas zonas = new GUIZonas();
+
                 zonas.Show();
             }
             else
@@ -96,11 +106,14 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnZonaD_Click(object sender, EventArgs e)
         {
-            if (Reservas.getNumReservasD() < 30)
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(5);
+
+            if (zona.getCapacidaActual() < 30)
             {
                 btnZonaD.BackgroundImage = Image.FromFile(@"imagenes\ZonaDVerde.png");
-                zona = "D";
+                idZona = 5;
                 GUIZonas zonas = new GUIZonas();
+
                 zonas.Show();
             }
             else
@@ -112,10 +125,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnVIP_Click(object sender, EventArgs e)
         {
-            if (Reservas.getNumReservasVIP() < 60)
+            Zona zona = BaseDeDatosZonas.buscarZonaBd(6);
+
+            if (zona.getCapacidaActual() < 60)
             {
                 btnVIP.BackgroundImage = Image.FromFile(@"imagenes\ZonaVIPVerde.png");
-                zona = "V";
+                idZona = 6;
                 GUIZonas zonas = new GUIZonas();
                 zonas.Show();
             }
@@ -132,15 +147,33 @@ namespace DiscotecaLaSantaDiabla
             usuario.Show();
         }
 
+        
         private void aforoZonas_Click(object sender, EventArgs e)
         {
             GUIAforoZonas aforo = new GUIAforoZonas();
             aforo.Show();
         }
 
+        private static int darAforototal()
+        {
+            int capacidad = BaseDeDatosZonas.buscarZonaBd(1).getCapacidaActual() +
+            BaseDeDatosZonas.buscarZonaBd(2).getCapacidaActual() +
+            BaseDeDatosZonas.buscarZonaBd(3).getCapacidaActual() +
+            BaseDeDatosZonas.buscarZonaBd(4).getCapacidaActual() +
+            BaseDeDatosZonas.buscarZonaBd(5).getCapacidaActual() +
+            BaseDeDatosZonas.buscarZonaBd(6).getCapacidaActual();
+
+            int capacidadMaxima = 240;
+
+            int aforo = (capacidad * 100) / capacidadMaxima;
+            return aforo;
+        }
+
+
+
         private void btnAfotoPorcentual_Click(object sender, EventArgs e)
         {
-            double aforo = Reservas.darAforoTotal();
+            int aforo = darAforototal();
             MessageBox.Show("El Aforo en la discoteca es del: " + aforo + "%", "Aforo Porcentual");
         }
 
@@ -186,6 +219,12 @@ namespace DiscotecaLaSantaDiabla
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ConexionBaseDeDatos.cerrarConexion();
+        }
+
+        private void GUIPrincipal_Load(object sender, EventArgs e)
+        {
+            ConexionBaseDeDatos.establecerConexion();
             ConexionBaseDeDatos.cerrarConexion();
         }
     }

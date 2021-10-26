@@ -50,7 +50,7 @@ namespace DiscotecaLaSantaDiabla
                 try
                 {
                     BaseDeDatosUsuario.eliminarUsuario(cliente.getID());
-                    MessageBox.Show(cliente.getNombre() + ", Ha sido Eliminado!");
+                    MessageBox.Show(cliente.getNombre() + " , Ha sido Eliminado/a del sistema");
                     this.Close();
                 }
                 catch

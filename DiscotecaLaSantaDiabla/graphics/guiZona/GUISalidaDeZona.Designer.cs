@@ -34,6 +34,7 @@ namespace DiscotecaLaSantaDiabla
             this.lblPersonas = new System.Windows.Forms.Label();
             this.txtPersonas = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblZona
@@ -86,13 +87,27 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminar.Location = new System.Drawing.Point(100, 99);
+            this.btnEliminar.Location = new System.Drawing.Point(12, 99);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(151, 26);
             this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Salida";
+            this.btnEliminar.Text = "Confirmar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(192, 99);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(151, 26);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // GUISalidaDeZona
             // 
@@ -100,6 +115,7 @@ namespace DiscotecaLaSantaDiabla
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(357, 137);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtPersonas);
             this.Controls.Add(this.lblPersonas);
@@ -120,5 +136,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Label lblPersonas;
         private System.Windows.Forms.TextBox txtPersonas;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

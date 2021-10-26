@@ -26,7 +26,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             {
                 conexion.ConnectionString = cadenaConexion;
                 conexion.Open();
-                MessageBox.Show("Se conecto correctamente a la base de datos");
             }
             catch (NpgsqlException e)
             {
@@ -43,7 +42,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 if (conexion.State == System.Data.ConnectionState.Open)
                 {
                     conexion.Close();
-                    MessageBox.Show("Conexion Cerrada");
                 }
             }
             catch (Exception e)

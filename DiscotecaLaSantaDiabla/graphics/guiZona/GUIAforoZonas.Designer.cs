@@ -42,13 +42,14 @@ namespace DiscotecaLaSantaDiabla
             this.txtZonaEspecial = new System.Windows.Forms.TextBox();
             this.txtZonaVIP = new System.Windows.Forms.TextBox();
             this.btnConstular = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblZonaA
             // 
             this.lblZonaA.AutoSize = true;
             this.lblZonaA.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaA.Location = new System.Drawing.Point(12, 24);
+            this.lblZonaA.Location = new System.Drawing.Point(11, 75);
             this.lblZonaA.Name = "lblZonaA";
             this.lblZonaA.Size = new System.Drawing.Size(63, 17);
             this.lblZonaA.TabIndex = 0;
@@ -58,7 +59,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.lblZonaB.AutoSize = true;
             this.lblZonaB.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaB.Location = new System.Drawing.Point(12, 70);
+            this.lblZonaB.Location = new System.Drawing.Point(11, 121);
             this.lblZonaB.Name = "lblZonaB";
             this.lblZonaB.Size = new System.Drawing.Size(63, 17);
             this.lblZonaB.TabIndex = 1;
@@ -68,7 +69,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.lblZonaC.AutoSize = true;
             this.lblZonaC.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaC.Location = new System.Drawing.Point(11, 118);
+            this.lblZonaC.Location = new System.Drawing.Point(10, 162);
             this.lblZonaC.Name = "lblZonaC";
             this.lblZonaC.Size = new System.Drawing.Size(63, 17);
             this.lblZonaC.TabIndex = 2;
@@ -78,7 +79,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.lblZonaD.AutoSize = true;
             this.lblZonaD.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaD.Location = new System.Drawing.Point(12, 167);
+            this.lblZonaD.Location = new System.Drawing.Point(11, 206);
             this.lblZonaD.Name = "lblZonaD";
             this.lblZonaD.Size = new System.Drawing.Size(63, 17);
             this.lblZonaD.TabIndex = 3;
@@ -88,7 +89,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.lblZonaEspecial.AutoSize = true;
             this.lblZonaEspecial.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaEspecial.Location = new System.Drawing.Point(6, 217);
+            this.lblZonaEspecial.Location = new System.Drawing.Point(5, 36);
             this.lblZonaEspecial.Name = "lblZonaEspecial";
             this.lblZonaEspecial.Size = new System.Drawing.Size(93, 14);
             this.lblZonaEspecial.TabIndex = 4;
@@ -98,7 +99,7 @@ namespace DiscotecaLaSantaDiabla
             // 
             this.lblZonaVIP.AutoSize = true;
             this.lblZonaVIP.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblZonaVIP.Location = new System.Drawing.Point(12, 266);
+            this.lblZonaVIP.Location = new System.Drawing.Point(11, 247);
             this.lblZonaVIP.Name = "lblZonaVIP";
             this.lblZonaVIP.Size = new System.Drawing.Size(77, 17);
             this.lblZonaVIP.TabIndex = 5;
@@ -107,7 +108,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaA
             // 
             this.txtZonaA.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaA.Location = new System.Drawing.Point(105, 16);
+            this.txtZonaA.Location = new System.Drawing.Point(104, 67);
             this.txtZonaA.Name = "txtZonaA";
             this.txtZonaA.ReadOnly = true;
             this.txtZonaA.Size = new System.Drawing.Size(191, 23);
@@ -116,7 +117,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaB
             // 
             this.txtZonaB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaB.Location = new System.Drawing.Point(105, 62);
+            this.txtZonaB.Location = new System.Drawing.Point(104, 113);
             this.txtZonaB.Name = "txtZonaB";
             this.txtZonaB.ReadOnly = true;
             this.txtZonaB.Size = new System.Drawing.Size(191, 23);
@@ -125,7 +126,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaC
             // 
             this.txtZonaC.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaC.Location = new System.Drawing.Point(105, 110);
+            this.txtZonaC.Location = new System.Drawing.Point(104, 154);
             this.txtZonaC.Name = "txtZonaC";
             this.txtZonaC.ReadOnly = true;
             this.txtZonaC.Size = new System.Drawing.Size(191, 23);
@@ -134,7 +135,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaD
             // 
             this.txtZonaD.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaD.Location = new System.Drawing.Point(105, 159);
+            this.txtZonaD.Location = new System.Drawing.Point(104, 198);
             this.txtZonaD.Name = "txtZonaD";
             this.txtZonaD.ReadOnly = true;
             this.txtZonaD.Size = new System.Drawing.Size(191, 23);
@@ -143,7 +144,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaEspecial
             // 
             this.txtZonaEspecial.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaEspecial.Location = new System.Drawing.Point(105, 208);
+            this.txtZonaEspecial.Location = new System.Drawing.Point(104, 27);
             this.txtZonaEspecial.Name = "txtZonaEspecial";
             this.txtZonaEspecial.ReadOnly = true;
             this.txtZonaEspecial.Size = new System.Drawing.Size(191, 23);
@@ -152,7 +153,7 @@ namespace DiscotecaLaSantaDiabla
             // txtZonaVIP
             // 
             this.txtZonaVIP.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtZonaVIP.Location = new System.Drawing.Point(105, 260);
+            this.txtZonaVIP.Location = new System.Drawing.Point(104, 241);
             this.txtZonaVIP.Name = "txtZonaVIP";
             this.txtZonaVIP.ReadOnly = true;
             this.txtZonaVIP.Size = new System.Drawing.Size(191, 23);
@@ -164,20 +165,35 @@ namespace DiscotecaLaSantaDiabla
             this.btnConstular.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnConstular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConstular.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConstular.Location = new System.Drawing.Point(62, 300);
+            this.btnConstular.Location = new System.Drawing.Point(11, 286);
             this.btnConstular.Name = "btnConstular";
-            this.btnConstular.Size = new System.Drawing.Size(180, 27);
+            this.btnConstular.Size = new System.Drawing.Size(139, 27);
             this.btnConstular.TabIndex = 12;
             this.btnConstular.Text = "Consultar Aforo";
             this.btnConstular.UseVisualStyleBackColor = false;
             this.btnConstular.Click += new System.EventHandler(this.btnConstular_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(156, 286);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(139, 27);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // GUIAforoZonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(307, 340);
+            this.ClientSize = new System.Drawing.Size(307, 331);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConstular);
             this.Controls.Add(this.txtZonaVIP);
             this.Controls.Add(this.txtZonaEspecial);
@@ -214,5 +230,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.TextBox txtZonaEspecial;
         private System.Windows.Forms.TextBox txtZonaVIP;
         private System.Windows.Forms.Button btnConstular;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

@@ -4,29 +4,46 @@ using System.Text;
 
 namespace DiscotecaLaSantaDiabla.logica
 {
-    public  class Zona
+    public class Zona
     {
-        public enum TipoZona
+        private int idZona;
+        private String tipoZona;
+        private int capacidadMaxima;
+        private int capacidaActual;
+
+        public Zona(int idZona, string tipoZona, int capacidadMaxima, int capacidaActual)
         {
-            ESPECIAL,
-            A,
-            B,
-            C,
-            D,
-            VIP,
+            this.idZona = idZona;
+            this.tipoZona = tipoZona;
+            this.capacidadMaxima = capacidadMaxima;
+            this.capacidaActual = capacidaActual;
         }
 
-        public static int capacidadEspecial = 60;
-        public static int capacidadA = 30;
-        public static int capacidadB = 30;
-        public static int capacidadC = 30;
-        public static int capacidadD = 30;
-        public static int capacidadVIP = 30;
+        public int getIdZona() => idZona;
 
-        public static int darCapacidadTotal()
+        public void setIdZona(int pTipoZona)
         {
-            int capacidad = capacidadVIP+ capacidadEspecial+ capacidadA+ capacidadB+ capacidadC+ capacidadD;
-            return capacidad;
+            idZona = pTipoZona;
         }
+        public string getTipoZona() => tipoZona;
+
+        public void setTipoZona(String pTipoZona)
+        {
+            tipoZona = pTipoZona;
+        }
+
+        public int getCapacidadMaxima() => capacidadMaxima;
+
+        public void setCapacidadMaxima(int pCapacidadMaxima)
+        {
+            capacidadMaxima = pCapacidadMaxima;
+        }
+        public int getCapacidaActual() => capacidaActual;
+
+        public void setCapacidadActual(int pCapacidadActual)
+        {
+            capacidaActual = pCapacidadActual;
+        }
+
     }
 }

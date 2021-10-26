@@ -141,16 +141,7 @@ namespace DiscotecaLaSantaDiabla.logica
         }
 
         
-
-        //Metodo para dar el total a pagar
-        public static double totalAPagar(String id)
-        {
-            Producto p = Bebida.buscarBebida(id);
-            double aPagar = numBebidas * p.getPrecio();
-            return aPagar;
-
-        }
-
+  
         public static double descuentoBebidaVIP(double totalPrecio)
         {
             double descuento = totalPrecio-((totalPrecio * 10) / 100);

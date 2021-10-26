@@ -37,7 +37,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 
                 busqueda = true;
                 txtNombreB.Text = bebida.getNombre();
-                txtPrecioB.Text = Convert.ToString(bebida.getPrecio().ToString("C", CultureInfo.CurrentCulture));
+                txtPrecioB.Text = Convert.ToString(bebida.getPrecio().ToString("N", CultureInfo.CurrentCulture));
                 txtPresentacionB.Text = bebida.getPresentacion();
                 txtCantidadB.Text = Convert.ToString(bebida.getCantidad());
                 txtTipoBebidaB.Text = Convert.ToString(bebida.getTipoBebida());
@@ -79,7 +79,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     String nombre = txtNombre.Text;
                     double precio = Double.Parse(txtPrecio.Text);
                     String presentacion = txtPresentacion.Text;
-                    int cantidad = Int32.Parse(txtCantidad.Text);
+                    int cantidad = Convert.ToInt32(txtCantidad.Text);
                     String membresia = Convert.ToString(Membresia.Membresias.STANDAR);
 
                     if (txtTipoBebidaNew.Text.Equals("STANDAR") == true)

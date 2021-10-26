@@ -29,6 +29,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             String id = txtIdentificador.Text;
+
             Producto bebida = BaseDeDatosBebida.buscarBebidaBd(id);
 
             if (bebida == null)

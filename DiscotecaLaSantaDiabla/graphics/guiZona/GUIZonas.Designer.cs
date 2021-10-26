@@ -34,13 +34,14 @@ namespace DiscotecaLaSantaDiabla
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.txtIdentificacionUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(16, 19);
+            this.label1.Location = new System.Drawing.Point(32, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 15);
             this.label1.TabIndex = 0;
@@ -49,9 +50,9 @@ namespace DiscotecaLaSantaDiabla
             // txtIngreso
             // 
             this.txtIngreso.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtIngreso.Location = new System.Drawing.Point(16, 49);
+            this.txtIngreso.Location = new System.Drawing.Point(14, 27);
             this.txtIngreso.Name = "txtIngreso";
-            this.txtIngreso.Size = new System.Drawing.Size(218, 23);
+            this.txtIngreso.Size = new System.Drawing.Size(246, 23);
             this.txtIngreso.TabIndex = 1;
             // 
             // btnConfirmar
@@ -60,7 +61,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConfirmar.Location = new System.Drawing.Point(55, 159);
+            this.btnConfirmar.Location = new System.Drawing.Point(10, 137);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(122, 29);
             this.btnConfirmar.TabIndex = 2;
@@ -71,27 +72,42 @@ namespace DiscotecaLaSantaDiabla
             // txtIdentificacionUsuario
             // 
             this.txtIdentificacionUsuario.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtIdentificacionUsuario.Location = new System.Drawing.Point(12, 116);
+            this.txtIdentificacionUsuario.Location = new System.Drawing.Point(10, 94);
             this.txtIdentificacionUsuario.Name = "txtIdentificacionUsuario";
-            this.txtIdentificacionUsuario.Size = new System.Drawing.Size(218, 23);
+            this.txtIdentificacionUsuario.Size = new System.Drawing.Size(250, 23);
             this.txtIdentificacionUsuario.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(36, 88);
+            this.label2.Location = new System.Drawing.Point(56, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Identificacion Del Usuario";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(138, 137);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(122, 29);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // GUIZonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(242, 200);
+            this.ClientSize = new System.Drawing.Size(275, 179);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtIdentificacionUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnConfirmar);
@@ -113,5 +129,6 @@ namespace DiscotecaLaSantaDiabla
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.TextBox txtIdentificacionUsuario;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

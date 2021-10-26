@@ -5,10 +5,9 @@ namespace DiscotecaLaSantaDiabla.logica
 {
     public class Reservas
     {
-
         //ATRIBUTOS
 
-        public TipoZona tipoZona;
+        public String tipoZona;
 
         private static int reservasEspecial;
         private static int reservasA;
@@ -21,7 +20,7 @@ namespace DiscotecaLaSantaDiabla.logica
         private static int salidaZona;
 
         //CONSTRUCTOR
-        public Reservas(TipoZona pZona, int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasVIP)
+        public Reservas(String pZona, int pReservasEspecial, int pReservasA, int pReservasB, int pReservasC, int pReservasD, int pReservasVIP)
         {
             tipoZona = pZona;
             reservasEspecial = pReservasEspecial;
@@ -35,10 +34,10 @@ namespace DiscotecaLaSantaDiabla.logica
         //METODOS
 
         //Metodo Get tipoZona
-        public TipoZona getTipoZona() => tipoZona;
+        public String getTipoZona() => tipoZona;
       
         //Metodo Set tipoZona
-        public void setTipoZona(TipoZona pZona)
+        public void setTipoZona(String pZona)
         {
             tipoZona = pZona;
         }
@@ -79,124 +78,6 @@ namespace DiscotecaLaSantaDiabla.logica
         //Metodo Get Numreo de reservas zona VIP
         public static int getNumReservasVIP() => reservasVIP;
         
-        //Metodo Realizar reserva zona Especial
-        public static void reservarZonaEspecial()
-        {
-            int temp = reservasEspecial + ingreso;
-            if (reservasEspecial == Zona.capacidadEspecial)
-            {
-                throw new Exception("La zona especial ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadEspecial)
-            {
-                //topeZonaEspecial = true;
-                int exceso = temp - Zona.capacidadEspecial;
-                throw new Exception("Se excedio el cupo de la zona Especial por: " + exceso + " persona(s)");
-            }
-            else
-            {
-                reservasEspecial += ingreso;
-            }
-        }
-        //Metodo Realizar reserva zona A
-        public static void reservarZonaA()
-        {
-            int temp = reservasA + ingreso;
-            if (reservasA == Zona.capacidadA)
-            {
-                throw new Exception("La zona A ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadA)
-            {
-                int exceso = temp - Zona.capacidadA;
-                throw new Exception("Se excedio el cupo de la zona A por: " + exceso + " persona(s)");
-                //reservasEspecial -= exceso;
-            }
-            else
-            {
-                reservasA += ingreso;
-            }
-        }
-        //Metodo Realizar reserva zona B
-        public static void reservarZonaB()
-        {
-            int temp = reservasB + ingreso;
-
-            if (reservasB == Zona.capacidadB)
-            {
-                throw new Exception("La Zona B ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadB)
-            {
-                int exceso = temp - Zona.capacidadB;
-                throw new Exception("Se excedio el cupo de la Zona B por: " + exceso + " persona(s)");
-            }
-            else
-            {
-                reservasB += ingreso;
-            }
-
-        }
-        //Metodo Realizar reserva zona C
-        public static void reservarZonaC()
-        {
-            int temp = reservasC + ingreso;
-            if (reservasC == Zona.capacidadC)
-            {
-                throw new Exception("La zona C ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadC)
-            {
-                int exceso = temp - Zona.capacidadC;
-                throw new Exception("Se excedio el cupo de la zona C por: " + exceso + " persona(s)");
-            }
-            else
-            {
-                reservasC += ingreso;
-            }
-
-        }
-        //Metodo Realizar reserva zona D
-        public static void reservarZonaD()
-        {
-            int temp = reservasD + ingreso;
-
-            if (reservasD == Zona.capacidadD)
-            {
-                throw new Exception("La Zona D ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadD)
-            {
-                int exceso = temp - Zona.capacidadD;
-
-                throw new Exception("Se excedio el cupo de la Zona D por: " + exceso + " persona(s)");
-            }
-            else
-            {
-                reservasD += ingreso;
-            }
-
-        }
-        //Metodo Realizar reserva zona VIP
-        public static void reservarZonaVIP()
-        {
-            int temp = reservasVIP + ingreso;
-
-            if (reservasVIP == Zona.capacidadVIP)
-            {
-                throw new Exception("La zona VIP ya se encuentra al maximo de su capacidad");
-            }
-            else if (temp > Zona.capacidadVIP)
-            {
-                int exceso = temp - Zona.capacidadVIP;
-                throw new Exception("Se excedio el cupo de la zona VIP por: " + exceso + " persona(s)");
-            }
-            else
-            {
-                reservasVIP += ingreso;
-            }
-
-        }
         //Metodo Salida zona Especial
         public static void salidaZonaEspecial()
         {
@@ -316,22 +197,6 @@ namespace DiscotecaLaSantaDiabla.logica
                 reservasVIP = reservasVIP - salidaZona;
 
             }
-        }
-        
-        //Metodo Get NumPersonas ingresadas
-        public static int darNumeroDePersonasIngresasadas()
-        {
-            int ingresadas = reservasEspecial + reservasA + reservasB + reservasC + reservasD + reservasVIP;
-            return ingresadas;
-        }
-        //Metodo Get Aforo
-        public static double darAforoTotal()
-        {
-            int totalCapacidad = Zona.darCapacidadTotal();
-            int personasIngresadas = darNumeroDePersonasIngresasadas();
-
-            double aforo = (personasIngresadas * 100) / totalCapacidad;
-            return aforo;
         }
     }
 }

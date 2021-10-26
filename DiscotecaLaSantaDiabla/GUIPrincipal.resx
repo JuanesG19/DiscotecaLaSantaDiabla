@@ -66,7 +66,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AAD+VElEQVR4Xoz9BXAdSbYtDO/MokNCu+3mdncPw52ZZjCLmZmZmcmyLBkkMzMzowySLMliZmZmZq6/
         Su6Ze+/7Xrz4I1ZUpEp1CjKzsnKt3AD4Z1P42eQ3/GIKv5qhjeZokzn8G2izxXvAJsv/AG22+p/4n//6
         DdxODltWsdUabbND2+1/g4LDe4CiAyhxcPwPKGUnsYqzlKqLWNWFVnXBKk6g6gbqAcj8IBFwB58vhIxe
@@ -11068,147 +11068,6 @@
         cKBgOBCP/9k=
 </value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnZonaD.Name" xml:space="preserve">
-    <value>btnZonaD</value>
-  </data>
-  <data name="&gt;&gt;btnZonaD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZonaD.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaD.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaC.Name" xml:space="preserve">
-    <value>btnZonaC</value>
-  </data>
-  <data name="&gt;&gt;btnZonaC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZonaC.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaC.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnZonaB.Name" xml:space="preserve">
-    <value>btnZonaB</value>
-  </data>
-  <data name="&gt;&gt;btnZonaB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZonaB.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaB.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnEntrada.Name" xml:space="preserve">
-    <value>btnEntrada</value>
-  </data>
-  <data name="&gt;&gt;btnEntrada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEntrada.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnEntrada.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnBar.Name" xml:space="preserve">
-    <value>btnBar</value>
-  </data>
-  <data name="&gt;&gt;btnBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBar.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnBar.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnZonaA.Name" xml:space="preserve">
-    <value>btnZonaA</value>
-  </data>
-  <data name="&gt;&gt;btnZonaA.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZonaA.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaA.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnVIP.Name" xml:space="preserve">
-    <value>btnVIP</value>
-  </data>
-  <data name="&gt;&gt;btnVIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnVIP.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnVIP.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnZonaEspecial.Name" xml:space="preserve">
-    <value>btnZonaEspecial</value>
-  </data>
-  <data name="&gt;&gt;btnZonaEspecial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZonaEspecial.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnZonaEspecial.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btnTarima.Name" xml:space="preserve">
-    <value>btnTarima</value>
-  </data>
-  <data name="&gt;&gt;btnTarima.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnTarima.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnTarima.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 213</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1195, 482</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH4AAAA7CAIAAAAy1KkAAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -11217,7 +11076,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AAAkgUlEQVR4Xt18B1hUx9r/iUTFhmChiCJgF0EUC4giCCIoIEgvUnepS++dpfe+LLC7LAsmlqghRo0t
         KsaW2Dt2kSJFY0y8ifHe5P7fOefsupzdJZrku//7fe/ze+aZ856ZOTO/95135sCewT5QPiLwETZCEiMw
         uRHYxwA5bKQoQwC/he6KFyOUQg2hJMvIAtkLYR+E/SGE7Bt59X9FyFGJKBAyBeSO+hgbDcAz8iOxsYBR
@@ -11413,7 +11272,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADKk0lEQVR4Xuy9CXwURd7/n8lNCBEQRERAFFlFV2VRuW8IARJCCAESQggBchBC7vvO5L7vOwTUXffQ
         dd173ftwd9V1rsxkch8zmXumGwgYEd3//1tVPT09k4C4++zvAZ/t1+c1r05npo/qqnd96lvV1XYvfEfw
         f0vfttWLNnqDo9et9NJrZl25qy5bi93I/S9Zv4vwgWyPy9k4XV/6hS/V3X47LTW+VDbnY3NpSOwWkE2a
@@ -12310,7 +12169,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADW2UlEQVR4Xuy9B1gbV7r/jygGY4yJu+M4jmPHcRInsZM47r33XnCvGBswvYMQCBBNCERvLkl2k927
         u9lkc+/u3fLbni1ZVJCEACGahFCdsU0S4jib//8954yG0YCdbLnPOvvsPN9HzzCMRjNn3vmc73nnzBmv
         l76t+HfWt5BefojeUrz8pocW3Xqwbg5r8Y2/RdfRJ/stdgtohvcToDc8xNu9BwoOhNWoC4nYo2ZLwC1S
@@ -13260,7 +13119,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADPLUlEQVR4Xuz9B3wVVd7/geemEzqCqNiwrbqugi4i0iGEkEISQggJEEJIAiGEECAhvffeK6HoFrfv
         uu665fk925trcm967+3WuUDUqKj//+ecMzN37iS4us8+f/H5O6/Pa15z586dO3PmzPt8zvecOWPx7Hea
         /+/o23Prudl6dQ6teaV5zTWJrvJae+U2uvyv9XyjmUxrLpnvYfbexDWz/2v2R9kaJnG9OBc3Y8ufUbfZ
@@ -14177,7 +14036,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AAAy+klEQVR4Xu2dd1QU1//3P4kao8ZEMdHYu4K9ANIFUUBAsdLZAth7jVFjiR0bnW00MRpjCaZoLIka
         ewEpgg17AXuJijHm+zzvKbvuzqKRJN/feX4P931eZ87dO/feuTPLH/M6d3YgFhYWFpZ/Ke+8Q+9iK37i
         wtUYEOvEYFeld6kytpWoSiV6rzK9X4VqVKUP3qMPKlM11KCe71iJRzqyEf/rwl2Wd7kTx1lXrULV36Ma
@@ -14430,7 +14289,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AACGs0lEQVR4Xu29BXRUV9f4neBSrC11d6M4BAsJCXGfuLu7hyREiLtNMj6TBJcCxd0dooQQdydAi7T0
         ad//t8+5dyZ3biYw7fv8v7Xyfd1rL0pD7sz93b3PPnufe0ThX/lX/pV/5V/5V/6Vf+Vf+VfGv9g7Wf5/
         Q0ke+YV2/fhVkkd+oV0/fpXkkV9o149fJXnkF9r141dJHvmFdv34VZJHfqFdP36V5JFfaNePXyV55Bfa
@@ -15041,7 +14900,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADRCklEQVR4Xuy9B3gU173GrVUHRDHFGGNsYzDBxMZgjAHTuxACIYQQAoGEEEUIgQoIod5775ViO4lT
         nTi5N7m5Nze5qTeF3VXvvexqyywgMNjY+b73nDMzOzsSLrn3fsb5PM/7zDM7O/XMmd95z/+cmbFa+m3l
         P4++Nb5eHau3x9Gyt5TLbkh0ndfya4/Q1c/Wa7UWMs+psdzC2K2Jc8bua+xP2Rwmcb44Fhdj059Tj1h+
@@ -15966,7 +15825,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADATklEQVR4Xsy9CVxUV5r3z6LiFrdojBpjjGuMUYxRxAURERFZRVbZBEQQERFBdpB93/dVk/Q209t0
         90x3p6ff6emZnu7paWqjin1fqqjtlltiEpP8/885595b9xaFitrzvufzpFJCcavqe373d56z3HNNXlEx
         ZR5RmJqYQbBPDMLMxJw8MjHP3GQ+JxaQmGdiMc9kIRMW800WMY8L55ss5jzXP+I/of+KOYIFe0Ac7PHR
@@ -16819,7 +16678,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AADa0ElEQVR4Xuy9B3wUx/n/r4pELwZjjHEDd1zovfdiwMZgg2mm944A9d5Pp+unu9NJAtfEsR3HjpN8
         013iOI4a6r1d3yIQWNhg///PM7O3ulsJ7Dg44fv93fP6vPZ2Z2dnZ2fndt/P7Oysn8985jOf+cxnPvOZ
         z3zmM5/5zGc+85nPfOYzn/nMZz7zmc96Nn/htwe7ySpP+/dT8JnPfOYzn/nMZz7zmc9+chPZFGYk8+Ii
@@ -17785,7 +17644,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsQAAALEAGtI711
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
         AABjJklEQVR4Xu29BXQUSduwXbgkuLu7BgIkJMTd3ZUQ3D1AkHhC3EZjOCzuBNdAQtxwCbAJDovswu4+
         /HdV9UxmmoGFfQjv+/1v3+c6fXq6q++urs4cripquhEXXHDxfzXqUeqh+nQpuyJFWkAG6bGyweyVHiK7
         IkVaQAbpsTSY7dLC0vJ0XbpFdvvnBWSpjxoQGrJWGqBGsCQF8BbZQ6QwlfqmqK25LJIzNoTTERpTGqIm
@@ -18238,6 +18097,27 @@
   </data>
   <data name="&gt;&gt;btnTarima.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 213</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1195, 482</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="btnUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

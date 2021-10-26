@@ -81,9 +81,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAceptar.Location = new System.Drawing.Point(59, 142);
+            this.btnAceptar.Location = new System.Drawing.Point(42, 136);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(122, 28);
+            this.btnAceptar.Size = new System.Drawing.Size(139, 34);
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -95,9 +95,9 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(187, 142);
+            this.btnCancelar.Location = new System.Drawing.Point(214, 136);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(139, 34);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;

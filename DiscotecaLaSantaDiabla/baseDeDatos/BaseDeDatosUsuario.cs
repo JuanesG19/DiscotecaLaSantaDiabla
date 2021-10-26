@@ -90,7 +90,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             {
                 NpgsqlCommand comando = new NpgsqlCommand(sql, conexion); //Almacena Datos
                 comando.ExecuteNonQuery();
-                MessageBox.Show(pNombre + ", Ha sido registrado con exito");
+                MessageBox.Show(pNombre + ", Ha sido Modificado/a con exito");
                 ConexionBaseDeDatos.cerrarConexion();
             }
             catch (Exception e)
@@ -109,7 +109,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 string sql = "DELETE FROM usuario WHERE id_usuario='" + pId + "';"; //Sentencia SQL
                 NpgsqlCommand comando = new NpgsqlCommand(sql, conexion); //Almacena Datos
                 comando.ExecuteNonQuery();
-                MessageBox.Show("El paciente ya fue eliminado, f");
                 ConexionBaseDeDatos.cerrarConexion();
             }
             catch (Exception e)
@@ -243,6 +242,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 {
                     MessageBox.Show("No se pudo obtener la informacion en las variables metodo crearListaVIPBd" + ex.Message);
                 }
+
                 try
                 {
                     Cliente cliente = new Cliente(idCliente, nombreCliente, apellidoCliente, telefonoCliente, membresias, fechaUsuario);
