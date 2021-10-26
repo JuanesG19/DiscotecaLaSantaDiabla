@@ -349,13 +349,28 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
 
                     if (dr == DialogResult.Yes)
                     {
-
                         try
                         {
                             int nuevaCantidad;
                             nuevaCantidad = bebida.getCantidad() - cantidad;
-                            pedirBebida(idBebida, nuevaCantidad); MessageBox.Show("Los productos fueron adquiridos correctamente por el cliente !");
+
+                            pedirBebida(idBebida, nuevaCantidad);
+
                             BaseDeDatosFactura.agregarFactura(usuario, bebida, totalFactura, totalFacturaFinal, cantidad);
+
+                            botones = MessageBoxButtons.YesNo;
+                            dr = MessageBox.Show("La compra ha sido realizada ¿Desea imprimir factura?", "Pagar", botones);
+
+                            if (dr == DialogResult.Yes)
+                            {
+                                int idFactura = BaseDeDatosFactura.obtenerValorUltimaFactura();
+                                Factura factura = BaseDeDatosFactura.crearFactura(idFactura);
+                                Facturacion.generarFactura(factura);
+                            }
+                            else
+                            {
+                                return;
+                            }
                         }
 
                         catch (Exception ex)

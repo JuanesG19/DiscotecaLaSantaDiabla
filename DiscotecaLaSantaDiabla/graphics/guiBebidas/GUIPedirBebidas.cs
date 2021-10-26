@@ -16,8 +16,8 @@ using DiscotecaLaSantaDiabla.baseDeDatos;
 namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 {
     public partial class GUIPedirBebidas : Form
-    { 
-        
+    {
+
         public GUIPedirBebidas()
         {
             InitializeComponent();
@@ -51,13 +51,13 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 return;
             }
 
-             Cliente user = BaseDeDatosUsuario.buscarClienteBd(idUsuario);
+            Cliente user = BaseDeDatosUsuario.buscarClienteBd(idUsuario);
 
-             if(user == null)
-             {
-                 MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
-                 DialogResult dR = MessageBox.Show("El usuario con la identificacion: " + idUsuario + " No existe, ¿Desea crearlo?","Crear Usuario", botonesConf);
-             
+            if (user == null)
+            {
+                MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
+                DialogResult dR = MessageBox.Show("El usuario con la identificacion: " + idUsuario + " No existe, ¿Desea crearlo?", "Crear Usuario", botonesConf);
+
                 if (dR == DialogResult.Yes)
                 {
                     GUIAgregar agregar = new GUIAgregar();
@@ -68,26 +68,26 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                     return;
                 }
                 return;
-             }
+            }
 
-             Producto buscada = BaseDeDatosBebida.buscarBebidaBd(idBebida);
-            
-             if (buscada == null)
-             {
+            Producto buscada = BaseDeDatosBebida.buscarBebidaBd(idBebida);
+
+            if (buscada == null)
+            {
                 MessageBoxButtons botonesBeb = MessageBoxButtons.YesNo;
-                DialogResult dbeb = MessageBox.Show("La bebida buscada con el id: " + idBebida+ " No existe, ¿Desea crearla?", "Crear Bebida", botonesBeb);
+                DialogResult dbeb = MessageBox.Show("La bebida buscada con el id: " + idBebida + " No existe, ¿Desea crearla?", "Crear Bebida", botonesBeb);
 
-                 if (dbeb == DialogResult.Yes)
-                 {
-                        GUIAgregarBebida agregar = new GUIAgregarBebida();
-                        agregar.Show();
-                 }
-                 else
-                 {
-                     return;
-                 }      
-             }
-            
+                if (dbeb == DialogResult.Yes)
+                {
+                    GUIAgregarBebida agregar = new GUIAgregarBebida();
+                    agregar.Show();
+                }
+                else
+                {
+                    return;
+                }
+            }
+
             if (buscada.getTipoBebida().Equals(logica.Membresia.Membresias.VIP) && user.getTipoCuenta().Equals(logica.Membresia.Membresias.STANDAR))
             {
                 MessageBoxButtons botonesConf = MessageBoxButtons.YesNo;
@@ -108,12 +108,20 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
             try
             {
                 BaseDeDatosBebida.pedirBebidaBd(idBebida, cantidad, user.getID());
+
                 this.Close();
             }
             catch
             {
                 MessageBox.Show("No se pudo pedir la bebida Error!");
             }
+        }
+
+        private void btnGenerarFactura_Click(object sender, EventArgs e)
+        {
+            int idFactura = BaseDeDatosFactura.obtenerValorUltimaFactura();
+            Factura factura = BaseDeDatosFactura.crearFactura(idFactura);
+            Facturacion.generarFactura(factura);
         }
     }
 }

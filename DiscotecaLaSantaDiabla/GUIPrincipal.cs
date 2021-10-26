@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DiscotecaLaSantaDiabla.graphics.guiUsuario;
 
 namespace DiscotecaLaSantaDiabla
 {
@@ -226,6 +227,12 @@ namespace DiscotecaLaSantaDiabla
         {
             ConexionBaseDeDatos.establecerConexion();
             ConexionBaseDeDatos.cerrarConexion();
+        }
+
+        private void btnFacturacion_Click(object sender, EventArgs e)
+        {
+            GUIFacturacion facturacion = new GUIFacturacion();
+            facturacion.Show();
         }
     }
 }
