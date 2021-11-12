@@ -41,7 +41,16 @@ namespace DiscotecaLaSantaDiabla
             else
             {
                 Cliente user = BaseDeDatosUsuario.buscarClienteBd(idUsuario);
-                numPersonas = Convert.ToInt32(txtIngreso.Text);
+                try
+                {
+                    numPersonas = Convert.ToInt32(txtIngreso.Text);
+
+                }
+                catch
+                {
+                    MessageBox.Show("El valor ingresado no es correcto");
+                }
+
                 BaseDeDatosZonas.modificarCapacidadBd(zona, numPersonas, user.getID());
 
 
