@@ -12,9 +12,9 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
         static NpgsqlConnection conexion = new NpgsqlConnection();
 
         static String servidor = "localhost";
-        static String bd = "LaSantaDiabla";
+        static String bd = "laSantaDiabla";
         static String usuario = "postgres";
-        static String password = "juanchog";
+        static String password = "jorgerojas123";
         static String puerto = "5432";
 
         static String cadenaConexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";";

@@ -40,10 +40,7 @@ namespace DiscotecaLaSantaDiabla
             if ( edadActual <= DateTime.Today )
             {
                 try
-                {
-                    //Cliente cliente = new Cliente("da", nombre, apellidos, telefono, Membresia.Membresias.STANDAR, fecha);
-                    //Usuario.crearUsuario(cliente);
-                   
+                {                  
                     BaseDeDatosUsuario.agregarUsuario(identificacion, nombre, apellidos, fecha, telefono, membresia);
 
                     txtIdentificacion.Text = "";
@@ -53,9 +50,9 @@ namespace DiscotecaLaSantaDiabla
                     fechaNacimiento.Text = "";
 
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Campos Invalidos, Intente de nuevo");
                 }
             }
             else

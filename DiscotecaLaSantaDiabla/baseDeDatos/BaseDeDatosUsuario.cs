@@ -74,9 +74,11 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 MessageBox.Show(pNombre + ", Ha sido registrado con exito");
                 ConexionBaseDeDatos.cerrarConexion();
             }
-            catch (Exception e)
+            catch
             {
-                MessageBox.Show("Error al Agregar el usuario a la base de datos. Error : " + e.ToString());
+                MessageBox.Show("Error al Agregar el usuario a la base de datos. \n" +
+                    "Posibles datos invalidos. \n" +
+                    "Intente de nuevo");
             }
         }
 

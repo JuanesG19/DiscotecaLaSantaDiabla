@@ -47,24 +47,36 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 String nombre = txtNombre.Text;
                 double precio = Double.Parse(txtPrecio.Text);
                 String presentacion = txtPresentacion.Text;
-                int cantidad = Int32.Parse(txtCantidad.Text);                            
-                try
-                {   
-                    BaseDeDatosBebida.agregarBebida(id, nombre, precio, presentacion, cantidad, Convert.ToString(tipoBebida));
-                
-                    MessageBox.Show("La bebida : "+ nombre + ", Ha sido Agregada con exito");
+                int cantidad = Int32.Parse(txtCantidad.Text);
 
-                    txtIdentificador.Text = " ";
-                    txtNombre.Text = " ";
-                    txtPrecio.Text = " ";
-                    txtPresentacion.Text = " ";
-                    txtCantidad.Text = " ";
-                    txtTipoBebida.Text = " ";
-                }
-                catch(Exception ex)
+                Producto existe = BaseDeDatosBebida.buscarBebidaBd(id);
+
+                if(existe == null)
                 {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        BaseDeDatosBebida.agregarBebida(id, nombre, precio, presentacion, cantidad, Convert.ToString(tipoBebida));
+
+                        MessageBox.Show("La bebida : " + nombre + ", Ha sido Agregada con exito");
+
+                        txtIdentificador.Text = " ";
+                        txtNombre.Text = " ";
+                        txtPrecio.Text = " ";
+                        txtPresentacion.Text = " ";
+                        txtCantidad.Text = " ";
+                        txtTipoBebida.Text = " ";
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("La bebida con el id: " + id + ", ya existe");
+                }
+
+                
                 
             }
             catch
