@@ -114,6 +114,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
 
         */
 
+        //Commit Mene
         //Metodo Contar Usuarios
         public static int contarUsuarios()
         {
