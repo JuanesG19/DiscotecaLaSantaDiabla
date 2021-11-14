@@ -12,8 +12,6 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
     {
         static NpgsqlConnection conexion = new NpgsqlConnection();
 
-        //INSERT INTO public.factura (id_usuario, nombre_usuario, apellido_usuario, telefono_usuario, nombre_bebida, cantidad_bebida, precio_subtotal, precio_total, fecha_factura) VALUES('', '', '', '', '', 0, 0, 0, '');
-
         //METODOS Factura
         //Metodo para agregar una bebida en la base de datos
         public static void agregarFactura(Cliente pUsuario, Producto pBebida, double pSubtotal, double pTotal, double pCantidadN)

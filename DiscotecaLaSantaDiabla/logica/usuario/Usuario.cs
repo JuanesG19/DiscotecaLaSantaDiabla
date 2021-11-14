@@ -46,73 +46,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
                 throw new Exception("El usuario ya existe, no se pueden agregar dos usuarios con la misma identificacion");
             }
 
-        }
-
-        /**
-        public void setUsuarios(List<Cliente> pUsuario)
-        {
-            clientes = pUsuario;
-        }
-
-        //Metodo Modificar Usuario
-        public static void modificarUsuario(Cliente nuevoCliente, String id)
-        {
-            Cliente clienteModificar = buscarUsuario(id);
-            int pos = clientes.IndexOf(clienteModificar);
-
-            try
-            {
-                eliminarUsuario(id);
-                clientes.Insert(pos, nuevoCliente);
-            }
-            catch
-            {
-                throw new Exception("El cliente no ha podido ser modificado!");
-            }
-        }
-
-        //Metodo Eliminar Usuario
-        public static void eliminarUsuario(String id)
-        {
-            Cliente buscado = buscarUsuario(id);
-
-            if (buscado != null)
-            {
-                int pos = clientes.IndexOf(buscado);
-                clientes.RemoveAt(pos);
-            }
-            else
-            {
-                throw new Exception("No se pudo eliminar el usuario");
-            }
-        }
-
-        //Metodo Cambiar Estado
-        public static void cambiarEstado(String id)
-        {
-            Cliente idBuscado = buscarUsuario(id);
-            int pos = clientes.IndexOf(idBuscado);
-
-            if (idBuscado.getTipoCuenta() == Membresia.Membresias.STANDAR)
-            {
-                eliminarUsuario(idBuscado.getID());
-                idBuscado.setTipoCuenta(Membresia.Membresias.VIP);
-                clientes.Insert(pos, idBuscado);
-
-            }
-            else if (idBuscado.getTipoCuenta() == Membresia.Membresias.VIP)
-            {
-                eliminarUsuario(idBuscado.getID());
-                idBuscado.setTipoCuenta(Membresia.Membresias.STANDAR);
-                clientes.Insert(pos, idBuscado);
-            }
-            else
-            {
-                throw new Exception("El Cliente no tiene un tipo de cuenta definido");
-            }
-        }
-
-        */
+        }       
 
         //Metodo Contar Usuarios
         public static int contarUsuarios()
