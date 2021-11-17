@@ -110,7 +110,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             {
                 if (cliente.getTipoCuenta().Equals("VIP") && zona.getTipoZona().Equals("VIP"))
                 {
-                    modificarCapacidaZona(pId, pCantidad);
+                    modificarCapacidaZona(pId, Ncantidad);
                     MessageBox.Show("Se han ingresado los clientes!");
                 }
                 else if ((cliente.getTipoCuenta().Equals(Membresias.STANDAR) && zona.getTipoZona().Equals("VIP")))
@@ -130,7 +130,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
                 }
                 else
                 {
-                    modificarCapacidaZona(pId, pCantidad);
+                    modificarCapacidaZona(pId, Ncantidad);
                     MessageBox.Show("Se han ingresado los clientes!");
                 }
             }

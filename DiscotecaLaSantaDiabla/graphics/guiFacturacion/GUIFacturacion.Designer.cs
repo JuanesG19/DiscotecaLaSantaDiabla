@@ -32,10 +32,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIFacturacion));
             this.gridFacturas = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMostrarFacturas = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnImprimirFactura = new System.Windows.Forms.Button();
             this.idGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idUsuarioGRid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +42,10 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             this.subtotalGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMostrarFacturas = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnImprimirFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridFacturas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             this.gridFacturas.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -78,57 +78,6 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             this.gridFacturas.RowTemplate.Height = 25;
             this.gridFacturas.Size = new System.Drawing.Size(1071, 473);
             this.gridFacturas.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1266, 159);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnMostrarFacturas
-            // 
-            this.btnMostrarFacturas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMostrarFacturas.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnMostrarFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarFacturas.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMostrarFacturas.Location = new System.Drawing.Point(12, 174);
-            this.btnMostrarFacturas.Name = "btnMostrarFacturas";
-            this.btnMostrarFacturas.Size = new System.Drawing.Size(140, 49);
-            this.btnMostrarFacturas.TabIndex = 12;
-            this.btnMostrarFacturas.Text = "Mostrar Facturas";
-            this.btnMostrarFacturas.UseVisualStyleBackColor = false;
-            this.btnMostrarFacturas.Click += new System.EventHandler(this.btnMostrar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(12, 284);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(140, 49);
-            this.btnSalir.TabIndex = 13;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnImprimirFactura
-            // 
-            this.btnImprimirFactura.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnImprimirFactura.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnImprimirFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImprimirFactura.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimirFactura.Location = new System.Drawing.Point(12, 229);
-            this.btnImprimirFactura.Name = "btnImprimirFactura";
-            this.btnImprimirFactura.Size = new System.Drawing.Size(140, 49);
-            this.btnImprimirFactura.TabIndex = 14;
-            this.btnImprimirFactura.Text = "Imprimir Factura";
-            this.btnImprimirFactura.UseVisualStyleBackColor = false;
-            this.btnImprimirFactura.Click += new System.EventHandler(this.btnImprimirFactura_Click);
             // 
             // idGrid
             // 
@@ -195,6 +144,58 @@ namespace DiscotecaLaSantaDiabla.graphics.guiUsuario
             // 
             this.fechaGrid.HeaderText = "Fecha";
             this.fechaGrid.Name = "fechaGrid";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1266, 159);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnMostrarFacturas
+            // 
+            this.btnMostrarFacturas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostrarFacturas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrarFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrarFacturas.Location = new System.Drawing.Point(12, 174);
+            this.btnMostrarFacturas.Name = "btnMostrarFacturas";
+            this.btnMostrarFacturas.Size = new System.Drawing.Size(140, 49);
+            this.btnMostrarFacturas.TabIndex = 12;
+            this.btnMostrarFacturas.Text = "Mostrar Facturas";
+            this.btnMostrarFacturas.UseVisualStyleBackColor = false;
+            this.btnMostrarFacturas.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Location = new System.Drawing.Point(12, 284);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(140, 49);
+            this.btnSalir.TabIndex = 13;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnImprimirFactura
+            // 
+            this.btnImprimirFactura.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnImprimirFactura.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnImprimirFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimirFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnImprimirFactura.Location = new System.Drawing.Point(12, 229);
+            this.btnImprimirFactura.Name = "btnImprimirFactura";
+            this.btnImprimirFactura.Size = new System.Drawing.Size(140, 49);
+            this.btnImprimirFactura.TabIndex = 14;
+            this.btnImprimirFactura.Text = "Imprimir Factura";
+            this.btnImprimirFactura.UseVisualStyleBackColor = false;
+            this.btnImprimirFactura.Click += new System.EventHandler(this.btnImprimirFactura_Click);
             // 
             // GUIFacturacion
             // 

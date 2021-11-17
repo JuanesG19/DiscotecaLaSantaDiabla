@@ -31,7 +31,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
             if (bebida == null)
             {
-                MessageBox.Show("No existe el usuario a eliminar");
+                MessageBox.Show("No existe la bebida a eliminar");
                 return;
             }
 

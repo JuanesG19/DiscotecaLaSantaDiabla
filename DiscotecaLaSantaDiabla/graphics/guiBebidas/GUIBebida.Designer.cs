@@ -29,7 +29,7 @@ namespace DiscotecaLaSantaDiabla
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIBebida));
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnModificarBebida = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMostrar.Location = new System.Drawing.Point(15, 475);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(140, 54);
@@ -70,7 +70,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnModificarBebida.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificarBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnModificarBebida.Location = new System.Drawing.Point(15, 356);
             this.btnModificarBebida.Name = "btnModificarBebida";
             this.btnModificarBebida.Size = new System.Drawing.Size(140, 54);
@@ -84,7 +84,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnBuscarBebida.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuscarBebida.Location = new System.Drawing.Point(15, 296);
             this.btnBuscarBebida.Name = "btnBuscarBebida";
             this.btnBuscarBebida.Size = new System.Drawing.Size(140, 54);
@@ -98,7 +98,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminarBebida.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminarBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminarBebida.Location = new System.Drawing.Point(15, 236);
             this.btnEliminarBebida.Name = "btnEliminarBebida";
             this.btnEliminarBebida.Size = new System.Drawing.Size(140, 54);
@@ -112,7 +112,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnAgregarBebida.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAgregarBebida.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAgregarBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarBebida.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAgregarBebida.Location = new System.Drawing.Point(15, 176);
             this.btnAgregarBebida.Name = "btnAgregarBebida";
             this.btnAgregarBebida.Size = new System.Drawing.Size(140, 54);
@@ -124,14 +124,14 @@ namespace DiscotecaLaSantaDiabla
             // gridBebidas
             // 
             this.gridBebidas.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridBebidas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridBebidas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridBebidas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iterador,
@@ -146,6 +146,7 @@ namespace DiscotecaLaSantaDiabla
             this.gridBebidas.RowTemplate.Height = 25;
             this.gridBebidas.Size = new System.Drawing.Size(828, 413);
             this.gridBebidas.TabIndex = 9;
+            this.gridBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridBebidas_CellContentClick);
             // 
             // iterador
             // 
@@ -216,7 +217,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnSalir.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSalir.Location = new System.Drawing.Point(15, 535);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(140, 54);
@@ -230,7 +231,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnMostrarVIP.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrarVIP.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMostrarVIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarVIP.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMostrarVIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMostrarVIP.Location = new System.Drawing.Point(15, 416);
             this.btnMostrarVIP.Name = "btnMostrarVIP";
             this.btnMostrarVIP.Size = new System.Drawing.Size(140, 54);
