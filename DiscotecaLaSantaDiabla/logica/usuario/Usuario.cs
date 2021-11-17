@@ -46,9 +46,7 @@ namespace DiscotecaLaSantaDiabla.logica.usuario
                 throw new Exception("El usuario ya existe, no se pueden agregar dos usuarios con la misma identificacion");
             }
 
-        }       
-
-        //Metodo Contar Usuarios
+        }
         public static int contarUsuarios()
         {
             int cantidad = clientes.Count;

@@ -105,5 +105,10 @@ namespace DiscotecaLaSantaDiabla
             }
 
         }
+
+        private void gridBebidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

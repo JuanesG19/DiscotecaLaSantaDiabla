@@ -57,5 +57,15 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 txtTipoBebida.Text = Convert.ToString(bebida.getTipoBebida());
             }
         }
+
+        private void lblIdentificador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GUIBuscarBebida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,7 +76,7 @@ namespace DiscotecaLaSantaDiabla.baseDeDatos
             }
             catch
             {
-                MessageBox.Show("Error al Agregar el usuario a la base de datos. \n" +
+                MessageBox.Show("Error al agregar el usuario a la base de datos. \n" +
                     "Posibles datos invalidos. \n" +
                     "Intente de nuevo");
             }

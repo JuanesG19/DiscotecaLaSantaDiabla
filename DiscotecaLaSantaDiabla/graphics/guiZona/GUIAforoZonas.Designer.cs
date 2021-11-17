@@ -48,60 +48,60 @@ namespace DiscotecaLaSantaDiabla
             // lblZonaA
             // 
             this.lblZonaA.AutoSize = true;
-            this.lblZonaA.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaA.Location = new System.Drawing.Point(11, 75);
             this.lblZonaA.Name = "lblZonaA";
-            this.lblZonaA.Size = new System.Drawing.Size(63, 17);
+            this.lblZonaA.Size = new System.Drawing.Size(59, 18);
             this.lblZonaA.TabIndex = 0;
             this.lblZonaA.Text = "Zona A:";
             // 
             // lblZonaB
             // 
             this.lblZonaB.AutoSize = true;
-            this.lblZonaB.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaB.Location = new System.Drawing.Point(11, 121);
             this.lblZonaB.Name = "lblZonaB";
-            this.lblZonaB.Size = new System.Drawing.Size(63, 17);
+            this.lblZonaB.Size = new System.Drawing.Size(60, 18);
             this.lblZonaB.TabIndex = 1;
             this.lblZonaB.Text = "Zona B:";
             // 
             // lblZonaC
             // 
             this.lblZonaC.AutoSize = true;
-            this.lblZonaC.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaC.Location = new System.Drawing.Point(10, 162);
             this.lblZonaC.Name = "lblZonaC";
-            this.lblZonaC.Size = new System.Drawing.Size(63, 17);
+            this.lblZonaC.Size = new System.Drawing.Size(61, 18);
             this.lblZonaC.TabIndex = 2;
             this.lblZonaC.Text = "Zona C:";
             // 
             // lblZonaD
             // 
             this.lblZonaD.AutoSize = true;
-            this.lblZonaD.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaD.Location = new System.Drawing.Point(11, 206);
             this.lblZonaD.Name = "lblZonaD";
-            this.lblZonaD.Size = new System.Drawing.Size(63, 17);
+            this.lblZonaD.Size = new System.Drawing.Size(61, 18);
             this.lblZonaD.TabIndex = 3;
             this.lblZonaD.Text = "Zona D:";
             // 
             // lblZonaEspecial
             // 
             this.lblZonaEspecial.AutoSize = true;
-            this.lblZonaEspecial.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaEspecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaEspecial.Location = new System.Drawing.Point(5, 36);
             this.lblZonaEspecial.Name = "lblZonaEspecial";
-            this.lblZonaEspecial.Size = new System.Drawing.Size(93, 14);
+            this.lblZonaEspecial.Size = new System.Drawing.Size(88, 15);
             this.lblZonaEspecial.TabIndex = 4;
             this.lblZonaEspecial.Text = "Zona Especial:";
             // 
             // lblZonaVIP
             // 
             this.lblZonaVIP.AutoSize = true;
-            this.lblZonaVIP.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblZonaVIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblZonaVIP.Location = new System.Drawing.Point(11, 247);
             this.lblZonaVIP.Name = "lblZonaVIP";
-            this.lblZonaVIP.Size = new System.Drawing.Size(77, 17);
+            this.lblZonaVIP.Size = new System.Drawing.Size(72, 18);
             this.lblZonaVIP.TabIndex = 5;
             this.lblZonaVIP.Text = "Zona VIP:";
             // 
@@ -164,7 +164,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnConstular.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConstular.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnConstular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConstular.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConstular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConstular.Location = new System.Drawing.Point(11, 286);
             this.btnConstular.Name = "btnConstular";
             this.btnConstular.Size = new System.Drawing.Size(139, 27);
@@ -178,7 +178,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(156, 286);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 27);

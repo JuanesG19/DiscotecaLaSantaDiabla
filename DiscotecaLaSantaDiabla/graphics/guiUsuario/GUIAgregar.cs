@@ -21,7 +21,6 @@ namespace DiscotecaLaSantaDiabla
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-
             if (txtIdentificacion.Text.Length == 0 || txtNombres.Text.Length == 0 || txtApellidos.Text.Length == 0 || txtTelefonos.Text.Length == 0 || fechaNacimiento.Value.ToString().Length == 0)
             {
                 MessageBox.Show("Hay espacios vacios, No se ha podido agregar el usuario");
@@ -37,10 +36,10 @@ namespace DiscotecaLaSantaDiabla
 
             DateTime edadActual = fechaNacimiento.Value.AddYears(18);
 
-            if ( edadActual <= DateTime.Today )
+            if (edadActual <= DateTime.Today)
             {
                 try
-                {                  
+                {
                     BaseDeDatosUsuario.agregarUsuario(identificacion, nombre, apellidos, fecha, telefono, membresia);
 
                     txtIdentificacion.Text = "";
@@ -60,7 +59,6 @@ namespace DiscotecaLaSantaDiabla
                 MessageBox.Show("El usuario NO es mayor de edad");
                 return;
             }
-            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

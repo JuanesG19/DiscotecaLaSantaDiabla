@@ -51,7 +51,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                 Producto existe = BaseDeDatosBebida.buscarBebidaBd(id);
 
-                if(existe == null)
+                if (existe == null)
                 {
                     try
                     {
@@ -59,33 +59,26 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
 
                         MessageBox.Show("La bebida : " + nombre + ", Ha sido Agregada con exito");
 
-                        txtIdentificador.Text = " ";
-                        txtNombre.Text = " ";
-                        txtPrecio.Text = " ";
-                        txtPresentacion.Text = " ";
-                        txtCantidad.Text = " ";
-                        txtTipoBebida.Text = " ";
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    txtIdentificador.Text = " ";
+                    txtNombre.Text = " ";
+                    txtPrecio.Text = " ";
+                    txtPresentacion.Text = " ";
+                    txtCantidad.Text = " ";
+                    txtTipoBebida.Text = " ";
                 }
-                else
+                catch(Exception ex)
                 {
-                    MessageBox.Show("La bebida con el id: " + id + ", ya existe");
+                    MessageBox.Show(ex.Message);
                 }
-
-                
                 
             }
             catch
             {
-                MessageBox.Show("Alguno de los campos ingresados no es valido. \n" +
+                MessageBox.Show("Alguno de los campos ingresados no son validos. \n" +
                     "Posibles errores en la digitacion de:  \n" +
                     "Identificador, Precio, Cantidad");
-            }                               
-            
+            }
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

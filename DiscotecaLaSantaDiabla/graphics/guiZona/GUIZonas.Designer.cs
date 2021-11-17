@@ -40,10 +40,10 @@ namespace DiscotecaLaSantaDiabla
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(32, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 15);
+            this.label1.Size = new System.Drawing.Size(198, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inserte El Numero De  Personas";
             // 
@@ -60,7 +60,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnConfirmar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmar.Location = new System.Drawing.Point(10, 137);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(122, 29);
@@ -80,10 +80,10 @@ namespace DiscotecaLaSantaDiabla
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Allstar4", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(56, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 15);
+            this.label2.Size = new System.Drawing.Size(159, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Identificacion Del Usuario";
             // 
@@ -92,7 +92,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(138, 137);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 29);

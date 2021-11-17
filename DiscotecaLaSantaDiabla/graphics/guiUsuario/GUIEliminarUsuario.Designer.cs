@@ -77,10 +77,10 @@ namespace DiscotecaLaSantaDiabla
             // lblIdentificacion
             // 
             this.lblIdentificacion.AutoSize = true;
-            this.lblIdentificacion.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblIdentificacion.Location = new System.Drawing.Point(11, 10);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(220, 17);
+            this.lblIdentificacion.Size = new System.Drawing.Size(195, 18);
             this.lblIdentificacion.TabIndex = 30;
             this.lblIdentificacion.Text = "Documento de Identificacion";
             // 
@@ -89,7 +89,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.Location = new System.Drawing.Point(24, 395);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(119, 25);
@@ -103,7 +103,7 @@ namespace DiscotecaLaSantaDiabla
             this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Allstar4", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(158, 395);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 25);
@@ -115,20 +115,20 @@ namespace DiscotecaLaSantaDiabla
             // lblTipoDeCuenta
             // 
             this.lblTipoDeCuenta.AutoSize = true;
-            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTipoDeCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTipoDeCuenta.Location = new System.Drawing.Point(24, 215);
             this.lblTipoDeCuenta.Name = "lblTipoDeCuenta";
-            this.lblTipoDeCuenta.Size = new System.Drawing.Size(119, 17);
+            this.lblTipoDeCuenta.Size = new System.Drawing.Size(108, 18);
             this.lblTipoDeCuenta.TabIndex = 53;
             this.lblTipoDeCuenta.Text = "Tipo de Cuenta";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(24, 331);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 17);
+            this.label4.Size = new System.Drawing.Size(148, 18);
             this.label4.TabIndex = 52;
             this.label4.Text = "Fecha de Nacimiento";
             // 
@@ -144,10 +144,10 @@ namespace DiscotecaLaSantaDiabla
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelefono.Location = new System.Drawing.Point(24, 271);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(74, 17);
+            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 50;
             this.lblTelefono.Text = "Telefono";
             // 
@@ -164,10 +164,10 @@ namespace DiscotecaLaSantaDiabla
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblApellidos.Location = new System.Drawing.Point(24, 153);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(79, 17);
+            this.lblApellidos.Size = new System.Drawing.Size(67, 18);
             this.lblApellidos.TabIndex = 48;
             this.lblApellidos.Text = "Apellidos";
             // 
@@ -183,10 +183,10 @@ namespace DiscotecaLaSantaDiabla
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Allstar4", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNombre.Location = new System.Drawing.Point(24, 92);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(75, 17);
+            this.lblNombre.Size = new System.Drawing.Size(70, 18);
             this.lblNombre.TabIndex = 46;
             this.lblNombre.Text = "Nombres";
             // 

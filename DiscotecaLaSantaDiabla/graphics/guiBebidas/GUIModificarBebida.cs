@@ -100,7 +100,7 @@ namespace DiscotecaLaSantaDiabla.graphics.guiBebidas
                 }                    
                  catch
                 {
-                        MessageBox.Show("Alguno de los campos ingresados no es valido. \n" +
+                        MessageBox.Show("Alguno de los campos ingresados no son validos. \n" +
                         "Posibles errores en la digitacion de:  \n" +
                         "Identificador, Precio, Cantidad");
                 }
